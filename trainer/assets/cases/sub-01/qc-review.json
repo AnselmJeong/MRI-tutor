@@ -1,7 +1,7 @@
 {
   "status": "developer-visual-qc",
   "reviewer": "Codex visual inspection (not specialist clinical adjudication)",
-  "reviewed_at": "2026-09-06",
+  "reviewed_at": "2026-09-07",
   "orientation": "scanner RAS header and voxel ordering checked; radiological browser display. Independent physical left-right fiducial unavailable.",
   "intensity_integrity": true,
   "notes": [
@@ -9,17 +9,23 @@
     "T1/T2 three-plane visual contacts inspected at central brain landmarks: ventricles, callosum, thalamus and cortical outline show no gross displacement. No claim of zero local registration error.",
     "Left and right individual reference outlines inspected in sagittal/coronal/axial contacts. Localization plausible; automatic local boundaries are not clinically approved.",
     "Cingulate and insula folding, hippocampal/amygdala transitions, caudate tail and pallidal boundaries retain partial-volume/segmentation uncertainty.",
-    "Ventricle labels exclude separate inferior-lateral-ventricle class. Callosum labels cover central segmentation only."
+    "Ventricle labels exclude separate inferior-lateral-ventricle class. Callosum labels cover central segmentation only.",
+    "Expanded label IDs 21-46 inspected bilaterally at their anchors in sagittal, coronal and axial T1 contacts. Gross localization is plausible; no specialist boundary adjudication performed.",
+    "Cortical folding, entorhinal and accumbens boundaries remain uncertain. Inferior lateral ventricles can be narrow/discontinuous; cerebellar folia have partial-volume limits. Broad frontal/parietal parcels are not functional territory maps.",
+    "Original labels 1-20 retain identical IDs, source IDs, voxel counts, bounds and anchors. Original T1 and registered T2 hashes unchanged.",
+    "Inferior lateral ventricle labels contain only 51 left / 102 right one-mm voxels; use as a limited location reference, not a complete temporal-horn extent."
   ],
   "evidence": [
     "qa/sub-01-registration.png",
     "qa/sub-01-labels.png",
-    "qa/sub-01-labels-right.png"
+    "qa/sub-01-labels-right.png",
+    "qa/sub-01-expanded-1.png",
+    "qa/sub-01-expanded-2.png"
   ],
   "reviewed_hashes": {
     "T1w": "06d22728884f865d87196d86611a72eb865b0521de6243350b3511ce52a1f84e",
     "T2w": "de5a38fa2e7999018af5963ed0f10061f3b84fcce6126c212a3e32c989d0c1a1",
-    "labels": "548bef40ca9668d75d43a8e1870c972e4491cfd23683409d939e3a22c273751f"
+    "labels": "cf634e97e53f8e40b6202e414327c47d0af9564a7f1726423c0d76bf37643918"
   },
   "label_review_logs": [
     {
@@ -27,7 +33,70 @@
       "decision": "reference-only",
       "side": "all",
       "scope": "Three-plane left/right localization review; no voxelwise boundary adjudication",
+      "expert_approved": false,
+      "label_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "role": "developer",
+      "decision": "reference-only",
+      "side": "all",
+      "label_ids": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "scope": "Three-plane bilateral anchor localization on native T1; T2 inherits unchanged registration. No voxelwise or clinical boundary adjudication.",
+      "reviewed_at": "2026-09-07",
       "expert_approved": false
     }
-  ]
+  ],
+  "prior_reviewed_hashes": {
+    "T1w": "06d22728884f865d87196d86611a72eb865b0521de6243350b3511ce52a1f84e",
+    "T2w": "de5a38fa2e7999018af5963ed0f10061f3b84fcce6126c212a3e32c989d0c1a1",
+    "labels": "548bef40ca9668d75d43a8e1870c972e4491cfd23683409d939e3a22c273751f"
+  }
 }

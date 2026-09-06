@@ -28,7 +28,7 @@ export async function createCaseViewer({canvas,onLocation=()=>{},onLoad=()=>{}})
   function color() {
     if(!base)return;
     if(labelImage){
-      const count=64,lut={R:Array(count).fill(227),G:Array(count).fill(175),B:Array(count).fill(91),A:Array(count).fill(0),labels:Array(count).fill('참고 영역')};
+      const count=Math.max(2,...current.segmentation.labels.map(l=>l.id+1)),lut={R:Array(count).fill(227),G:Array(count).fill(175),B:Array(count).fill(91),A:Array(count).fill(0),labels:Array(count).fill('참고 영역')};
       ids.forEach(id=>{lut.A[id]=180;});labelImage.setColormapLabel(lut);labelImage.opacity=overlay?.48:0;
     }
     nv.updateGLVolume();

@@ -7,8 +7,10 @@
   "scripts": {
     "test": "node --test tests/*.test.mjs",
     "test:browser": "node tests/browser.mjs",
-    "serve": "python3 -m http.server 8091 --bind 127.0.0.1 --directory trainer",
-    "test:resilience": "node tests/resilience.mjs"
+    "serve": "python3 trainer/serve.py --no-browser",
+    "test:resilience": "node tests/resilience.mjs",
+    "test:atlas-recovery": "node tests/atlas-recovery.mjs",
+    "test:expanded": "node tests/expanded.mjs"
   },
   "devDependencies": {
     "@playwright/test": "1.58.2"

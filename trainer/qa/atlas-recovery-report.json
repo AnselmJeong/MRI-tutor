@@ -1,0 +1,11 @@
+{
+  "date": "2026-09-06T22:05:25.822Z",
+  "checks": [
+    "Connection refused: actionable server guidance and retry",
+    "Retry restores MRI without refresh",
+    "Failed template switch hides previous MRI",
+    "503 recovery loads Allen template",
+    "Return to MNI template succeeds",
+    "Atlas exercise retry completes question setup, preserving hidden answer"
+  ]
+}

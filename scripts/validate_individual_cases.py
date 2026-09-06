@@ -29,7 +29,9 @@ for c in m['cases']:
     for structure in set(l['structure'] for l in c['segmentation']['labels']):
         pair={l['side']:l for l in c['segmentation']['labels'] if l['structure']==structure}
         if 'left' in pair and 'right' in pair:assert pair['left']['anchor'][0]<pair['right']['anchor'][0]
-    assert len(c['tasks'])==11
+    assert len(c['tasks'])==26
+    assert len({t['target'] for t in c['tasks']})==26
+    assert {l['structure'] for l in c['segmentation']['labels']} == {t['target'] for t in c['tasks']} - {'internal-capsule'}
     assert all(t['status']=='enabled-observation' and not t['scoreable'] and t['allowed_region'] is None for t in c['tasks'])
     results.append({'case':c['id'],'labels_checked':len(c['segmentation']['labels']),'tasks':len(c['tasks']),'hashes':'passed','affines':'passed','native_intensity':'passed','hemispheres':'left relative to right in scanner RAS, not sign-of-x assumption'})
 (ROOT/'qa/data-validation.json').write_text(json.dumps({'results':results,'clinical_scoreable_tasks':0},indent=2));print(json.dumps(results,indent=2))

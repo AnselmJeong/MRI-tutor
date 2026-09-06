@@ -25,4 +25,4 @@ Verified split behavior in Chromium: actual drag to both endpoints; button/keybo
 
 ## 개인 MRI 구현 상태 (2026-09-06)
 
-REDESIGN.md를 기준으로 개인 StudyForrest T1/T2 4명, 11개 관찰 주제, 안내·추적·비교·별도 개인 전이 흐름을 구현했다. 기존 디자인과 3D/분할/Atlas 기능은 유지한다. 개인 자동 라벨은 전문 경계 검수 전 참고용이며, 임상 정답률을 계산하지 않는다. 데이터·브라우저 검증과 제약은 [VERIFICATION.md](VERIFICATION.md), 실행·재현 방법은 [README.md](README.md)를 참조한다.
+REDESIGN.md를 기준으로 개인 StudyForrest T1/T2 4명, 26개 관찰 주제, 안내·추적·비교·별도 개인 전이 흐름을 구현했다. 기존 디자인과 3D/분할/Atlas 기능은 유지한다. 개인 자동 라벨은 전문 경계 검수 전 참고용이며, 임상 정답률을 계산하지 않는다. 데이터·브라우저 검증과 제약은 [VERIFICATION.md](VERIFICATION.md), 실행·재현 방법은 [README.md](README.md)를 참조한다.

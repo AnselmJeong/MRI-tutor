@@ -62,3 +62,11 @@ All 44 case/task contracts are observation exercises. Reference-label status is 
 The ordinary T1/T2 pilot cannot certify small-nucleus boundaries or functional-network borders. [Wengler et al., neuromelanin-sensitive MRI](https://pmc.ncbi.nlm.nih.gov/articles/PMC11526017/) supports the need for appropriate contrast for SN/LC-related observation. ATAG is a future data candidate, not an installed or tested component. No clinical disease-specific interpretation is attached to these four participants.
 
 Authored anatomical observation prompts refer to [Radiology Assistant brain anatomy](https://radiologyassistant.nl/neuroradiology/brain/anatomy), [UTHealth basal-ganglia anatomy](https://nba.uth.tmc.edu/neuroanatomy/L5/Lab05p20_index.html), and [UTHealth internal capsule](https://nba.uth.tmc.edu/neuroanatomy/L10/Lab10p01_index.html). They are original Korean prompts, not reproduced textbook figures. The user's textbook PDF and extraction results remain local and are excluded from Git.
+
+## 개인 분할 확장 (2026-09-07)
+
+동일한 개인 aparc+aseg의 추가 source ID를 사용한다. [FreeSurfer 공식 LUT](https://raw.githubusercontent.com/freesurfer/freesurfer/dev/distribution/FreeSurferColorLUT.txt)와 [피질 parcellation 설명](https://surfer.nmr.mgh.harvard.edu/fswiki/CorticalParcellation)을 대조했다. 기존 앱 라벨 ID 1–20은 보존하고 21–46을 추가했다. 각 원본 ID 집합은 겹치지 않으며, 빈 영역은 생성 단계에서 거부한다. 전체 매핑은 `scripts/build_individual_cases.py`의 GROUPS와 개별 case.json의 source_ids에 기록된다.
+
+측좌핵 영역(26/58), 해마곁(1016/2016), 내후각(1006/2006), 안와전두(1012+1014/2012+2014), 상전두(1028/2028), 중전두(1003+1027/2003+2027), 중심앞(1024/2024), 중심뒤(1022/2022), 쐐기앞(1025/2025), 하두정·연상(1008+1031/2008+2031), 하측뇌실(5/44), 제4뇌실(15), 뇌간 전체(16), 소뇌 피질(8/47)을 추가했다. 이미 있던 제3뇌실(14)도 관찰 주제로 연결했다.
+
+해마곁/내후각 및 넓은 피질 구획은 조직학적·기능적 영역과 같지 않다. 뇌간 전체가 미세 핵의 경계를 제공하지 않으며 소뇌 피질은 충부·개별 소엽 전용 분할이 아니다. 사례 01의 측두각 참고 라벨은 좌 51/우 102 복셀에 불과해 전체 범위의 정답으로 사용하지 않는다.

@@ -1,0 +1,39 @@
+{
+  "date": "2026-09-06T22:04:32.231Z",
+  "checked": [
+    "accumbens:left",
+    "accumbens:right",
+    "parahippocampal:left",
+    "parahippocampal:right",
+    "entorhinal:left",
+    "entorhinal:right",
+    "orbitofrontal:left",
+    "orbitofrontal:right",
+    "superior-frontal:left",
+    "superior-frontal:right",
+    "middle-frontal:left",
+    "middle-frontal:right",
+    "precentral:left",
+    "precentral:right",
+    "postcentral:left",
+    "postcentral:right",
+    "precuneus:left",
+    "precuneus:right",
+    "inferior-parietal:left",
+    "inferior-parietal:right",
+    "temporal-horn:left",
+    "temporal-horn:right",
+    "third-ventricle:midline",
+    "fourth-ventricle:midline",
+    "brainstem:midline",
+    "cerebellar-cortex:left",
+    "cerebellar-cortex:right"
+  ],
+  "checks": [
+    "26 topics; category and landmark search",
+    "Every new topic maps to correct native label and anchor on both sides",
+    "Midline selection, first-response contract and reload",
+    "Unavailable 3D never displays previous structure as current"
+  ],
+  "errors": []
+}

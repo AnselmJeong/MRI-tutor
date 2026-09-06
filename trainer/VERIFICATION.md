@@ -1,6 +1,6 @@
 # 개인 MRI 훈련 검증 기록
 
-2026-09-06. REDESIGN.md의 완료 경험: 처음 보는 개인 MRI에서 라벨을 가린 채 단면을 이동하고 구조의 위치·주변 관계·관찰 한계를 설명하는 흐름.
+2026-09-07. REDESIGN.md의 완료 경험: 처음 보는 개인 MRI에서 라벨을 가린 채 단면을 이동하고 구조의 위치·주변 관계·관찰 한계를 설명하는 흐름.
 
 ## 결과와 범위
 
@@ -9,8 +9,8 @@
 | 실제 개인 MRI | StudyForrest 4명 T1/T2 실파일, upstream 해시·크기 및 앱 SHA-256 대조. 원본 T1 byte-identical. |
 | 원본 상세·방향·세 방향 | int16 native T1/T2, float32 정합 T2, native affine 및 scanner RAS. 단일/3면, 연속 이동, 확대, W/L. |
 | 같은 사람의 T2 | 개인 brain mask + Euler3D 강체 정합, 원본 T2에서 1회 선형 resampling, 변환 및 원본 보존. |
-| 개인 라벨·정답 계약 | 개인 FreeSurfer rawavg와 동일 복셀 촬영 대조 후 헤더 보정. 80개 앵커/좌우/voxel count 검사. 모든 라벨 reference-only. |
-| 관찰·추적·비교 | 11개 주제별 주변 랜드마크·경계 불확실성. 출현/변화/소실을 같은 방향의 서로 다른 순서 깊이에 기록. 같은 개인 좌표 동기화, 다른 개인 독립 탐색. |
+| 개인 라벨·정답 계약 | 개인 FreeSurfer rawavg와 동일 복셀 촬영 대조 후 헤더 보정. 184개 앵커/좌우/voxel count 검사. 모든 라벨 reference-only. |
+| 관찰·추적·비교 | 26개 주제별 주변 랜드마크·경계 불확실성. 출현/변화/소실을 같은 방향의 서로 다른 순서 깊이에 기록. 같은 개인 좌표 동기화, 다른 개인 독립 탐색. |
 | 사례 간 전이 | 3명 학습/1명 전이. 첫 응답 전 도움·경계·3D 잠금. 과거 노출을 저장하여 재노출을 미노출로 표시하지 않음. |
 | 학습 피드백 | 위치/부재/식별 곤란 구분, 첫 서술·실제 클릭·시퀀스·방향·도움·추적 기록. 구조별 이웃 관계와 피드백. 자기 점검·복습·JSON 내보내기. |
 | 기존 3D·디자인 유지 | 같은 아이보리·세이지 배치, 분할 드래그/접기/복원. 개인에서는 참고 모델과 필요 이웃만 강조하며 개인 커서/정답을 정합한 것처럼 표시하지 않음. |
@@ -19,7 +19,7 @@
 ## 수행한 검증
 
 - `npm test`: 데이터 격리, 원본 강도/헤더, 구조→3D 대응, 전문검수 없는 채점 차단, 첫 응답 고정, 추적 순서, 저장소 실패/손상, HTML 이스케이프, 손상된 draft 복구 계약.
-- `scripts/validate_individual_cases.py`: 모든 개인 T1/T2 해시·affine·finite intensity, 80개 라벨 anchor/voxel count, 좌우 상대 순서, 44개 관찰 과제 계약 검사. `qa/data-validation.json`.
+- `scripts/validate_individual_cases.py`: 모든 개인 T1/T2 해시·affine·finite intensity, 184개 라벨 anchor/voxel count, 좌우 상대 순서, 104개 관찰 과제 계약 검사. `qa/data-validation.json`.
 - `tests/browser.mjs`: 실제 Chrome UI를 통해 MRI 클릭/키보드, W/L, T2 좌표 보존, 잘못된 과거 클릭 무효화, 첫 응답/reload, 추적, 같은 개인/다른 개인 비교, 전이 힌트 잠금과 다음 과제 재잠금, 빠른 사례 교체, 자료 안내/기록, 기존 Atlas, 390px 레이아웃 검사. `qa/browser-report.json`.
 - `tests/resilience.mjs`: 영상 HTTP 503 실패 시 이전 화면 숨김/제출 차단/재시도, 전이 재노출 기록, 기존 Atlas 위치/3D 찾기/기초 문제 및 복귀, localStorage 거부 상태의 관찰·실행 중 기록 확인. `qa/resilience-report.json`.
 - `qa/sub-0*-registration.png`: 4명의 T1/T2 세 방향을 뇌량·뇌실·시상과 대조. `qa/sub-0*-labels*.png`: 양측 개인 분할의 세 방향 형태·주변 관계를 시각 검토. 정확히 검사한 해시와 관찰 범위는 `assets/cases/*/qc-review.json`에 기록.
@@ -33,3 +33,14 @@
 현재는 공개 연구 참여자의 해부학 관찰 훈련이다. 환자 진단·병변 사례·임상 척도·FLAIR/DWI/SWI·해마 사위 재구성·표적 작은 핵 대비·교육 효과 검증을 제공하지 않는다. 기본 3T 구조영상을 7T 자료라고 표현하지 않으며, 화면 확대를 해상도 향상이라고 표시하지 않는다.
 
 브라우저 검증은 macOS의 Chrome headless/소프트웨어 WebGL 환경과 1440px·390px 뷰포트에서 수행했다. 실제 의료기관 디스플레이·Safari·모든 GPU에서 검증한 결과는 아니다. 개발용 테스트는 별도 임시 브라우저 프로필을 사용하여 사용자의 학습 기록을 건드리지 않는다.
+
+## 2026-09-07 후속 점검
+
+- 사용자 탭의 `Failed to fetch`와 8091 포트 미청취를 확인했다. 종료된 로컬 서버를 재시작한 뒤, 같은 사용자 탭에서 Atlas MRI 3면과 해마 강조가 복구됨을 확인했다. 재시도 버튼·서버 안내·실패 시 이전 MRI 숨김을 추가했다.
+- `tests/atlas-recovery.mjs`: 연결 거부와 HTTP 503을 재현하고 화면의 재시도 버튼으로 MNI/Allen 템플릿 및 복귀, 로딩에 실패한 Atlas 위치 연습의 과제 준비 재개를 검증한다.
+- `tests/expanded.mjs`: 새 주제 전체의 좌우/정중 라벨·앵커 연결, 부위/랜드마크 검색, 정중선 첫 응답·reload, 3D 구획 없는 주제의 잘못된 이전 모델 노출 방지를 검사한다.
+- `scripts/review_expanded_cases.py`와 `qa/sub-0*-expanded-*.png`: 추가 26개 라벨/개인 × 4명에 대한 양측 세 방향 앵커 위치 검토. 기존 라벨 1–20의 번호·source ID·앵커·범위·복셀 수와 모든 MRI 해시는 이전 커밋과 동일하다. 검수 로그는 라벨 ID별 범위를 명시한다.
+
+서버는 `serve.py`의 HTTP/1.1 연결 유지와 128개 요청 대기열을 사용한다. 기본 `http.server`로 테스트하던 중 새로고침에서 ES module 요청이 중단되는 사례가 있어 서버 실행 경로도 통일했다. 이 설정은 서버 프로세스 종료 자체를 방지하지 않으므로 사용 중 서버를 유지해야 한다.
+
+추가 주제 브라우저 검사 결과는 `qa/expanded-report.json`에 기록했다. 새로 연결한 제3뇌실을 포함해 27개 좌우/정중 경로의 표시 라벨과 앵커를 확인했다. 최신 화면 예시는 `qa/individual-expanded.png`와 `qa/atlas-recovered.png`다.

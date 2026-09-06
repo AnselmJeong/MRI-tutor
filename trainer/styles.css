@@ -25,3 +25,5 @@
 #viewer-split.compact-three .display-controls,#viewer-split.compact-three .viewer-toolbar,#viewer-split.compact-three .viewer-bottom{display:none}
 #viewer-split.compact-mri .slice-controls,#viewer-split.compact-mri .mri-footer,#viewer-split.compact-mri #voxel-label{display:none}
 #viewer-split.compact-mri .mri-toolbar>label,#viewer-split.compact-mri #mri-reset{display:none}
+
+#mri-loading{max-width:38em;width:calc(100% - 32px);padding:16px;line-height:1.65;inset:50% auto auto 50%;transform:translate(-50%,-50%);margin:0;text-align:center;display:block;pointer-events:auto}#atlas-retry{display:block;margin:16px auto 0;background:#e5ecdd;color:#294d3d}

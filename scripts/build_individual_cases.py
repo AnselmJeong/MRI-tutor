@@ -12,6 +12,11 @@ sitk.ProcessObject.SetGlobalDefaultNumberOfThreads(4)
 # FreeSurfer aparc+aseg: subjects' own segmentation, never certified ground truth.
 GROUPS=[('hippocampus',[17],[53]),('amygdala',[18],[54]),('caudate',[11],[50]),('putamen',[12],[51]),('pallidum',[13],[52]),('thalamus',[10],[49]),('insula',[1035],[2035]),('cingulate',[1002,1010,1023,1026],[2002,2010,2023,2026]),('ventricle',[4],[43]),('callosum',[251,252,253,254,255],[]),('third-ventricle',[14],[])]
 
+# Append only: existing label IDs remain stable for recorded attempts.
+GROUPS += [('accumbens',[26],[58]),('parahippocampal',[1016],[2016]),('entorhinal',[1006],[2006]),('orbitofrontal',[1012,1014],[2012,2014]),('superior-frontal',[1028],[2028]),('middle-frontal',[1003,1027],[2003,2027]),('precentral',[1024],[2024]),('postcentral',[1022],[2022]),('precuneus',[1025],[2025]),('inferior-parietal',[1008,1031],[2008,2031]),('temporal-horn',[5],[44]),('fourth-ventricle',[15],[]),('brainstem',[16],[]),('cerebellar-cortex',[8],[47])]
+source_ids=[i for _,left,right in GROUPS for i in left+right]
+assert len(source_ids)==len(set(source_ids)), 'Reference groups must not overwrite each other'
+
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def info(p):
     im=nib.load(p);a=np.asanyarray(im.dataobj);nonzero=a[a>0]
@@ -58,10 +63,16 @@ for index,sid in enumerate(['sub-01','sub-02','sub-03','sub-04']):
     for key,left,right in GROUPS:
         for side,ids in [('left',left),('right',right)]:
             if not ids:continue
-            label_id+=1;mask=np.isin(segdata,ids);labels[mask]=label_id
+            label_id+=1;mask=np.isin(segdata,ids)
+            assert mask.any(), f'{sid}: empty {key} {side}'
+            labels[mask]=label_id
             ijk=np.argwhere(mask);world=nib.affines.apply_affine(aff,ijk)
-            center=ijk[np.argmax(distance_transform_edt(mask)[mask])];anchor=nib.affines.apply_affine(aff,center)
-            items.append({'id':label_id,'structure':key,'side':'midline' if key in ['callosum','third-ventricle'] else side,'source_ids':ids,'anchor':anchor.tolist(),'bounds':[world.min(0).tolist(),world.max(0).tolist()],'voxel_count':int(mask.sum()),'space':f'{sid}:T1-native-world','source':'StudyForrest FreeSurfer 5.3 aparc+aseg','generation':'automatic-subject-segmentation','transform_history':['FreeSurfer conformed voxel to scanner RAS','voxel-order-matched rawavg RAS to distributed T1 RAS header correction'],'review_status':'reference-only','boundary_uncertainty':'automatic-segmentation; local boundaries require expert review','scoreable':False,'review_log':[]})
+            # One-voxel background padding gives the same interior distances without
+            # recomputing an entire 256-cubed distance map for every small region.
+            lo=np.maximum(ijk.min(0)-1,0);hi=np.minimum(ijk.max(0)+2,mask.shape)
+            crop=mask[tuple(slice(int(x),int(y)) for x,y in zip(lo,hi))]
+            center=ijk[np.argmax(distance_transform_edt(crop)[crop])];anchor=nib.affines.apply_affine(aff,center)
+            items.append({'id':label_id,'structure':key,'side':'midline' if not right else side,'source_ids':ids,'anchor':anchor.tolist(),'bounds':[world.min(0).tolist(),world.max(0).tolist()],'voxel_count':int(mask.sum()),'space':f'{sid}:T1-native-world','source':'StudyForrest FreeSurfer 5.3 aparc+aseg','generation':'automatic-subject-segmentation','transform_history':['FreeSurfer conformed voxel to scanner RAS','voxel-order-matched rawavg RAS to distributed T1 RAS header correction'],'review_status':'reference-only','boundary_uncertainty':'automatic-segmentation; local boundaries require expert review','scoreable':False,'review_log':[]})
     nib.save(nib.Nifti1Image(labels,aff),out/'labels-reference.nii.gz')
     # Registration metric uses the individual's brain region; geometry only, not a scored label.
     maskpath=out/'registration-mask.nii.gz';nib.save(nib.Nifti1Image((segdata>0).astype('uint8'),aff),maskpath)

@@ -14,7 +14,7 @@ for(const c of manifest.cases){
   const qc=JSON.parse(fs.readFileSync(review));
   if(qc.reviewed_hashes?.T1w!==c.sequences.T1w.sha256||qc.reviewed_hashes?.T2w!==c.sequences.T2w.sha256||qc.reviewed_hashes?.labels!==c.segmentation.sha256)throw new Error(`${c.id}: QC hashes changed; repeat visual review before publishing contracts`);
   c.qc=qc;c.registration.review_status=qc.status;
-  c.segmentation.labels.forEach(l=>{l.review_log=qc.label_review_logs?.filter(r=>r.side===l.side||r.side==='all')??[];});
+  c.segmentation.labels.forEach(l=>{l.review_log=qc.label_review_logs?.filter(r=>(r.side===l.side||r.side==='all')&&(!r.label_ids||r.label_ids.includes(l.id)))??[];});
  }
  fs.writeFileSync(new URL(`${c.id}/case.json`,root),JSON.stringify(c,null,2));
 }

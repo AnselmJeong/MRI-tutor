@@ -1,0 +1,36 @@
+import {chromium,expect} from '@playwright/test';
+import fs from 'node:fs';
+const browser=await chromium.launch({channel:'chrome',headless:true,args:['--enable-webgl','--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
+const page=await browser.newPage({viewport:{width:1440,height:1050}});
+page.on('pageerror',e=>console.error('Page error:',e.message));
+page.on('requestfailed',r=>console.error('Request failed:',r.url(),r.failure()));
+try{
+ await page.goto('http://127.0.0.1:8091/');
+ await page.waitForFunction(()=>window.mriCaseQA&&!window.mriCaseQA.snapshot().loading,undefined,{timeout:120000});
+ await page.route('**/assets/all-labels.nii.gz',r=>r.abort('connectionrefused'));
+ await page.locator('#explore-mode').click();await expect(page.locator('#atlas-retry')).toBeVisible();
+ await expect(page.locator('#mri')).toHaveCSS('visibility','hidden');
+ await expect(page.locator('#mri-loading')).toContainText('로컬 서버');
+ await page.unroute('**/assets/all-labels.nii.gz');await page.locator('#atlas-retry').click();
+ await expect(page.locator('#mri-loading')).toBeHidden({timeout:45000});await expect(page.locator('#mri')).toHaveCSS('visibility','visible');
+ await expect(page.locator('#template-name')).toContainText('CIT168');
+ await page.route('**/assets/extended/allen/ICBM2009sym.nii.gz',r=>r.fulfill({status:503,body:'Unavailable'}));
+ await page.locator('[data-group="40"]').click();await expect(page.locator('#atlas-retry')).toBeVisible();await expect(page.locator('#mri')).toHaveCSS('visibility','hidden');
+ await page.unroute('**/assets/extended/allen/ICBM2009sym.nii.gz');await page.locator('#atlas-retry').click();
+ await expect(page.locator('#mri-loading')).toBeHidden({timeout:45000});await expect(page.locator('#template-name')).toContainText('ICBM2009b');
+ await page.locator('[data-group="17"]').click();await expect(page.locator('#mri-loading')).toBeHidden({timeout:45000});await expect(page.locator('#template-name')).toContainText('CIT168');
+ await page.screenshot({path:'trainer/qa/atlas-recovered.png',fullPage:true});
+ await page.close();
+ const practice=await browser.newPage({viewport:{width:1440,height:1050}});
+ await practice.goto('http://127.0.0.1:8091/');
+ await practice.waitForFunction(()=>window.mriCaseQA&&!window.mriCaseQA.snapshot().loading,undefined,{timeout:120000});
+ await practice.route('**/assets/CIT168toMNI152-2009c_T1w_brain.nii.gz',r=>r.abort('connectionrefused'));
+ await practice.locator('#explore-mode').click();await expect(practice.locator('#atlas-retry')).toBeVisible({timeout:15000});
+ await practice.locator('#mri-train').click();await expect(practice.locator('#detail')).toContainText('MRI LOCALIZATION');await expect(practice.locator('#atlas-retry')).toBeVisible({timeout:15000});
+ await expect(practice.locator('#mri-reveal')).toHaveCount(0);
+ await practice.unroute('**/assets/CIT168toMNI152-2009c_T1w_brain.nii.gz');await practice.locator('#atlas-retry').click();
+ await expect(practice.locator('#mri-reveal')).toBeVisible({timeout:45000});await expect(practice.locator('#mri-loading')).toBeHidden();
+ await practice.close();
+ fs.writeFileSync('trainer/qa/atlas-recovery-report.json',JSON.stringify({date:new Date().toISOString(),checks:['Connection refused: actionable server guidance and retry','Retry restores MRI without refresh','Failed template switch hides previous MRI','503 recovery loads Allen template','Return to MNI template succeeds','Atlas exercise retry completes question setup, preserving hidden answer' ]},null,2));
+ console.log('Atlas disconnected-server and template-switch recovery passed');
+}finally{await browser.close();}

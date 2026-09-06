@@ -327,7 +327,7 @@
   },
   "segmentation": {
     "url": "assets/cases/sub-02/labels-reference.nii.gz",
-    "sha256": "feb5969d73109f6940155ab1b761ec24f1639730860af4944a63b8672e2679d1",
+    "sha256": "5ef7a09401030024e1485485849bd74cc1fa3c276620262676bc07ede4a4ecb1",
     "source_sha256": "dddd1df1df1e737dd1c4b20a73f0d3ee567901ca50421ad8640318417ed06188",
     "rawavg_sha256": "cc83ce9a082ff52811b974dedcac707338d19a76f408f14a07b30c7d566a1134",
     "rawavg_to_T1_RAS": [
@@ -402,7 +402,29 @@
             "decision": "reference-only",
             "side": "all",
             "scope": "Three-plane left/right localization review; no voxelwise boundary adjudication",
-            "expert_approved": false
+            "expert_approved": false,
+            "label_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
           }
         ],
         "case_id": "sub-02",
@@ -453,7 +475,29 @@
             "decision": "reference-only",
             "side": "all",
             "scope": "Three-plane left/right localization review; no voxelwise boundary adjudication",
-            "expert_approved": false
+            "expert_approved": false,
+            "label_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
           }
         ],
         "case_id": "sub-02",
@@ -504,7 +548,29 @@
             "decision": "reference-only",
             "side": "all",
             "scope": "Three-plane left/right localization review; no voxelwise boundary adjudication",
-            "expert_approved": false
+            "expert_approved": false,
+            "label_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
           }
         ],
         "case_id": "sub-02",
@@ -555,7 +621,29 @@
             "decision": "reference-only",
             "side": "all",
             "scope": "Three-plane left/right localization review; no voxelwise boundary adjudication",
-            "expert_approved": false
+            "expert_approved": false,
+            "label_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
           }
         ],
         "case_id": "sub-02",
@@ -606,7 +694,29 @@
             "decision": "reference-only",
             "side": "all",
             "scope": "Three-plane left/right localization review; no voxelwise boundary adjudication",
-            "expert_approved": false
+            "expert_approved": false,
+            "label_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
           }
         ],
         "case_id": "sub-02",
@@ -657,7 +767,29 @@
             "decision": "reference-only",
             "side": "all",
             "scope": "Three-plane left/right localization review; no voxelwise boundary adjudication",
-            "expert_approved": false
+            "expert_approved": false,
+            "label_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
           }
         ],
         "case_id": "sub-02",
@@ -708,7 +840,29 @@
             "decision": "reference-only",
             "side": "all",
             "scope": "Three-plane left/right localization review; no voxelwise boundary adjudication",
-            "expert_approved": false
+            "expert_approved": false,
+            "label_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
           }
         ],
         "case_id": "sub-02",
@@ -759,7 +913,29 @@
             "decision": "reference-only",
             "side": "all",
             "scope": "Three-plane left/right localization review; no voxelwise boundary adjudication",
-            "expert_approved": false
+            "expert_approved": false,
+            "label_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
           }
         ],
         "case_id": "sub-02",
@@ -810,7 +986,29 @@
             "decision": "reference-only",
             "side": "all",
             "scope": "Three-plane left/right localization review; no voxelwise boundary adjudication",
-            "expert_approved": false
+            "expert_approved": false,
+            "label_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
           }
         ],
         "case_id": "sub-02",
@@ -861,7 +1059,29 @@
             "decision": "reference-only",
             "side": "all",
             "scope": "Three-plane left/right localization review; no voxelwise boundary adjudication",
-            "expert_approved": false
+            "expert_approved": false,
+            "label_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
           }
         ],
         "case_id": "sub-02",
@@ -912,7 +1132,29 @@
             "decision": "reference-only",
             "side": "all",
             "scope": "Three-plane left/right localization review; no voxelwise boundary adjudication",
-            "expert_approved": false
+            "expert_approved": false,
+            "label_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
           }
         ],
         "case_id": "sub-02",
@@ -963,7 +1205,29 @@
             "decision": "reference-only",
             "side": "all",
             "scope": "Three-plane left/right localization review; no voxelwise boundary adjudication",
-            "expert_approved": false
+            "expert_approved": false,
+            "label_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
           }
         ],
         "case_id": "sub-02",
@@ -1014,7 +1278,29 @@
             "decision": "reference-only",
             "side": "all",
             "scope": "Three-plane left/right localization review; no voxelwise boundary adjudication",
-            "expert_approved": false
+            "expert_approved": false,
+            "label_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
           }
         ],
         "case_id": "sub-02",
@@ -1065,7 +1351,29 @@
             "decision": "reference-only",
             "side": "all",
             "scope": "Three-plane left/right localization review; no voxelwise boundary adjudication",
-            "expert_approved": false
+            "expert_approved": false,
+            "label_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
           }
         ],
         "case_id": "sub-02",
@@ -1119,7 +1427,29 @@
             "decision": "reference-only",
             "side": "all",
             "scope": "Three-plane left/right localization review; no voxelwise boundary adjudication",
-            "expert_approved": false
+            "expert_approved": false,
+            "label_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
           }
         ],
         "case_id": "sub-02",
@@ -1173,7 +1503,29 @@
             "decision": "reference-only",
             "side": "all",
             "scope": "Three-plane left/right localization review; no voxelwise boundary adjudication",
-            "expert_approved": false
+            "expert_approved": false,
+            "label_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
           }
         ],
         "case_id": "sub-02",
@@ -1224,7 +1576,29 @@
             "decision": "reference-only",
             "side": "all",
             "scope": "Three-plane left/right localization review; no voxelwise boundary adjudication",
-            "expert_approved": false
+            "expert_approved": false,
+            "label_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
           }
         ],
         "case_id": "sub-02",
@@ -1275,7 +1649,29 @@
             "decision": "reference-only",
             "side": "all",
             "scope": "Three-plane left/right localization review; no voxelwise boundary adjudication",
-            "expert_approved": false
+            "expert_approved": false,
+            "label_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
           }
         ],
         "case_id": "sub-02",
@@ -1330,7 +1726,29 @@
             "decision": "reference-only",
             "side": "all",
             "scope": "Three-plane left/right localization review; no voxelwise boundary adjudication",
-            "expert_approved": false
+            "expert_approved": false,
+            "label_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
           }
         ],
         "case_id": "sub-02",
@@ -1373,7 +1791,7 @@
           "voxel-order-matched rawavg RAS to distributed T1 RAS header correction"
         ],
         "review_status": "reference-only",
-        "boundary_uncertainty": "automatic-segmentation; local boundaries require expert review",
+        "boundary_uncertainty": "자동 뇌실 분할이며 좁은 공간의 경계와 작은 함요부는 불확실합니다.",
         "scoreable": false,
         "review_log": [
           {
@@ -1381,6 +1799,2114 @@
             "decision": "reference-only",
             "side": "all",
             "scope": "Three-plane left/right localization review; no voxelwise boundary adjudication",
+            "expert_approved": false,
+            "label_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
+          }
+        ],
+        "case_id": "sub-02",
+        "reference_space": "sub-02:T1-native-world",
+        "observability": {
+          "T1w": "reference-localization; visible boundaries require individual inspection",
+          "T2w": "reference-localization on rigidly aligned T2; visibility not certified"
+        }
+      },
+      {
+        "id": 21,
+        "structure": "accumbens",
+        "side": "left",
+        "source_ids": [
+          26
+        ],
+        "anchor": [
+          -12.242720233984713,
+          31.403400046740387,
+          -3.2918618957580748
+        ],
+        "bounds": [
+          [
+            -20.244353471810015,
+            26.403722192835488,
+            -7.292387538316277
+          ],
+          [
+            -6.241585422769376,
+            43.4028890884459,
+            7.709271216479024
+          ]
+        ],
+        "voxel_count": 990,
+        "space": "sub-02:T1-native-world",
+        "source": "StudyForrest FreeSurfer 5.3 aparc+aseg",
+        "generation": "automatic-subject-segmentation",
+        "transform_history": [
+          "FreeSurfer conformed voxel to scanner RAS",
+          "voxel-order-matched rawavg RAS to distributed T1 RAS header correction"
+        ],
+        "review_status": "reference-only",
+        "boundary_uncertainty": "FreeSurfer accumbens-area 구획입니다. T1/T2에서 핵의 경계나 core/shell을 직접 식별한 것으로 해석하지 않습니다.",
+        "scoreable": false,
+        "review_log": [
+          {
+            "role": "developer",
+            "decision": "reference-only",
+            "side": "all",
+            "label_ids": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46
+            ],
+            "scope": "Three-plane bilateral anchor localization on native T1; T2 inherits unchanged registration. No voxelwise or clinical boundary adjudication.",
+            "reviewed_at": "2026-09-07",
+            "expert_approved": false
+          }
+        ],
+        "case_id": "sub-02",
+        "reference_space": "sub-02:T1-native-world",
+        "observability": {
+          "T1w": "reference-localization; visible boundaries require individual inspection",
+          "T2w": "reference-localization on rigidly aligned T2; visibility not certified"
+        }
+      },
+      {
+        "id": 22,
+        "structure": "accumbens",
+        "side": "right",
+        "source_ids": [
+          58
+        ],
+        "anchor": [
+          4.760366842225153,
+          33.40331682233392,
+          -1.2919811327990516
+        ],
+        "bounds": [
+          [
+            -0.24052885051625594,
+            27.40249347253831,
+            -6.292042920739561
+          ],
+          [
+            11.761563417182657,
+            45.40280207108199,
+            9.708853232665433
+          ]
+        ],
+        "voxel_count": 871,
+        "space": "sub-02:T1-native-world",
+        "source": "StudyForrest FreeSurfer 5.3 aparc+aseg",
+        "generation": "automatic-subject-segmentation",
+        "transform_history": [
+          "FreeSurfer conformed voxel to scanner RAS",
+          "voxel-order-matched rawavg RAS to distributed T1 RAS header correction"
+        ],
+        "review_status": "reference-only",
+        "boundary_uncertainty": "FreeSurfer accumbens-area 구획입니다. T1/T2에서 핵의 경계나 core/shell을 직접 식별한 것으로 해석하지 않습니다.",
+        "scoreable": false,
+        "review_log": [
+          {
+            "role": "developer",
+            "decision": "reference-only",
+            "side": "all",
+            "label_ids": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46
+            ],
+            "scope": "Three-plane bilateral anchor localization on native T1; T2 inherits unchanged registration. No voxelwise or clinical boundary adjudication.",
+            "reviewed_at": "2026-09-07",
+            "expert_approved": false
+          }
+        ],
+        "case_id": "sub-02",
+        "reference_space": "sub-02:T1-native-world",
+        "observability": {
+          "T1w": "reference-localization; visible boundaries require individual inspection",
+          "T2w": "reference-localization on rigidly aligned T2; visibility not certified"
+        }
+      },
+      {
+        "id": 23,
+        "structure": "parahippocampal",
+        "side": "left",
+        "source_ids": [
+          1016
+        ],
+        "anchor": [
+          -19.243717481188,
+          6.40560033700838,
+          -23.29455113721687
+        ],
+        "bounds": [
+          [
+            -39.24727556318355,
+            -22.595284179974797,
+            -32.29405032824252
+          ],
+          [
+            -10.241566707399087,
+            17.405812450248774,
+            -10.297314222447255
+          ]
+        ],
+        "voxel_count": 2768,
+        "space": "sub-02:T1-native-world",
+        "source": "StudyForrest FreeSurfer 5.3 aparc+aseg",
+        "generation": "automatic-subject-segmentation",
+        "transform_history": [
+          "FreeSurfer conformed voxel to scanner RAS",
+          "voxel-order-matched rawavg RAS to distributed T1 RAS header correction"
+        ],
+        "review_status": "reference-only",
+        "boundary_uncertainty": "Desikan–Killiany parahippocampal 구획이며, 앞쪽 entorhinal 구획은 별도입니다. 해부학적 해마곁이랑 전체와 일대일로 같지 않습니다.",
+        "scoreable": false,
+        "review_log": [
+          {
+            "role": "developer",
+            "decision": "reference-only",
+            "side": "all",
+            "label_ids": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46
+            ],
+            "scope": "Three-plane bilateral anchor localization on native T1; T2 inherits unchanged registration. No voxelwise or clinical boundary adjudication.",
+            "reviewed_at": "2026-09-07",
+            "expert_approved": false
+          }
+        ],
+        "case_id": "sub-02",
+        "reference_space": "sub-02:T1-native-world",
+        "observability": {
+          "T1w": "reference-localization; visible boundaries require individual inspection",
+          "T2w": "reference-localization on rigidly aligned T2; visibility not certified"
+        }
+      },
+      {
+        "id": 24,
+        "structure": "parahippocampal",
+        "side": "right",
+        "source_ids": [
+          2016
+        ],
+        "anchor": [
+          17.763338897862596,
+          -9.594652630147849,
+          -18.297113371786295
+        ],
+        "bounds": [
+          [
+            14.762760546650682,
+            -13.59499102490905,
+            -32.29404917505235
+          ],
+          [
+            34.76639686760845,
+            24.40634906586652,
+            -11.2971644243204
+          ]
+        ],
+        "voxel_count": 1967,
+        "space": "sub-02:T1-native-world",
+        "source": "StudyForrest FreeSurfer 5.3 aparc+aseg",
+        "generation": "automatic-subject-segmentation",
+        "transform_history": [
+          "FreeSurfer conformed voxel to scanner RAS",
+          "voxel-order-matched rawavg RAS to distributed T1 RAS header correction"
+        ],
+        "review_status": "reference-only",
+        "boundary_uncertainty": "Desikan–Killiany parahippocampal 구획이며, 앞쪽 entorhinal 구획은 별도입니다. 해부학적 해마곁이랑 전체와 일대일로 같지 않습니다.",
+        "scoreable": false,
+        "review_log": [
+          {
+            "role": "developer",
+            "decision": "reference-only",
+            "side": "all",
+            "label_ids": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46
+            ],
+            "scope": "Three-plane bilateral anchor localization on native T1; T2 inherits unchanged registration. No voxelwise or clinical boundary adjudication.",
+            "reviewed_at": "2026-09-07",
+            "expert_approved": false
+          }
+        ],
+        "case_id": "sub-02",
+        "reference_space": "sub-02:T1-native-world",
+        "observability": {
+          "T1w": "reference-localization; visible boundaries require individual inspection",
+          "T2w": "reference-localization on rigidly aligned T2; visibility not certified"
+        }
+      },
+      {
+        "id": 25,
+        "structure": "entorhinal",
+        "side": "left",
+        "source_ids": [
+          1006
+        ],
+        "anchor": [
+          -24.24502617813495,
+          27.40646015494025,
+          -31.292074609748994
+        ],
+        "bounds": [
+          [
+            -36.247151200832675,
+            12.405591590212069,
+            -37.29171574543585
+          ],
+          [
+            -16.24330383755715,
+            39.40686060612228,
+            -16.291117579530734
+          ]
+        ],
+        "voxel_count": 1844,
+        "space": "sub-02:T1-native-world",
+        "source": "StudyForrest FreeSurfer 5.3 aparc+aseg",
+        "generation": "automatic-subject-segmentation",
+        "transform_history": [
+          "FreeSurfer conformed voxel to scanner RAS",
+          "voxel-order-matched rawavg RAS to distributed T1 RAS header correction"
+        ],
+        "review_status": "reference-only",
+        "boundary_uncertainty": "피질 접힘에 기반한 자동 구획입니다. 조직학적 내후각피질 경계를 일반 T1/T2에서 직접 보장하지 않습니다.",
+        "scoreable": false,
+        "review_log": [
+          {
+            "role": "developer",
+            "decision": "reference-only",
+            "side": "all",
+            "label_ids": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46
+            ],
+            "scope": "Three-plane bilateral anchor localization on native T1; T2 inherits unchanged registration. No voxelwise or clinical boundary adjudication.",
+            "reviewed_at": "2026-09-07",
+            "expert_approved": false
+          }
+        ],
+        "case_id": "sub-02",
+        "reference_space": "sub-02:T1-native-world",
+        "observability": {
+          "T1w": "reference-localization; visible boundaries require individual inspection",
+          "T2w": "reference-localization on rigidly aligned T2; visibility not certified"
+        }
+      },
+      {
+        "id": 26,
+        "structure": "entorhinal",
+        "side": "right",
+        "source_ids": [
+          2006
+        ],
+        "anchor": [
+          19.76286103899139,
+          38.40637720218197,
+          -27.291724503437592
+        ],
+        "bounds": [
+          [
+            13.762071006036464,
+            17.40566761891634,
+            -33.29203307448935
+          ],
+          [
+            29.76491438265046,
+            43.4064897830676,
+            -14.29196916058521
+          ]
+        ],
+        "voxel_count": 1522,
+        "space": "sub-02:T1-native-world",
+        "source": "StudyForrest FreeSurfer 5.3 aparc+aseg",
+        "generation": "automatic-subject-segmentation",
+        "transform_history": [
+          "FreeSurfer conformed voxel to scanner RAS",
+          "voxel-order-matched rawavg RAS to distributed T1 RAS header correction"
+        ],
+        "review_status": "reference-only",
+        "boundary_uncertainty": "피질 접힘에 기반한 자동 구획입니다. 조직학적 내후각피질 경계를 일반 T1/T2에서 직접 보장하지 않습니다.",
+        "scoreable": false,
+        "review_log": [
+          {
+            "role": "developer",
+            "decision": "reference-only",
+            "side": "all",
+            "label_ids": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46
+            ],
+            "scope": "Three-plane bilateral anchor localization on native T1; T2 inherits unchanged registration. No voxelwise or clinical boundary adjudication.",
+            "reviewed_at": "2026-09-07",
+            "expert_approved": false
+          }
+        ],
+        "case_id": "sub-02",
+        "reference_space": "sub-02:T1-native-world",
+        "observability": {
+          "T1w": "reference-localization; visible boundaries require individual inspection",
+          "T2w": "reference-localization on rigidly aligned T2; visibility not certified"
+        }
+      },
+      {
+        "id": 27,
+        "structure": "orbitofrontal",
+        "side": "left",
+        "source_ids": [
+          1012,
+          1014
+        ],
+        "anchor": [
+          -21.2444488413242,
+          33.40422742662227,
+          -11.29145373622363
+        ],
+        "bounds": [
+          [
+            -50.24995666780801,
+            22.40389783793961,
+            -18.290488617067965
+          ],
+          [
+            -3.2410143686269777,
+            90.40194592643874,
+            23.714611765675386
+          ]
+        ],
+        "voxel_count": 13649,
+        "space": "sub-02:T1-native-world",
+        "source": "StudyForrest FreeSurfer 5.3 aparc+aseg",
+        "generation": "automatic-subject-segmentation",
+        "transform_history": [
+          "FreeSurfer conformed voxel to scanner RAS",
+          "voxel-order-matched rawavg RAS to distributed T1 RAS header correction"
+        ],
+        "review_status": "reference-only",
+        "boundary_uncertainty": "medial/lateral orbitofrontal 두 구획의 합입니다. vmPFC 전체나 기능적 OFC의 경계를 뜻하지 않습니다.",
+        "scoreable": false,
+        "review_log": [
+          {
+            "role": "developer",
+            "decision": "reference-only",
+            "side": "all",
+            "label_ids": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46
+            ],
+            "scope": "Three-plane bilateral anchor localization on native T1; T2 inherits unchanged registration. No voxelwise or clinical boundary adjudication.",
+            "reviewed_at": "2026-09-07",
+            "expert_approved": false
+          }
+        ],
+        "case_id": "sub-02",
+        "reference_space": "sub-02:T1-native-world",
+        "observability": {
+          "T1w": "reference-localization; visible boundaries require individual inspection",
+          "T2w": "reference-localization on rigidly aligned T2; visibility not certified"
+        }
+      },
+      {
+        "id": 28,
+        "structure": "orbitofrontal",
+        "side": "right",
+        "source_ids": [
+          2012,
+          2014
+        ],
+        "anchor": [
+          15.76221812627574,
+          40.404198850568406,
+          -8.291413958276792
+        ],
+        "bounds": [
+          [
+            -4.241823132858869,
+            27.40327522251212,
+            -14.290341939649224
+          ],
+          [
+            44.76739925354491,
+            91.40062111105092,
+            24.71355545068353
+          ]
+        ],
+        "voxel_count": 12494,
+        "space": "sub-02:T1-native-world",
+        "source": "StudyForrest FreeSurfer 5.3 aparc+aseg",
+        "generation": "automatic-subject-segmentation",
+        "transform_history": [
+          "FreeSurfer conformed voxel to scanner RAS",
+          "voxel-order-matched rawavg RAS to distributed T1 RAS header correction"
+        ],
+        "review_status": "reference-only",
+        "boundary_uncertainty": "medial/lateral orbitofrontal 두 구획의 합입니다. vmPFC 전체나 기능적 OFC의 경계를 뜻하지 않습니다.",
+        "scoreable": false,
+        "review_log": [
+          {
+            "role": "developer",
+            "decision": "reference-only",
+            "side": "all",
+            "label_ids": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46
+            ],
+            "scope": "Three-plane bilateral anchor localization on native T1; T2 inherits unchanged registration. No voxelwise or clinical boundary adjudication.",
+            "reviewed_at": "2026-09-07",
+            "expert_approved": false
+          }
+        ],
+        "case_id": "sub-02",
+        "reference_space": "sub-02:T1-native-world",
+        "observability": {
+          "T1w": "reference-localization; visible boundaries require individual inspection",
+          "T2w": "reference-localization on rigidly aligned T2; visibility not certified"
+        }
+      },
+      {
+        "id": 29,
+        "structure": "superior-frontal",
+        "side": "left",
+        "source_ids": [
+          1028
+        ],
+        "anchor": [
+          -5.2418113205746835,
+          68.3992801310421,
+          33.71218765743252
+        ],
+        "bounds": [
+          [
+            -38.246989422827696,
+            -10.604486690114186,
+            16.712585537124184
+          ],
+          [
+            -0.23959922702758263,
+            93.39999327013632,
+            71.70826263751646
+          ]
+        ],
+        "voxel_count": 28726,
+        "space": "sub-02:T1-native-world",
+        "source": "StudyForrest FreeSurfer 5.3 aparc+aseg",
+        "generation": "automatic-subject-segmentation",
+        "transform_history": [
+          "FreeSurfer conformed voxel to scanner RAS",
+          "voxel-order-matched rawavg RAS to distributed T1 RAS header correction"
+        ],
+        "review_status": "reference-only",
+        "boundary_uncertainty": "상전두회 해부학적 구획입니다. dlPFC·dmPFC·SMA의 기능적 경계나 자극 표적이 아닙니다.",
+        "scoreable": false,
+        "review_log": [
+          {
+            "role": "developer",
+            "decision": "reference-only",
+            "side": "all",
+            "label_ids": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46
+            ],
+            "scope": "Three-plane bilateral anchor localization on native T1; T2 inherits unchanged registration. No voxelwise or clinical boundary adjudication.",
+            "reviewed_at": "2026-09-07",
+            "expert_approved": false
+          }
+        ],
+        "case_id": "sub-02",
+        "reference_space": "sub-02:T1-native-world",
+        "observability": {
+          "T1w": "reference-localization; visible boundaries require individual inspection",
+          "T2w": "reference-localization on rigidly aligned T2; visibility not certified"
+        }
+      },
+      {
+        "id": 30,
+        "structure": "superior-frontal",
+        "side": "right",
+        "source_ids": [
+          2028
+        ],
+        "anchor": [
+          21.764309802269437,
+          8.395898174262626,
+          65.70485460774516
+        ],
+        "bounds": [
+          [
+            -4.241321958487973,
+            -4.604306234498466,
+            17.711859741531583
+          ],
+          [
+            29.76579564260021,
+            95.40081766224895,
+            69.7081427930573
+          ]
+        ],
+        "voxel_count": 26913,
+        "space": "sub-02:T1-native-world",
+        "source": "StudyForrest FreeSurfer 5.3 aparc+aseg",
+        "generation": "automatic-subject-segmentation",
+        "transform_history": [
+          "FreeSurfer conformed voxel to scanner RAS",
+          "voxel-order-matched rawavg RAS to distributed T1 RAS header correction"
+        ],
+        "review_status": "reference-only",
+        "boundary_uncertainty": "상전두회 해부학적 구획입니다. dlPFC·dmPFC·SMA의 기능적 경계나 자극 표적이 아닙니다.",
+        "scoreable": false,
+        "review_log": [
+          {
+            "role": "developer",
+            "decision": "reference-only",
+            "side": "all",
+            "label_ids": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46
+            ],
+            "scope": "Three-plane bilateral anchor localization on native T1; T2 inherits unchanged registration. No voxelwise or clinical boundary adjudication.",
+            "reviewed_at": "2026-09-07",
+            "expert_approved": false
+          }
+        ],
+        "case_id": "sub-02",
+        "reference_space": "sub-02:T1-native-world",
+        "observability": {
+          "T1w": "reference-localization; visible boundaries require individual inspection",
+          "T2w": "reference-localization on rigidly aligned T2; visibility not certified"
+        }
+      },
+      {
+        "id": 31,
+        "structure": "middle-frontal",
+        "side": "left",
+        "source_ids": [
+          1003,
+          1027
+        ],
+        "anchor": [
+          -46.24945588431969,
+          71.40074195471863,
+          17.713358718770763
+        ],
+        "bounds": [
+          [
+            -59.251058594490544,
+            4.397945374561573,
+            6.7138350011659185
+          ],
+          [
+            -15.244080205859504,
+            91.40079571383802,
+            62.70705233741223
+          ]
+        ],
+        "voxel_count": 28163,
+        "space": "sub-02:T1-native-world",
+        "source": "StudyForrest FreeSurfer 5.3 aparc+aseg",
+        "generation": "automatic-subject-segmentation",
+        "transform_history": [
+          "FreeSurfer conformed voxel to scanner RAS",
+          "voxel-order-matched rawavg RAS to distributed T1 RAS header correction"
+        ],
+        "review_status": "reference-only",
+        "boundary_uncertainty": "rostral/caudal middle frontal 구획의 합입니다. dlPFC 기능 영역 전체 또는 개인 치료 표적과 같지 않습니다.",
+        "scoreable": false,
+        "review_log": [
+          {
+            "role": "developer",
+            "decision": "reference-only",
+            "side": "all",
+            "label_ids": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46
+            ],
+            "scope": "Three-plane bilateral anchor localization on native T1; T2 inherits unchanged registration. No voxelwise or clinical boundary adjudication.",
+            "reviewed_at": "2026-09-07",
+            "expert_approved": false
+          }
+        ],
+        "case_id": "sub-02",
+        "reference_space": "sub-02:T1-native-world",
+        "observability": {
+          "T1w": "reference-localization; visible boundaries require individual inspection",
+          "T2w": "reference-localization on rigidly aligned T2; visibility not certified"
+        }
+      },
+      {
+        "id": 32,
+        "structure": "middle-frontal",
+        "side": "right",
+        "source_ids": [
+          2003,
+          2027
+        ],
+        "anchor": [
+          41.76695447464775,
+          60.39888484606496,
+          40.71032745114924
+        ],
+        "bounds": [
+          [
+            7.760152627169958,
+            6.39722385412081,
+            5.712890163253363
+          ],
+          [
+            55.77004735772866,
+            95.4012691714357,
+            66.70641843528239
+          ]
+        ],
+        "voxel_count": 28612,
+        "space": "sub-02:T1-native-world",
+        "source": "StudyForrest FreeSurfer 5.3 aparc+aseg",
+        "generation": "automatic-subject-segmentation",
+        "transform_history": [
+          "FreeSurfer conformed voxel to scanner RAS",
+          "voxel-order-matched rawavg RAS to distributed T1 RAS header correction"
+        ],
+        "review_status": "reference-only",
+        "boundary_uncertainty": "rostral/caudal middle frontal 구획의 합입니다. dlPFC 기능 영역 전체 또는 개인 치료 표적과 같지 않습니다.",
+        "scoreable": false,
+        "review_log": [
+          {
+            "role": "developer",
+            "decision": "reference-only",
+            "side": "all",
+            "label_ids": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46
+            ],
+            "scope": "Three-plane bilateral anchor localization on native T1; T2 inherits unchanged registration. No voxelwise or clinical boundary adjudication.",
+            "reviewed_at": "2026-09-07",
+            "expert_approved": false
+          }
+        ],
+        "case_id": "sub-02",
+        "reference_space": "sub-02:T1-native-world",
+        "observability": {
+          "T1w": "reference-localization; visible boundaries require individual inspection",
+          "T2w": "reference-localization on rigidly aligned T2; visibility not certified"
+        }
+      },
+      {
+        "id": 33,
+        "structure": "precentral",
+        "side": "left",
+        "source_ids": [
+          1024
+        ],
+        "anchor": [
+          -30.244780256576078,
+          -19.603746362115544,
+          58.70274333786118
+        ],
+        "bounds": [
+          [
+            -62.25156677276898,
+            -28.604175957410718,
+            0.707780299615024
+          ],
+          [
+            -4.23990721087192,
+            26.402353870838482,
+            70.7033044844679
+          ]
+        ],
+        "voxel_count": 17626,
+        "space": "sub-02:T1-native-world",
+        "source": "StudyForrest FreeSurfer 5.3 aparc+aseg",
+        "generation": "automatic-subject-segmentation",
+        "transform_history": [
+          "FreeSurfer conformed voxel to scanner RAS",
+          "voxel-order-matched rawavg RAS to distributed T1 RAS header correction"
+        ],
+        "review_status": "reference-only",
+        "boundary_uncertainty": "거시적 이랑 구획입니다. 개인별 운동 체성지도와 기능 경계는 제시하지 않습니다.",
+        "scoreable": false,
+        "review_log": [
+          {
+            "role": "developer",
+            "decision": "reference-only",
+            "side": "all",
+            "label_ids": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46
+            ],
+            "scope": "Three-plane bilateral anchor localization on native T1; T2 inherits unchanged registration. No voxelwise or clinical boundary adjudication.",
+            "reviewed_at": "2026-09-07",
+            "expert_approved": false
+          }
+        ],
+        "case_id": "sub-02",
+        "reference_space": "sub-02:T1-native-world",
+        "observability": {
+          "T1w": "reference-localization; visible boundaries require individual inspection",
+          "T2w": "reference-localization on rigidly aligned T2; visibility not certified"
+        }
+      },
+      {
+        "id": 34,
+        "structure": "precentral",
+        "side": "right",
+        "source_ids": [
+          2024
+        ],
+        "anchor": [
+          53.76927525837891,
+          39.4028246123151,
+          6.707702145565634
+        ],
+        "bounds": [
+          [
+            1.7611539425031424,
+            -26.60368640423073,
+            0.7073300292605893
+          ],
+          [
+            61.770962128010346,
+            42.40250258478443,
+            68.70378213355397
+          ]
+        ],
+        "voxel_count": 14874,
+        "space": "sub-02:T1-native-world",
+        "source": "StudyForrest FreeSurfer 5.3 aparc+aseg",
+        "generation": "automatic-subject-segmentation",
+        "transform_history": [
+          "FreeSurfer conformed voxel to scanner RAS",
+          "voxel-order-matched rawavg RAS to distributed T1 RAS header correction"
+        ],
+        "review_status": "reference-only",
+        "boundary_uncertainty": "거시적 이랑 구획입니다. 개인별 운동 체성지도와 기능 경계는 제시하지 않습니다.",
+        "scoreable": false,
+        "review_log": [
+          {
+            "role": "developer",
+            "decision": "reference-only",
+            "side": "all",
+            "label_ids": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46
+            ],
+            "scope": "Three-plane bilateral anchor localization on native T1; T2 inherits unchanged registration. No voxelwise or clinical boundary adjudication.",
+            "reviewed_at": "2026-09-07",
+            "expert_approved": false
+          }
+        ],
+        "case_id": "sub-02",
+        "reference_space": "sub-02:T1-native-world",
+        "observability": {
+          "T1w": "reference-localization; visible boundaries require individual inspection",
+          "T2w": "reference-localization on rigidly aligned T2; visibility not certified"
+        }
+      },
+      {
+        "id": 35,
+        "structure": "postcentral",
+        "side": "left",
+        "source_ids": [
+          1022
+        ],
+        "anchor": [
+          -6.240108977318457,
+          -36.60365684514208,
+          59.70033180925031
+        ],
+        "bounds": [
+          [
+            -67.25216037345184,
+            -41.60287479875721,
+            5.7056605754383725
+          ],
+          [
+            -1.2392269461288805,
+            15.400506530680758,
+            62.70162393317963
+          ]
+        ],
+        "voxel_count": 12842,
+        "space": "sub-02:T1-native-world",
+        "source": "StudyForrest FreeSurfer 5.3 aparc+aseg",
+        "generation": "automatic-subject-segmentation",
+        "transform_history": [
+          "FreeSurfer conformed voxel to scanner RAS",
+          "voxel-order-matched rawavg RAS to distributed T1 RAS header correction"
+        ],
+        "review_status": "reference-only",
+        "boundary_uncertainty": "해부학적 이랑 구획이며 개인의 감각 기능 지도를 뜻하지 않습니다.",
+        "scoreable": false,
+        "review_log": [
+          {
+            "role": "developer",
+            "decision": "reference-only",
+            "side": "all",
+            "label_ids": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46
+            ],
+            "scope": "Three-plane bilateral anchor localization on native T1; T2 inherits unchanged registration. No voxelwise or clinical boundary adjudication.",
+            "reviewed_at": "2026-09-07",
+            "expert_approved": false
+          }
+        ],
+        "case_id": "sub-02",
+        "reference_space": "sub-02:T1-native-world",
+        "observability": {
+          "T1w": "reference-localization; visible boundaries require individual inspection",
+          "T2w": "reference-localization on rigidly aligned T2; visibility not certified"
+        }
+      },
+      {
+        "id": 36,
+        "structure": "postcentral",
+        "side": "right",
+        "source_ids": [
+          2022
+        ],
+        "anchor": [
+          61.77145158781774,
+          2.4009750205375724,
+          23.70335564918149
+        ],
+        "bounds": [
+          [
+            1.7611575910379003,
+            -37.60363540550823,
+            3.705470578954447
+          ],
+          [
+            63.77183715529235,
+            24.40249066261569,
+            63.70198501366478
+          ]
+        ],
+        "voxel_count": 12222,
+        "space": "sub-02:T1-native-world",
+        "source": "StudyForrest FreeSurfer 5.3 aparc+aseg",
+        "generation": "automatic-subject-segmentation",
+        "transform_history": [
+          "FreeSurfer conformed voxel to scanner RAS",
+          "voxel-order-matched rawavg RAS to distributed T1 RAS header correction"
+        ],
+        "review_status": "reference-only",
+        "boundary_uncertainty": "해부학적 이랑 구획이며 개인의 감각 기능 지도를 뜻하지 않습니다.",
+        "scoreable": false,
+        "review_log": [
+          {
+            "role": "developer",
+            "decision": "reference-only",
+            "side": "all",
+            "label_ids": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46
+            ],
+            "scope": "Three-plane bilateral anchor localization on native T1; T2 inherits unchanged registration. No voxelwise or clinical boundary adjudication.",
+            "reviewed_at": "2026-09-07",
+            "expert_approved": false
+          }
+        ],
+        "case_id": "sub-02",
+        "reference_space": "sub-02:T1-native-world",
+        "observability": {
+          "T1w": "reference-localization; visible boundaries require individual inspection",
+          "T2w": "reference-localization on rigidly aligned T2; visibility not certified"
+        }
+      },
+      {
+        "id": 37,
+        "structure": "precuneus",
+        "side": "left",
+        "source_ids": [
+          1025
+        ],
+        "anchor": [
+          -1.2393322627528391,
+          -49.59740586764038,
+          4.698750868415814
+        ],
+        "bounds": [
+          [
+            -28.244412604519354,
+            -69.5991146236524,
+            -13.299713565343609
+          ],
+          [
+            1.761560827668319,
+            -14.599975154075267,
+            50.70092793610462
+          ]
+        ],
+        "voxel_count": 15127,
+        "space": "sub-02:T1-native-world",
+        "source": "StudyForrest FreeSurfer 5.3 aparc+aseg",
+        "generation": "automatic-subject-segmentation",
+        "transform_history": [
+          "FreeSurfer conformed voxel to scanner RAS",
+          "voxel-order-matched rawavg RAS to distributed T1 RAS header correction"
+        ],
+        "review_status": "reference-only",
+        "boundary_uncertainty": "해부학적 피질 구획입니다. DMN의 개인별 기능적 범위와 같지 않습니다.",
+        "scoreable": false,
+        "review_log": [
+          {
+            "role": "developer",
+            "decision": "reference-only",
+            "side": "all",
+            "label_ids": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46
+            ],
+            "scope": "Three-plane bilateral anchor localization on native T1; T2 inherits unchanged registration. No voxelwise or clinical boundary adjudication.",
+            "reviewed_at": "2026-09-07",
+            "expert_approved": false
+          }
+        ],
+        "case_id": "sub-02",
+        "reference_space": "sub-02:T1-native-world",
+        "observability": {
+          "T1w": "reference-localization; visible boundaries require individual inspection",
+          "T2w": "reference-localization on rigidly aligned T2; visibility not certified"
+        }
+      },
+      {
+        "id": 38,
+        "structure": "precuneus",
+        "side": "right",
+        "source_ids": [
+          2025
+        ],
+        "anchor": [
+          22.7648896087657,
+          -44.595737372722056,
+          -8.301173614117033
+        ],
+        "bounds": [
+          [
+            -2.239811693636483,
+            -64.59915227743299,
+            -14.301102066839135
+          ],
+          [
+            29.765982486831717,
+            -13.599962224108864,
+            59.70000632302209
+          ]
+        ],
+        "voxel_count": 15077,
+        "space": "sub-02:T1-native-world",
+        "source": "StudyForrest FreeSurfer 5.3 aparc+aseg",
+        "generation": "automatic-subject-segmentation",
+        "transform_history": [
+          "FreeSurfer conformed voxel to scanner RAS",
+          "voxel-order-matched rawavg RAS to distributed T1 RAS header correction"
+        ],
+        "review_status": "reference-only",
+        "boundary_uncertainty": "해부학적 피질 구획입니다. DMN의 개인별 기능적 범위와 같지 않습니다.",
+        "scoreable": false,
+        "review_log": [
+          {
+            "role": "developer",
+            "decision": "reference-only",
+            "side": "all",
+            "label_ids": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46
+            ],
+            "scope": "Three-plane bilateral anchor localization on native T1; T2 inherits unchanged registration. No voxelwise or clinical boundary adjudication.",
+            "reviewed_at": "2026-09-07",
+            "expert_approved": false
+          }
+        ],
+        "case_id": "sub-02",
+        "reference_space": "sub-02:T1-native-world",
+        "observability": {
+          "T1w": "reference-localization; visible boundaries require individual inspection",
+          "T2w": "reference-localization on rigidly aligned T2; visibility not certified"
+        }
+      },
+      {
+        "id": 39,
+        "structure": "inferior-parietal",
+        "side": "left",
+        "source_ids": [
+          1008,
+          1031
+        ],
+        "anchor": [
+          -24.24312934959501,
+          -68.59929089609804,
+          19.697071293196544
+        ],
+        "bounds": [
+          [
+            -67.25199294992318,
+            -78.59588720216922,
+            -19.302769369431047
+          ],
+          [
+            -19.24216814685606,
+            -0.5986855975209409,
+            45.70179049133285
+          ]
+        ],
+        "voxel_count": 32368,
+        "space": "sub-02:T1-native-world",
+        "source": "StudyForrest FreeSurfer 5.3 aparc+aseg",
+        "generation": "automatic-subject-segmentation",
+        "transform_history": [
+          "FreeSurfer conformed voxel to scanner RAS",
+          "voxel-order-matched rawavg RAS to distributed T1 RAS header correction"
+        ],
+        "review_status": "reference-only",
+        "boundary_uncertainty": "DK inferiorparietal/supramarginal 구획의 합입니다. 다른 atlas의 각회·연상회 정의와 완전히 일치하지 않습니다.",
+        "scoreable": false,
+        "review_log": [
+          {
+            "role": "developer",
+            "decision": "reference-only",
+            "side": "all",
+            "label_ids": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46
+            ],
+            "scope": "Three-plane bilateral anchor localization on native T1; T2 inherits unchanged registration. No voxelwise or clinical boundary adjudication.",
+            "reviewed_at": "2026-09-07",
+            "expert_approved": false
+          }
+        ],
+        "case_id": "sub-02",
+        "reference_space": "sub-02:T1-native-world",
+        "observability": {
+          "T1w": "reference-localization; visible boundaries require individual inspection",
+          "T2w": "reference-localization on rigidly aligned T2; visibility not certified"
+        }
+      },
+      {
+        "id": 40,
+        "structure": "inferior-parietal",
+        "side": "right",
+        "source_ids": [
+          2008,
+          2031
+        ],
+        "anchor": [
+          53.77056263453457,
+          -32.59909003340901,
+          23.69955834586571
+        ],
+        "bounds": [
+          [
+            22.765168795214592,
+            -69.5972826084082,
+            -16.303733942814702
+          ],
+          [
+            64.77221102411016,
+            7.402191201080996,
+            45.70063849640137
+          ]
+        ],
+        "voxel_count": 32630,
+        "space": "sub-02:T1-native-world",
+        "source": "StudyForrest FreeSurfer 5.3 aparc+aseg",
+        "generation": "automatic-subject-segmentation",
+        "transform_history": [
+          "FreeSurfer conformed voxel to scanner RAS",
+          "voxel-order-matched rawavg RAS to distributed T1 RAS header correction"
+        ],
+        "review_status": "reference-only",
+        "boundary_uncertainty": "DK inferiorparietal/supramarginal 구획의 합입니다. 다른 atlas의 각회·연상회 정의와 완전히 일치하지 않습니다.",
+        "scoreable": false,
+        "review_log": [
+          {
+            "role": "developer",
+            "decision": "reference-only",
+            "side": "all",
+            "label_ids": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46
+            ],
+            "scope": "Three-plane bilateral anchor localization on native T1; T2 inherits unchanged registration. No voxelwise or clinical boundary adjudication.",
+            "reviewed_at": "2026-09-07",
+            "expert_approved": false
+          }
+        ],
+        "case_id": "sub-02",
+        "reference_space": "sub-02:T1-native-world",
+        "observability": {
+          "T1w": "reference-localization; visible boundaries require individual inspection",
+          "T2w": "reference-localization on rigidly aligned T2; visibility not certified"
+        }
+      },
+      {
+        "id": 41,
+        "structure": "temporal-horn",
+        "side": "left",
+        "source_ids": [
+          5
+        ],
+        "anchor": [
+          -32.246209075633985,
+          15.404926332645744,
+          -18.293267622730326
+        ],
+        "bounds": [
+          [
+            -37.24699555777475,
+            -13.596280034021461,
+            -26.293031119461872
+          ],
+          [
+            -21.2440885363376,
+            19.405879460508515,
+            -7.296628505215011
+          ]
+        ],
+        "voxel_count": 571,
+        "space": "sub-02:T1-native-world",
+        "source": "StudyForrest FreeSurfer 5.3 aparc+aseg",
+        "generation": "automatic-subject-segmentation",
+        "transform_history": [
+          "FreeSurfer conformed voxel to scanner RAS",
+          "voxel-order-matched rawavg RAS to distributed T1 RAS header correction"
+        ],
+        "review_status": "reference-only",
+        "boundary_uncertainty": "FreeSurfer inferior-lateral-ventricle 구획입니다. 좁은 각은 부분용적과 분할 누락 때문에 연속적으로 표시되지 않을 수 있습니다.",
+        "scoreable": false,
+        "review_log": [
+          {
+            "role": "developer",
+            "decision": "reference-only",
+            "side": "all",
+            "label_ids": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46
+            ],
+            "scope": "Three-plane bilateral anchor localization on native T1; T2 inherits unchanged registration. No voxelwise or clinical boundary adjudication.",
+            "reviewed_at": "2026-09-07",
+            "expert_approved": false
+          }
+        ],
+        "case_id": "sub-02",
+        "reference_space": "sub-02:T1-native-world",
+        "observability": {
+          "T1w": "reference-localization; visible boundaries require individual inspection",
+          "T2w": "reference-localization on rigidly aligned T2; visibility not certified"
+        }
+      },
+      {
+        "id": 42,
+        "structure": "temporal-horn",
+        "side": "right",
+        "source_ids": [
+          44
+        ],
+        "anchor": [
+          34.76600745615778,
+          16.405714231859235,
+          -20.29451775583638
+        ],
+        "bounds": [
+          [
+            16.76272301508868,
+            8.404606508313563,
+            -22.294065482810637
+          ],
+          [
+            35.76621661739448,
+            26.40580973412773,
+            -9.29414991342965
+          ]
+        ],
+        "voxel_count": 306,
+        "space": "sub-02:T1-native-world",
+        "source": "StudyForrest FreeSurfer 5.3 aparc+aseg",
+        "generation": "automatic-subject-segmentation",
+        "transform_history": [
+          "FreeSurfer conformed voxel to scanner RAS",
+          "voxel-order-matched rawavg RAS to distributed T1 RAS header correction"
+        ],
+        "review_status": "reference-only",
+        "boundary_uncertainty": "FreeSurfer inferior-lateral-ventricle 구획입니다. 좁은 각은 부분용적과 분할 누락 때문에 연속적으로 표시되지 않을 수 있습니다.",
+        "scoreable": false,
+        "review_log": [
+          {
+            "role": "developer",
+            "decision": "reference-only",
+            "side": "all",
+            "label_ids": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46
+            ],
+            "scope": "Three-plane bilateral anchor localization on native T1; T2 inherits unchanged registration. No voxelwise or clinical boundary adjudication.",
+            "reviewed_at": "2026-09-07",
+            "expert_approved": false
+          }
+        ],
+        "case_id": "sub-02",
+        "reference_space": "sub-02:T1-native-world",
+        "observability": {
+          "T1w": "reference-localization; visible boundaries require individual inspection",
+          "T2w": "reference-localization on rigidly aligned T2; visibility not certified"
+        }
+      },
+      {
+        "id": 43,
+        "structure": "fourth-ventricle",
+        "side": "midline",
+        "source_ids": [
+          15
+        ],
+        "anchor": [
+          -1.2402483065036591,
+          -9.592780269764859,
+          -36.296729590272065
+        ],
+        "bounds": [
+          [
+            -15.242912576838862,
+            -19.59236173216803,
+            -60.29648660352444
+          ],
+          [
+            14.762512331840185,
+            -2.5954897398608665,
+            -11.295913441733234
+          ]
+        ],
+        "voxel_count": 2456,
+        "space": "sub-02:T1-native-world",
+        "source": "StudyForrest FreeSurfer 5.3 aparc+aseg",
+        "generation": "automatic-subject-segmentation",
+        "transform_history": [
+          "FreeSurfer conformed voxel to scanner RAS",
+          "voxel-order-matched rawavg RAS to distributed T1 RAS header correction"
+        ],
+        "review_status": "reference-only",
+        "boundary_uncertainty": "자동 분할입니다. 작은 출구나 수도관 전체를 포함한 라벨이 아닙니다.",
+        "scoreable": false,
+        "review_log": [
+          {
+            "role": "developer",
+            "decision": "reference-only",
+            "side": "all",
+            "label_ids": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46
+            ],
+            "scope": "Three-plane bilateral anchor localization on native T1; T2 inherits unchanged registration. No voxelwise or clinical boundary adjudication.",
+            "reviewed_at": "2026-09-07",
+            "expert_approved": false
+          }
+        ],
+        "case_id": "sub-02",
+        "reference_space": "sub-02:T1-native-world",
+        "observability": {
+          "T1w": "reference-localization; visible boundaries require individual inspection",
+          "T2w": "reference-localization on rigidly aligned T2; visibility not certified"
+        }
+      },
+      {
+        "id": 44,
+        "structure": "brainstem",
+        "side": "midline",
+        "source_ids": [
+          16
+        ],
+        "anchor": [
+          -0.24029575336207643,
+          6.406662786339254,
+          -31.294938866949224
+        ],
+        "bounds": [
+          [
+            -19.24362379731359,
+            -11.59349937049565,
+            -78.29579904206659
+          ],
+          [
+            16.76293592258078,
+            18.407096801933378,
+            -4.295561516462897
+          ]
+        ],
+        "voxel_count": 23598,
+        "space": "sub-02:T1-native-world",
+        "source": "StudyForrest FreeSurfer 5.3 aparc+aseg",
+        "generation": "automatic-subject-segmentation",
+        "transform_history": [
+          "FreeSurfer conformed voxel to scanner RAS",
+          "voxel-order-matched rawavg RAS to distributed T1 RAS header correction"
+        ],
+        "review_status": "reference-only",
+        "boundary_uncertainty": "뇌간 전체 자동 분할입니다. 중뇌·교뇌·연수의 별도 정답 경계나 LC·봉선핵·PPTN 라벨을 제공하지 않습니다.",
+        "scoreable": false,
+        "review_log": [
+          {
+            "role": "developer",
+            "decision": "reference-only",
+            "side": "all",
+            "label_ids": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46
+            ],
+            "scope": "Three-plane bilateral anchor localization on native T1; T2 inherits unchanged registration. No voxelwise or clinical boundary adjudication.",
+            "reviewed_at": "2026-09-07",
+            "expert_approved": false
+          }
+        ],
+        "case_id": "sub-02",
+        "reference_space": "sub-02:T1-native-world",
+        "observability": {
+          "T1w": "reference-localization; visible boundaries require individual inspection",
+          "T2w": "reference-localization on rigidly aligned T2; visibility not certified"
+        }
+      },
+      {
+        "id": 45,
+        "structure": "cerebellar-cortex",
+        "side": "left",
+        "source_ids": [
+          8
+        ],
+        "anchor": [
+          -12.242397870450091,
+          -11.589824766323105,
+          -63.29673620693032
+        ],
+        "bounds": [
+          [
+            -58.25071257229375,
+            -59.59111391765839,
+            -72.29892160232387
+          ],
+          [
+            0.7606204381100241,
+            5.407891506636432,
+            -10.298042686479931
+          ]
+        ],
+        "voxel_count": 57179,
+        "space": "sub-02:T1-native-world",
+        "source": "StudyForrest FreeSurfer 5.3 aparc+aseg",
+        "generation": "automatic-subject-segmentation",
+        "transform_history": [
+          "FreeSurfer conformed voxel to scanner RAS",
+          "voxel-order-matched rawavg RAS to distributed T1 RAS header correction"
+        ],
+        "review_status": "reference-only",
+        "boundary_uncertainty": "양측 소뇌 피질 자동 분할이며 개별 소엽·심부핵·충부 전용 분할이 아닙니다.",
+        "scoreable": false,
+        "review_log": [
+          {
+            "role": "developer",
+            "decision": "reference-only",
+            "side": "all",
+            "label_ids": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46
+            ],
+            "scope": "Three-plane bilateral anchor localization on native T1; T2 inherits unchanged registration. No voxelwise or clinical boundary adjudication.",
+            "reviewed_at": "2026-09-07",
+            "expert_approved": false
+          }
+        ],
+        "case_id": "sub-02",
+        "reference_space": "sub-02:T1-native-world",
+        "observability": {
+          "T1w": "reference-localization; visible boundaries require individual inspection",
+          "T2w": "reference-localization on rigidly aligned T2; visibility not certified"
+        }
+      },
+      {
+        "id": 46,
+        "structure": "cerebellar-cortex",
+        "side": "right",
+        "source_ids": [
+          47
+        ],
+        "anchor": [
+          7.761326702486912,
+          -16.58943089325824,
+          -65.29770908934321
+        ],
+        "bounds": [
+          [
+            -3.2406756275929496,
+            -58.591129953958486,
+            -73.29950666479601
+          ],
+          [
+            52.769839733590274,
+            7.408557272979834,
+            -10.29808337225846
+          ]
+        ],
+        "voxel_count": 58298,
+        "space": "sub-02:T1-native-world",
+        "source": "StudyForrest FreeSurfer 5.3 aparc+aseg",
+        "generation": "automatic-subject-segmentation",
+        "transform_history": [
+          "FreeSurfer conformed voxel to scanner RAS",
+          "voxel-order-matched rawavg RAS to distributed T1 RAS header correction"
+        ],
+        "review_status": "reference-only",
+        "boundary_uncertainty": "양측 소뇌 피질 자동 분할이며 개별 소엽·심부핵·충부 전용 분할이 아닙니다.",
+        "scoreable": false,
+        "review_log": [
+          {
+            "role": "developer",
+            "decision": "reference-only",
+            "side": "all",
+            "label_ids": [
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46
+            ],
+            "scope": "Three-plane bilateral anchor localization on native T1; T2 inherits unchanged registration. No voxelwise or clinical boundary adjudication.",
+            "reviewed_at": "2026-09-07",
             "expert_approved": false
           }
         ],
@@ -1401,7 +3927,7 @@
   "qc": {
     "status": "developer-visual-qc",
     "reviewer": "Codex visual inspection (not specialist clinical adjudication)",
-    "reviewed_at": "2026-09-06",
+    "reviewed_at": "2026-09-07",
     "orientation": "scanner RAS header and voxel ordering checked; radiological browser display. Independent physical left-right fiducial unavailable.",
     "intensity_integrity": true,
     "notes": [
@@ -1409,17 +3935,22 @@
       "T1/T2 three-plane visual contacts inspected at central brain landmarks: ventricles, callosum, thalamus and cortical outline show no gross displacement. No claim of zero local registration error.",
       "Left and right individual reference outlines inspected in sagittal/coronal/axial contacts. Localization plausible; automatic local boundaries are not clinically approved.",
       "Cingulate and insula folding, hippocampal/amygdala transitions, caudate tail and pallidal boundaries retain partial-volume/segmentation uncertainty.",
-      "Ventricle labels exclude separate inferior-lateral-ventricle class. Callosum labels cover central segmentation only."
+      "Ventricle labels exclude separate inferior-lateral-ventricle class. Callosum labels cover central segmentation only.",
+      "Expanded label IDs 21-46 inspected bilaterally at their anchors in sagittal, coronal and axial T1 contacts. Gross localization is plausible; no specialist boundary adjudication performed.",
+      "Cortical folding, entorhinal and accumbens boundaries remain uncertain. Inferior lateral ventricles can be narrow/discontinuous; cerebellar folia have partial-volume limits. Broad frontal/parietal parcels are not functional territory maps.",
+      "Original labels 1-20 retain identical IDs, source IDs, voxel counts, bounds and anchors. Original T1 and registered T2 hashes unchanged."
     ],
     "evidence": [
       "qa/sub-02-registration.png",
       "qa/sub-02-labels.png",
-      "qa/sub-02-labels-right.png"
+      "qa/sub-02-labels-right.png",
+      "qa/sub-02-expanded-1.png",
+      "qa/sub-02-expanded-2.png"
     ],
     "reviewed_hashes": {
       "T1w": "6a4876dbf6bc08507223a27953d26989c61db0a44d7f69e2532f1bc8decced2e",
       "T2w": "15088224c49091d156cc7e24f7aefefbee5bd157f1b4ab920d82eaa156ef64a0",
-      "labels": "feb5969d73109f6940155ab1b761ec24f1639730860af4944a63b8672e2679d1"
+      "labels": "5ef7a09401030024e1485485849bd74cc1fa3c276620262676bc07ede4a4ecb1"
     },
     "label_review_logs": [
       {
@@ -1427,9 +3958,72 @@
         "decision": "reference-only",
         "side": "all",
         "scope": "Three-plane left/right localization review; no voxelwise boundary adjudication",
+        "expert_approved": false,
+        "label_ids": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      },
+      {
+        "role": "developer",
+        "decision": "reference-only",
+        "side": "all",
+        "label_ids": [
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46
+        ],
+        "scope": "Three-plane bilateral anchor localization on native T1; T2 inherits unchanged registration. No voxelwise or clinical boundary adjudication.",
+        "reviewed_at": "2026-09-07",
         "expert_approved": false
       }
-    ]
+    ],
+    "prior_reviewed_hashes": {
+      "T1w": "6a4876dbf6bc08507223a27953d26989c61db0a44d7f69e2532f1bc8decced2e",
+      "T2w": "15088224c49091d156cc7e24f7aefefbee5bd157f1b4ab920d82eaa156ef64a0",
+      "labels": "feb5969d73109f6940155ab1b761ec24f1639730860af4944a63b8672e2679d1"
+    }
   },
   "tasks": [
     {
@@ -2083,6 +4677,915 @@
       "unidentifiable_answer_key": null,
       "boundary_uncertainty": "이 사례에는 검수된 내포 전용 라벨이 없습니다. 주변 구조를 통해 관찰하고 색 경계나 위치 점수는 제공하지 않습니다.",
       "source": "https://nba.uth.tmc.edu/neuroanatomy/L10/Lab10p01_index.html"
+    },
+    {
+      "id": "sub-02:accumbens:observation-v1",
+      "case_id": "sub-02",
+      "target": "accumbens",
+      "reference_space": "sub-02:T1-native-world",
+      "planes": [
+        "axial",
+        "coronal",
+        "sagittal"
+      ],
+      "sequences": [
+        "T1w",
+        "T2w"
+      ],
+      "landmarks": [
+        "미상핵 머리의 아래쪽",
+        "조가비핵의 앞·아래쪽",
+        "내포 앞다리"
+      ],
+      "scoring": "reference-feedback-only",
+      "status": "enabled-observation",
+      "scoreable": false,
+      "allowed_region": null,
+      "reference_regions": [
+        {
+          "id": 21,
+          "side": "left",
+          "reference_extent": [
+            [
+              -20.244353471810015,
+              26.403722192835488,
+              -7.292387538316277
+            ],
+            [
+              -6.241585422769376,
+              43.4028890884459,
+              7.709271216479024
+            ]
+          ],
+          "range_status": "automatic-extent-not-validated-presence-key"
+        },
+        {
+          "id": 22,
+          "side": "right",
+          "reference_extent": [
+            [
+              -0.24052885051625594,
+              27.40249347253831,
+              -6.292042920739561
+            ],
+            [
+              11.761563417182657,
+              45.40280207108199,
+              9.708853232665433
+            ]
+          ],
+          "range_status": "automatic-extent-not-validated-presence-key"
+        }
+      ],
+      "absence_answer_key": null,
+      "unidentifiable_answer_key": null,
+      "boundary_uncertainty": "FreeSurfer accumbens-area 구획입니다. T1/T2에서 핵의 경계나 core/shell을 직접 식별한 것으로 해석하지 않습니다.",
+      "source": "https://nba.uth.tmc.edu/neuroanatomy/L5/Lab05p20_index.html"
+    },
+    {
+      "id": "sub-02:parahippocampal:observation-v1",
+      "case_id": "sub-02",
+      "target": "parahippocampal",
+      "reference_space": "sub-02:T1-native-world",
+      "planes": [
+        "axial",
+        "coronal",
+        "sagittal"
+      ],
+      "sequences": [
+        "T1w",
+        "T2w"
+      ],
+      "landmarks": [
+        "해마 아래쪽 피질",
+        "곁고랑(collateral sulcus)",
+        "측두각"
+      ],
+      "scoring": "reference-feedback-only",
+      "status": "enabled-observation",
+      "scoreable": false,
+      "allowed_region": null,
+      "reference_regions": [
+        {
+          "id": 23,
+          "side": "left",
+          "reference_extent": [
+            [
+              -39.24727556318355,
+              -22.595284179974797,
+              -32.29405032824252
+            ],
+            [
+              -10.241566707399087,
+              17.405812450248774,
+              -10.297314222447255
+            ]
+          ],
+          "range_status": "automatic-extent-not-validated-presence-key"
+        },
+        {
+          "id": 24,
+          "side": "right",
+          "reference_extent": [
+            [
+              14.762760546650682,
+              -13.59499102490905,
+              -32.29404917505235
+            ],
+            [
+              34.76639686760845,
+              24.40634906586652,
+              -11.2971644243204
+            ]
+          ],
+          "range_status": "automatic-extent-not-validated-presence-key"
+        }
+      ],
+      "absence_answer_key": null,
+      "unidentifiable_answer_key": null,
+      "boundary_uncertainty": "Desikan–Killiany parahippocampal 구획이며, 앞쪽 entorhinal 구획은 별도입니다. 해부학적 해마곁이랑 전체와 일대일로 같지 않습니다.",
+      "source": "https://radiologyassistant.nl/neuroradiology/brain/anatomy"
+    },
+    {
+      "id": "sub-02:entorhinal:observation-v1",
+      "case_id": "sub-02",
+      "target": "entorhinal",
+      "reference_space": "sub-02:T1-native-world",
+      "planes": [
+        "axial",
+        "coronal",
+        "sagittal"
+      ],
+      "sequences": [
+        "T1w",
+        "T2w"
+      ],
+      "landmarks": [
+        "앞쪽 해마곁 피질",
+        "곁고랑",
+        "해마 머리"
+      ],
+      "scoring": "reference-feedback-only",
+      "status": "enabled-observation",
+      "scoreable": false,
+      "allowed_region": null,
+      "reference_regions": [
+        {
+          "id": 25,
+          "side": "left",
+          "reference_extent": [
+            [
+              -36.247151200832675,
+              12.405591590212069,
+              -37.29171574543585
+            ],
+            [
+              -16.24330383755715,
+              39.40686060612228,
+              -16.291117579530734
+            ]
+          ],
+          "range_status": "automatic-extent-not-validated-presence-key"
+        },
+        {
+          "id": 26,
+          "side": "right",
+          "reference_extent": [
+            [
+              13.762071006036464,
+              17.40566761891634,
+              -33.29203307448935
+            ],
+            [
+              29.76491438265046,
+              43.4064897830676,
+              -14.29196916058521
+            ]
+          ],
+          "range_status": "automatic-extent-not-validated-presence-key"
+        }
+      ],
+      "absence_answer_key": null,
+      "unidentifiable_answer_key": null,
+      "boundary_uncertainty": "피질 접힘에 기반한 자동 구획입니다. 조직학적 내후각피질 경계를 일반 T1/T2에서 직접 보장하지 않습니다.",
+      "source": "https://radiologyassistant.nl/neuroradiology/brain/anatomy"
+    },
+    {
+      "id": "sub-02:orbitofrontal:observation-v1",
+      "case_id": "sub-02",
+      "target": "orbitofrontal",
+      "reference_space": "sub-02:T1-native-world",
+      "planes": [
+        "axial",
+        "coronal",
+        "sagittal"
+      ],
+      "sequences": [
+        "T1w",
+        "T2w"
+      ],
+      "landmarks": [
+        "안와 위 전두엽 바닥",
+        "대뇌 종열",
+        "전두엽 아래쪽 고랑"
+      ],
+      "scoring": "reference-feedback-only",
+      "status": "enabled-observation",
+      "scoreable": false,
+      "allowed_region": null,
+      "reference_regions": [
+        {
+          "id": 27,
+          "side": "left",
+          "reference_extent": [
+            [
+              -50.24995666780801,
+              22.40389783793961,
+              -18.290488617067965
+            ],
+            [
+              -3.2410143686269777,
+              90.40194592643874,
+              23.714611765675386
+            ]
+          ],
+          "range_status": "automatic-extent-not-validated-presence-key"
+        },
+        {
+          "id": 28,
+          "side": "right",
+          "reference_extent": [
+            [
+              -4.241823132858869,
+              27.40327522251212,
+              -14.290341939649224
+            ],
+            [
+              44.76739925354491,
+              91.40062111105092,
+              24.71355545068353
+            ]
+          ],
+          "range_status": "automatic-extent-not-validated-presence-key"
+        }
+      ],
+      "absence_answer_key": null,
+      "unidentifiable_answer_key": null,
+      "boundary_uncertainty": "medial/lateral orbitofrontal 두 구획의 합입니다. vmPFC 전체나 기능적 OFC의 경계를 뜻하지 않습니다.",
+      "source": "https://radiologyassistant.nl/neuroradiology/brain/anatomy"
+    },
+    {
+      "id": "sub-02:superior-frontal:observation-v1",
+      "case_id": "sub-02",
+      "target": "superior-frontal",
+      "reference_space": "sub-02:T1-native-world",
+      "planes": [
+        "axial",
+        "coronal",
+        "sagittal"
+      ],
+      "sequences": [
+        "T1w",
+        "T2w"
+      ],
+      "landmarks": [
+        "상전두고랑",
+        "대뇌 종열",
+        "중심앞이랑"
+      ],
+      "scoring": "reference-feedback-only",
+      "status": "enabled-observation",
+      "scoreable": false,
+      "allowed_region": null,
+      "reference_regions": [
+        {
+          "id": 29,
+          "side": "left",
+          "reference_extent": [
+            [
+              -38.246989422827696,
+              -10.604486690114186,
+              16.712585537124184
+            ],
+            [
+              -0.23959922702758263,
+              93.39999327013632,
+              71.70826263751646
+            ]
+          ],
+          "range_status": "automatic-extent-not-validated-presence-key"
+        },
+        {
+          "id": 30,
+          "side": "right",
+          "reference_extent": [
+            [
+              -4.241321958487973,
+              -4.604306234498466,
+              17.711859741531583
+            ],
+            [
+              29.76579564260021,
+              95.40081766224895,
+              69.7081427930573
+            ]
+          ],
+          "range_status": "automatic-extent-not-validated-presence-key"
+        }
+      ],
+      "absence_answer_key": null,
+      "unidentifiable_answer_key": null,
+      "boundary_uncertainty": "상전두회 해부학적 구획입니다. dlPFC·dmPFC·SMA의 기능적 경계나 자극 표적이 아닙니다.",
+      "source": "https://radiologyassistant.nl/neuroradiology/brain/anatomy"
+    },
+    {
+      "id": "sub-02:middle-frontal:observation-v1",
+      "case_id": "sub-02",
+      "target": "middle-frontal",
+      "reference_space": "sub-02:T1-native-world",
+      "planes": [
+        "axial",
+        "coronal",
+        "sagittal"
+      ],
+      "sequences": [
+        "T1w",
+        "T2w"
+      ],
+      "landmarks": [
+        "상전두고랑",
+        "하전두고랑",
+        "중심앞고랑"
+      ],
+      "scoring": "reference-feedback-only",
+      "status": "enabled-observation",
+      "scoreable": false,
+      "allowed_region": null,
+      "reference_regions": [
+        {
+          "id": 31,
+          "side": "left",
+          "reference_extent": [
+            [
+              -59.251058594490544,
+              4.397945374561573,
+              6.7138350011659185
+            ],
+            [
+              -15.244080205859504,
+              91.40079571383802,
+              62.70705233741223
+            ]
+          ],
+          "range_status": "automatic-extent-not-validated-presence-key"
+        },
+        {
+          "id": 32,
+          "side": "right",
+          "reference_extent": [
+            [
+              7.760152627169958,
+              6.39722385412081,
+              5.712890163253363
+            ],
+            [
+              55.77004735772866,
+              95.4012691714357,
+              66.70641843528239
+            ]
+          ],
+          "range_status": "automatic-extent-not-validated-presence-key"
+        }
+      ],
+      "absence_answer_key": null,
+      "unidentifiable_answer_key": null,
+      "boundary_uncertainty": "rostral/caudal middle frontal 구획의 합입니다. dlPFC 기능 영역 전체 또는 개인 치료 표적과 같지 않습니다.",
+      "source": "https://radiologyassistant.nl/neuroradiology/brain/anatomy"
+    },
+    {
+      "id": "sub-02:precentral:observation-v1",
+      "case_id": "sub-02",
+      "target": "precentral",
+      "reference_space": "sub-02:T1-native-world",
+      "planes": [
+        "axial",
+        "coronal",
+        "sagittal"
+      ],
+      "sequences": [
+        "T1w",
+        "T2w"
+      ],
+      "landmarks": [
+        "중심고랑",
+        "중심앞고랑",
+        "중심뒤이랑"
+      ],
+      "scoring": "reference-feedback-only",
+      "status": "enabled-observation",
+      "scoreable": false,
+      "allowed_region": null,
+      "reference_regions": [
+        {
+          "id": 33,
+          "side": "left",
+          "reference_extent": [
+            [
+              -62.25156677276898,
+              -28.604175957410718,
+              0.707780299615024
+            ],
+            [
+              -4.23990721087192,
+              26.402353870838482,
+              70.7033044844679
+            ]
+          ],
+          "range_status": "automatic-extent-not-validated-presence-key"
+        },
+        {
+          "id": 34,
+          "side": "right",
+          "reference_extent": [
+            [
+              1.7611539425031424,
+              -26.60368640423073,
+              0.7073300292605893
+            ],
+            [
+              61.770962128010346,
+              42.40250258478443,
+              68.70378213355397
+            ]
+          ],
+          "range_status": "automatic-extent-not-validated-presence-key"
+        }
+      ],
+      "absence_answer_key": null,
+      "unidentifiable_answer_key": null,
+      "boundary_uncertainty": "거시적 이랑 구획입니다. 개인별 운동 체성지도와 기능 경계는 제시하지 않습니다.",
+      "source": "https://radiologyassistant.nl/neuroradiology/brain/anatomy"
+    },
+    {
+      "id": "sub-02:postcentral:observation-v1",
+      "case_id": "sub-02",
+      "target": "postcentral",
+      "reference_space": "sub-02:T1-native-world",
+      "planes": [
+        "axial",
+        "coronal",
+        "sagittal"
+      ],
+      "sequences": [
+        "T1w",
+        "T2w"
+      ],
+      "landmarks": [
+        "중심고랑",
+        "중심뒤고랑",
+        "중심앞이랑"
+      ],
+      "scoring": "reference-feedback-only",
+      "status": "enabled-observation",
+      "scoreable": false,
+      "allowed_region": null,
+      "reference_regions": [
+        {
+          "id": 35,
+          "side": "left",
+          "reference_extent": [
+            [
+              -67.25216037345184,
+              -41.60287479875721,
+              5.7056605754383725
+            ],
+            [
+              -1.2392269461288805,
+              15.400506530680758,
+              62.70162393317963
+            ]
+          ],
+          "range_status": "automatic-extent-not-validated-presence-key"
+        },
+        {
+          "id": 36,
+          "side": "right",
+          "reference_extent": [
+            [
+              1.7611575910379003,
+              -37.60363540550823,
+              3.705470578954447
+            ],
+            [
+              63.77183715529235,
+              24.40249066261569,
+              63.70198501366478
+            ]
+          ],
+          "range_status": "automatic-extent-not-validated-presence-key"
+        }
+      ],
+      "absence_answer_key": null,
+      "unidentifiable_answer_key": null,
+      "boundary_uncertainty": "해부학적 이랑 구획이며 개인의 감각 기능 지도를 뜻하지 않습니다.",
+      "source": "https://radiologyassistant.nl/neuroradiology/brain/anatomy"
+    },
+    {
+      "id": "sub-02:precuneus:observation-v1",
+      "case_id": "sub-02",
+      "target": "precuneus",
+      "reference_space": "sub-02:T1-native-world",
+      "planes": [
+        "axial",
+        "coronal",
+        "sagittal"
+      ],
+      "sequences": [
+        "T1w",
+        "T2w"
+      ],
+      "landmarks": [
+        "두정후두고랑",
+        "대상고랑의 변연가지",
+        "후대상회"
+      ],
+      "scoring": "reference-feedback-only",
+      "status": "enabled-observation",
+      "scoreable": false,
+      "allowed_region": null,
+      "reference_regions": [
+        {
+          "id": 37,
+          "side": "left",
+          "reference_extent": [
+            [
+              -28.244412604519354,
+              -69.5991146236524,
+              -13.299713565343609
+            ],
+            [
+              1.761560827668319,
+              -14.599975154075267,
+              50.70092793610462
+            ]
+          ],
+          "range_status": "automatic-extent-not-validated-presence-key"
+        },
+        {
+          "id": 38,
+          "side": "right",
+          "reference_extent": [
+            [
+              -2.239811693636483,
+              -64.59915227743299,
+              -14.301102066839135
+            ],
+            [
+              29.765982486831717,
+              -13.599962224108864,
+              59.70000632302209
+            ]
+          ],
+          "range_status": "automatic-extent-not-validated-presence-key"
+        }
+      ],
+      "absence_answer_key": null,
+      "unidentifiable_answer_key": null,
+      "boundary_uncertainty": "해부학적 피질 구획입니다. DMN의 개인별 기능적 범위와 같지 않습니다.",
+      "source": "https://radiologyassistant.nl/neuroradiology/brain/anatomy"
+    },
+    {
+      "id": "sub-02:inferior-parietal:observation-v1",
+      "case_id": "sub-02",
+      "target": "inferior-parietal",
+      "reference_space": "sub-02:T1-native-world",
+      "planes": [
+        "axial",
+        "coronal",
+        "sagittal"
+      ],
+      "sequences": [
+        "T1w",
+        "T2w"
+      ],
+      "landmarks": [
+        "외측고랑 뒤쪽 끝",
+        "상측두고랑 뒤쪽",
+        "두정내고랑"
+      ],
+      "scoring": "reference-feedback-only",
+      "status": "enabled-observation",
+      "scoreable": false,
+      "allowed_region": null,
+      "reference_regions": [
+        {
+          "id": 39,
+          "side": "left",
+          "reference_extent": [
+            [
+              -67.25199294992318,
+              -78.59588720216922,
+              -19.302769369431047
+            ],
+            [
+              -19.24216814685606,
+              -0.5986855975209409,
+              45.70179049133285
+            ]
+          ],
+          "range_status": "automatic-extent-not-validated-presence-key"
+        },
+        {
+          "id": 40,
+          "side": "right",
+          "reference_extent": [
+            [
+              22.765168795214592,
+              -69.5972826084082,
+              -16.303733942814702
+            ],
+            [
+              64.77221102411016,
+              7.402191201080996,
+              45.70063849640137
+            ]
+          ],
+          "range_status": "automatic-extent-not-validated-presence-key"
+        }
+      ],
+      "absence_answer_key": null,
+      "unidentifiable_answer_key": null,
+      "boundary_uncertainty": "DK inferiorparietal/supramarginal 구획의 합입니다. 다른 atlas의 각회·연상회 정의와 완전히 일치하지 않습니다.",
+      "source": "https://radiologyassistant.nl/neuroradiology/brain/anatomy"
+    },
+    {
+      "id": "sub-02:temporal-horn:observation-v1",
+      "case_id": "sub-02",
+      "target": "temporal-horn",
+      "reference_space": "sub-02:T1-native-world",
+      "planes": [
+        "axial",
+        "coronal",
+        "sagittal"
+      ],
+      "sequences": [
+        "T1w",
+        "T2w"
+      ],
+      "landmarks": [
+        "해마 위쪽 CSF",
+        "측뇌실 하각",
+        "해마 머리와 몸통"
+      ],
+      "scoring": "reference-feedback-only",
+      "status": "enabled-observation",
+      "scoreable": false,
+      "allowed_region": null,
+      "reference_regions": [
+        {
+          "id": 41,
+          "side": "left",
+          "reference_extent": [
+            [
+              -37.24699555777475,
+              -13.596280034021461,
+              -26.293031119461872
+            ],
+            [
+              -21.2440885363376,
+              19.405879460508515,
+              -7.296628505215011
+            ]
+          ],
+          "range_status": "automatic-extent-not-validated-presence-key"
+        },
+        {
+          "id": 42,
+          "side": "right",
+          "reference_extent": [
+            [
+              16.76272301508868,
+              8.404606508313563,
+              -22.294065482810637
+            ],
+            [
+              35.76621661739448,
+              26.40580973412773,
+              -9.29414991342965
+            ]
+          ],
+          "range_status": "automatic-extent-not-validated-presence-key"
+        }
+      ],
+      "absence_answer_key": null,
+      "unidentifiable_answer_key": null,
+      "boundary_uncertainty": "FreeSurfer inferior-lateral-ventricle 구획입니다. 좁은 각은 부분용적과 분할 누락 때문에 연속적으로 표시되지 않을 수 있습니다.",
+      "source": "https://radiologyassistant.nl/neuroradiology/brain/anatomy"
+    },
+    {
+      "id": "sub-02:third-ventricle:observation-v1",
+      "case_id": "sub-02",
+      "target": "third-ventricle",
+      "reference_space": "sub-02:T1-native-world",
+      "planes": [
+        "axial",
+        "coronal",
+        "sagittal"
+      ],
+      "sequences": [
+        "T1w",
+        "T2w"
+      ],
+      "landmarks": [
+        "양측 시상",
+        "정중선 CSF",
+        "뇌량 아래쪽"
+      ],
+      "scoring": "reference-feedback-only",
+      "status": "enabled-observation",
+      "scoreable": false,
+      "allowed_region": null,
+      "reference_regions": [
+        {
+          "id": 20,
+          "side": "midline",
+          "reference_extent": [
+            [
+              -6.241440741222405,
+              -5.596860871780493,
+              -11.292632260405625
+            ],
+            [
+              1.760346258579716,
+              29.404274217411825,
+              5.705673158365968
+            ]
+          ],
+          "range_status": "automatic-extent-not-validated-presence-key"
+        }
+      ],
+      "absence_answer_key": null,
+      "unidentifiable_answer_key": null,
+      "boundary_uncertainty": "자동 뇌실 분할이며 좁은 공간의 경계와 작은 함요부는 불확실합니다.",
+      "source": "https://radiologyassistant.nl/neuroradiology/brain/anatomy"
+    },
+    {
+      "id": "sub-02:fourth-ventricle:observation-v1",
+      "case_id": "sub-02",
+      "target": "fourth-ventricle",
+      "reference_space": "sub-02:T1-native-world",
+      "planes": [
+        "axial",
+        "coronal",
+        "sagittal"
+      ],
+      "sequences": [
+        "T1w",
+        "T2w"
+      ],
+      "landmarks": [
+        "교뇌·연수 뒤쪽",
+        "소뇌 앞쪽",
+        "정중 시상면"
+      ],
+      "scoring": "reference-feedback-only",
+      "status": "enabled-observation",
+      "scoreable": false,
+      "allowed_region": null,
+      "reference_regions": [
+        {
+          "id": 43,
+          "side": "midline",
+          "reference_extent": [
+            [
+              -15.242912576838862,
+              -19.59236173216803,
+              -60.29648660352444
+            ],
+            [
+              14.762512331840185,
+              -2.5954897398608665,
+              -11.295913441733234
+            ]
+          ],
+          "range_status": "automatic-extent-not-validated-presence-key"
+        }
+      ],
+      "absence_answer_key": null,
+      "unidentifiable_answer_key": null,
+      "boundary_uncertainty": "자동 분할입니다. 작은 출구나 수도관 전체를 포함한 라벨이 아닙니다.",
+      "source": "https://radiologyassistant.nl/neuroradiology/brain/anatomy"
+    },
+    {
+      "id": "sub-02:brainstem:observation-v1",
+      "case_id": "sub-02",
+      "target": "brainstem",
+      "reference_space": "sub-02:T1-native-world",
+      "planes": [
+        "axial",
+        "coronal",
+        "sagittal"
+      ],
+      "sequences": [
+        "T1w",
+        "T2w"
+      ],
+      "landmarks": [
+        "중뇌에서 교뇌로",
+        "제4뇌실 앞쪽",
+        "연수와 척수의 이행"
+      ],
+      "scoring": "reference-feedback-only",
+      "status": "enabled-observation",
+      "scoreable": false,
+      "allowed_region": null,
+      "reference_regions": [
+        {
+          "id": 44,
+          "side": "midline",
+          "reference_extent": [
+            [
+              -19.24362379731359,
+              -11.59349937049565,
+              -78.29579904206659
+            ],
+            [
+              16.76293592258078,
+              18.407096801933378,
+              -4.295561516462897
+            ]
+          ],
+          "range_status": "automatic-extent-not-validated-presence-key"
+        }
+      ],
+      "absence_answer_key": null,
+      "unidentifiable_answer_key": null,
+      "boundary_uncertainty": "뇌간 전체 자동 분할입니다. 중뇌·교뇌·연수의 별도 정답 경계나 LC·봉선핵·PPTN 라벨을 제공하지 않습니다.",
+      "source": "https://radiologyassistant.nl/neuroradiology/brain/anatomy"
+    },
+    {
+      "id": "sub-02:cerebellar-cortex:observation-v1",
+      "case_id": "sub-02",
+      "target": "cerebellar-cortex",
+      "reference_space": "sub-02:T1-native-world",
+      "planes": [
+        "axial",
+        "coronal",
+        "sagittal"
+      ],
+      "sequences": [
+        "T1w",
+        "T2w"
+      ],
+      "landmarks": [
+        "소뇌 백질 가지",
+        "소뇌 잎(folia)",
+        "제4뇌실"
+      ],
+      "scoring": "reference-feedback-only",
+      "status": "enabled-observation",
+      "scoreable": false,
+      "allowed_region": null,
+      "reference_regions": [
+        {
+          "id": 45,
+          "side": "left",
+          "reference_extent": [
+            [
+              -58.25071257229375,
+              -59.59111391765839,
+              -72.29892160232387
+            ],
+            [
+              0.7606204381100241,
+              5.407891506636432,
+              -10.298042686479931
+            ]
+          ],
+          "range_status": "automatic-extent-not-validated-presence-key"
+        },
+        {
+          "id": 46,
+          "side": "right",
+          "reference_extent": [
+            [
+              -3.2406756275929496,
+              -58.591129953958486,
+              -73.29950666479601
+            ],
+            [
+              52.769839733590274,
+              7.408557272979834,
+              -10.29808337225846
+            ]
+          ],
+          "range_status": "automatic-extent-not-validated-presence-key"
+        }
+      ],
+      "absence_answer_key": null,
+      "unidentifiable_answer_key": null,
+      "boundary_uncertainty": "양측 소뇌 피질 자동 분할이며 개별 소엽·심부핵·충부 전용 분할이 아닙니다.",
+      "source": "https://radiologyassistant.nl/neuroradiology/brain/anatomy"
     }
   ]
 }
