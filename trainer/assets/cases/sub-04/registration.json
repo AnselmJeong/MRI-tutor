@@ -1,0 +1,25 @@
+{
+  "method": "SimpleITK 2.5.6 Euler3D rigid / Mattes MI 50 bins / fixed subject brain mask / seeded 12% sampling / levels 4,2,1",
+  "transform_file": "T2-to-T1.tfm",
+  "transform_direction": "fixed T1 LPS physical point to moving T2 LPS sampling point",
+  "parameters": [
+    -0.01001372365674975,
+    0.006946970306900283,
+    -0.003929161263737162,
+    -0.20876705682422397,
+    0.08203712572320981,
+    0.10370784455312979
+  ],
+  "fixed_parameters": [
+    1.090206153240615,
+    -24.265716664286103,
+    8.29054506491039,
+    0.0
+  ],
+  "initial_full_metric": -0.243558867098885,
+  "final_sampled_metric": -0.3062278784811938,
+  "stop": "RegularStepGradientDescentOptimizerv4: Step too small after 15 iterations. Current step (0.000976562) is less than minimum step (0.001).",
+  "resampling": "one linear interpolation from intact native T2 to native T1 grid; float32",
+  "review_status": "pending-visual-review",
+  "clinical_boundary_review": "not-performed"
+}

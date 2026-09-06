@@ -1,0 +1,23 @@
+{
+  "date": "2026-09-06T14:04:26.993Z",
+  "browser": "Chrome headless, software WebGL",
+  "results": [
+    "Individual T1 is default, hidden label and correct topic",
+    "Split endpoints preserve MRI coordinates",
+    "Native label reveal, anatomical anchor and continuous slice keyboard navigation",
+    "T2 load retains T1 world point and W/L updates display",
+    "Real click required; moving slice invalidates old candidate; first response has reference-only feedback",
+    "First response and review survive reload",
+    "Ordered appearance, change and disappearance trace records",
+    "Same-person T1/T2 comparison shares world coordinates",
+    "Different subjects navigate independently, without false spatial matching",
+    "Held-out case, reference masking and pre-answer hint lock",
+    "Next transfer question re-locks every hint after feedback",
+    "Rapid subject selection rejects stale volume completion",
+    "History and acquisition/native geometry provenance",
+    "Original atlas, MRI planes and 3D split still work",
+    "390px mobile retains reading controls without horizontal overflow",
+    "No uncaught browser errors"
+  ],
+  "errors": []
+}

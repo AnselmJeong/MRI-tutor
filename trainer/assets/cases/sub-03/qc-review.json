@@ -1,0 +1,33 @@
+{
+  "status": "developer-visual-qc",
+  "reviewer": "Codex visual inspection (not specialist clinical adjudication)",
+  "reviewed_at": "2026-09-06",
+  "orientation": "scanner RAS header and voxel ordering checked; radiological browser display. Independent physical left-right fiducial unavailable.",
+  "intensity_integrity": true,
+  "notes": [
+    "Native T1 SHA-256 matches source; native T1/T2 stored as int16; aligned T2 float32.",
+    "T1/T2 three-plane visual contacts inspected at central brain landmarks: ventricles, callosum, thalamus and cortical outline show no gross displacement. No claim of zero local registration error.",
+    "Left and right individual reference outlines inspected in sagittal/coronal/axial contacts. Localization plausible; automatic local boundaries are not clinically approved.",
+    "Cingulate and insula folding, hippocampal/amygdala transitions, caudate tail and pallidal boundaries retain partial-volume/segmentation uncertainty.",
+    "Ventricle labels exclude separate inferior-lateral-ventricle class. Callosum labels cover central segmentation only."
+  ],
+  "evidence": [
+    "qa/sub-03-registration.png",
+    "qa/sub-03-labels.png",
+    "qa/sub-03-labels-right.png"
+  ],
+  "reviewed_hashes": {
+    "T1w": "3e99aaa0c726caaff7ed916ad70758051a747cd20bedc548f16844a6a69a2034",
+    "T2w": "8315e840b94eef55c7144762d6dc7195645abdcdb03bbfd9346db4e4fc08c2ad",
+    "labels": "67e4be43affeb1954e8dcc632e4f172a127ee147777b5e54a00ee53bf80684cc"
+  },
+  "label_review_logs": [
+    {
+      "role": "developer",
+      "decision": "reference-only",
+      "side": "all",
+      "scope": "Three-plane left/right localization review; no voxelwise boundary adjudication",
+      "expert_approved": false
+    }
+  ]
+}

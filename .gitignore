@@ -1,0 +1,25 @@
+# Preserve the user's textbook, extraction work and first prototype locally.
+/*.pdf
+/demo/
+/extraction/
+/feasibility/
+/.playwright-mcp/
+node_modules/
+__pycache__/
+*.pyc
+.DS_Store
+*.part
+# Full original download staging (the app's selected intact T1/T2 files are tracked).
+/trainer/assets/cases/source/
+# Incidental QA failures; keep the intentional passing evidence.
+/trainer/qa/browser-failure.png
+/trainer/qa/individual-initial.png
+# Earlier PDF/prototype scripts depend on the preserved, private local source folders.
+/scripts/build_demo_data.py
+/scripts/build_extraction_review.py
+/scripts/color_regions.py
+/scripts/extract_sample.py
+/scripts/extraction-requirements.txt
+/scripts/first_pair_regions.py
+/scripts/validate_demo_regions.py
+/scripts/validate_extraction.py

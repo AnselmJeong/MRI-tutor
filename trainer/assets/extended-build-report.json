@@ -1,0 +1,27 @@
+{
+  "groups": 42,
+  "meshes": 80,
+  "anchors_inside": 80,
+  "spaces": {
+    "mni": "MNI152NLin2009cAsym; CAT12 registered atlas derivatives and CANLab AAN conversion",
+    "allen": "ICBM2009b nonlinear symmetric; own matched MRI, never mixed with 2009c"
+  },
+  "overlay": "Each ROI retains a separate native-resolution mask; overlap is preserved. Global picking uses smallest physical ROI at overlapping voxels, active ROI takes precedence.",
+  "mesh": "Unsmooth marching cubes, exact same native mask as MRI overlay.",
+  "AAN_limit": "Boundaries approximate: CANLab conversion assumes original template identity. Paired masks split at world x=0; supplied PTg_L contained bilateral voxels (222), retaining 109 left voxels. PTg_R contains 113 right voxels.",
+  "sources": {
+    "/Volumes/Aquatope/_DEV_/MRI-Tutor/trainer/assets/extended/../training-labels.nii.gz": "425648a9a51e6993b8ae922ec1d41ea6033e88ad218770e7495dfb54c3c42589",
+    "/Volumes/Aquatope/_DEV_/MRI-Tutor/trainer/assets/extended/aal3.nii.gz": "e328d2ad2d3625e2e18f0028de9693ee418ea23af25e6ef30d6fc50d11554d8a",
+    "/Volumes/Aquatope/_DEV_/MRI-Tutor/trainer/assets/extended/cobra.nii.gz": "fea66ea642ba18b79a58574e137d2aa401892a24b3c88646dc83ef622af83a00",
+    "/Volumes/Aquatope/_DEV_/MRI-Tutor/trainer/assets/extended/julichbrain3.nii.gz": "6c1cde3e27cbf09884df2285c54807263c1b52a117ccec563d7d1f57eb5a4d75",
+    "/Volumes/Aquatope/_DEV_/MRI-Tutor/trainer/assets/extended/aan/AAN_LC_L_MNI152_1mm_v2p0_MNI152NLin2009cAsym.nii.gz": "bba0ed1f86f2adbecd6d6e3307f43630cbe0a770755dfb1a4e84237e637243cc",
+    "/Volumes/Aquatope/_DEV_/MRI-Tutor/trainer/assets/extended/aan/AAN_LC_R_MNI152_1mm_v2p0_MNI152NLin2009cAsym.nii.gz": "5689e9da1b9a7f3162b17610db100077c4a732a48413a5596f2991afedf49bf8",
+    "/Volumes/Aquatope/_DEV_/MRI-Tutor/trainer/assets/extended/aan/AAN_PTg_L_MNI152_1mm_v2p0_MNI152NLin2009cAsym.nii.gz": "197e900668d43dfa24dcbf6a40a5f6ac73157f7b300037b66fcd7567362a2a73",
+    "/Volumes/Aquatope/_DEV_/MRI-Tutor/trainer/assets/extended/aan/AAN_PTg_R_MNI152_1mm_v2p0_MNI152NLin2009cAsym.nii.gz": "be527b2e4197f2d37521ab79ecd52783a347de19d674fac2a84b3a34c78254cb",
+    "/Volumes/Aquatope/_DEV_/MRI-Tutor/trainer/assets/extended/aan/AAN_PAG_MNI152_1mm_v2p0_MNI152NLin2009cAsym.nii.gz": "afe7e5ccdb1bc092196f317396055fa66204168652514bc269e0117fb7cc6907",
+    "/Volumes/Aquatope/_DEV_/MRI-Tutor/trainer/assets/extended/aan/AAN_DR_MNI152_1mm_v2p0_MNI152NLin2009cAsym.nii.gz": "dd2cc962cf4e507b72acfecf74847b572ccac8850bb4092fbea430bd624e1d55",
+    "/Volumes/Aquatope/_DEV_/MRI-Tutor/trainer/assets/extended/aan/AAN_MnR_MNI152_1mm_v2p0_MNI152NLin2009cAsym.nii.gz": "22310b05b033710bdb37845859be6b1b4328f175783687890604fd677ae775e0",
+    "/Volumes/Aquatope/_DEV_/MRI-Tutor/trainer/assets/extended/thalamic_nuclei.nii.gz": "1b8e621c26632d88ed0890e20197c9041ac480f044d07bc9a5a9e33f554e1fb4",
+    "/Volumes/Aquatope/_DEV_/MRI-Tutor/trainer/assets/extended/allen/AllenAtlas.nii.gz": "9bfb87ae3be25f1724b209fbfd3b2a02edc379922363a3721946cc7841719d28"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "results": [
+    {
+      "case": "sub-01",
+      "labels_checked": 20,
+      "tasks": 11,
+      "hashes": "passed",
+      "affines": "passed",
+      "native_intensity": "passed",
+      "hemispheres": "left relative to right in scanner RAS, not sign-of-x assumption"
+    },
+    {
+      "case": "sub-02",
+      "labels_checked": 20,
+      "tasks": 11,
+      "hashes": "passed",
+      "affines": "passed",
+      "native_intensity": "passed",
+      "hemispheres": "left relative to right in scanner RAS, not sign-of-x assumption"
+    },
+    {
+      "case": "sub-03",
+      "labels_checked": 20,
+      "tasks": 11,
+      "hashes": "passed",
+      "affines": "passed",
+      "native_intensity": "passed",
+      "hemispheres": "left relative to right in scanner RAS, not sign-of-x assumption"
+    },
+    {
+      "case": "sub-04",
+      "labels_checked": 20,
+      "tasks": 11,
+      "hashes": "passed",
+      "affines": "passed",
+      "native_intensity": "passed",
+      "hemispheres": "left relative to right in scanner RAS, not sign-of-x assumption"
+    }
+  ],
+  "clinical_scoreable_tasks": 0
+}

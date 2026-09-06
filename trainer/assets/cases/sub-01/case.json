@@ -1,0 +1,2088 @@
+{
+  "id": "sub-01",
+  "title": "사례 01",
+  "cohort": "learning",
+  "kind": "individual",
+  "source_project": "StudyForrest",
+  "source_url": "https://doi.gin.g-node.org/10.12751/g-node.zdwr8e/",
+  "license": "PDDL",
+  "diagnosis": null,
+  "diagnosis_note": "연구 참여자의 구조영상. 진단·병변·정상 판정은 이 앱에서 부여하지 않음.",
+  "reference_space": "sub-01:T1-native-world",
+  "sequences": {
+    "T1w": {
+      "shape": [
+        384,
+        384,
+        274
+      ],
+      "voxel_size": [
+        0.6666666865348816,
+        0.6666666865348816,
+        0.7000055909156799
+      ],
+      "dtype": "int16",
+      "affine": [
+        [
+          -0.04504255950450897,
+          0.07981664687395096,
+          0.6933593153953552,
+          -99.03291320800781
+        ],
+        [
+          -0.6558665037155151,
+          -0.11548271775245667,
+          -0.032318130135536194,
+          182.73703002929688
+        ],
+        [
+          -0.11070125550031662,
+          0.6517188549041748,
+          -0.09064307063817978,
+          -119.07606506347656
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "orientation": "PSR",
+      "range": [
+        0,
+        277
+      ],
+      "display_range": [
+        0,
+        78
+      ],
+      "bounds": [
+        [
+          -116.28421349823475,
+          -121.5125713199377,
+          -186.2202042043209
+        ],
+        [
+          120.82395564764738,
+          182.73703002929688,
+          130.5322563648224
+        ]
+      ],
+      "sha256": "06d22728884f865d87196d86611a72eb865b0521de6243350b3511ce52a1f84e",
+      "bytes": 13702811,
+      "url": "assets/cases/sub-01/T1w.nii.gz",
+      "sequence": "T1w",
+      "field_strength_t": 3,
+      "acquisition_voxel_size": [
+        0.7,
+        0.7,
+        0.7
+      ],
+      "acquisition_source": "https://studyforrest.org/data.html",
+      "native": {
+        "shape": [
+          384,
+          384,
+          274
+        ],
+        "voxel_size": [
+          0.6666666865348816,
+          0.6666666865348816,
+          0.7000055909156799
+        ],
+        "dtype": "int16",
+        "affine": [
+          [
+            -0.04504255950450897,
+            0.07981664687395096,
+            0.6933593153953552,
+            -99.03291320800781
+          ],
+          [
+            -0.6558665037155151,
+            -0.11548271775245667,
+            -0.032318130135536194,
+            182.73703002929688
+          ],
+          [
+            -0.11070125550031662,
+            0.6517188549041748,
+            -0.09064307063817978,
+            -119.07606506347656
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "orientation": "PSR",
+        "range": [
+          0,
+          277
+        ],
+        "display_range": [
+          0,
+          78
+        ],
+        "bounds": [
+          [
+            -116.28421349823475,
+            -121.5125713199377,
+            -186.2202042043209
+          ],
+          [
+            120.82395564764738,
+            182.73703002929688,
+            130.5322563648224
+          ]
+        ],
+        "sha256": "06d22728884f865d87196d86611a72eb865b0521de6243350b3511ce52a1f84e",
+        "bytes": 13702811
+      },
+      "source": {
+        "url": "https://datapub.fz-juelich.de/studyforrest/studyforrest/structural/sub-01/anat/sub-01_T1w.nii.gz",
+        "pointer_url": "https://raw.githubusercontent.com/psychoinformatics-de/studyforrest-data-structural/master/sub-01/anat/sub-01_T1w.nii.gz",
+        "annex_hash": "21c3c396e96b308b021b5754afa5518c",
+        "annex_algorithm": "md5",
+        "bytes": 13702811,
+        "sha256": "06d22728884f865d87196d86611a72eb865b0521de6243350b3511ce52a1f84e"
+      },
+      "preprocessing": [
+        "public source defacing; original intensity retained"
+      ]
+    },
+    "T2w": {
+      "shape": [
+        384,
+        384,
+        274
+      ],
+      "voxel_size": [
+        0.6666666865348816,
+        0.6666666865348816,
+        0.7000055909156799
+      ],
+      "dtype": "float32",
+      "affine": [
+        [
+          -0.04504255950450897,
+          0.07981665432453156,
+          0.693359375,
+          -99.03291320800781
+        ],
+        [
+          -0.6558665037155151,
+          -0.11548271775245667,
+          -0.032318130135536194,
+          182.73703002929688
+        ],
+        [
+          -0.11070125550031662,
+          0.6517188549041748,
+          -0.09064307808876038,
+          -119.07606506347656
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "orientation": "PSR",
+      "range": [
+        0,
+        186.48898315429688
+      ],
+      "display_range": [
+        0,
+        130.4276885986328
+      ],
+      "bounds": [
+        [
+          -116.28421349823475,
+          -121.5125713199377,
+          -186.2202062383294
+        ],
+        [
+          120.82397477328777,
+          182.73703002929688,
+          130.5322563648224
+        ]
+      ],
+      "sha256": "de5a38fa2e7999018af5963ed0f10061f3b84fcce6126c212a3e32c989d0c1a1",
+      "bytes": 59978537,
+      "url": "assets/cases/sub-01/T2w-in-T1.nii.gz",
+      "sequence": "T2w",
+      "field_strength_t": 3,
+      "acquisition_voxel_size": [
+        0.7,
+        0.7,
+        0.7
+      ],
+      "acquisition_source": "https://studyforrest.org/data.html",
+      "native": {
+        "shape": [
+          384,
+          384,
+          274
+        ],
+        "voxel_size": [
+          0.6666666865348816,
+          0.6666666865348816,
+          0.7000055909156799
+        ],
+        "dtype": "int16",
+        "affine": [
+          [
+            -0.04504255950450897,
+            0.07981664687395096,
+            0.6933593153953552,
+            -99.03291320800781
+          ],
+          [
+            -0.6558665037155151,
+            -0.11548271775245667,
+            -0.032318130135536194,
+            182.73703002929688
+          ],
+          [
+            -0.11070125550031662,
+            0.6517188549041748,
+            -0.09064307063817978,
+            -119.07606506347656
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "orientation": "PSR",
+        "range": [
+          0,
+          200
+        ],
+        "display_range": [
+          0,
+          138
+        ],
+        "bounds": [
+          [
+            -116.28421349823475,
+            -121.5125713199377,
+            -186.2202042043209
+          ],
+          [
+            120.82395564764738,
+            182.73703002929688,
+            130.5322563648224
+          ]
+        ],
+        "sha256": "666a94b7f1561a3bc0d962cf7c007e267f6ab25e90929f6bcf6230829ac72ff6",
+        "bytes": 14086334
+      },
+      "source": {
+        "url": "https://datapub.fz-juelich.de/studyforrest/studyforrest/structural/sub-01/anat/sub-01_T2w.nii.gz",
+        "pointer_url": "https://raw.githubusercontent.com/psychoinformatics-de/studyforrest-data-structural/master/sub-01/anat/sub-01_T2w.nii.gz",
+        "annex_hash": "5fa90bf3281454cb3c58434cf7979b42",
+        "annex_algorithm": "md5",
+        "bytes": 14086334,
+        "sha256": "666a94b7f1561a3bc0d962cf7c007e267f6ab25e90929f6bcf6230829ac72ff6"
+      },
+      "preprocessing": [
+        "public source defacing; original intensity retained",
+        "one linear interpolation from intact native T2 to native T1 grid; float32"
+      ]
+    }
+  },
+  "registration": {
+    "method": "SimpleITK 2.5.6 Euler3D rigid / Mattes MI 50 bins / fixed subject brain mask / seeded 12% sampling / levels 4,2,1",
+    "transform_file": "T2-to-T1.tfm",
+    "transform_direction": "fixed T1 LPS physical point to moving T2 LPS sampling point",
+    "parameters": [
+      -0.0016011117649985293,
+      0.006477854620450687,
+      -0.006409538478371381,
+      -0.44337690010459074,
+      0.14423296745108877,
+      0.4198093365327875
+    ],
+    "fixed_parameters": [
+      -2.2698776560551295,
+      -30.612227832267536,
+      -27.8439676671981,
+      0
+    ],
+    "initial_full_metric": -0.2232963559072422,
+    "final_sampled_metric": -0.2662168274428825,
+    "stop": "RegularStepGradientDescentOptimizerv4: Step too small after 12 iterations. Current step (0.000976562) is less than minimum step (0.001).",
+    "resampling": "one linear interpolation from intact native T2 to native T1 grid; float32",
+    "review_status": "developer-visual-qc",
+    "clinical_boundary_review": "not-performed"
+  },
+  "segmentation": {
+    "url": "assets/cases/sub-01/labels-reference.nii.gz",
+    "sha256": "548bef40ca9668d75d43a8e1870c972e4491cfd23683409d939e3a22c273751f",
+    "source_sha256": "f1a933d67e88b081cd904fba1d76f3055cc39e37b337582bb064f17cbff99cec",
+    "rawavg_sha256": "86228d34be5f4588d3623043e3d2b7a0e58f286e73cca7a9e08fa3934ce0691e",
+    "rawavg_to_T1_RAS": [
+      [
+        1.0001082645650698,
+        0.000032632766565995897,
+        -0.000054848465195152935,
+        0.07160912137459263
+      ],
+      [
+        -0.000042732136456433145,
+        1.0000002222473927,
+        -0.0001073079618416628,
+        -0.767493589996171
+      ],
+      [
+        0.00002652347960395776,
+        0.00010864160432999537,
+        1.000001813183258,
+        0.6145943681679569
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "foreground_exact_agreement": 1,
+    "foreground_correlation": 1,
+    "review_status": "reference-only",
+    "expert_review": false,
+    "labels": [
+      {
+        "id": 1,
+        "structure": "hippocampus",
+        "side": "left",
+        "source_ids": [
+          17
+        ],
+        "anchor": [
+          -19.017340588735806,
+          25.898392191448266,
+          -17.418508097190923
+        ],
+        "bounds": [
+          [
+            -31.01939030162086,
+            -7.102926541304825,
+            -25.417626350206902
+          ],
+          [
+            -5.015477993780081,
+            37.898954590422164,
+            -5.421452428928532
+          ]
+        ],
+        "voxel_count": 4191,
+        "space": "sub-01:T1-native-world",
+        "source": "StudyForrest FreeSurfer 5.3 aparc+aseg",
+        "generation": "automatic-subject-segmentation",
+        "transform_history": [
+          "FreeSurfer conformed voxel to scanner RAS",
+          "voxel-order-matched rawavg RAS to distributed T1 RAS header correction"
+        ],
+        "review_status": "reference-only",
+        "boundary_uncertainty": "해마 전체의 자동 분할입니다. 세부 아영역이나 편도체와의 한 복셀 경계는 정답이 아닙니다.",
+        "scoreable": false,
+        "review_log": [
+          {
+            "role": "developer",
+            "decision": "reference-only",
+            "side": "all",
+            "scope": "Three-plane left/right localization review; no voxelwise boundary adjudication",
+            "expert_approved": false
+          }
+        ],
+        "case_id": "sub-01",
+        "reference_space": "sub-01:T1-native-world",
+        "observability": {
+          "T1w": "reference-localization; visible boundaries require individual inspection",
+          "T2w": "reference-localization on rigidly aligned T2; visibility not certified"
+        }
+      },
+      {
+        "id": 2,
+        "structure": "hippocampus",
+        "side": "right",
+        "source_ids": [
+          53
+        ],
+        "anchor": [
+          24.987692048663178,
+          25.897048606852536,
+          -22.41734983211026
+        ],
+        "bounds": [
+          [
+            10.984617855639783,
+            -9.104143567670604,
+            -28.41630031188268
+          ],
+          [
+            36.98885925424918,
+            36.89778157799569,
+            -6.420875791240292
+          ]
+        ],
+        "voxel_count": 4441,
+        "space": "sub-01:T1-native-world",
+        "source": "StudyForrest FreeSurfer 5.3 aparc+aseg",
+        "generation": "automatic-subject-segmentation",
+        "transform_history": [
+          "FreeSurfer conformed voxel to scanner RAS",
+          "voxel-order-matched rawavg RAS to distributed T1 RAS header correction"
+        ],
+        "review_status": "reference-only",
+        "boundary_uncertainty": "해마 전체의 자동 분할입니다. 세부 아영역이나 편도체와의 한 복셀 경계는 정답이 아닙니다.",
+        "scoreable": false,
+        "review_log": [
+          {
+            "role": "developer",
+            "decision": "reference-only",
+            "side": "all",
+            "scope": "Three-plane left/right localization review; no voxelwise boundary adjudication",
+            "expert_approved": false
+          }
+        ],
+        "case_id": "sub-01",
+        "reference_space": "sub-01:T1-native-world",
+        "observability": {
+          "T1w": "reference-localization; visible boundaries require individual inspection",
+          "T2w": "reference-localization on rigidly aligned T2; visibility not certified"
+        }
+      },
+      {
+        "id": 3,
+        "structure": "amygdala",
+        "side": "left",
+        "source_ids": [
+          18
+        ],
+        "anchor": [
+          -15.016921172611148,
+          33.89768754419279,
+          -12.417523983234759
+        ],
+        "bounds": [
+          [
+            -25.01787071528929,
+            24.897598070207195,
+            -24.417054790557344
+          ],
+          [
+            -6.01569583604595,
+            45.89891459365634,
+            -7.4174091214267435
+          ]
+        ],
+        "voxel_count": 1915,
+        "space": "sub-01:T1-native-world",
+        "source": "StudyForrest FreeSurfer 5.3 aparc+aseg",
+        "generation": "automatic-subject-segmentation",
+        "transform_history": [
+          "FreeSurfer conformed voxel to scanner RAS",
+          "voxel-order-matched rawavg RAS to distributed T1 RAS header correction"
+        ],
+        "review_status": "reference-only",
+        "boundary_uncertainty": "해마와의 이행부와 피질 인접 경계는 T1/T2에서 항상 명확하지 않습니다. 자동 분할과 다르다는 이유로 오답 처리하지 않습니다.",
+        "scoreable": false,
+        "review_log": [
+          {
+            "role": "developer",
+            "decision": "reference-only",
+            "side": "all",
+            "scope": "Three-plane left/right localization review; no voxelwise boundary adjudication",
+            "expert_approved": false
+          }
+        ],
+        "case_id": "sub-01",
+        "reference_space": "sub-01:T1-native-world",
+        "observability": {
+          "T1w": "reference-localization; visible boundaries require individual inspection",
+          "T2w": "reference-localization on rigidly aligned T2; visibility not certified"
+        }
+      },
+      {
+        "id": 4,
+        "structure": "amygdala",
+        "side": "right",
+        "source_ids": [
+          54
+        ],
+        "anchor": [
+          25.987972415750235,
+          37.896580803689716,
+          -18.416012416090695
+        ],
+        "bounds": [
+          [
+            12.986293656206001,
+            22.895996488186768,
+            -29.416164322856304
+          ],
+          [
+            32.988861343903054,
+            44.89722695220061,
+            -10.41662124047285
+          ]
+        ],
+        "voxel_count": 2215,
+        "space": "sub-01:T1-native-world",
+        "source": "StudyForrest FreeSurfer 5.3 aparc+aseg",
+        "generation": "automatic-subject-segmentation",
+        "transform_history": [
+          "FreeSurfer conformed voxel to scanner RAS",
+          "voxel-order-matched rawavg RAS to distributed T1 RAS header correction"
+        ],
+        "review_status": "reference-only",
+        "boundary_uncertainty": "해마와의 이행부와 피질 인접 경계는 T1/T2에서 항상 명확하지 않습니다. 자동 분할과 다르다는 이유로 오답 처리하지 않습니다.",
+        "scoreable": false,
+        "review_log": [
+          {
+            "role": "developer",
+            "decision": "reference-only",
+            "side": "all",
+            "scope": "Three-plane left/right localization review; no voxelwise boundary adjudication",
+            "expert_approved": false
+          }
+        ],
+        "case_id": "sub-01",
+        "reference_space": "sub-01:T1-native-world",
+        "observability": {
+          "T1w": "reference-localization; visible boundaries require individual inspection",
+          "T2w": "reference-localization on rigidly aligned T2; visibility not certified"
+        }
+      },
+      {
+        "id": 5,
+        "structure": "caudate",
+        "side": "left",
+        "source_ids": [
+          11
+        ],
+        "anchor": [
+          -2.0165823621923096,
+          44.89434621150792,
+          13.584061636751187
+        ],
+        "bounds": [
+          [
+            -16.01948789316569,
+            -2.104535173922102,
+            0.5837393941308591
+          ],
+          [
+            3.9845261391642595,
+            61.89520941659947,
+            25.58253752758769
+          ]
+        ],
+        "voxel_count": 4640,
+        "space": "sub-01:T1-native-world",
+        "source": "StudyForrest FreeSurfer 5.3 aparc+aseg",
+        "generation": "automatic-subject-segmentation",
+        "transform_history": [
+          "FreeSurfer conformed voxel to scanner RAS",
+          "voxel-order-matched rawavg RAS to distributed T1 RAS header correction"
+        ],
+        "review_status": "reference-only",
+        "boundary_uncertainty": "머리·몸통보다 가느다란 꼬리의 경계가 어렵습니다. 자동 분할의 끝이 실제 조직의 끝과 일치한다고 가정하지 않습니다.",
+        "scoreable": false,
+        "review_log": [
+          {
+            "role": "developer",
+            "decision": "reference-only",
+            "side": "all",
+            "scope": "Three-plane left/right localization review; no voxelwise boundary adjudication",
+            "expert_approved": false
+          }
+        ],
+        "case_id": "sub-01",
+        "reference_space": "sub-01:T1-native-world",
+        "observability": {
+          "T1w": "reference-localization; visible boundaries require individual inspection",
+          "T2w": "reference-localization on rigidly aligned T2; visibility not certified"
+        }
+      },
+      {
+        "id": 6,
+        "structure": "caudate",
+        "side": "right",
+        "source_ids": [
+          50
+        ],
+        "anchor": [
+          18.98565605537813,
+          43.893448573525404,
+          13.584509973246455
+        ],
+        "bounds": [
+          [
+            8.984698836340243,
+            -3.106201923213902,
+            -0.41621700032897024
+          ],
+          [
+            25.98701366141114,
+            58.894183854566876,
+            23.584145929927303
+          ]
+        ],
+        "voxel_count": 4884,
+        "space": "sub-01:T1-native-world",
+        "source": "StudyForrest FreeSurfer 5.3 aparc+aseg",
+        "generation": "automatic-subject-segmentation",
+        "transform_history": [
+          "FreeSurfer conformed voxel to scanner RAS",
+          "voxel-order-matched rawavg RAS to distributed T1 RAS header correction"
+        ],
+        "review_status": "reference-only",
+        "boundary_uncertainty": "머리·몸통보다 가느다란 꼬리의 경계가 어렵습니다. 자동 분할의 끝이 실제 조직의 끝과 일치한다고 가정하지 않습니다.",
+        "scoreable": false,
+        "review_log": [
+          {
+            "role": "developer",
+            "decision": "reference-only",
+            "side": "all",
+            "scope": "Three-plane left/right localization review; no voxelwise boundary adjudication",
+            "expert_approved": false
+          }
+        ],
+        "case_id": "sub-01",
+        "reference_space": "sub-01:T1-native-world",
+        "observability": {
+          "T1w": "reference-localization; visible boundaries require individual inspection",
+          "T2w": "reference-localization on rigidly aligned T2; visibility not certified"
+        }
+      },
+      {
+        "id": 7,
+        "structure": "putamen",
+        "side": "left",
+        "source_ids": [
+          12
+        ],
+        "anchor": [
+          -14.017364256326346,
+          43.89593154146854,
+          3.5836171627092597
+        ],
+        "bounds": [
+          [
+            -30.019670212173565,
+            10.896004786186495,
+            -10.418546306472606
+          ],
+          [
+            -4.015898863666337,
+            55.895721996898544,
+            17.58326013371061
+          ]
+        ],
+        "voxel_count": 7693,
+        "space": "sub-01:T1-native-world",
+        "source": "StudyForrest FreeSurfer 5.3 aparc+aseg",
+        "generation": "automatic-subject-segmentation",
+        "transform_history": [
+          "FreeSurfer conformed voxel to scanner RAS",
+          "voxel-order-matched rawavg RAS to distributed T1 RAS header correction"
+        ],
+        "review_status": "reference-only",
+        "boundary_uncertainty": "조가비핵과 담창구의 대비는 시퀀스·위치에 따라 다릅니다. 보이지 않는 경계를 임의로 확정하지 않습니다.",
+        "scoreable": false,
+        "review_log": [
+          {
+            "role": "developer",
+            "decision": "reference-only",
+            "side": "all",
+            "scope": "Three-plane left/right localization review; no voxelwise boundary adjudication",
+            "expert_approved": false
+          }
+        ],
+        "case_id": "sub-01",
+        "reference_space": "sub-01:T1-native-world",
+        "observability": {
+          "T1w": "reference-localization; visible boundaries require individual inspection",
+          "T2w": "reference-localization on rigidly aligned T2; visibility not certified"
+        }
+      },
+      {
+        "id": 8,
+        "structure": "putamen",
+        "side": "right",
+        "source_ids": [
+          51
+        ],
+        "anchor": [
+          27.987134792643445,
+          40.89424321710274,
+          2.5844034256011383
+        ],
+        "bounds": [
+          [
+            15.986066863176802,
+            6.894575323036705,
+            -15.417668651827213
+          ],
+          [
+            39.98846928805756,
+            52.89474010735023,
+            13.583497853269535
+          ]
+        ],
+        "voxel_count": 7170,
+        "space": "sub-01:T1-native-world",
+        "source": "StudyForrest FreeSurfer 5.3 aparc+aseg",
+        "generation": "automatic-subject-segmentation",
+        "transform_history": [
+          "FreeSurfer conformed voxel to scanner RAS",
+          "voxel-order-matched rawavg RAS to distributed T1 RAS header correction"
+        ],
+        "review_status": "reference-only",
+        "boundary_uncertainty": "조가비핵과 담창구의 대비는 시퀀스·위치에 따라 다릅니다. 보이지 않는 경계를 임의로 확정하지 않습니다.",
+        "scoreable": false,
+        "review_log": [
+          {
+            "role": "developer",
+            "decision": "reference-only",
+            "side": "all",
+            "scope": "Three-plane left/right localization review; no voxelwise boundary adjudication",
+            "expert_approved": false
+          }
+        ],
+        "case_id": "sub-01",
+        "reference_space": "sub-01:T1-native-world",
+        "observability": {
+          "T1w": "reference-localization; visible boundaries require individual inspection",
+          "T2w": "reference-localization on rigidly aligned T2; visibility not certified"
+        }
+      },
+      {
+        "id": 9,
+        "structure": "pallidum",
+        "side": "left",
+        "source_ids": [
+          13
+        ],
+        "anchor": [
+          -10.017071262065969,
+          32.896186044056066,
+          -0.41747897940754797
+        ],
+        "bounds": [
+          [
+            -22.018671766455896,
+            16.89639327872773,
+            -7.419195547454478
+          ],
+          [
+            -3.015953891485765,
+            43.895911593382806,
+            12.582191324101657
+          ]
+        ],
+        "voxel_count": 2506,
+        "space": "sub-01:T1-native-world",
+        "source": "StudyForrest FreeSurfer 5.3 aparc+aseg",
+        "generation": "automatic-subject-segmentation",
+        "transform_history": [
+          "FreeSurfer conformed voxel to scanner RAS",
+          "voxel-order-matched rawavg RAS to distributed T1 RAS header correction"
+        ],
+        "review_status": "reference-only",
+        "boundary_uncertainty": "개인 MRI에서 내·외절을 구분해 채점하지 않습니다. 3D 참고 모델의 내·외절 구획과 개인 전체 분할을 구별하세요.",
+        "scoreable": false,
+        "review_log": [
+          {
+            "role": "developer",
+            "decision": "reference-only",
+            "side": "all",
+            "scope": "Three-plane left/right localization review; no voxelwise boundary adjudication",
+            "expert_approved": false
+          }
+        ],
+        "case_id": "sub-01",
+        "reference_space": "sub-01:T1-native-world",
+        "observability": {
+          "T1w": "reference-localization; visible boundaries require individual inspection",
+          "T2w": "reference-localization on rigidly aligned T2; visibility not certified"
+        }
+      },
+      {
+        "id": 10,
+        "structure": "pallidum",
+        "side": "right",
+        "source_ids": [
+          52
+        ],
+        "anchor": [
+          21.986346333473904,
+          29.894925003750956,
+          -1.4169579512841182
+        ],
+        "bounds": [
+          [
+            14.985709433799329,
+            10.894941296425742,
+            -11.417847301844645
+          ],
+          [
+            29.987366993020544,
+            40.89531425948914,
+            8.582813185392098
+          ]
+        ],
+        "voxel_count": 3042,
+        "space": "sub-01:T1-native-world",
+        "source": "StudyForrest FreeSurfer 5.3 aparc+aseg",
+        "generation": "automatic-subject-segmentation",
+        "transform_history": [
+          "FreeSurfer conformed voxel to scanner RAS",
+          "voxel-order-matched rawavg RAS to distributed T1 RAS header correction"
+        ],
+        "review_status": "reference-only",
+        "boundary_uncertainty": "개인 MRI에서 내·외절을 구분해 채점하지 않습니다. 3D 참고 모델의 내·외절 구획과 개인 전체 분할을 구별하세요.",
+        "scoreable": false,
+        "review_log": [
+          {
+            "role": "developer",
+            "decision": "reference-only",
+            "side": "all",
+            "scope": "Three-plane left/right localization review; no voxelwise boundary adjudication",
+            "expert_approved": false
+          }
+        ],
+        "case_id": "sub-01",
+        "reference_space": "sub-01:T1-native-world",
+        "observability": {
+          "T1w": "reference-localization; visible boundaries require individual inspection",
+          "T2w": "reference-localization on rigidly aligned T2; visibility not certified"
+        }
+      },
+      {
+        "id": 11,
+        "structure": "thalamus",
+        "side": "left",
+        "source_ids": [
+          10
+        ],
+        "anchor": [
+          -8.017682630217479,
+          10.895878489124698,
+          1.5801871312989846
+        ],
+        "bounds": [
+          [
+            -21.018691415199072,
+            -2.1033540062468035,
+            -13.421029268884325
+          ],
+          [
+            4.984103081805841,
+            31.89496463875426,
+            14.581619899970192
+          ]
+        ],
+        "voxel_count": 9162,
+        "space": "sub-01:T1-native-world",
+        "source": "StudyForrest FreeSurfer 5.3 aparc+aseg",
+        "generation": "automatic-subject-segmentation",
+        "transform_history": [
+          "FreeSurfer conformed voxel to scanner RAS",
+          "voxel-order-matched rawavg RAS to distributed T1 RAS header correction"
+        ],
+        "review_status": "reference-only",
+        "boundary_uncertainty": "시상 전체 자동 분할입니다. 개별 시상핵은 이 T1/T2에서 직접 식별하는 정답 영역이 아닙니다.",
+        "scoreable": false,
+        "review_log": [
+          {
+            "role": "developer",
+            "decision": "reference-only",
+            "side": "all",
+            "scope": "Three-plane left/right localization review; no voxelwise boundary adjudication",
+            "expert_approved": false
+          }
+        ],
+        "case_id": "sub-01",
+        "reference_space": "sub-01:T1-native-world",
+        "observability": {
+          "T1w": "reference-localization; visible boundaries require individual inspection",
+          "T2w": "reference-localization on rigidly aligned T2; visibility not certified"
+        }
+      },
+      {
+        "id": 12,
+        "structure": "thalamus",
+        "side": "right",
+        "source_ids": [
+          49
+        ],
+        "anchor": [
+          12.984708539711804,
+          12.895089168561526,
+          0.5809596837696773
+        ],
+        "bounds": [
+          [
+            2.9835173893589513,
+            -3.1044007216114693,
+            -16.420108770546193
+          ],
+          [
+            24.98618536668127,
+            30.89545897824277,
+            13.581962951589077
+          ]
+        ],
+        "voxel_count": 8086,
+        "space": "sub-01:T1-native-world",
+        "source": "StudyForrest FreeSurfer 5.3 aparc+aseg",
+        "generation": "automatic-subject-segmentation",
+        "transform_history": [
+          "FreeSurfer conformed voxel to scanner RAS",
+          "voxel-order-matched rawavg RAS to distributed T1 RAS header correction"
+        ],
+        "review_status": "reference-only",
+        "boundary_uncertainty": "시상 전체 자동 분할입니다. 개별 시상핵은 이 T1/T2에서 직접 식별하는 정답 영역이 아닙니다.",
+        "scoreable": false,
+        "review_log": [
+          {
+            "role": "developer",
+            "decision": "reference-only",
+            "side": "all",
+            "scope": "Three-plane left/right localization review; no voxelwise boundary adjudication",
+            "expert_approved": false
+          }
+        ],
+        "case_id": "sub-01",
+        "reference_space": "sub-01:T1-native-world",
+        "observability": {
+          "T1w": "reference-localization; visible boundaries require individual inspection",
+          "T2w": "reference-localization on rigidly aligned T2; visibility not certified"
+        }
+      },
+      {
+        "id": 13,
+        "structure": "insula",
+        "side": "left",
+        "source_ids": [
+          1035
+        ],
+        "anchor": [
+          -25.018028956535744,
+          49.897047360991195,
+          -2.4160331779056747
+        ],
+        "bounds": [
+          [
+            -36.0206926026581,
+            -2.1042370191578073,
+            -17.416388013774224
+          ],
+          [
+            -16.01683625460302,
+            58.89574202527115,
+            19.58432624519034
+          ]
+        ],
+        "voxel_count": 6713,
+        "space": "sub-01:T1-native-world",
+        "source": "StudyForrest FreeSurfer 5.3 aparc+aseg",
+        "generation": "automatic-subject-segmentation",
+        "transform_history": [
+          "FreeSurfer conformed voxel to scanner RAS",
+          "voxel-order-matched rawavg RAS to distributed T1 RAS header correction"
+        ],
+        "review_status": "reference-only",
+        "boundary_uncertainty": "고랑 주변 피질 경계의 자동 추출 오차와 부분용적 효과가 있습니다.",
+        "scoreable": false,
+        "review_log": [
+          {
+            "role": "developer",
+            "decision": "reference-only",
+            "side": "all",
+            "scope": "Three-plane left/right localization review; no voxelwise boundary adjudication",
+            "expert_approved": false
+          }
+        ],
+        "case_id": "sub-01",
+        "reference_space": "sub-01:T1-native-world",
+        "observability": {
+          "T1w": "reference-localization; visible boundaries require individual inspection",
+          "T2w": "reference-localization on rigidly aligned T2; visibility not certified"
+        }
+      },
+      {
+        "id": 14,
+        "structure": "insula",
+        "side": "right",
+        "source_ids": [
+          2035
+        ],
+        "anchor": [
+          40.98915443598176,
+          42.89476136127669,
+          -7.4150519919640345
+        ],
+        "bounds": [
+          [
+            8.985661150373417,
+            -4.106178540270392,
+            -20.415263015454713
+          ],
+          [
+            47.98964900410097,
+            54.895620970936676,
+            17.585132152756685
+          ]
+        ],
+        "voxel_count": 6928,
+        "space": "sub-01:T1-native-world",
+        "source": "StudyForrest FreeSurfer 5.3 aparc+aseg",
+        "generation": "automatic-subject-segmentation",
+        "transform_history": [
+          "FreeSurfer conformed voxel to scanner RAS",
+          "voxel-order-matched rawavg RAS to distributed T1 RAS header correction"
+        ],
+        "review_status": "reference-only",
+        "boundary_uncertainty": "고랑 주변 피질 경계의 자동 추출 오차와 부분용적 효과가 있습니다.",
+        "scoreable": false,
+        "review_log": [
+          {
+            "role": "developer",
+            "decision": "reference-only",
+            "side": "all",
+            "scope": "Three-plane left/right localization review; no voxelwise boundary adjudication",
+            "expert_approved": false
+          }
+        ],
+        "case_id": "sub-01",
+        "reference_space": "sub-01:T1-native-world",
+        "observability": {
+          "T1w": "reference-localization; visible boundaries require individual inspection",
+          "T2w": "reference-localization on rigidly aligned T2; visibility not certified"
+        }
+      },
+      {
+        "id": 15,
+        "structure": "cingulate",
+        "side": "left",
+        "source_ids": [
+          1002,
+          1010,
+          1023,
+          1026
+        ],
+        "anchor": [
+          7.983334108300113,
+          52.89113203967614,
+          39.58524171675102
+        ],
+        "bounds": [
+          [
+            -18.01895440255484,
+            -26.104798795201035,
+            -16.421988477425657
+          ],
+          [
+            9.986143629393254,
+            85.89386836245521,
+            45.58001276447716
+          ]
+        ],
+        "voxel_count": 11524,
+        "space": "sub-01:T1-native-world",
+        "source": "StudyForrest FreeSurfer 5.3 aparc+aseg",
+        "generation": "automatic-subject-segmentation",
+        "transform_history": [
+          "FreeSurfer conformed voxel to scanner RAS",
+          "voxel-order-matched rawavg RAS to distributed T1 RAS header correction"
+        ],
+        "review_status": "reference-only",
+        "boundary_uncertainty": "FreeSurfer의 앞·뒤·isthmus 구획을 합친 참고 영역입니다. dACC 같은 기능적 경계는 아닙니다.",
+        "scoreable": false,
+        "review_log": [
+          {
+            "role": "developer",
+            "decision": "reference-only",
+            "side": "all",
+            "scope": "Three-plane left/right localization review; no voxelwise boundary adjudication",
+            "expert_approved": false
+          }
+        ],
+        "case_id": "sub-01",
+        "reference_space": "sub-01:T1-native-world",
+        "observability": {
+          "T1w": "reference-localization; visible boundaries require individual inspection",
+          "T2w": "reference-localization on rigidly aligned T2; visibility not certified"
+        }
+      },
+      {
+        "id": 16,
+        "structure": "cingulate",
+        "side": "right",
+        "source_ids": [
+          2002,
+          2010,
+          2023,
+          2026
+        ],
+        "anchor": [
+          10.983398839491102,
+          39.891321294705364,
+          36.58390349170045
+        ],
+        "bounds": [
+          [
+            0.9821693073394897,
+            -29.10507708216649,
+            -19.42130412776801
+          ],
+          [
+            21.98649990108308,
+            76.89397352649243,
+            42.582501478440456
+          ]
+        ],
+        "voxel_count": 9485,
+        "space": "sub-01:T1-native-world",
+        "source": "StudyForrest FreeSurfer 5.3 aparc+aseg",
+        "generation": "automatic-subject-segmentation",
+        "transform_history": [
+          "FreeSurfer conformed voxel to scanner RAS",
+          "voxel-order-matched rawavg RAS to distributed T1 RAS header correction"
+        ],
+        "review_status": "reference-only",
+        "boundary_uncertainty": "FreeSurfer의 앞·뒤·isthmus 구획을 합친 참고 영역입니다. dACC 같은 기능적 경계는 아닙니다.",
+        "scoreable": false,
+        "review_log": [
+          {
+            "role": "developer",
+            "decision": "reference-only",
+            "side": "all",
+            "scope": "Three-plane left/right localization review; no voxelwise boundary adjudication",
+            "expert_approved": false
+          }
+        ],
+        "case_id": "sub-01",
+        "reference_space": "sub-01:T1-native-world",
+        "observability": {
+          "T1w": "reference-localization; visible boundaries require individual inspection",
+          "T2w": "reference-localization on rigidly aligned T2; visibility not certified"
+        }
+      },
+      {
+        "id": 17,
+        "structure": "ventricle",
+        "side": "left",
+        "source_ids": [
+          4
+        ],
+        "anchor": [
+          1.9829232842227782,
+          24.893632003511613,
+          18.582003368188808
+        ],
+        "bounds": [
+          [
+            -28.01971855824158,
+            -17.10282455095725,
+            -15.423362484664892
+          ],
+          [
+            6.984576332886036,
+            61.89463022292199,
+            25.582399784981206
+          ]
+        ],
+        "voxel_count": 5691,
+        "space": "sub-01:T1-native-world",
+        "source": "StudyForrest FreeSurfer 5.3 aparc+aseg",
+        "generation": "automatic-subject-segmentation",
+        "transform_history": [
+          "FreeSurfer conformed voxel to scanner RAS",
+          "voxel-order-matched rawavg RAS to distributed T1 RAS header correction"
+        ],
+        "review_status": "reference-only",
+        "boundary_uncertainty": "제공 라벨은 FreeSurfer lateral-ventricle 구획이며 inferior-lateral-ventricle 별도 라벨은 포함하지 않습니다. 측두각 전체 범위의 정답으로 사용하지 않습니다.",
+        "scoreable": false,
+        "review_log": [
+          {
+            "role": "developer",
+            "decision": "reference-only",
+            "side": "all",
+            "scope": "Three-plane left/right localization review; no voxelwise boundary adjudication",
+            "expert_approved": false
+          }
+        ],
+        "case_id": "sub-01",
+        "reference_space": "sub-01:T1-native-world",
+        "observability": {
+          "T1w": "reference-localization; visible boundaries require individual inspection",
+          "T2w": "reference-localization on rigidly aligned T2; visibility not certified"
+        }
+      },
+      {
+        "id": 18,
+        "structure": "ventricle",
+        "side": "right",
+        "source_ids": [
+          43
+        ],
+        "anchor": [
+          20.98465856052428,
+          -10.105582391315565,
+          3.5786780323988836
+        ],
+        "bounds": [
+          [
+            6.98327999616825,
+            -22.104555342560985,
+            -20.422455743931536
+          ],
+          [
+            32.987293509321844,
+            57.8937543408947,
+            23.584010749931934
+          ]
+        ],
+        "voxel_count": 7980,
+        "space": "sub-01:T1-native-world",
+        "source": "StudyForrest FreeSurfer 5.3 aparc+aseg",
+        "generation": "automatic-subject-segmentation",
+        "transform_history": [
+          "FreeSurfer conformed voxel to scanner RAS",
+          "voxel-order-matched rawavg RAS to distributed T1 RAS header correction"
+        ],
+        "review_status": "reference-only",
+        "boundary_uncertainty": "제공 라벨은 FreeSurfer lateral-ventricle 구획이며 inferior-lateral-ventricle 별도 라벨은 포함하지 않습니다. 측두각 전체 범위의 정답으로 사용하지 않습니다.",
+        "scoreable": false,
+        "review_log": [
+          {
+            "role": "developer",
+            "decision": "reference-only",
+            "side": "all",
+            "scope": "Three-plane left/right localization review; no voxelwise boundary adjudication",
+            "expert_approved": false
+          }
+        ],
+        "case_id": "sub-01",
+        "reference_space": "sub-01:T1-native-world",
+        "observability": {
+          "T1w": "reference-localization; visible boundaries require individual inspection",
+          "T2w": "reference-localization on rigidly aligned T2; visibility not certified"
+        }
+      },
+      {
+        "id": 19,
+        "structure": "callosum",
+        "side": "midline",
+        "source_ids": [
+          251,
+          252,
+          253,
+          254,
+          255
+        ],
+        "anchor": [
+          7.983732584999402,
+          39.89273699657494,
+          24.58380287830842
+        ],
+        "bounds": [
+          [
+            -0.017820092498965323,
+            -15.10475042263323,
+            -8.421793909668992
+          ],
+          [
+            10.98541095065137,
+            62.89411782350416,
+            28.582723327443745
+          ]
+        ],
+        "voxel_count": 3788,
+        "space": "sub-01:T1-native-world",
+        "source": "StudyForrest FreeSurfer 5.3 aparc+aseg",
+        "generation": "automatic-subject-segmentation",
+        "transform_history": [
+          "FreeSurfer conformed voxel to scanner RAS",
+          "voxel-order-matched rawavg RAS to distributed T1 RAS header correction"
+        ],
+        "review_status": "reference-only",
+        "boundary_uncertainty": "FreeSurfer의 중앙 뇌량 5구획을 합친 라벨입니다. 가쪽 모든 뇌량 섬유의 범위를 나타내지 않습니다.",
+        "scoreable": false,
+        "review_log": [
+          {
+            "role": "developer",
+            "decision": "reference-only",
+            "side": "all",
+            "scope": "Three-plane left/right localization review; no voxelwise boundary adjudication",
+            "expert_approved": false
+          }
+        ],
+        "case_id": "sub-01",
+        "reference_space": "sub-01:T1-native-world",
+        "observability": {
+          "T1w": "reference-localization; visible boundaries require individual inspection",
+          "T2w": "reference-localization on rigidly aligned T2; visibility not certified"
+        }
+      },
+      {
+        "id": 20,
+        "structure": "third-ventricle",
+        "side": "midline",
+        "source_ids": [
+          14
+        ],
+        "anchor": [
+          4.984497441839437,
+          27.895757996798395,
+          -2.417627917007678
+        ],
+        "bounds": [
+          [
+            1.983400195434342,
+            1.8960709981304547,
+            -11.419626040038992
+          ],
+          [
+            6.985598984268222,
+            40.895934293416275,
+            5.582685557712011
+          ]
+        ],
+        "voxel_count": 616,
+        "space": "sub-01:T1-native-world",
+        "source": "StudyForrest FreeSurfer 5.3 aparc+aseg",
+        "generation": "automatic-subject-segmentation",
+        "transform_history": [
+          "FreeSurfer conformed voxel to scanner RAS",
+          "voxel-order-matched rawavg RAS to distributed T1 RAS header correction"
+        ],
+        "review_status": "reference-only",
+        "boundary_uncertainty": "automatic-segmentation; local boundaries require expert review",
+        "scoreable": false,
+        "review_log": [
+          {
+            "role": "developer",
+            "decision": "reference-only",
+            "side": "all",
+            "scope": "Three-plane left/right localization review; no voxelwise boundary adjudication",
+            "expert_approved": false
+          }
+        ],
+        "case_id": "sub-01",
+        "reference_space": "sub-01:T1-native-world",
+        "observability": {
+          "T1w": "reference-localization; visible boundaries require individual inspection",
+          "T2w": "reference-localization on rigidly aligned T2; visibility not certified"
+        }
+      }
+    ]
+  },
+  "initial_point": [
+    2.4835129547471624,
+    11.895483828843112,
+    1.080573407534331
+  ],
+  "qc": {
+    "status": "developer-visual-qc",
+    "reviewer": "Codex visual inspection (not specialist clinical adjudication)",
+    "reviewed_at": "2026-09-06",
+    "orientation": "scanner RAS header and voxel ordering checked; radiological browser display. Independent physical left-right fiducial unavailable.",
+    "intensity_integrity": true,
+    "notes": [
+      "Native T1 SHA-256 matches source; native T1/T2 stored as int16; aligned T2 float32.",
+      "T1/T2 three-plane visual contacts inspected at central brain landmarks: ventricles, callosum, thalamus and cortical outline show no gross displacement. No claim of zero local registration error.",
+      "Left and right individual reference outlines inspected in sagittal/coronal/axial contacts. Localization plausible; automatic local boundaries are not clinically approved.",
+      "Cingulate and insula folding, hippocampal/amygdala transitions, caudate tail and pallidal boundaries retain partial-volume/segmentation uncertainty.",
+      "Ventricle labels exclude separate inferior-lateral-ventricle class. Callosum labels cover central segmentation only."
+    ],
+    "evidence": [
+      "qa/sub-01-registration.png",
+      "qa/sub-01-labels.png",
+      "qa/sub-01-labels-right.png"
+    ],
+    "reviewed_hashes": {
+      "T1w": "06d22728884f865d87196d86611a72eb865b0521de6243350b3511ce52a1f84e",
+      "T2w": "de5a38fa2e7999018af5963ed0f10061f3b84fcce6126c212a3e32c989d0c1a1",
+      "labels": "548bef40ca9668d75d43a8e1870c972e4491cfd23683409d939e3a22c273751f"
+    },
+    "label_review_logs": [
+      {
+        "role": "developer",
+        "decision": "reference-only",
+        "side": "all",
+        "scope": "Three-plane left/right localization review; no voxelwise boundary adjudication",
+        "expert_approved": false
+      }
+    ]
+  },
+  "tasks": [
+    {
+      "id": "sub-01:hippocampus:observation-v1",
+      "case_id": "sub-01",
+      "target": "hippocampus",
+      "reference_space": "sub-01:T1-native-world",
+      "planes": [
+        "axial",
+        "coronal",
+        "sagittal"
+      ],
+      "sequences": [
+        "T1w",
+        "T2w"
+      ],
+      "landmarks": [
+        "측뇌실 측두각의 CSF",
+        "해마곁이랑과 내측 측두엽",
+        "앞쪽 편도체와의 이행"
+      ],
+      "scoring": "reference-feedback-only",
+      "status": "enabled-observation",
+      "scoreable": false,
+      "allowed_region": null,
+      "reference_regions": [
+        {
+          "id": 1,
+          "side": "left",
+          "reference_extent": [
+            [
+              -31.01939030162086,
+              -7.102926541304825,
+              -25.417626350206902
+            ],
+            [
+              -5.015477993780081,
+              37.898954590422164,
+              -5.421452428928532
+            ]
+          ],
+          "range_status": "automatic-extent-not-validated-presence-key"
+        },
+        {
+          "id": 2,
+          "side": "right",
+          "reference_extent": [
+            [
+              10.984617855639783,
+              -9.104143567670604,
+              -28.41630031188268
+            ],
+            [
+              36.98885925424918,
+              36.89778157799569,
+              -6.420875791240292
+            ]
+          ],
+          "range_status": "automatic-extent-not-validated-presence-key"
+        }
+      ],
+      "absence_answer_key": null,
+      "unidentifiable_answer_key": null,
+      "boundary_uncertainty": "해마 전체의 자동 분할입니다. 세부 아영역이나 편도체와의 한 복셀 경계는 정답이 아닙니다.",
+      "source": "https://radiologyassistant.nl/neuroradiology/brain/anatomy"
+    },
+    {
+      "id": "sub-01:amygdala:observation-v1",
+      "case_id": "sub-01",
+      "target": "amygdala",
+      "reference_space": "sub-01:T1-native-world",
+      "planes": [
+        "axial",
+        "coronal",
+        "sagittal"
+      ],
+      "sequences": [
+        "T1w",
+        "T2w"
+      ],
+      "landmarks": [
+        "해마 머리",
+        "내측 측두엽 앞부분",
+        "측두각"
+      ],
+      "scoring": "reference-feedback-only",
+      "status": "enabled-observation",
+      "scoreable": false,
+      "allowed_region": null,
+      "reference_regions": [
+        {
+          "id": 3,
+          "side": "left",
+          "reference_extent": [
+            [
+              -25.01787071528929,
+              24.897598070207195,
+              -24.417054790557344
+            ],
+            [
+              -6.01569583604595,
+              45.89891459365634,
+              -7.4174091214267435
+            ]
+          ],
+          "range_status": "automatic-extent-not-validated-presence-key"
+        },
+        {
+          "id": 4,
+          "side": "right",
+          "reference_extent": [
+            [
+              12.986293656206001,
+              22.895996488186768,
+              -29.416164322856304
+            ],
+            [
+              32.988861343903054,
+              44.89722695220061,
+              -10.41662124047285
+            ]
+          ],
+          "range_status": "automatic-extent-not-validated-presence-key"
+        }
+      ],
+      "absence_answer_key": null,
+      "unidentifiable_answer_key": null,
+      "boundary_uncertainty": "해마와의 이행부와 피질 인접 경계는 T1/T2에서 항상 명확하지 않습니다. 자동 분할과 다르다는 이유로 오답 처리하지 않습니다.",
+      "source": "https://radiologyassistant.nl/neuroradiology/brain/anatomy"
+    },
+    {
+      "id": "sub-01:caudate:observation-v1",
+      "case_id": "sub-01",
+      "target": "caudate",
+      "reference_space": "sub-01:T1-native-world",
+      "planes": [
+        "axial",
+        "coronal",
+        "sagittal"
+      ],
+      "sequences": [
+        "T1w",
+        "T2w"
+      ],
+      "landmarks": [
+        "측뇌실 전각",
+        "내포 앞다리",
+        "조가비핵"
+      ],
+      "scoring": "reference-feedback-only",
+      "status": "enabled-observation",
+      "scoreable": false,
+      "allowed_region": null,
+      "reference_regions": [
+        {
+          "id": 5,
+          "side": "left",
+          "reference_extent": [
+            [
+              -16.01948789316569,
+              -2.104535173922102,
+              0.5837393941308591
+            ],
+            [
+              3.9845261391642595,
+              61.89520941659947,
+              25.58253752758769
+            ]
+          ],
+          "range_status": "automatic-extent-not-validated-presence-key"
+        },
+        {
+          "id": 6,
+          "side": "right",
+          "reference_extent": [
+            [
+              8.984698836340243,
+              -3.106201923213902,
+              -0.41621700032897024
+            ],
+            [
+              25.98701366141114,
+              58.894183854566876,
+              23.584145929927303
+            ]
+          ],
+          "range_status": "automatic-extent-not-validated-presence-key"
+        }
+      ],
+      "absence_answer_key": null,
+      "unidentifiable_answer_key": null,
+      "boundary_uncertainty": "머리·몸통보다 가느다란 꼬리의 경계가 어렵습니다. 자동 분할의 끝이 실제 조직의 끝과 일치한다고 가정하지 않습니다.",
+      "source": "https://nba.uth.tmc.edu/neuroanatomy/L5/Lab05p20_index.html"
+    },
+    {
+      "id": "sub-01:putamen:observation-v1",
+      "case_id": "sub-01",
+      "target": "putamen",
+      "reference_space": "sub-01:T1-native-world",
+      "planes": [
+        "axial",
+        "coronal",
+        "sagittal"
+      ],
+      "sequences": [
+        "T1w",
+        "T2w"
+      ],
+      "landmarks": [
+        "담창구(창백핵)",
+        "내포",
+        "뇌섬엽 방향"
+      ],
+      "scoring": "reference-feedback-only",
+      "status": "enabled-observation",
+      "scoreable": false,
+      "allowed_region": null,
+      "reference_regions": [
+        {
+          "id": 7,
+          "side": "left",
+          "reference_extent": [
+            [
+              -30.019670212173565,
+              10.896004786186495,
+              -10.418546306472606
+            ],
+            [
+              -4.015898863666337,
+              55.895721996898544,
+              17.58326013371061
+            ]
+          ],
+          "range_status": "automatic-extent-not-validated-presence-key"
+        },
+        {
+          "id": 8,
+          "side": "right",
+          "reference_extent": [
+            [
+              15.986066863176802,
+              6.894575323036705,
+              -15.417668651827213
+            ],
+            [
+              39.98846928805756,
+              52.89474010735023,
+              13.583497853269535
+            ]
+          ],
+          "range_status": "automatic-extent-not-validated-presence-key"
+        }
+      ],
+      "absence_answer_key": null,
+      "unidentifiable_answer_key": null,
+      "boundary_uncertainty": "조가비핵과 담창구의 대비는 시퀀스·위치에 따라 다릅니다. 보이지 않는 경계를 임의로 확정하지 않습니다.",
+      "source": "https://nba.uth.tmc.edu/neuroanatomy/L5/Lab05p20_index.html"
+    },
+    {
+      "id": "sub-01:pallidum:observation-v1",
+      "case_id": "sub-01",
+      "target": "pallidum",
+      "reference_space": "sub-01:T1-native-world",
+      "planes": [
+        "axial",
+        "coronal",
+        "sagittal"
+      ],
+      "sequences": [
+        "T1w",
+        "T2w"
+      ],
+      "landmarks": [
+        "조가비핵의 안쪽",
+        "내포",
+        "렌즈핵"
+      ],
+      "scoring": "reference-feedback-only",
+      "status": "enabled-observation",
+      "scoreable": false,
+      "allowed_region": null,
+      "reference_regions": [
+        {
+          "id": 9,
+          "side": "left",
+          "reference_extent": [
+            [
+              -22.018671766455896,
+              16.89639327872773,
+              -7.419195547454478
+            ],
+            [
+              -3.015953891485765,
+              43.895911593382806,
+              12.582191324101657
+            ]
+          ],
+          "range_status": "automatic-extent-not-validated-presence-key"
+        },
+        {
+          "id": 10,
+          "side": "right",
+          "reference_extent": [
+            [
+              14.985709433799329,
+              10.894941296425742,
+              -11.417847301844645
+            ],
+            [
+              29.987366993020544,
+              40.89531425948914,
+              8.582813185392098
+            ]
+          ],
+          "range_status": "automatic-extent-not-validated-presence-key"
+        }
+      ],
+      "absence_answer_key": null,
+      "unidentifiable_answer_key": null,
+      "boundary_uncertainty": "개인 MRI에서 내·외절을 구분해 채점하지 않습니다. 3D 참고 모델의 내·외절 구획과 개인 전체 분할을 구별하세요.",
+      "source": "https://nba.uth.tmc.edu/neuroanatomy/L5/Lab05p20_index.html"
+    },
+    {
+      "id": "sub-01:thalamus:observation-v1",
+      "case_id": "sub-01",
+      "target": "thalamus",
+      "reference_space": "sub-01:T1-native-world",
+      "planes": [
+        "axial",
+        "coronal",
+        "sagittal"
+      ],
+      "sequences": [
+        "T1w",
+        "T2w"
+      ],
+      "landmarks": [
+        "제3뇌실",
+        "내포 뒷다리",
+        "미상핵 뒤쪽"
+      ],
+      "scoring": "reference-feedback-only",
+      "status": "enabled-observation",
+      "scoreable": false,
+      "allowed_region": null,
+      "reference_regions": [
+        {
+          "id": 11,
+          "side": "left",
+          "reference_extent": [
+            [
+              -21.018691415199072,
+              -2.1033540062468035,
+              -13.421029268884325
+            ],
+            [
+              4.984103081805841,
+              31.89496463875426,
+              14.581619899970192
+            ]
+          ],
+          "range_status": "automatic-extent-not-validated-presence-key"
+        },
+        {
+          "id": 12,
+          "side": "right",
+          "reference_extent": [
+            [
+              2.9835173893589513,
+              -3.1044007216114693,
+              -16.420108770546193
+            ],
+            [
+              24.98618536668127,
+              30.89545897824277,
+              13.581962951589077
+            ]
+          ],
+          "range_status": "automatic-extent-not-validated-presence-key"
+        }
+      ],
+      "absence_answer_key": null,
+      "unidentifiable_answer_key": null,
+      "boundary_uncertainty": "시상 전체 자동 분할입니다. 개별 시상핵은 이 T1/T2에서 직접 식별하는 정답 영역이 아닙니다.",
+      "source": "https://nba.uth.tmc.edu/neuroanatomy/L5/Lab05p20_index.html"
+    },
+    {
+      "id": "sub-01:insula:observation-v1",
+      "case_id": "sub-01",
+      "target": "insula",
+      "reference_space": "sub-01:T1-native-world",
+      "planes": [
+        "axial",
+        "coronal",
+        "sagittal"
+      ],
+      "sequences": [
+        "T1w",
+        "T2w"
+      ],
+      "landmarks": [
+        "외측고랑",
+        "덮개(operculum)",
+        "조가비핵보다 가쪽"
+      ],
+      "scoring": "reference-feedback-only",
+      "status": "enabled-observation",
+      "scoreable": false,
+      "allowed_region": null,
+      "reference_regions": [
+        {
+          "id": 13,
+          "side": "left",
+          "reference_extent": [
+            [
+              -36.0206926026581,
+              -2.1042370191578073,
+              -17.416388013774224
+            ],
+            [
+              -16.01683625460302,
+              58.89574202527115,
+              19.58432624519034
+            ]
+          ],
+          "range_status": "automatic-extent-not-validated-presence-key"
+        },
+        {
+          "id": 14,
+          "side": "right",
+          "reference_extent": [
+            [
+              8.985661150373417,
+              -4.106178540270392,
+              -20.415263015454713
+            ],
+            [
+              47.98964900410097,
+              54.895620970936676,
+              17.585132152756685
+            ]
+          ],
+          "range_status": "automatic-extent-not-validated-presence-key"
+        }
+      ],
+      "absence_answer_key": null,
+      "unidentifiable_answer_key": null,
+      "boundary_uncertainty": "고랑 주변 피질 경계의 자동 추출 오차와 부분용적 효과가 있습니다.",
+      "source": "https://radiologyassistant.nl/neuroradiology/brain/anatomy"
+    },
+    {
+      "id": "sub-01:cingulate:observation-v1",
+      "case_id": "sub-01",
+      "target": "cingulate",
+      "reference_space": "sub-01:T1-native-world",
+      "planes": [
+        "axial",
+        "coronal",
+        "sagittal"
+      ],
+      "sequences": [
+        "T1w",
+        "T2w"
+      ],
+      "landmarks": [
+        "뇌량",
+        "뇌량고랑",
+        "대상고랑"
+      ],
+      "scoring": "reference-feedback-only",
+      "status": "enabled-observation",
+      "scoreable": false,
+      "allowed_region": null,
+      "reference_regions": [
+        {
+          "id": 15,
+          "side": "left",
+          "reference_extent": [
+            [
+              -18.01895440255484,
+              -26.104798795201035,
+              -16.421988477425657
+            ],
+            [
+              9.986143629393254,
+              85.89386836245521,
+              45.58001276447716
+            ]
+          ],
+          "range_status": "automatic-extent-not-validated-presence-key"
+        },
+        {
+          "id": 16,
+          "side": "right",
+          "reference_extent": [
+            [
+              0.9821693073394897,
+              -29.10507708216649,
+              -19.42130412776801
+            ],
+            [
+              21.98649990108308,
+              76.89397352649243,
+              42.582501478440456
+            ]
+          ],
+          "range_status": "automatic-extent-not-validated-presence-key"
+        }
+      ],
+      "absence_answer_key": null,
+      "unidentifiable_answer_key": null,
+      "boundary_uncertainty": "FreeSurfer의 앞·뒤·isthmus 구획을 합친 참고 영역입니다. dACC 같은 기능적 경계는 아닙니다.",
+      "source": "https://radiologyassistant.nl/neuroradiology/brain/anatomy"
+    },
+    {
+      "id": "sub-01:ventricle:observation-v1",
+      "case_id": "sub-01",
+      "target": "ventricle",
+      "reference_space": "sub-01:T1-native-world",
+      "planes": [
+        "axial",
+        "coronal",
+        "sagittal"
+      ],
+      "sequences": [
+        "T1w",
+        "T2w"
+      ],
+      "landmarks": [
+        "전각과 미상핵",
+        "몸통과 뇌량",
+        "측두각과 해마"
+      ],
+      "scoring": "reference-feedback-only",
+      "status": "enabled-observation",
+      "scoreable": false,
+      "allowed_region": null,
+      "reference_regions": [
+        {
+          "id": 17,
+          "side": "left",
+          "reference_extent": [
+            [
+              -28.01971855824158,
+              -17.10282455095725,
+              -15.423362484664892
+            ],
+            [
+              6.984576332886036,
+              61.89463022292199,
+              25.582399784981206
+            ]
+          ],
+          "range_status": "automatic-extent-not-validated-presence-key"
+        },
+        {
+          "id": 18,
+          "side": "right",
+          "reference_extent": [
+            [
+              6.98327999616825,
+              -22.104555342560985,
+              -20.422455743931536
+            ],
+            [
+              32.987293509321844,
+              57.8937543408947,
+              23.584010749931934
+            ]
+          ],
+          "range_status": "automatic-extent-not-validated-presence-key"
+        }
+      ],
+      "absence_answer_key": null,
+      "unidentifiable_answer_key": null,
+      "boundary_uncertainty": "제공 라벨은 FreeSurfer lateral-ventricle 구획이며 inferior-lateral-ventricle 별도 라벨은 포함하지 않습니다. 측두각 전체 범위의 정답으로 사용하지 않습니다.",
+      "source": "https://radiologyassistant.nl/neuroradiology/brain/anatomy"
+    },
+    {
+      "id": "sub-01:callosum:observation-v1",
+      "case_id": "sub-01",
+      "target": "callosum",
+      "reference_space": "sub-01:T1-native-world",
+      "planes": [
+        "axial",
+        "coronal",
+        "sagittal"
+      ],
+      "sequences": [
+        "T1w",
+        "T2w"
+      ],
+      "landmarks": [
+        "무릎(genu)",
+        "몸통(body)",
+        "팽대부(splenium)"
+      ],
+      "scoring": "reference-feedback-only",
+      "status": "enabled-observation",
+      "scoreable": false,
+      "allowed_region": null,
+      "reference_regions": [
+        {
+          "id": 19,
+          "side": "midline",
+          "reference_extent": [
+            [
+              -0.017820092498965323,
+              -15.10475042263323,
+              -8.421793909668992
+            ],
+            [
+              10.98541095065137,
+              62.89411782350416,
+              28.582723327443745
+            ]
+          ],
+          "range_status": "automatic-extent-not-validated-presence-key"
+        }
+      ],
+      "absence_answer_key": null,
+      "unidentifiable_answer_key": null,
+      "boundary_uncertainty": "FreeSurfer의 중앙 뇌량 5구획을 합친 라벨입니다. 가쪽 모든 뇌량 섬유의 범위를 나타내지 않습니다.",
+      "source": "https://radiologyassistant.nl/neuroradiology/brain/anatomy"
+    },
+    {
+      "id": "sub-01:internal-capsule:observation-v1",
+      "case_id": "sub-01",
+      "target": "internal-capsule",
+      "reference_space": "sub-01:T1-native-world",
+      "planes": [
+        "axial",
+        "coronal",
+        "sagittal"
+      ],
+      "sequences": [
+        "T1w",
+        "T2w"
+      ],
+      "landmarks": [
+        "미상핵·시상(안쪽)",
+        "렌즈핵(가쪽)",
+        "앞다리–무릎–뒷다리"
+      ],
+      "scoring": "reference-feedback-only",
+      "status": "enabled-observation",
+      "scoreable": false,
+      "allowed_region": null,
+      "reference_regions": [],
+      "absence_answer_key": null,
+      "unidentifiable_answer_key": null,
+      "boundary_uncertainty": "이 사례에는 검수된 내포 전용 라벨이 없습니다. 주변 구조를 통해 관찰하고 색 경계나 위치 점수는 제공하지 않습니다.",
+      "source": "https://nba.uth.tmc.edu/neuroanatomy/L10/Lab10p01_index.html"
+    }
+  ]
+}

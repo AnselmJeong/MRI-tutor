@@ -1,0 +1,8 @@
+*.nii.gz binary
+*.mgz binary
+*.png binary
+*.tfm text eol=lf
+*.js text eol=lf
+*.mjs text eol=lf
+*.py text eol=lf
+*.md text eol=lf

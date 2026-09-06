@@ -1,0 +1,14 @@
+{
+  "source": "Pauli, Nili & Tyszka (2018); NiiVue CIT168 derivatives",
+  "license": "CC BY 4.0",
+  "coordinates": "RAS millimeters; x<0 is patient left",
+  "label_derivative": "Most probable label with quantized probability >=64/255; educational display threshold, not a biological boundary",
+  "brain_surface": "Filled binary mask at positive-intensity percentile 12, Gaussian sigma 0.7 voxels, marching cubes step 2; contextual outer surface, not a cortical parcellation",
+  "region_surface": "Marching cubes of same binary labels as the MRI overlay; no smoothing",
+  "regions": 32,
+  "verified_inside_anchors": 32,
+  "source_hashes": {
+    "CIT168.nii.gz": "18649d3a1ce27e920c3794ac3493504611b9f369a082d69406d594222c52dbce",
+    "CIT168toMNI152-2009c_T1w_brain.nii.gz": "d665acefc59bd0f16f26fa64cc53ee71833e04abf13e8e2e17e3a5be2a38d2bb"
+  }
+}

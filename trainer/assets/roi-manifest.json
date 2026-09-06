@@ -1,0 +1,1635 @@
+[
+  {
+    "key": "cit0",
+    "src": "../training-labels.nii.gz",
+    "left": [
+      1
+    ],
+    "right": [
+      2
+    ],
+    "space": "mni",
+    "midline": false,
+    "group": 0,
+    "entries": [
+      {
+        "id": 1,
+        "anchor": [
+          -23.0,
+          10.0,
+          -4.0
+        ],
+        "voxels": 7810,
+        "url": "assets/rois/1.nii.gz",
+        "space": "mni",
+        "midline": false
+      },
+      {
+        "id": 2,
+        "anchor": [
+          23.0,
+          11.0,
+          -2.0
+        ],
+        "voxels": 7783,
+        "url": "assets/rois/2.nii.gz",
+        "space": "mni",
+        "midline": false
+      }
+    ]
+  },
+  {
+    "key": "cit1",
+    "src": "../training-labels.nii.gz",
+    "left": [
+      3
+    ],
+    "right": [
+      4
+    ],
+    "space": "mni",
+    "midline": false,
+    "group": 1,
+    "entries": [
+      {
+        "id": 3,
+        "anchor": [
+          -12.0,
+          16.0,
+          4.0
+        ],
+        "voxels": 6901,
+        "url": "assets/rois/3.nii.gz",
+        "space": "mni",
+        "midline": false
+      },
+      {
+        "id": 4,
+        "anchor": [
+          10.0,
+          17.0,
+          -1.0
+        ],
+        "voxels": 7068,
+        "url": "assets/rois/4.nii.gz",
+        "space": "mni",
+        "midline": false
+      }
+    ]
+  },
+  {
+    "key": "cit2",
+    "src": "../training-labels.nii.gz",
+    "left": [
+      5
+    ],
+    "right": [
+      6
+    ],
+    "space": "mni",
+    "midline": false,
+    "group": 2,
+    "entries": [
+      {
+        "id": 5,
+        "anchor": [
+          -12.0,
+          8.0,
+          -12.0
+        ],
+        "voxels": 580,
+        "url": "assets/rois/5.nii.gz",
+        "space": "mni",
+        "midline": false
+      },
+      {
+        "id": 6,
+        "anchor": [
+          10.0,
+          9.0,
+          -11.0
+        ],
+        "voxels": 600,
+        "url": "assets/rois/6.nii.gz",
+        "space": "mni",
+        "midline": false
+      }
+    ]
+  },
+  {
+    "key": "cit3",
+    "src": "../training-labels.nii.gz",
+    "left": [
+      7
+    ],
+    "right": [
+      8
+    ],
+    "space": "mni",
+    "midline": false,
+    "group": 3,
+    "entries": [
+      {
+        "id": 7,
+        "anchor": [
+          -6.0,
+          2.0,
+          0.0
+        ],
+        "voxels": 242,
+        "url": "assets/rois/7.nii.gz",
+        "space": "mni",
+        "midline": false
+      },
+      {
+        "id": 8,
+        "anchor": [
+          5.0,
+          3.0,
+          -1.0
+        ],
+        "voxels": 248,
+        "url": "assets/rois/8.nii.gz",
+        "space": "mni",
+        "midline": false
+      }
+    ]
+  },
+  {
+    "key": "cit4",
+    "src": "../training-labels.nii.gz",
+    "left": [
+      9
+    ],
+    "right": [
+      10
+    ],
+    "space": "mni",
+    "midline": false,
+    "group": 4,
+    "entries": [
+      {
+        "id": 9,
+        "anchor": [
+          -16.0,
+          3.0,
+          0.0
+        ],
+        "voxels": 1201,
+        "url": "assets/rois/9.nii.gz",
+        "space": "mni",
+        "midline": false
+      },
+      {
+        "id": 10,
+        "anchor": [
+          16.0,
+          4.0,
+          0.0
+        ],
+        "voxels": 1177,
+        "url": "assets/rois/10.nii.gz",
+        "space": "mni",
+        "midline": false
+      }
+    ]
+  },
+  {
+    "key": "cit5",
+    "src": "../training-labels.nii.gz",
+    "left": [
+      11
+    ],
+    "right": [
+      12
+    ],
+    "space": "mni",
+    "midline": false,
+    "group": 5,
+    "entries": [
+      {
+        "id": 11,
+        "anchor": [
+          -18.0,
+          -5.0,
+          -4.0
+        ],
+        "voxels": 621,
+        "url": "assets/rois/11.nii.gz",
+        "space": "mni",
+        "midline": false
+      },
+      {
+        "id": 12,
+        "anchor": [
+          15.0,
+          -2.0,
+          -5.0
+        ],
+        "voxels": 636,
+        "url": "assets/rois/12.nii.gz",
+        "space": "mni",
+        "midline": false
+      }
+    ]
+  },
+  {
+    "key": "cit6",
+    "src": "../training-labels.nii.gz",
+    "left": [
+      13
+    ],
+    "right": [
+      14
+    ],
+    "space": "mni",
+    "midline": false,
+    "group": 6,
+    "entries": [
+      {
+        "id": 13,
+        "anchor": [
+          -9.0,
+          -16.0,
+          -12.0
+        ],
+        "voxels": 189,
+        "url": "assets/rois/13.nii.gz",
+        "space": "mni",
+        "midline": false
+      },
+      {
+        "id": 14,
+        "anchor": [
+          6.0,
+          -20.0,
+          -18.0
+        ],
+        "voxels": 186,
+        "url": "assets/rois/14.nii.gz",
+        "space": "mni",
+        "midline": false
+      }
+    ]
+  },
+  {
+    "key": "cit7",
+    "src": "../training-labels.nii.gz",
+    "left": [
+      15
+    ],
+    "right": [
+      16
+    ],
+    "space": "mni",
+    "midline": false,
+    "group": 7,
+    "entries": [
+      {
+        "id": 15,
+        "anchor": [
+          -5.0,
+          -20.0,
+          -10.0
+        ],
+        "voxels": 452,
+        "url": "assets/rois/15.nii.gz",
+        "space": "mni",
+        "midline": false
+      },
+      {
+        "id": 16,
+        "anchor": [
+          5.0,
+          -19.0,
+          -9.0
+        ],
+        "voxels": 473,
+        "url": "assets/rois/16.nii.gz",
+        "space": "mni",
+        "midline": false
+      }
+    ]
+  },
+  {
+    "key": "cit8",
+    "src": "../training-labels.nii.gz",
+    "left": [
+      17
+    ],
+    "right": [
+      18
+    ],
+    "space": "mni",
+    "midline": false,
+    "group": 8,
+    "entries": [
+      {
+        "id": 17,
+        "anchor": [
+          -12.0,
+          -16.0,
+          -12.0
+        ],
+        "voxels": 425,
+        "url": "assets/rois/17.nii.gz",
+        "space": "mni",
+        "midline": false
+      },
+      {
+        "id": 18,
+        "anchor": [
+          9.0,
+          -12.0,
+          -13.0
+        ],
+        "voxels": 450,
+        "url": "assets/rois/18.nii.gz",
+        "space": "mni",
+        "midline": false
+      }
+    ]
+  },
+  {
+    "key": "cit9",
+    "src": "../training-labels.nii.gz",
+    "left": [
+      19
+    ],
+    "right": [
+      20
+    ],
+    "space": "mni",
+    "midline": false,
+    "group": 9,
+    "entries": [
+      {
+        "id": 19,
+        "anchor": [
+          -10.0,
+          -17.0,
+          -9.0
+        ],
+        "voxels": 145,
+        "url": "assets/rois/19.nii.gz",
+        "space": "mni",
+        "midline": false
+      },
+      {
+        "id": 20,
+        "anchor": [
+          5.0,
+          -14.0,
+          -12.0
+        ],
+        "voxels": 132,
+        "url": "assets/rois/20.nii.gz",
+        "space": "mni",
+        "midline": false
+      }
+    ]
+  },
+  {
+    "key": "cit10",
+    "src": "../training-labels.nii.gz",
+    "left": [
+      21
+    ],
+    "right": [
+      22
+    ],
+    "space": "mni",
+    "midline": false,
+    "group": 10,
+    "entries": [
+      {
+        "id": 21,
+        "anchor": [
+          -4.0,
+          -21.0,
+          -17.0
+        ],
+        "voxels": 44,
+        "url": "assets/rois/21.nii.gz",
+        "space": "mni",
+        "midline": false
+      },
+      {
+        "id": 22,
+        "anchor": [
+          4.0,
+          -21.0,
+          -17.0
+        ],
+        "voxels": 42,
+        "url": "assets/rois/22.nii.gz",
+        "space": "mni",
+        "midline": false
+      }
+    ]
+  },
+  {
+    "key": "cit11",
+    "src": "../training-labels.nii.gz",
+    "left": [
+      23
+    ],
+    "right": [
+      24
+    ],
+    "space": "mni",
+    "midline": false,
+    "group": 11,
+    "entries": [
+      {
+        "id": 23,
+        "anchor": [
+          -13.0,
+          3.0,
+          -9.0
+        ],
+        "voxels": 134,
+        "url": "assets/rois/23.nii.gz",
+        "space": "mni",
+        "midline": false
+      },
+      {
+        "id": 24,
+        "anchor": [
+          11.0,
+          4.0,
+          -9.0
+        ],
+        "voxels": 148,
+        "url": "assets/rois/24.nii.gz",
+        "space": "mni",
+        "midline": false
+      }
+    ]
+  },
+  {
+    "key": "cit12",
+    "src": "../training-labels.nii.gz",
+    "left": [
+      25
+    ],
+    "right": [
+      26
+    ],
+    "space": "mni",
+    "midline": false,
+    "group": 12,
+    "entries": [
+      {
+        "id": 25,
+        "anchor": [
+          -4.0,
+          -25.0,
+          1.0
+        ],
+        "voxels": 66,
+        "url": "assets/rois/25.nii.gz",
+        "space": "mni",
+        "midline": false
+      },
+      {
+        "id": 26,
+        "anchor": [
+          3.0,
+          -22.0,
+          3.0
+        ],
+        "voxels": 61,
+        "url": "assets/rois/26.nii.gz",
+        "space": "mni",
+        "midline": false
+      }
+    ]
+  },
+  {
+    "key": "cit13",
+    "src": "../training-labels.nii.gz",
+    "left": [
+      27
+    ],
+    "right": [
+      28
+    ],
+    "space": "mni",
+    "midline": false,
+    "group": 13,
+    "entries": [
+      {
+        "id": 27,
+        "anchor": [
+          -6.0,
+          -1.0,
+          -12.0
+        ],
+        "voxels": 1064,
+        "url": "assets/rois/27.nii.gz",
+        "space": "mni",
+        "midline": false
+      },
+      {
+        "id": 28,
+        "anchor": [
+          4.0,
+          1.0,
+          -11.0
+        ],
+        "voxels": 1140,
+        "url": "assets/rois/28.nii.gz",
+        "space": "mni",
+        "midline": false
+      }
+    ]
+  },
+  {
+    "key": "cit14",
+    "src": "../training-labels.nii.gz",
+    "left": [
+      29
+    ],
+    "right": [
+      30
+    ],
+    "space": "mni",
+    "midline": false,
+    "group": 14,
+    "entries": [
+      {
+        "id": 29,
+        "anchor": [
+          -3.0,
+          -8.0,
+          -15.0
+        ],
+        "voxels": 105,
+        "url": "assets/rois/29.nii.gz",
+        "space": "mni",
+        "midline": false
+      },
+      {
+        "id": 30,
+        "anchor": [
+          2.0,
+          -8.0,
+          -15.0
+        ],
+        "voxels": 118,
+        "url": "assets/rois/30.nii.gz",
+        "space": "mni",
+        "midline": false
+      }
+    ]
+  },
+  {
+    "key": "cit15",
+    "src": "../training-labels.nii.gz",
+    "left": [
+      31
+    ],
+    "right": [
+      32
+    ],
+    "space": "mni",
+    "midline": false,
+    "group": 15,
+    "entries": [
+      {
+        "id": 31,
+        "anchor": [
+          -10.0,
+          -12.0,
+          -8.0
+        ],
+        "voxels": 242,
+        "url": "assets/rois/31.nii.gz",
+        "space": "mni",
+        "midline": false
+      },
+      {
+        "id": 32,
+        "anchor": [
+          10.0,
+          -12.0,
+          -8.0
+        ],
+        "voxels": 234,
+        "url": "assets/rois/32.nii.gz",
+        "space": "mni",
+        "midline": false
+      }
+    ]
+  },
+  {
+    "key": "amygdala",
+    "src": "aal3.nii.gz",
+    "left": [
+      45
+    ],
+    "right": [
+      46
+    ],
+    "space": "mni",
+    "midline": false,
+    "group": 16,
+    "entries": [
+      {
+        "id": 33,
+        "anchor": [
+          -23.0,
+          -6.0,
+          -16.0
+        ],
+        "voxels": 1895,
+        "url": "assets/rois/33.nii.gz",
+        "space": "mni",
+        "midline": false
+      },
+      {
+        "id": 34,
+        "anchor": [
+          25.0,
+          -4.0,
+          -16.0
+        ],
+        "voxels": 1982,
+        "url": "assets/rois/34.nii.gz",
+        "space": "mni",
+        "midline": false
+      }
+    ]
+  },
+  {
+    "key": "hippocampus",
+    "src": "aal3.nii.gz",
+    "left": [
+      41
+    ],
+    "right": [
+      42
+    ],
+    "space": "mni",
+    "midline": false,
+    "group": 17,
+    "entries": [
+      {
+        "id": 35,
+        "anchor": [
+          -28.0,
+          -17.0,
+          -18.0
+        ],
+        "voxels": 7629,
+        "url": "assets/rois/35.nii.gz",
+        "space": "mni",
+        "midline": false
+      },
+      {
+        "id": 36,
+        "anchor": [
+          28.0,
+          -16.0,
+          -17.0
+        ],
+        "voxels": 7363,
+        "url": "assets/rois/36.nii.gz",
+        "space": "mni",
+        "midline": false
+      }
+    ]
+  },
+  {
+    "key": "acc",
+    "src": "aal3.nii.gz",
+    "left": [
+      151,
+      153,
+      155
+    ],
+    "right": [
+      152,
+      154,
+      156
+    ],
+    "space": "mni",
+    "midline": false,
+    "group": 18,
+    "entries": [
+      {
+        "id": 37,
+        "anchor": [
+          -5.0,
+          42.0,
+          9.0
+        ],
+        "voxels": 12185,
+        "url": "assets/rois/37.nii.gz",
+        "space": "mni",
+        "midline": false
+      },
+      {
+        "id": 38,
+        "anchor": [
+          10.0,
+          46.0,
+          12.0
+        ],
+        "voxels": 11681,
+        "url": "assets/rois/38.nii.gz",
+        "space": "mni",
+        "midline": false
+      }
+    ]
+  },
+  {
+    "key": "pcc",
+    "src": "aal3.nii.gz",
+    "left": [
+      39
+    ],
+    "right": [
+      40
+    ],
+    "space": "mni",
+    "midline": false,
+    "group": 19,
+    "entries": [
+      {
+        "id": 39,
+        "anchor": [
+          -4.0,
+          -47.0,
+          26.0
+        ],
+        "voxels": 3459,
+        "url": "assets/rois/39.nii.gz",
+        "space": "mni",
+        "midline": false
+      },
+      {
+        "id": 40,
+        "anchor": [
+          7.0,
+          -45.0,
+          23.0
+        ],
+        "voxels": 2527,
+        "url": "assets/rois/40.nii.gz",
+        "space": "mni",
+        "midline": false
+      }
+    ]
+  },
+  {
+    "key": "dacc",
+    "src": "aal3.nii.gz",
+    "left": [
+      155
+    ],
+    "right": [
+      156
+    ],
+    "space": "mni",
+    "midline": false,
+    "group": 20,
+    "entries": [
+      {
+        "id": 41,
+        "anchor": [
+          -5.0,
+          32.0,
+          22.0
+        ],
+        "voxels": 5298,
+        "url": "assets/rois/41.nii.gz",
+        "space": "mni",
+        "midline": false
+      },
+      {
+        "id": 42,
+        "anchor": [
+          8.0,
+          34.0,
+          23.0
+        ],
+        "voxels": 4773,
+        "url": "assets/rois/42.nii.gz",
+        "space": "mni",
+        "midline": false
+      }
+    ]
+  },
+  {
+    "key": "insula",
+    "src": "aal3.nii.gz",
+    "left": [
+      33
+    ],
+    "right": [
+      34
+    ],
+    "space": "mni",
+    "midline": false,
+    "group": 21,
+    "entries": [
+      {
+        "id": 43,
+        "anchor": [
+          -39.0,
+          15.0,
+          -5.0
+        ],
+        "voxels": 15071,
+        "url": "assets/rois/43.nii.gz",
+        "space": "mni",
+        "midline": false
+      },
+      {
+        "id": 44,
+        "anchor": [
+          42.0,
+          11.0,
+          -7.0
+        ],
+        "voxels": 14370,
+        "url": "assets/rois/44.nii.gz",
+        "space": "mni",
+        "midline": false
+      }
+    ]
+  },
+  {
+    "key": "dlpfc",
+    "src": "aal3.nii.gz",
+    "left": [
+      3,
+      5
+    ],
+    "right": [
+      4,
+      6
+    ],
+    "space": "mni",
+    "midline": false,
+    "group": 22,
+    "entries": [
+      {
+        "id": 45,
+        "anchor": [
+          -29.0,
+          18.0,
+          51.0
+        ],
+        "voxels": 78841,
+        "url": "assets/rois/45.nii.gz",
+        "space": "mni",
+        "midline": false
+      },
+      {
+        "id": 46,
+        "anchor": [
+          35.0,
+          49.0,
+          22.0
+        ],
+        "voxels": 80942,
+        "url": "assets/rois/46.nii.gz",
+        "space": "mni",
+        "midline": false
+      }
+    ]
+  },
+  {
+    "key": "ofc",
+    "src": "aal3.nii.gz",
+    "left": [
+      25,
+      27,
+      29,
+      31
+    ],
+    "right": [
+      26,
+      28,
+      30,
+      32
+    ],
+    "space": "mni",
+    "midline": false,
+    "group": 23,
+    "entries": [
+      {
+        "id": 47,
+        "anchor": [
+          -21.0,
+          19.0,
+          -22.0
+        ],
+        "voxels": 14790,
+        "url": "assets/rois/47.nii.gz",
+        "space": "mni",
+        "midline": false
+      },
+      {
+        "id": 48,
+        "anchor": [
+          33.0,
+          30.0,
+          -19.0
+        ],
+        "voxels": 16255,
+        "url": "assets/rois/48.nii.gz",
+        "space": "mni",
+        "midline": false
+      }
+    ]
+  },
+  {
+    "key": "vmpfc",
+    "src": "aal3.nii.gz",
+    "left": [
+      21,
+      23
+    ],
+    "right": [
+      22,
+      24
+    ],
+    "space": "mni",
+    "midline": false,
+    "group": 24,
+    "entries": [
+      {
+        "id": 49,
+        "anchor": [
+          -6.0,
+          60.0,
+          -13.0
+        ],
+        "voxels": 12492,
+        "url": "assets/rois/49.nii.gz",
+        "space": "mni",
+        "midline": false
+      },
+      {
+        "id": 50,
+        "anchor": [
+          7.0,
+          47.0,
+          -11.0
+        ],
+        "voxels": 13101,
+        "url": "assets/rois/50.nii.gz",
+        "space": "mni",
+        "midline": false
+      }
+    ]
+  },
+  {
+    "key": "sma",
+    "src": "aal3.nii.gz",
+    "left": [
+      15
+    ],
+    "right": [
+      16
+    ],
+    "space": "mni",
+    "midline": false,
+    "group": 25,
+    "entries": [
+      {
+        "id": 51,
+        "anchor": [
+          -7.0,
+          6.0,
+          63.0
+        ],
+        "voxels": 18684,
+        "url": "assets/rois/51.nii.gz",
+        "space": "mni",
+        "midline": false
+      },
+      {
+        "id": 52,
+        "anchor": [
+          8.0,
+          11.0,
+          63.0
+        ],
+        "voxels": 19077,
+        "url": "assets/rois/52.nii.gz",
+        "space": "mni",
+        "midline": false
+      }
+    ]
+  },
+  {
+    "key": "precuneus",
+    "src": "aal3.nii.gz",
+    "left": [
+      71
+    ],
+    "right": [
+      72
+    ],
+    "space": "mni",
+    "midline": false,
+    "group": 26,
+    "entries": [
+      {
+        "id": 53,
+        "anchor": [
+          -6.0,
+          -60.0,
+          44.0
+        ],
+        "voxels": 30138,
+        "url": "assets/rois/53.nii.gz",
+        "space": "mni",
+        "midline": false
+      },
+      {
+        "id": 54,
+        "anchor": [
+          10.0,
+          -55.0,
+          43.0
+        ],
+        "voxels": 27497,
+        "url": "assets/rois/54.nii.gz",
+        "space": "mni",
+        "midline": false
+      }
+    ]
+  },
+  {
+    "key": "ipl",
+    "src": "aal3.nii.gz",
+    "left": [
+      65,
+      67,
+      69
+    ],
+    "right": [
+      66,
+      68,
+      70
+    ],
+    "space": "mni",
+    "midline": false,
+    "group": 27,
+    "entries": [
+      {
+        "id": 55,
+        "anchor": [
+          -43.0,
+          -54.0,
+          45.0
+        ],
+        "voxels": 41661,
+        "url": "assets/rois/55.nii.gz",
+        "space": "mni",
+        "midline": false
+      },
+      {
+        "id": 56,
+        "anchor": [
+          49.0,
+          -51.0,
+          45.0
+        ],
+        "voxels": 43109,
+        "url": "assets/rois/56.nii.gz",
+        "space": "mni",
+        "midline": false
+      }
+    ]
+  },
+  {
+    "key": "thalamus",
+    "src": "aal3.nii.gz",
+    "left": [
+      121,
+      123,
+      125,
+      127,
+      129,
+      131,
+      133,
+      135,
+      137,
+      139,
+      141,
+      143,
+      145,
+      147,
+      149
+    ],
+    "right": [
+      122,
+      124,
+      126,
+      128,
+      130,
+      132,
+      134,
+      136,
+      138,
+      140,
+      142,
+      144,
+      146,
+      148,
+      150
+    ],
+    "space": "mni",
+    "midline": false,
+    "group": 28,
+    "entries": [
+      {
+        "id": 57,
+        "anchor": [
+          -11.0,
+          -17.0,
+          5.0
+        ],
+        "voxels": 9448,
+        "url": "assets/rois/57.nii.gz",
+        "space": "mni",
+        "midline": false
+      },
+      {
+        "id": 58,
+        "anchor": [
+          12.0,
+          -16.0,
+          6.0
+        ],
+        "voxels": 9595,
+        "url": "assets/rois/58.nii.gz",
+        "space": "mni",
+        "midline": false
+      }
+    ]
+  },
+  {
+    "key": "mammillary",
+    "src": "cobra.nii.gz",
+    "left": [
+      38
+    ],
+    "right": [
+      138
+    ],
+    "space": "mni",
+    "midline": false,
+    "group": 29,
+    "entries": [
+      {
+        "id": 59,
+        "anchor": [
+          -2.4,
+          -7.8,
+          -15.0
+        ],
+        "voxels": 262,
+        "url": "assets/rois/59.nii.gz",
+        "space": "mni",
+        "midline": false
+      },
+      {
+        "id": 60,
+        "anchor": [
+          2.4,
+          -7.8,
+          -14.4
+        ],
+        "voxels": 272,
+        "url": "assets/rois/60.nii.gz",
+        "space": "mni",
+        "midline": false
+      }
+    ]
+  },
+  {
+    "key": "nbm",
+    "src": "julichbrain3.nii.gz",
+    "left": [
+      225
+    ],
+    "right": [
+      226
+    ],
+    "space": "mni",
+    "midline": false,
+    "group": 30,
+    "entries": [
+      {
+        "id": 61,
+        "anchor": [
+          -23.0,
+          -4.0,
+          -9.0
+        ],
+        "voxels": 544,
+        "url": "assets/rois/61.nii.gz",
+        "space": "mni",
+        "midline": false
+      },
+      {
+        "id": 62,
+        "anchor": [
+          19.0,
+          0.0,
+          -11.0
+        ],
+        "voxels": 166,
+        "url": "assets/rois/62.nii.gz",
+        "space": "mni",
+        "midline": false
+      }
+    ]
+  },
+  {
+    "key": "lc",
+    "src": "aan/AAN_LC_L_MNI152_1mm_v2p0_MNI152NLin2009cAsym.nii.gz",
+    "left": [
+      1
+    ],
+    "right": "aan/AAN_LC_R_MNI152_1mm_v2p0_MNI152NLin2009cAsym.nii.gz",
+    "space": "mni",
+    "midline": false,
+    "group": 31,
+    "entries": [
+      {
+        "id": 63,
+        "anchor": [
+          -8.0,
+          -40.0,
+          -35.0
+        ],
+        "voxels": 62,
+        "url": "assets/rois/63.nii.gz",
+        "space": "mni",
+        "midline": false
+      },
+      {
+        "id": 64,
+        "anchor": [
+          3.0,
+          -37.0,
+          -25.0
+        ],
+        "voxels": 61,
+        "url": "assets/rois/64.nii.gz",
+        "space": "mni",
+        "midline": false
+      }
+    ]
+  },
+  {
+    "key": "pptn",
+    "src": "aan/AAN_PTg_L_MNI152_1mm_v2p0_MNI152NLin2009cAsym.nii.gz",
+    "left": [
+      1
+    ],
+    "right": "aan/AAN_PTg_R_MNI152_1mm_v2p0_MNI152NLin2009cAsym.nii.gz",
+    "space": "mni",
+    "midline": false,
+    "group": 32,
+    "entries": [
+      {
+        "id": 65,
+        "anchor": [
+          -8.0,
+          -26.0,
+          -18.0
+        ],
+        "voxels": 109,
+        "url": "assets/rois/65.nii.gz",
+        "space": "mni",
+        "midline": false
+      },
+      {
+        "id": 66,
+        "anchor": [
+          8.0,
+          -26.0,
+          -18.0
+        ],
+        "voxels": 113,
+        "url": "assets/rois/66.nii.gz",
+        "space": "mni",
+        "midline": false
+      }
+    ]
+  },
+  {
+    "key": "pag",
+    "src": "aan/AAN_PAG_MNI152_1mm_v2p0_MNI152NLin2009cAsym.nii.gz",
+    "left": [
+      1
+    ],
+    "right": null,
+    "space": "mni",
+    "midline": true,
+    "group": 33,
+    "entries": [
+      {
+        "id": 67,
+        "anchor": [
+          -2.0,
+          -34.0,
+          -11.0
+        ],
+        "voxels": 472,
+        "url": "assets/rois/67.nii.gz",
+        "space": "mni",
+        "midline": true
+      }
+    ]
+  },
+  {
+    "key": "dr",
+    "src": "aan/AAN_DR_MNI152_1mm_v2p0_MNI152NLin2009cAsym.nii.gz",
+    "left": [
+      1
+    ],
+    "right": null,
+    "space": "mni",
+    "midline": true,
+    "group": 34,
+    "entries": [
+      {
+        "id": 69,
+        "anchor": [
+          -1.0,
+          -31.0,
+          -15.0
+        ],
+        "voxels": 318,
+        "url": "assets/rois/69.nii.gz",
+        "space": "mni",
+        "midline": true
+      }
+    ]
+  },
+  {
+    "key": "mnr",
+    "src": "aan/AAN_MnR_MNI152_1mm_v2p0_MNI152NLin2009cAsym.nii.gz",
+    "left": [
+      1
+    ],
+    "right": null,
+    "space": "mni",
+    "midline": true,
+    "group": 35,
+    "entries": [
+      {
+        "id": 71,
+        "anchor": [
+          -1.0,
+          -38.0,
+          -35.0
+        ],
+        "voxels": 175,
+        "url": "assets/rois/71.nii.gz",
+        "space": "mni",
+        "midline": true
+      }
+    ]
+  },
+  {
+    "key": "vermis",
+    "src": "aal3.nii.gz",
+    "left": [
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120
+    ],
+    "right": null,
+    "space": "mni",
+    "midline": true,
+    "group": 36,
+    "entries": [
+      {
+        "id": 73,
+        "anchor": [
+          1.0,
+          -52.0,
+          -10.0
+        ],
+        "voxels": 15056,
+        "url": "assets/rois/73.nii.gz",
+        "space": "mni",
+        "midline": true
+      }
+    ]
+  },
+  {
+    "key": "fornix",
+    "src": "cobra.nii.gz",
+    "left": [
+      33,
+      37
+    ],
+    "right": [
+      133,
+      137
+    ],
+    "space": "mni",
+    "midline": false,
+    "group": 37,
+    "entries": [
+      {
+        "id": 75,
+        "anchor": [
+          -1.8,
+          -13.8,
+          18.0
+        ],
+        "voxels": 3966,
+        "url": "assets/rois/75.nii.gz",
+        "space": "mni",
+        "midline": false
+      },
+      {
+        "id": 76,
+        "anchor": [
+          1.2,
+          -9.6,
+          17.4
+        ],
+        "voxels": 3798,
+        "url": "assets/rois/76.nii.gz",
+        "space": "mni",
+        "midline": false
+      }
+    ]
+  },
+  {
+    "key": "anterior_thalamus",
+    "src": "thalamic_nuclei.nii.gz",
+    "left": [
+      2
+    ],
+    "right": [
+      16
+    ],
+    "space": "mni",
+    "midline": false,
+    "group": 38,
+    "entries": [
+      {
+        "id": 77,
+        "anchor": [
+          -6.5,
+          -9.5,
+          14.5
+        ],
+        "voxels": 1858,
+        "url": "assets/rois/77.nii.gz",
+        "space": "mni",
+        "midline": false
+      },
+      {
+        "id": 78,
+        "anchor": [
+          5.5,
+          -6.0,
+          12.5
+        ],
+        "voxels": 1926,
+        "url": "assets/rois/78.nii.gz",
+        "space": "mni",
+        "midline": false
+      }
+    ]
+  },
+  {
+    "key": "parahippocampal",
+    "src": "aal3.nii.gz",
+    "left": [
+      43
+    ],
+    "right": [
+      44
+    ],
+    "space": "mni",
+    "midline": false,
+    "group": 39,
+    "entries": [
+      {
+        "id": 79,
+        "anchor": [
+          -23.0,
+          -7.0,
+          -34.0
+        ],
+        "voxels": 8944,
+        "url": "assets/rois/79.nii.gz",
+        "space": "mni",
+        "midline": false
+      },
+      {
+        "id": 80,
+        "anchor": [
+          25.0,
+          -3.0,
+          -35.0
+        ],
+        "voxels": 9307,
+        "url": "assets/rois/80.nii.gz",
+        "space": "mni",
+        "midline": false
+      }
+    ]
+  },
+  {
+    "key": "claustrum",
+    "src": "allen/AllenAtlas.nii.gz",
+    "left": [
+      13
+    ],
+    "right": [
+      13
+    ],
+    "space": "allen",
+    "midline": false,
+    "group": 40,
+    "entries": [
+      {
+        "id": 81,
+        "anchor": [
+          -34.5,
+          3.0,
+          -2.5
+        ],
+        "voxels": 12696,
+        "url": "assets/rois/81.nii.gz",
+        "space": "allen",
+        "midline": false
+      },
+      {
+        "id": 82,
+        "anchor": [
+          29.0,
+          3.5,
+          -12.5
+        ],
+        "voxels": 12696,
+        "url": "assets/rois/82.nii.gz",
+        "space": "allen",
+        "midline": false
+      }
+    ]
+  },
+  {
+    "key": "septal",
+    "src": "allen/AllenAtlas.nii.gz",
+    "left": [
+      15
+    ],
+    "right": [
+      15
+    ],
+    "space": "allen",
+    "midline": false,
+    "group": 41,
+    "entries": [
+      {
+        "id": 83,
+        "anchor": [
+          -2.0,
+          5.0,
+          -0.5
+        ],
+        "voxels": 2222,
+        "url": "assets/rois/83.nii.gz",
+        "space": "allen",
+        "midline": false
+      },
+      {
+        "id": 84,
+        "anchor": [
+          1.5,
+          5.5,
+          -0.5
+        ],
+        "voxels": 2976,
+        "url": "assets/rois/84.nii.gz",
+        "space": "allen",
+        "midline": false
+      }
+    ]
+  }
+]
