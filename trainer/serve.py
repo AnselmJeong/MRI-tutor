@@ -24,10 +24,11 @@ def main():
     root = Path(__file__).resolve().parent
     handler = partial(MRIHandler, directory=str(root))
     try:
-        server = MRIServer(('127.0.0.1', args.port), handler)
+        server = MRIServer(('0.0.0.0', args.port), handler)
     except OSError:
-        server = MRIServer(('127.0.0.1', 0), handler)
+        server = MRIServer(('0.0.0.0', 0), handler)
     url = f'http://127.0.0.1:{server.server_port}/'
+    print(f'네트워크 수신: 0.0.0.0:{server.server_port} (다른 기기에서는 이 컴퓨터의 IP 주소로 접속)', flush=True)
     print(f'MRI Tutor: {url}\n사용 중 이 서버를 유지하세요. 종료하려면 Ctrl+C를 누르세요.', flush=True)
     if not args.no_browser:
         webbrowser.open(url)

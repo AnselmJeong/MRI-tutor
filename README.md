@@ -8,6 +8,8 @@ python3 trainer/serve.py
 
 또는 macOS에서 `trainer/Start MRI Tutor.command`를 실행합니다. 기본 주소는 `http://127.0.0.1:8091/`입니다. WebGL2 지원 브라우저가 필요합니다. Chrome에서 검증했습니다. 런타임은 정적 HTML/JS와 포함된 영상으로 동작하며 인터넷·API 키·Node 설치가 필요하지 않습니다.
 
+서버는 기본적으로 `0.0.0.0:8091`에서 모든 IPv4 네트워크 인터페이스의 연결을 받습니다. 같은 네트워크의 다른 기기에서는 `http://<서버 컴퓨터의 IP>:8091/`로 접속합니다. 공유기 밖 인터넷에서 접속하려면 별도로 포트 포워딩 또는 VPN과 방화벽 허용이 필요합니다.
+
 - **[사용법과 재현 방법](trainer/README.md)**
 - **[설계 기준](trainer/REDESIGN.md)**
 - **[데이터 출처와 이용 조건](trainer/DATA-SOURCES.md)**

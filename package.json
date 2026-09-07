@@ -1,6 +1,6 @@
 {
   "name": "mri-tutor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "type": "module",
   "description": "Individual MRI anatomy reading practice with reference-label provenance",
