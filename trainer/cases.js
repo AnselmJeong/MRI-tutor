@@ -1,5 +1,6 @@
 import {createCaseViewer} from './case-viewer.js';
 import {topics,modes,statusNames,visibilityLesson} from './case-content.js';
+import {regions} from './regions.js';
 import {HISTORY_KEY,DRAFT_KEY,escapeHTML as esc,readHistory,writeHistory,appendFirst,referenceFeedback,traceReady,restoreTask} from './case-state.js';
 const $=id=>document.getElementById(id);
 const axisIndex={axial:2,coronal:1,sagittal:0,multi:2};
@@ -21,9 +22,9 @@ export async function initCaseTraining(){
   <div class="case-canvases"><div class="case-screen"><span class="image-caption" id="primary-caption"></span><canvas id="case-mri" tabindex="0" aria-label="개인 MRI. 클릭으로 위치, 휠과 위아래 방향키로 연속 단면 이동."></canvas><div id="case-loading" role="status">개인 MRI 준비 중…</div></div><div class="case-screen" id="comparison-screen" hidden><span class="image-caption" id="compare-caption"></span><canvas id="case-compare-mri" tabindex="0" aria-label="비교 MRI. 다른 개인은 독립적으로 탐색합니다."></canvas><div id="compare-loading" role="status"></div></div></div>
   <div class="case-window"><label>Window <input id="case-window" type="range" min="1" max="400" value="100"><output id="case-window-value">100</output></label><label>Level <input id="case-level" type="range" min="-100" max="400" value="50"><output id="case-level-value">50</output></label><label>확대 <input id="case-zoom" type="range" min="1" max="4" step=".1" value="1"><output id="case-zoom-value">1×</output></label><button id="case-window-reset" class="text-button">자동 대비</button></div>
   <div class="slice-controls case-slices">${['x','y','z'].map((a,i)=>`<label><span>${['Sagittal','Coronal','Axial'][i]} · ${a}</span><input id="case-slice-${a}" aria-label="개인 MRI ${a} 좌표" type="range" step=".5" min="-100" max="100"><output id="case-value-${a}">—</output></label>`).join('')}</div>
-  <div class="mri-footer"><span>R / L: 환자 기준 · 방사선학적 표시</span><span id="case-coordinate">T1 개인 공간 (mm)</span></div><div id="case-trace-tools" hidden><button id="trace-back" aria-label="이전 1 mm 단면">−1 mm</button><button id="trace-forward" aria-label="다음 1 mm 단면">+1 mm</button><button data-trace-mark="appearance">출현 기록</button><button data-trace-mark="body">형태 변화 기록</button><button data-trace-mark="disappearance">소실 기록</button><span id="trace-summary" class="small"></span></div>`;
+  <p id="case-cursor-status" class="small reference-note" role="status" aria-live="polite"></p><div class="mri-footer"><span>R / L: 환자 기준 · 방사선학적 표시</span><span id="case-coordinate">T1 개인 공간 (mm)</span></div><div id="case-trace-tools" hidden><button id="trace-back" aria-label="이전 1 mm 단면">−1 mm</button><button id="trace-forward" aria-label="다음 1 mm 단면">+1 mm</button><button data-trace-mark="appearance">출현 기록</button><button data-trace-mark="body">형태 변화 기록</button><button data-trace-mark="disappearance">소실 기록</button><span id="trace-summary" class="small"></span></div>`;
   const dialog=document.createElement('dialog');dialog.id='case-dialog';dialog.innerHTML='<button class="dialog-close" id="case-dialog-close" aria-label="닫기">×</button><div id="case-dialog-body"></div>';document.body.append(dialog);$('case-dialog-close').onclick=()=>dialog.close();
-  let manifest,viewer,comparison,loadToken=0,compareToken=0,active=true,loading=true,loadError=false,syncing=false;
+  let manifest,atlasEntries=[],viewer,comparison,loadToken=0,compareToken=0,active=true,loading=true,loadError=false,syncing=false;
   let history=readHistory(),current,topic=topics[0],sequence='T1w',mode='guided',side='left',task=null;
   let lastPoint=null,locationVersion=0,down=null,savedState=null;
   try{savedState=JSON.parse(localStorage.getItem(DRAFT_KEY));}catch{}
@@ -31,7 +32,24 @@ export async function initCaseTraining(){
   function saveDraft(){if(!task||!current)return;try{localStorage.setItem(DRAFT_KEY,JSON.stringify({caseId:current.id,topic:topic.id,mode,side,sequence,task,point:viewer?.point}));}catch{}}
   function freshTask(){return {id:crypto.randomUUID(),hints:[],landmarkChecks:[],marks:{},visited:{},status:'',note:'',confidence:'uncertain',submitted:null,novel:!history.exposures.includes(current?.id),startedAt:new Date().toISOString(),comparisonUsed:false};}
   function labels(){return current?.segmentation.labels.filter(l=>l.structure===topic.id&&(l.side===side||l.side==='midline'))??[];}
-  function setActive(value){if(!value&&task&&!task.submitted){task.helpUsed??=[];if(!task.helpUsed.includes('reference-atlas'))task.helpUsed.push('reference-atlas');saveDraft();}active=value;document.body.classList.toggle('individual-mode',value);$('cases-mode').setAttribute('aria-pressed',String(value));event('individual-mode',{active:value});if(value){updateHeader();requestAnimationFrame(()=>window.dispatchEvent(new Event('resize')));}}
+  function cursorStatus(){
+    const el=$('case-cursor-status');if(!el||!task)return;
+    if(loading||loadError){el.textContent=loadError?'영상 준비 실패 · 현재 위치를 확인할 수 없습니다.':'영상과 위치를 확인하는 중…';return;}
+    const revealed=mode==='explore'||task.submitted||task.hints.some(h=>['boundary','anchor'].includes(h));
+    if(!revealed){el.textContent=`학습 대상: ${topic.ko} · 십자선은 현재 탐색 위치이며, 목표 구조의 위치를 뜻하지 않습니다. 자동 라벨은 위치·경계 도움을 열면 표시됩니다.`;return;}
+    const hit=current.segmentation.labels.find(l=>l.id===viewer.referenceAt(viewer.point));
+    const name=hit?`${sideNames[hit.side]} ${topics.find(t=>t.id===hit.structure)?.ko??hit.structure}`:'제공된 참고 구획 없음';
+    const matches=labels().some(l=>l.id===hit?.id);
+    el.textContent=`현재 십자선의 자동 라벨: ${name} · ${matches?'선택 영역 안':labels().length?'선택 영역 밖':'이 주제는 전용 구획 없음'}. FreeSurfer 참고 라벨이며 경계 검수 전입니다.`;
+  }
+  function locateTarget(){
+    if(loading||loadError||viewer.current?.id!==current.id||(mode==='transfer'&&!task.submitted))return;
+    const target=labels()[0];if(!target){cursorStatus();return;}
+    viewer.setPoint(target.anchor);useHint('anchor',false);cursorStatus();
+  }
+  function exploreLocation(){if(mode==='explore')locateTarget();else cursorStatus();}
+  function aalReference(){return atlasEntries.find(r=>r.group===topic.group&&r.src==='aal3.nii.gz');}
+  function setActive(value){if(!value&&task&&!task.submitted){task.helpUsed??=[];if(!task.helpUsed.includes('reference-atlas'))task.helpUsed.push('reference-atlas');saveDraft();}active=value;document.body.classList.toggle('individual-mode',value);$('cases-mode').setAttribute('aria-pressed',String(value));event('individual-mode',{active:value});if(value){updateHeader();cursorStatus();requestAnimationFrame(()=>window.dispatchEvent(new Event('resize')));}}
   $('cases-mode').onclick=()=>setActive(true);
   for(const id of ['explore-mode','find-mode','mri-train','review-localization'])$(id).addEventListener('click',()=>setActive(false),true);
   $('case-atlas-all').onclick=()=>{$('explore-mode').click();};
@@ -55,7 +73,7 @@ export async function initCaseTraining(){
   function renderMode(){
     document.querySelectorAll('[data-trace-mark]').forEach(b=>{const mark=task?.marks[b.dataset.traceMark];b.setAttribute('aria-pressed',String(Boolean(mark)));b.title=mark?mm(mark.point)+' mm':'';});
     document.querySelectorAll('[data-case-mode]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.caseMode===mode)));
-    $('case-mode-note').textContent={explore:'자유롭게 단면을 이동하세요. 참고 색은 요청할 때만 켜집니다.',guided:'위치 → 형태 → 이웃 구조 → 경계의 확실성 순서로 읽습니다.',trace:'한 방향에서 출현·형태 변화·소실을 기록한 뒤 다른 방향으로 확인하세요.',compare:'같은 사람의 T1/T2 대비 또는 다른 사람의 형태를 나란히 확인하세요.',transfer:'학습용과 분리된 개인입니다. 도움은 첫 응답 이후에 열립니다. 자동 점수가 아닌 판독 설명 연습입니다.'}[mode];
+    $('case-mode-note').textContent={explore:'구조·좌우를 선택하면 해당 개인의 자동 분할 내부 지점으로 이동합니다. 십자선은 자유롭게 옮길 수 있고, 참고 경계는 별도로 켭니다.',guided:'위치 → 형태 → 이웃 구조 → 경계의 확실성 순서로 읽습니다.',trace:'한 방향에서 출현·형태 변화·소실을 기록한 뒤 다른 방향으로 확인하세요.',compare:'같은 사람의 T1/T2 대비 또는 다른 사람의 형태를 나란히 확인하세요.',transfer:'학습용과 분리된 개인입니다. 도움은 첫 응답 이후에 열립니다. 자동 점수가 아닌 판독 설명 연습입니다.'}[mode];
     $('case-trace-tools').hidden=mode!=='trace';$('compare-controls').hidden=mode!=='compare';$('comparison-screen').hidden=mode!=='compare';document.querySelector('.case-canvases').classList.toggle('is-comparing',mode==='compare');
     $('case-badge').textContent=`개인 3T · ${mode==='transfer'?(task.novel?'첫 노출 세션':'이전 노출 있음'):'학습 사례'}`;
     renderCaseSelect();
@@ -64,7 +82,7 @@ export async function initCaseTraining(){
     if(!active||e.caseId!==current?.id)return;lastPoint=e;locationVersion++;
     if(task&&!task.submitted){task.candidate=null;validateForm();}
     for(const [i,a] of ['x','y','z'].entries()){$('case-slice-'+a).value=e.mm[i];$('case-value-'+a).textContent=e.mm[i].toFixed(1)+' mm';}
-    $('case-coordinate').textContent=`T1 개인 공간 · ${mm(e.mm)} mm`;
+    $('case-coordinate').textContent=`T1 개인 공간 · ${mm(e.mm)} mm`;cursorStatus();
     if(task&&!task.submitted&&!loading){const axis=axisIndex[e.plane];const values=task.visited[e.plane]??[];const v=Math.round(e.mm[axis]*2)/2;if(!values.includes(v))values.push(v);task.visited[e.plane]=values.slice(-1500);$('trace-summary').textContent=`${planeNames[e.plane]} · ${values.length}개 깊이 관찰`;saveDraft();}
     if(mode==='compare'&&$('compare-select').value==='sequence'&&comparison&&!comparison.busy&&!syncing){syncing=true;comparison.setPoint(e.mm);syncing=false;}
   }
@@ -84,7 +102,7 @@ export async function initCaseTraining(){
     for(const [i,a] of ['x','y','z'].entries()){const input=$('case-slice-'+a);input.min=spec.bounds[0][i];input.max=spec.bounds[1][i];input.disabled=false;}
     updateWindow();$('case-zoom').value=1;$('case-zoom-value').textContent='1×';
     if(!history.exposures.includes(c.id)){history.exposures.push(c.id);save();}
-    applyMask();renderDetail();saveDraft();if(mode==='compare')await loadComparison();return true;
+    applyMask();if(!preserve)exploreLocation();renderDetail();saveDraft();if(mode==='compare')await loadComparison();return true;
   }
   function updateWindow(){
     const [lo,hi]=current.sequences[sequence].display_range;const max=Math.max(hi*3,200);
@@ -110,7 +128,7 @@ export async function initCaseTraining(){
   function reference3D(){event('individual-hide-reference',{hidden:(mode==='transfer'&&!task?.submitted)||topic.group==null,note:topic.group==null?'이 주제의 별도 3D 구획은 없습니다. 개인 MRI와 주변 랜드마크에서 확인하세요.':undefined});if(topic.group!=null)event('reference-structure',{group:topic.group,side});}
   function chooseTopic(id){
     const next=topics.find(t=>t.id===id);if(!next)return;topic=next;side=topic.midline?'midline':side==='midline'?'left':side;task=freshTask();if(mode==='transfer')task.novel=false;
-    event('individual-hide-reference',{hidden:mode==='transfer'});topicList();renderMode();setPlane(topic.plane);applyMask();renderDetail();reference3D();saveDraft();
+    event('individual-hide-reference',{hidden:mode==='transfer'});topicList();renderMode();setPlane(topic.plane);applyMask();exploreLocation();renderDetail();reference3D();saveDraft();
     if(mode==='compare')loadComparison();
   }
   async function chooseMode(next){
@@ -119,27 +137,31 @@ export async function initCaseTraining(){
     current=nextCase;task=freshTask();renderMode();applyMask();renderDetail();
     // Starting without label hints is separate from a later reference review.
     reference3D();
-    if(viewer.current?.id!==current.id)await loadCase(current,'T1w');else if(mode==='compare')await loadComparison();
+    if(viewer.current?.id!==current.id)await loadCase(current,'T1w');else if(mode==='compare')await loadComparison();else exploreLocation();
     saveDraft();
   }
   function renderDetail(){
     if(!current||!task)return;
     const t=task,transfer=mode==='transfer',locked=transfer&&!t.submitted;
     const hint=(id,label)=>`<button data-hint="${id}" ${loading||loadError||locked?'disabled':''} aria-pressed="${t.hints.includes(id)}">${label}</button>`;
-    const labelsAvailable=labels().length>0;
+    const targets=labels(),labelsAvailable=targets.length>0,aal=aalReference();
     $('case-detail').innerHTML=`<p class="eyebrow">${mode==='transfer'?'TRANSFER / FIRST RESPONSE':'READING / '+modes[mode]}</p><h2>${topic.ko}</h2><p class="english">${topic.en}</p><label class="case-side">관찰 측 <select id="case-side" ${t.submitted?'disabled':''}><option value="left">왼쪽</option><option value="right">오른쪽</option>${topic.midline?'<option value="midline">정중</option>':''}</select></label><p class="task-prompt">${topic.prompt}</p>
     <div class="reading-steps"><span>01 위치</span><span>02 형태·연속성</span><span>03 관계·확실성</span></div>
     ${loading?'<p class="small" role="status">영상 준비 후 응답할 수 있습니다.</p>':loadError?'<p role="alert">영상 로딩에 실패했습니다. 화면의 다시 불러오기를 사용하세요.</p>':''}
     <div class="hint-controls">${hint('landmarks','주변 랜드마크')}${hint('orthogonal','다른 방향')}${topic.group!=null?hint('three','3D 관계'):''}${labelsAvailable?hint('boundary','참고 경계'):''}</div>
+    ${labelsAvailable?`<button id="case-anchor" class="text-button" ${loading||loadError||locked?'disabled':''}>선택 구조 위치로 ↗</button>`:'<p class="small muted">이 주제의 전용 분할은 없습니다. 주변 랜드마크를 따라 직접 탐색하세요.</p>'}
+    <details id="case-location-source" class="clinical-context"><summary>이 위치의 근거 · ${labelsAvailable?'FreeSurfer':'랜드마크 관찰'}</summary>${labelsAvailable?`<p>${esc(current.id)}의 자체 FreeSurfer 5.3 aparc+aseg 자동 분할입니다. 원천 라벨 ID: ${targets.flatMap(l=>l.source_ids).join(', ')}. 표준 MNI 좌표를 개인 영상에 대입하지 않습니다.</p><p>이동 지점은 선택 분할 안에서 경계까지의 거리가 최대인 대표 복셀입니다. 구조 전체의 중심·유일한 위치·수동 판독 정답을 뜻하지 않습니다. 연속 단면에서 범위를 확인하세요.</p><p>기준: ${esc(current.reference_space)} · 전문 경계 검수 전.</p>`:'<p>전용 마스크나 자동 위치를 제공하지 않습니다.</p>'}${aal?`<p>관련 AAL3 구획: ${esc(regions[topic.group].ko)} · ${sideNames[side]}. 별도 MNI 표준공간 참고이며, 이 개인의 분할과 경계 정의가 다를 수 있습니다.</p><button id="case-open-aal" class="text-button" ${locked?'disabled':''}>AAL3에서 관련 영역 보기 ↗</button>`:''}<a href="ANATOMICAL_VALIDITY.md" target="_blank">위치 산출과 검증 범위 ↗</a></details>
     ${locked?'<p class="small muted">전이 연습: 첫 응답 전에는 위치 힌트와 참고 경계가 잠깁니다. 단면·시퀀스 이동은 자유롭습니다.</p>':''}
     ${t.hints.includes('landmarks')?`<div class="landmark-guide"><h3>관찰할 랜드마크</h3><ul>${topic.landmarks.map(x=>`<li>${x}</li>`).join('')}</ul><p>${topic.relation}</p></div>`:''}
-    ${t.hints.includes('boundary')?`<p class="reference-note">${topic.boundary}</p><button id="case-anchor" class="text-button">참고 영역으로 이동 ↗</button>`:''}
+    ${t.hints.includes('boundary')?`<p class="reference-note">${topic.boundary}</p>`:''}
     ${t.submitted?feedbackHTML(t.submitted):`<form id="reading-form"><fieldset ${loading||loadError?'disabled':''}><legend>이 단면에서의 판단</legend>${Object.entries(statusNames).map(([id,name])=>`<label class="reading-choice"><input type="radio" name="presence" value="${id}" ${t.status===id?'checked':''}> ${name}</label>`).join('')}<label class="note-label" for="reading-note">관찰 근거</label><textarea id="reading-note" maxlength="2000" rows="4" placeholder="어느 쪽·어느 단면인가요? 주변 구조와의 관계, 보이는 경계와 추론한 경계를 설명하세요.">${esc(t.note)}</textarea><label class="confidence-label">확신 정도 <select id="reading-confidence"><option value="uncertain">추가 확인 필요</option><option value="partial">일부는 확인</option><option value="confident">근거를 설명할 수 있음</option></select></label><p id="reading-validation" class="small">${t.status==='present'&&!t.candidate?'MRI에서 위치도 한 번 지정하세요.':'관찰 근거를 적으면 첫 응답으로 저장됩니다.'}</p><button id="reading-submit" class="primary" type="submit" ${canSubmit()?'':'disabled'}>첫 응답 저장 · 피드백</button></fieldset></form>`}
     <details class="clinical-context"><summary>임상 관찰과 연결하기</summary><p>${topic.clinical}</p><p>${topic.boundary}</p><a href="${topic.source}" target="_blank" rel="noopener">해부학 참고 자료 ↗</a></details>`;
     $('case-side').value=side;$('case-side').disabled=Boolean(t.submitted)||topic.midline;
-    $('case-side').onchange=()=>{side=$('case-side').value;task=freshTask();event('individual-hide-reference',{hidden:mode==='transfer'});renderMode();applyMask();renderDetail();reference3D();saveDraft();};
+    $('case-side').onchange=()=>{side=$('case-side').value;task=freshTask();event('individual-hide-reference',{hidden:mode==='transfer'});renderMode();applyMask();exploreLocation();renderDetail();reference3D();saveDraft();};
     $('case-detail').querySelectorAll('[data-hint]').forEach(b=>b.onclick=()=>useHint(b.dataset.hint));
-    if($('case-anchor'))$('case-anchor').onclick=()=>{if(labels()[0]){viewer.setPoint(labels()[0].anchor);useHint('anchor',false);}};
+    if($('case-anchor'))$('case-anchor').onclick=locateTarget;
+    if($('case-open-aal'))$('case-open-aal').onclick=()=>{if(!locked)event('open-reference-atlas',{group:topic.group,side});};
+    cursorStatus();
     if(!t.submitted){
       $('reading-confidence').value=t.confidence;
       $('reading-note').oninput=()=>{t.note=$('reading-note').value;validateForm();saveDraft();};
@@ -162,7 +184,7 @@ export async function initCaseTraining(){
     task.helpUsed??=[];if(!task.helpUsed.includes(id))task.helpUsed.push(id);
     if(id==='three'){event('individual-hide-reference',{hidden:false});reference3D();document.querySelector('[data-workspace=linked]').click();}
     if(id==='orthogonal')setPlane('multi');
-    applyMask();saveDraft();if(redraw)renderDetail();
+    applyMask();cursorStatus();saveDraft();if(redraw)renderDetail();
   }
   function feedbackHTML(a){
     const reference=referenceFeedback(a,current.segmentation.labels,topic);
@@ -195,7 +217,7 @@ export async function initCaseTraining(){
   document.querySelectorAll('[data-case-plane]').forEach(b=>b.onclick=()=>setPlane(b.dataset.casePlane));
   $('case-window').oninput=windowChanged;$('case-level').oninput=windowChanged;$('case-window-reset').onclick=updateWindow;
   $('case-zoom').oninput=()=>{viewer.setZoom(Number($('case-zoom').value));$('case-zoom-value').textContent=$('case-zoom').value+'×';};
-  $('case-reset').onclick=()=>{viewer.setPoint(current.initial_point);viewer.setZoom(1);$('case-zoom').value=1;$('case-zoom-value').textContent='1×';updateWindow();};
+  $('case-reset').onclick=()=>{if(mode==='explore'&&labels().length)locateTarget();else viewer.setPoint(current.initial_point);viewer.setZoom(1);$('case-zoom').value=1;$('case-zoom-value').textContent='1×';updateWindow();};
   for(const [i,a] of ['x','y','z'].entries())$('case-slice-'+a).oninput=()=>{const point=viewer.point;point[i]=Number($('case-slice-'+a).value);viewer.setPoint(point);};
   $('trace-back').onclick=()=>viewer.step(-1);$('trace-forward').onclick=()=>viewer.step(1);
   document.querySelectorAll('[data-trace-mark]').forEach(b=>b.onclick=()=>{if(loading||loadError||task.submitted)return;task.marks[b.dataset.traceMark]={point:viewer.point,plane:viewer.plane,sequence};b.setAttribute('aria-pressed','true');b.title=mm(viewer.point)+' mm';saveDraft();validateForm();$('trace-summary').textContent=`${Object.keys(task.marks).length}/3 지점 기록`;});
@@ -207,6 +229,8 @@ export async function initCaseTraining(){
   const startupControls=[...document.querySelectorAll('#case-bar button,#case-bar select,#case-mri-content button,#case-mri-content input,#case-mri-content select')];startupControls.forEach(el=>el.disabled=true);
   try{
     const response=await fetch('assets/cases/manifest.json');if(!response.ok)throw new Error('manifest');manifest=await response.json();
+    // Atlas metadata is optional: failure must not prevent native MRI practice.
+    try{const r=await fetch('assets/roi-manifest.json');if(r.ok)atlasEntries=await r.json();}catch{}
     if(!manifest.cases?.length)throw new Error('empty manifest');
     current=manifest.cases.find(c=>c.cohort==='learning');task=freshTask();
     const restoredTask=restoreTask(savedState?.task,history);

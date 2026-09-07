@@ -10,7 +10,8 @@
     "serve": "python3 trainer/serve.py --no-browser",
     "test:resilience": "node tests/resilience.mjs",
     "test:atlas-recovery": "node tests/atlas-recovery.mjs",
-    "test:expanded": "node tests/expanded.mjs"
+    "test:expanded": "node tests/expanded.mjs",
+    "test:navigation": "node tests/navigation.mjs"
   },
   "devDependencies": {
     "@playwright/test": "1.58.2"

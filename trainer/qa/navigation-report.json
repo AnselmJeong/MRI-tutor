@@ -1,0 +1,786 @@
+{
+  "date": "2026-09-07T12:05:23.696Z",
+  "checks": [
+    "All 46 native labels: normal exploration topic/side selection reaches actual label voxel",
+    "Manual movement reports actual membership; visible anchor restores location; T2 preserves native point",
+    "Changing subjects locates the new subject’s own label",
+    "Unaided training does not auto-locate or expose labels; held-out location and AAL hints locked",
+    "AAL link opens corresponding hippocampus in separate reference atlas",
+    "No uncaught browser errors"
+  ],
+  "points": [
+    {
+      "caseId": "sub-01",
+      "topic": "hippocampus",
+      "side": "left",
+      "point": [
+        -19.017343521118164,
+        25.898391723632812,
+        -17.418514251708984
+      ],
+      "label": 1,
+      "sourceIds": [
+        17
+      ]
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "hippocampus",
+      "side": "left",
+      "point": [
+        -19.017343521118164,
+        25.898391723632812,
+        -17.418514251708984
+      ],
+      "label": 1,
+      "sourceIds": [
+        17
+      ]
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "hippocampus",
+      "side": "right",
+      "point": [
+        24.987693786621094,
+        25.897048950195312,
+        -22.417356491088867
+      ],
+      "label": 2,
+      "sourceIds": [
+        53
+      ]
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "amygdala",
+      "side": "left",
+      "point": [
+        -15.016927719116211,
+        33.89769744873047,
+        -12.41752815246582
+      ],
+      "label": 3,
+      "sourceIds": [
+        18
+      ]
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "amygdala",
+      "side": "right",
+      "point": [
+        25.98796844482422,
+        37.89658737182617,
+        -18.416015625
+      ],
+      "label": 4,
+      "sourceIds": [
+        54
+      ]
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "caudate",
+      "side": "left",
+      "point": [
+        -2.016587257385254,
+        44.894344329833984,
+        13.584064483642578
+      ],
+      "label": 5,
+      "sourceIds": [
+        11
+      ]
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "caudate",
+      "side": "right",
+      "point": [
+        18.985647201538086,
+        43.89345169067383,
+        13.584497451782227
+      ],
+      "label": 6,
+      "sourceIds": [
+        50
+      ]
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "putamen",
+      "side": "left",
+      "point": [
+        -14.017365455627441,
+        43.895938873291016,
+        3.583613157272339
+      ],
+      "label": 7,
+      "sourceIds": [
+        12
+      ]
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "putamen",
+      "side": "right",
+      "point": [
+        27.987131118774414,
+        40.89424133300781,
+        2.584399461746216
+      ],
+      "label": 8,
+      "sourceIds": [
+        51
+      ]
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "pallidum",
+      "side": "left",
+      "point": [
+        -10.017074584960938,
+        32.89618682861328,
+        -0.4174932539463043
+      ],
+      "label": 9,
+      "sourceIds": [
+        13
+      ]
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "pallidum",
+      "side": "right",
+      "point": [
+        21.986339569091797,
+        29.894927978515625,
+        -1.4169659614562988
+      ],
+      "label": 10,
+      "sourceIds": [
+        52
+      ]
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "thalamus",
+      "side": "left",
+      "point": [
+        -8.017690658569336,
+        10.89588737487793,
+        1.5801748037338257
+      ],
+      "label": 11,
+      "sourceIds": [
+        10
+      ]
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "thalamus",
+      "side": "right",
+      "point": [
+        12.98470401763916,
+        12.89509105682373,
+        0.5809454321861267
+      ],
+      "label": 12,
+      "sourceIds": [
+        49
+      ]
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "insula",
+      "side": "left",
+      "point": [
+        -25.018030166625977,
+        49.897056579589844,
+        -2.4160420894622803
+      ],
+      "label": 13,
+      "sourceIds": [
+        1035
+      ]
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "insula",
+      "side": "right",
+      "point": [
+        40.98915481567383,
+        42.89476776123047,
+        -7.415057182312012
+      ],
+      "label": 14,
+      "sourceIds": [
+        2035
+      ]
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "cingulate",
+      "side": "left",
+      "point": [
+        7.983328819274902,
+        52.89113235473633,
+        39.585227966308594
+      ],
+      "label": 15,
+      "sourceIds": [
+        1002,
+        1010,
+        1023,
+        1026
+      ]
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "cingulate",
+      "side": "right",
+      "point": [
+        10.983390808105469,
+        39.89133071899414,
+        36.58388900756836
+      ],
+      "label": 16,
+      "sourceIds": [
+        2002,
+        2010,
+        2023,
+        2026
+      ]
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "ventricle",
+      "side": "left",
+      "point": [
+        1.9829143285751343,
+        24.89363670349121,
+        18.58199691772461
+      ],
+      "label": 17,
+      "sourceIds": [
+        4
+      ]
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "ventricle",
+      "side": "right",
+      "point": [
+        20.984651565551758,
+        -10.105578422546387,
+        3.578670024871826
+      ],
+      "label": 18,
+      "sourceIds": [
+        43
+      ]
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "callosum",
+      "side": "midline",
+      "point": [
+        7.983728408813477,
+        39.89273452758789,
+        24.583797454833984
+      ],
+      "label": 19,
+      "sourceIds": [
+        251,
+        252,
+        253,
+        254,
+        255
+      ]
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "third-ventricle",
+      "side": "midline",
+      "point": [
+        4.984489917755127,
+        27.89576530456543,
+        -2.4176247119903564
+      ],
+      "label": 20,
+      "sourceIds": [
+        14
+      ]
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "accumbens",
+      "side": "left",
+      "point": [
+        -1.015621542930603,
+        45.895912170410156,
+        -1.4158271551132202
+      ],
+      "label": 21,
+      "sourceIds": [
+        26
+      ]
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "accumbens",
+      "side": "right",
+      "point": [
+        12.98591136932373,
+        44.895416259765625,
+        -2.415571689605713
+      ],
+      "label": 22,
+      "sourceIds": [
+        58
+      ]
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "parahippocampal",
+      "side": "left",
+      "point": [
+        -14.017486572265625,
+        -0.10150956362485886,
+        -20.421201705932617
+      ],
+      "label": 23,
+      "sourceIds": [
+        1016
+      ]
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "parahippocampal",
+      "side": "right",
+      "point": [
+        19.986412048339844,
+        -0.10252783447504044,
+        -24.420326232910156
+      ],
+      "label": 24,
+      "sourceIds": [
+        2016
+      ]
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "entorhinal",
+      "side": "left",
+      "point": [
+        -16.015914916992188,
+        37.89966583251953,
+        -30.417150497436523
+      ],
+      "label": 25,
+      "sourceIds": [
+        1006
+      ]
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "entorhinal",
+      "side": "right",
+      "point": [
+        26.988788604736328,
+        37.89794158935547,
+        -31.416006088256836
+      ],
+      "label": 26,
+      "sourceIds": [
+        2006
+      ]
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "orbitofrontal",
+      "side": "left",
+      "point": [
+        2.9850258827209473,
+        45.89617919921875,
+        -5.4157328605651855
+      ],
+      "label": 27,
+      "sourceIds": [
+        1012,
+        1014
+      ]
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "orbitofrontal",
+      "side": "right",
+      "point": [
+        10.986477851867676,
+        68.89551544189453,
+        -2.413024663925171
+      ],
+      "label": 28,
+      "sourceIds": [
+        2012,
+        2014
+      ]
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "superior-frontal",
+      "side": "left",
+      "point": [
+        -0.020213013514876366,
+        12.888786315917969,
+        64.5807113647461
+      ],
+      "label": 29,
+      "sourceIds": [
+        1028
+      ]
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "superior-frontal",
+      "side": "right",
+      "point": [
+        13.983011245727539,
+        36.8900146484375,
+        47.58366775512695
+      ],
+      "label": 30,
+      "sourceIds": [
+        2028
+      ]
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "middle-frontal",
+      "side": "left",
+      "point": [
+        -0.014346050098538399,
+        101.89460754394531,
+        10.590292930603027
+      ],
+      "label": 31,
+      "sourceIds": [
+        1003,
+        1027
+      ]
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "middle-frontal",
+      "side": "right",
+      "point": [
+        43.98655319213867,
+        18.890443801879883,
+        31.58247947692871
+      ],
+      "label": 32,
+      "sourceIds": [
+        2003,
+        2027
+      ]
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "precentral",
+      "side": "left",
+      "point": [
+        -46.021846771240234,
+        37.89568328857422,
+        18.58213996887207
+      ],
+      "label": 33,
+      "sourceIds": [
+        1024
+      ]
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "precentral",
+      "side": "right",
+      "point": [
+        62.98948669433594,
+        23.891029357910156,
+        18.58351707458496
+      ],
+      "label": 34,
+      "sourceIds": [
+        2024
+      ]
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "postcentral",
+      "side": "left",
+      "point": [
+        -36.0225944519043,
+        -1.1058249473571777,
+        28.578174591064453
+      ],
+      "label": 35,
+      "sourceIds": [
+        1022
+      ]
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "postcentral",
+      "side": "right",
+      "point": [
+        63.98862838745117,
+        0.8905496597290039,
+        22.5810546875
+      ],
+      "label": 36,
+      "sourceIds": [
+        2022
+      ]
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "precuneus",
+      "side": "left",
+      "point": [
+        -4.019124984741211,
+        -31.105270385742188,
+        10.575733184814453
+      ],
+      "label": 37,
+      "sourceIds": [
+        1025
+      ]
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "precuneus",
+      "side": "right",
+      "point": [
+        16.984519958496094,
+        -26.10380744934082,
+        -11.423197746276855
+      ],
+      "label": 38,
+      "sourceIds": [
+        2025
+      ]
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "inferior-parietal",
+      "side": "left",
+      "point": [
+        -32.02141571044922,
+        -27.10289192199707,
+        -0.4245918095111847
+      ],
+      "label": 39,
+      "sourceIds": [
+        1008,
+        1031
+      ]
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "inferior-parietal",
+      "side": "right",
+      "point": [
+        45.987518310546875,
+        -0.10696756839752197,
+        6.580430030822754
+      ],
+      "label": 40,
+      "sourceIds": [
+        2008,
+        2031
+      ]
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "temporal-horn",
+      "side": "left",
+      "point": [
+        -14.016819953918457,
+        28.897966384887695,
+        -15.418049812316895
+      ],
+      "label": 41,
+      "sourceIds": [
+        5
+      ]
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "temporal-horn",
+      "side": "right",
+      "point": [
+        31.988544464111328,
+        30.896650314331055,
+        -21.4166202545166
+      ],
+      "label": 42,
+      "sourceIds": [
+        44
+      ]
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "fourth-ventricle",
+      "side": "midline",
+      "point": [
+        1.9854140281677246,
+        3.8998546600341797,
+        -39.42039108276367
+      ],
+      "label": 43,
+      "sourceIds": [
+        15
+      ]
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "brainstem",
+      "side": "midline",
+      "point": [
+        1.9857194423675537,
+        19.899417877197266,
+        -35.41864013671875
+      ],
+      "label": 44,
+      "sourceIds": [
+        16
+      ]
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "cerebellar-cortex",
+      "side": "left",
+      "point": [
+        -27.016517639160156,
+        8.903127670288086,
+        -58.4206428527832
+      ],
+      "label": 45,
+      "sourceIds": [
+        8
+      ]
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "cerebellar-cortex",
+      "side": "right",
+      "point": [
+        33.9886589050293,
+        -16.100666046142578,
+        -47.421722412109375
+      ],
+      "label": 46,
+      "sourceIds": [
+        47
+      ]
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "hippocampus",
+      "side": "left",
+      "point": [
+        -19.017343521118164,
+        25.898391723632812,
+        -17.418514251708984
+      ],
+      "label": 1,
+      "sourceIds": [
+        17
+      ]
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "hippocampus",
+      "side": "left",
+      "point": [
+        -19.017343521118164,
+        25.898391723632812,
+        -17.418514251708984
+      ],
+      "label": 1,
+      "sourceIds": [
+        17
+      ]
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "hippocampus",
+      "side": "left",
+      "point": [
+        -19.017335891723633,
+        25.898391723632812,
+        -17.418514251708984
+      ],
+      "label": 1,
+      "sourceIds": [
+        17
+      ]
+    },
+    {
+      "caseId": "sub-02",
+      "topic": "hippocampus",
+      "side": "left",
+      "point": [
+        -28.245330810546875,
+        6.404961585998535,
+        -18.29435920715332
+      ],
+      "label": 1,
+      "sourceIds": [
+        17
+      ]
+    },
+    {
+      "caseId": "sub-03",
+      "topic": "hippocampus",
+      "side": "left",
+      "point": [
+        -30.60432243347168,
+        13.792864799499512,
+        2.5111594200134277
+      ],
+      "label": 1,
+      "sourceIds": [
+        17
+      ]
+    },
+    {
+      "caseId": "sub-03",
+      "topic": "thalamus",
+      "side": "left",
+      "point": [
+        -11.603445053100586,
+        10.793828964233398,
+        23.5116024017334
+      ],
+      "label": 11,
+      "sourceIds": [
+        10
+      ]
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "thalamus",
+      "side": "left",
+      "point": [
+        -8.017690658569336,
+        10.89588737487793,
+        1.5801748037338257
+      ],
+      "label": 11,
+      "sourceIds": [
+        10
+      ]
+    }
+  ],
+  "errors": []
+}

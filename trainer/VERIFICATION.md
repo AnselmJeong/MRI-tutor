@@ -44,3 +44,14 @@
 서버는 `serve.py`의 HTTP/1.1 연결 유지와 128개 요청 대기열을 사용한다. 기본 `http.server`로 테스트하던 중 새로고침에서 ES module 요청이 중단되는 사례가 있어 서버 실행 경로도 통일했다. 이 설정은 서버 프로세스 종료 자체를 방지하지 않으므로 사용 중 서버를 유지해야 한다.
 
 추가 주제 브라우저 검사 결과는 `qa/expanded-report.json`에 기록했다. 새로 연결한 제3뇌실을 포함해 27개 좌우/정중 경로의 표시 라벨과 앵커를 확인했다. 최신 화면 예시는 `qa/individual-expanded.png`와 `qa/atlas-recovered.png`다.
+
+## 구조 선택과 십자선 불일치 수정 (2026-09-07)
+
+개인 탐색에서 구조·좌우 변경 시 제목과 마스크만 바뀌고 십자선은 이전 위치에 남던 오류를 수정했다. 이제 탐색에서는 해당 개인의 자동 분할 내부 지점으로 이동한다. 현재 십자선의 라벨과 선택 영역 안/밖을 표시하고, 위치 이동 버튼을 경계 힌트와 분리했다. 안내·추적·전이에서는 현재 십자선이 목표 위치를 뜻하지 않음을 명시한다. 개인 FreeSurfer와 별도 MNI AAL3의 출처 및 처리 차이는 [ANATOMICAL_VALIDITY.md](ANATOMICAL_VALIDITY.md)에 기록했다.
+
+- `npm run test:navigation`: 46개 구획을 일반적인 구조·좌우 선택으로 탐색해 실제 라벨 복셀에 도착하는지 검사. 수동 이동 시 소속 갱신, 위치 복귀, T2 좌표 보존, 다른 개인의 고유 위치, 안내/전이 도움 잠금, AAL3 관련 영역 전환을 확인했다. `qa/navigation-report.json`.
+- `uv run --with-requirements scripts/individual-requirements.txt python scripts/audit_navigation.py`: 원본 rawavg/T1 헤더로 좌표 변환을 독립 재구성하고 저장 앵커 184개와 브라우저 위치 54회를 원천 aparc+aseg ID와 대조했다. 총 238회 일치. `qa/navigation-source-audit.json`은 사용한 브라우저 보고서의 해시도 기록한다. 원천 staging 파일은 README의 다운로드 단계가 필요하다.
+- 실제 브라우저의 해마·시상·뇌량 3면 화면(`qa/navigation-*.png`)과 nibabel의 독립 그림(`qa/navigation-independent.png`)을 시각 대조했다. 독립 그림의 관상·축상은 앱과 같은 방사선학적 좌우 표시다.
+- 기존 단위 검사 10개, 브라우저 흐름 16개, 오류·저장소 복구 흐름 4개를 통과했다. 첫 응답 보존, 전이 잠금, 비교 좌표, Atlas, 390px 화면을 포함한다.
+
+검사는 UI 동작과 원천 분할 좌표의 일관성을 확인한다. 전문의의 국소 경계 승인이나 교육 효과 검증을 대신하지 않는다. 이번 수정에서 MRI·분할 자산과 공간 변환 자체는 변경하지 않았다. 개인 AAL normalization 파이프라인도 추가하지 않았다.

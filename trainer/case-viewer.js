@@ -51,11 +51,15 @@ export async function createCaseViewer({canvas,onLocation=()=>{},onLoad=()=>{}})
   function step(delta){if(busy||error)return;const axis={sagittal:0,coronal:1,axial:2,multi:2}[plane],p=[...point];p[axis]+=delta;pointAt(p);}
   canvas.addEventListener('keydown',e=>{if(!['ArrowUp','ArrowDown'].includes(e.key))return;e.preventDefault();step(e.key==='ArrowUp'?1:-1);});
   return {load,setPlane,setPoint:pointAt,step,
-    setMask(labelIds,show){ids=labelIds;overlay=show;color();},
+    setMask(labelIds,show){
+      // Hidden labels need no texture upload when only the learning target changes.
+      const changed=overlay!==show||(show&&(ids.length!==labelIds.length||ids.some((id,i)=>id!==labelIds[i])));
+      ids=[...labelIds];overlay=show;if(changed)color();
+    },
     setWindow(width,level){if(!base||busy||error)return;base.cal_min=level-width/2;base.cal_max=level+width/2;nv.updateGLVolume();},
     setZoom(value){if(!busy&&!error)nv.setPan2Dxyzmm([0,0,0,value]);},
     cancel(){request++;busy=false;canvas.style.visibility='hidden';},
-    snapshot(){return {caseId:current?.id,sequence,plane,point:[...point],busy,error:Boolean(error),overlay,ids:[...ids],range:base?[base.cal_min,base.cal_max]:null};},
+    snapshot(){const voxel=labelImage&&!busy&&!error?labelImage.mm2vox(point):null;const referenceLabel=voxel?Number(labelImage.getValue(...voxel))||0:0;return {referenceLabel,caseId:current?.id,sequence,plane,point:[...point],busy,error:Boolean(error),overlay,ids:[...ids],range:base?[base.cal_min,base.cal_max]:null};},
     get point(){return [...point];},get busy(){return busy;},get failed(){return Boolean(error);},get plane(){return plane;},
     get labels(){return labelImage;},get current(){return current;},
     // Purely geometric reference lookup; caller cannot turn it into clinical scoring.

@@ -1,0 +1,5085 @@
+{
+  "browser_report_sha256": "83d84a05d5cd1efdf56429d470aa0942b25469d3234c04b6c0fb66fb9ecdd559",
+  "scope": "Original source ID and coordinate consistency; no expert anatomical adjudication",
+  "checked": 238,
+  "checks": [
+    {
+      "caseId": "sub-01",
+      "topic": "hippocampus",
+      "side": "left",
+      "point": [
+        -19.017340588735806,
+        25.898392191448266,
+        -17.418508097190923
+      ],
+      "label": 1,
+      "sourceIds": [
+        17
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        149,
+        118,
+        123
+      ],
+      "originalSourceId": 17
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "hippocampus",
+      "side": "right",
+      "point": [
+        24.987692048663178,
+        25.897048606852536,
+        -22.41734983211026
+      ],
+      "label": 2,
+      "sourceIds": [
+        53
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        105,
+        123,
+        123
+      ],
+      "originalSourceId": 53
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "amygdala",
+      "side": "left",
+      "point": [
+        -15.016921172611148,
+        33.89768754419279,
+        -12.417523983234759
+      ],
+      "label": 3,
+      "sourceIds": [
+        18
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        145,
+        113,
+        131
+      ],
+      "originalSourceId": 18
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "amygdala",
+      "side": "right",
+      "point": [
+        25.987972415750235,
+        37.896580803689716,
+        -18.416012416090695
+      ],
+      "label": 4,
+      "sourceIds": [
+        54
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        104,
+        119,
+        135
+      ],
+      "originalSourceId": 54
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "caudate",
+      "side": "left",
+      "point": [
+        -2.0165823621923096,
+        44.89434621150792,
+        13.584061636751187
+      ],
+      "label": 5,
+      "sourceIds": [
+        11
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        132,
+        87,
+        142
+      ],
+      "originalSourceId": 11
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "caudate",
+      "side": "right",
+      "point": [
+        18.98565605537813,
+        43.893448573525404,
+        13.584509973246455
+      ],
+      "label": 6,
+      "sourceIds": [
+        50
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        111,
+        87,
+        141
+      ],
+      "originalSourceId": 50
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "putamen",
+      "side": "left",
+      "point": [
+        -14.017364256326346,
+        43.89593154146854,
+        3.5836171627092597
+      ],
+      "label": 7,
+      "sourceIds": [
+        12
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        144,
+        97,
+        141
+      ],
+      "originalSourceId": 12
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "putamen",
+      "side": "right",
+      "point": [
+        27.987134792643445,
+        40.89424321710274,
+        2.5844034256011383
+      ],
+      "label": 8,
+      "sourceIds": [
+        51
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        102,
+        98,
+        138
+      ],
+      "originalSourceId": 51
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "pallidum",
+      "side": "left",
+      "point": [
+        -10.017071262065969,
+        32.896186044056066,
+        -0.41747897940754797
+      ],
+      "label": 9,
+      "sourceIds": [
+        13
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        140,
+        101,
+        130
+      ],
+      "originalSourceId": 13
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "pallidum",
+      "side": "right",
+      "point": [
+        21.986346333473904,
+        29.894925003750956,
+        -1.4169579512841182
+      ],
+      "label": 10,
+      "sourceIds": [
+        52
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        108,
+        102,
+        127
+      ],
+      "originalSourceId": 52
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "thalamus",
+      "side": "left",
+      "point": [
+        -8.017682630217479,
+        10.895878489124698,
+        1.5801871312989846
+      ],
+      "label": 11,
+      "sourceIds": [
+        10
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        138,
+        99,
+        108
+      ],
+      "originalSourceId": 10
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "thalamus",
+      "side": "right",
+      "point": [
+        12.984708539711804,
+        12.895089168561526,
+        0.5809596837696773
+      ],
+      "label": 12,
+      "sourceIds": [
+        49
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        117,
+        100,
+        110
+      ],
+      "originalSourceId": 49
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "insula",
+      "side": "left",
+      "point": [
+        -25.018028956535744,
+        49.897047360991195,
+        -2.4160331779056747
+      ],
+      "label": 13,
+      "sourceIds": [
+        1035
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        155,
+        103,
+        147
+      ],
+      "originalSourceId": 1035
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "insula",
+      "side": "right",
+      "point": [
+        40.98915443598176,
+        42.89476136127669,
+        -7.4150519919640345
+      ],
+      "label": 14,
+      "sourceIds": [
+        2035
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        89,
+        108,
+        140
+      ],
+      "originalSourceId": 2035
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "cingulate",
+      "side": "left",
+      "point": [
+        7.983334108300113,
+        52.89113203967614,
+        39.58524171675102
+      ],
+      "label": 15,
+      "sourceIds": [
+        1002,
+        1010,
+        1023,
+        1026
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        122,
+        61,
+        150
+      ],
+      "originalSourceId": 1002
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "cingulate",
+      "side": "right",
+      "point": [
+        10.983398839491102,
+        39.891321294705364,
+        36.58390349170045
+      ],
+      "label": 16,
+      "sourceIds": [
+        2002,
+        2010,
+        2023,
+        2026
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        119,
+        64,
+        137
+      ],
+      "originalSourceId": 2002
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "ventricle",
+      "side": "left",
+      "point": [
+        1.9829232842227782,
+        24.893632003511613,
+        18.582003368188808
+      ],
+      "label": 17,
+      "sourceIds": [
+        4
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        128,
+        82,
+        122
+      ],
+      "originalSourceId": 4
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "ventricle",
+      "side": "right",
+      "point": [
+        20.98465856052428,
+        -10.105582391315565,
+        3.5786780323988836
+      ],
+      "label": 18,
+      "sourceIds": [
+        43
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        109,
+        97,
+        87
+      ],
+      "originalSourceId": 43
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "callosum",
+      "side": "midline",
+      "point": [
+        7.983732584999402,
+        39.89273699657494,
+        24.58380287830842
+      ],
+      "label": 19,
+      "sourceIds": [
+        251,
+        252,
+        253,
+        254,
+        255
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        122,
+        76,
+        137
+      ],
+      "originalSourceId": 254
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "third-ventricle",
+      "side": "midline",
+      "point": [
+        4.984497441839437,
+        27.895757996798395,
+        -2.417627917007678
+      ],
+      "label": 20,
+      "sourceIds": [
+        14
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        125,
+        103,
+        125
+      ],
+      "originalSourceId": 14
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "accumbens",
+      "side": "left",
+      "point": [
+        -1.01561885529523,
+        45.895913220371085,
+        -1.4158294869553032
+      ],
+      "label": 21,
+      "sourceIds": [
+        26
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        131,
+        102,
+        143
+      ],
+      "originalSourceId": 26
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "accumbens",
+      "side": "right",
+      "point": [
+        12.985917393335654,
+        44.89542197428534,
+        -2.4155685683780916
+      ],
+      "label": 22,
+      "sourceIds": [
+        58
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        117,
+        103,
+        142
+      ],
+      "originalSourceId": 58
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "parahippocampal",
+      "side": "left",
+      "point": [
+        -14.017483817081143,
+        -0.10150844925001934,
+        -20.42120581002854
+      ],
+      "label": 23,
+      "sourceIds": [
+        1016
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        144,
+        121,
+        97
+      ],
+      "originalSourceId": 1016
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "parahippocampal",
+      "side": "right",
+      "point": [
+        19.986412518426448,
+        -0.10253204283931439,
+        -24.420311026136247
+      ],
+      "label": 24,
+      "sourceIds": [
+        2016
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        110,
+        125,
+        97
+      ],
+      "originalSourceId": 2016
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "entorhinal",
+      "side": "left",
+      "point": [
+        -16.01591150711829,
+        37.89966291339607,
+        -30.417147445079763
+      ],
+      "label": 25,
+      "sourceIds": [
+        1006
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        146,
+        131,
+        135
+      ],
+      "originalSourceId": 1006
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "entorhinal",
+      "side": "right",
+      "point": [
+        26.988793591091948,
+        37.8979328849893,
+        -31.41600868915546
+      ],
+      "label": 26,
+      "sourceIds": [
+        2006
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        103,
+        132,
+        135
+      ],
+      "originalSourceId": 2006
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "orbitofrontal",
+      "side": "left",
+      "point": [
+        2.9850331199225053,
+        45.89617147896391,
+        -5.4157304073684145
+      ],
+      "label": 27,
+      "sourceIds": [
+        1012,
+        1014
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        127,
+        106,
+        143
+      ],
+      "originalSourceId": 1014
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "orbitofrontal",
+      "side": "right",
+      "point": [
+        10.98648433382931,
+        68.89551562601818,
+        -2.4130138588873393
+      ],
+      "label": 28,
+      "sourceIds": [
+        2012,
+        2014
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        119,
+        103,
+        166
+      ],
+      "originalSourceId": 2014
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "superior-frontal",
+      "side": "left",
+      "point": [
+        -0.020207651279264383,
+        12.888777882366469,
+        64.5807271076986
+      ],
+      "label": 29,
+      "sourceIds": [
+        1028
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        130,
+        36,
+        110
+      ],
+      "originalSourceId": 1028
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "superior-frontal",
+      "side": "right",
+      "point": [
+        13.983022038546792,
+        36.89001186152498,
+        47.5836763819568
+      ],
+      "label": 30,
+      "sourceIds": [
+        2028
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        116,
+        53,
+        134
+      ],
+      "originalSourceId": 2028
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "middle-frontal",
+      "side": "left",
+      "point": [
+        -0.014341352070317726,
+        101.89460209679532,
+        10.590302844520068
+      ],
+      "label": 31,
+      "sourceIds": [
+        1003,
+        1027
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        130,
+        90,
+        199
+      ],
+      "originalSourceId": 1027
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "middle-frontal",
+      "side": "right",
+      "point": [
+        43.98655655083495,
+        18.89044055202079,
+        31.582488211646876
+      ],
+      "label": 32,
+      "sourceIds": [
+        2003,
+        2027
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        86,
+        69,
+        116
+      ],
+      "originalSourceId": 2003
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "precentral",
+      "side": "left",
+      "point": [
+        -46.02184344201871,
+        37.89568740591844,
+        18.58214277604091
+      ],
+      "label": 33,
+      "sourceIds": [
+        1024
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        176,
+        82,
+        135
+      ],
+      "originalSourceId": 1024
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "precentral",
+      "side": "right",
+      "point": [
+        62.989487515513005,
+        23.891025229286242,
+        18.583512643757942
+      ],
+      "label": 34,
+      "sourceIds": [
+        2024
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        67,
+        82,
+        121
+      ],
+      "originalSourceId": 2024
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "postcentral",
+      "side": "left",
+      "point": [
+        -36.0225832238701,
+        -1.105826125431264,
+        28.578187942388382
+      ],
+      "label": 35,
+      "sourceIds": [
+        1022
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        166,
+        72,
+        96
+      ],
+      "originalSourceId": 1022
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "postcentral",
+      "side": "right",
+      "point": [
+        63.98862567046308,
+        0.8905454751973565,
+        22.581047081629364
+      ],
+      "label": 36,
+      "sourceIds": [
+        2022
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        66,
+        78,
+        98
+      ],
+      "originalSourceId": 2022
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "precuneus",
+      "side": "left",
+      "point": [
+        -4.01911433956289,
+        -31.10527240309939,
+        10.575745433649686
+      ],
+      "label": 37,
+      "sourceIds": [
+        1025
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        134,
+        90,
+        66
+      ],
+      "originalSourceId": 1025
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "precuneus",
+      "side": "right",
+      "point": [
+        16.984526551954133,
+        -26.103807545157537,
+        -11.423192869506664
+      ],
+      "label": 38,
+      "sourceIds": [
+        2025
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        113,
+        112,
+        71
+      ],
+      "originalSourceId": 2025
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "inferior-parietal",
+      "side": "left",
+      "point": [
+        -32.021408537561,
+        -27.102894418312175,
+        -0.4245818870093103
+      ],
+      "label": 39,
+      "sourceIds": [
+        1008,
+        1031
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        162,
+        101,
+        70
+      ],
+      "originalSourceId": 1008
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "inferior-parietal",
+      "side": "right",
+      "point": [
+        45.98752399503971,
+        -0.1069690660798841,
+        6.580432945245619
+      ],
+      "label": 40,
+      "sourceIds": [
+        2008,
+        2031
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        84,
+        94,
+        97
+      ],
+      "originalSourceId": 2031
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "temporal-horn",
+      "side": "left",
+      "point": [
+        -14.016811655046268,
+        28.89796498767444,
+        -15.418046003090865
+      ],
+      "label": 41,
+      "sourceIds": [
+        5
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        144,
+        116,
+        126
+      ],
+      "originalSourceId": 5
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "temporal-horn",
+      "side": "right",
+      "point": [
+        31.988557390765138,
+        30.896643922230908,
+        -21.41661913159963
+      ],
+      "label": 42,
+      "sourceIds": [
+        44
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        98,
+        122,
+        128
+      ],
+      "originalSourceId": 44
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "fourth-ventricle",
+      "side": "midline",
+      "point": [
+        1.985419167704066,
+        3.8998478301042923,
+        -39.42038012634728
+      ],
+      "label": 43,
+      "sourceIds": [
+        15
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        128,
+        140,
+        101
+      ],
+      "originalSourceId": 15
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "brainstem",
+      "side": "midline",
+      "point": [
+        1.9857219279780907,
+        19.899424121167655,
+        -35.418634607730496
+      ],
+      "label": 44,
+      "sourceIds": [
+        16
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        128,
+        136,
+        117
+      ],
+      "originalSourceId": 16
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "cerebellar-cortex",
+      "side": "left",
+      "point": [
+        -27.01651175331301,
+        8.90312722918685,
+        -58.4206393426056
+      ],
+      "label": 45,
+      "sourceIds": [
+        8
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        157,
+        159,
+        106
+      ],
+      "originalSourceId": 8
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "cerebellar-cortex",
+      "side": "right",
+      "point": [
+        33.98866591372173,
+        -16.100667963556347,
+        -47.42171853409951
+      ],
+      "label": 46,
+      "sourceIds": [
+        47
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        96,
+        148,
+        81
+      ],
+      "originalSourceId": 47
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "hippocampus",
+      "side": "left",
+      "point": [
+        -19.017343521118164,
+        25.898391723632812,
+        -17.418514251708984
+      ],
+      "label": 1,
+      "sourceIds": [
+        17
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        149,
+        118,
+        123
+      ],
+      "originalSourceId": 17
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "hippocampus",
+      "side": "left",
+      "point": [
+        -19.017343521118164,
+        25.898391723632812,
+        -17.418514251708984
+      ],
+      "label": 1,
+      "sourceIds": [
+        17
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        149,
+        118,
+        123
+      ],
+      "originalSourceId": 17
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "hippocampus",
+      "side": "right",
+      "point": [
+        24.987693786621094,
+        25.897048950195312,
+        -22.417356491088867
+      ],
+      "label": 2,
+      "sourceIds": [
+        53
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        105,
+        123,
+        123
+      ],
+      "originalSourceId": 53
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "amygdala",
+      "side": "left",
+      "point": [
+        -15.016927719116211,
+        33.89769744873047,
+        -12.41752815246582
+      ],
+      "label": 3,
+      "sourceIds": [
+        18
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        145,
+        113,
+        131
+      ],
+      "originalSourceId": 18
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "amygdala",
+      "side": "right",
+      "point": [
+        25.98796844482422,
+        37.89658737182617,
+        -18.416015625
+      ],
+      "label": 4,
+      "sourceIds": [
+        54
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        104,
+        119,
+        135
+      ],
+      "originalSourceId": 54
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "caudate",
+      "side": "left",
+      "point": [
+        -2.016587257385254,
+        44.894344329833984,
+        13.584064483642578
+      ],
+      "label": 5,
+      "sourceIds": [
+        11
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        132,
+        87,
+        142
+      ],
+      "originalSourceId": 11
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "caudate",
+      "side": "right",
+      "point": [
+        18.985647201538086,
+        43.89345169067383,
+        13.584497451782227
+      ],
+      "label": 6,
+      "sourceIds": [
+        50
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        111,
+        87,
+        141
+      ],
+      "originalSourceId": 50
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "putamen",
+      "side": "left",
+      "point": [
+        -14.017365455627441,
+        43.895938873291016,
+        3.583613157272339
+      ],
+      "label": 7,
+      "sourceIds": [
+        12
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        144,
+        97,
+        141
+      ],
+      "originalSourceId": 12
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "putamen",
+      "side": "right",
+      "point": [
+        27.987131118774414,
+        40.89424133300781,
+        2.584399461746216
+      ],
+      "label": 8,
+      "sourceIds": [
+        51
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        102,
+        98,
+        138
+      ],
+      "originalSourceId": 51
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "pallidum",
+      "side": "left",
+      "point": [
+        -10.017074584960938,
+        32.89618682861328,
+        -0.4174932539463043
+      ],
+      "label": 9,
+      "sourceIds": [
+        13
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        140,
+        101,
+        130
+      ],
+      "originalSourceId": 13
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "pallidum",
+      "side": "right",
+      "point": [
+        21.986339569091797,
+        29.894927978515625,
+        -1.4169659614562988
+      ],
+      "label": 10,
+      "sourceIds": [
+        52
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        108,
+        102,
+        127
+      ],
+      "originalSourceId": 52
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "thalamus",
+      "side": "left",
+      "point": [
+        -8.017690658569336,
+        10.89588737487793,
+        1.5801748037338257
+      ],
+      "label": 11,
+      "sourceIds": [
+        10
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        138,
+        99,
+        108
+      ],
+      "originalSourceId": 10
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "thalamus",
+      "side": "right",
+      "point": [
+        12.98470401763916,
+        12.89509105682373,
+        0.5809454321861267
+      ],
+      "label": 12,
+      "sourceIds": [
+        49
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        117,
+        100,
+        110
+      ],
+      "originalSourceId": 49
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "insula",
+      "side": "left",
+      "point": [
+        -25.018030166625977,
+        49.897056579589844,
+        -2.4160420894622803
+      ],
+      "label": 13,
+      "sourceIds": [
+        1035
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        155,
+        103,
+        147
+      ],
+      "originalSourceId": 1035
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "insula",
+      "side": "right",
+      "point": [
+        40.98915481567383,
+        42.89476776123047,
+        -7.415057182312012
+      ],
+      "label": 14,
+      "sourceIds": [
+        2035
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        89,
+        108,
+        140
+      ],
+      "originalSourceId": 2035
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "cingulate",
+      "side": "left",
+      "point": [
+        7.983328819274902,
+        52.89113235473633,
+        39.585227966308594
+      ],
+      "label": 15,
+      "sourceIds": [
+        1002,
+        1010,
+        1023,
+        1026
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        122,
+        61,
+        150
+      ],
+      "originalSourceId": 1002
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "cingulate",
+      "side": "right",
+      "point": [
+        10.983390808105469,
+        39.89133071899414,
+        36.58388900756836
+      ],
+      "label": 16,
+      "sourceIds": [
+        2002,
+        2010,
+        2023,
+        2026
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        119,
+        64,
+        137
+      ],
+      "originalSourceId": 2002
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "ventricle",
+      "side": "left",
+      "point": [
+        1.9829143285751343,
+        24.89363670349121,
+        18.58199691772461
+      ],
+      "label": 17,
+      "sourceIds": [
+        4
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        128,
+        82,
+        122
+      ],
+      "originalSourceId": 4
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "ventricle",
+      "side": "right",
+      "point": [
+        20.984651565551758,
+        -10.105578422546387,
+        3.578670024871826
+      ],
+      "label": 18,
+      "sourceIds": [
+        43
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        109,
+        97,
+        87
+      ],
+      "originalSourceId": 43
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "callosum",
+      "side": "midline",
+      "point": [
+        7.983728408813477,
+        39.89273452758789,
+        24.583797454833984
+      ],
+      "label": 19,
+      "sourceIds": [
+        251,
+        252,
+        253,
+        254,
+        255
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        122,
+        76,
+        137
+      ],
+      "originalSourceId": 254
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "third-ventricle",
+      "side": "midline",
+      "point": [
+        4.984489917755127,
+        27.89576530456543,
+        -2.4176247119903564
+      ],
+      "label": 20,
+      "sourceIds": [
+        14
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        125,
+        103,
+        125
+      ],
+      "originalSourceId": 14
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "accumbens",
+      "side": "left",
+      "point": [
+        -1.015621542930603,
+        45.895912170410156,
+        -1.4158271551132202
+      ],
+      "label": 21,
+      "sourceIds": [
+        26
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        131,
+        102,
+        143
+      ],
+      "originalSourceId": 26
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "accumbens",
+      "side": "right",
+      "point": [
+        12.98591136932373,
+        44.895416259765625,
+        -2.415571689605713
+      ],
+      "label": 22,
+      "sourceIds": [
+        58
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        117,
+        103,
+        142
+      ],
+      "originalSourceId": 58
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "parahippocampal",
+      "side": "left",
+      "point": [
+        -14.017486572265625,
+        -0.10150956362485886,
+        -20.421201705932617
+      ],
+      "label": 23,
+      "sourceIds": [
+        1016
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        144,
+        121,
+        97
+      ],
+      "originalSourceId": 1016
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "parahippocampal",
+      "side": "right",
+      "point": [
+        19.986412048339844,
+        -0.10252783447504044,
+        -24.420326232910156
+      ],
+      "label": 24,
+      "sourceIds": [
+        2016
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        110,
+        125,
+        97
+      ],
+      "originalSourceId": 2016
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "entorhinal",
+      "side": "left",
+      "point": [
+        -16.015914916992188,
+        37.89966583251953,
+        -30.417150497436523
+      ],
+      "label": 25,
+      "sourceIds": [
+        1006
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        146,
+        131,
+        135
+      ],
+      "originalSourceId": 1006
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "entorhinal",
+      "side": "right",
+      "point": [
+        26.988788604736328,
+        37.89794158935547,
+        -31.416006088256836
+      ],
+      "label": 26,
+      "sourceIds": [
+        2006
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        103,
+        132,
+        135
+      ],
+      "originalSourceId": 2006
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "orbitofrontal",
+      "side": "left",
+      "point": [
+        2.9850258827209473,
+        45.89617919921875,
+        -5.4157328605651855
+      ],
+      "label": 27,
+      "sourceIds": [
+        1012,
+        1014
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        127,
+        106,
+        143
+      ],
+      "originalSourceId": 1014
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "orbitofrontal",
+      "side": "right",
+      "point": [
+        10.986477851867676,
+        68.89551544189453,
+        -2.413024663925171
+      ],
+      "label": 28,
+      "sourceIds": [
+        2012,
+        2014
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        119,
+        103,
+        166
+      ],
+      "originalSourceId": 2014
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "superior-frontal",
+      "side": "left",
+      "point": [
+        -0.020213013514876366,
+        12.888786315917969,
+        64.5807113647461
+      ],
+      "label": 29,
+      "sourceIds": [
+        1028
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        130,
+        36,
+        110
+      ],
+      "originalSourceId": 1028
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "superior-frontal",
+      "side": "right",
+      "point": [
+        13.983011245727539,
+        36.8900146484375,
+        47.58366775512695
+      ],
+      "label": 30,
+      "sourceIds": [
+        2028
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        116,
+        53,
+        134
+      ],
+      "originalSourceId": 2028
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "middle-frontal",
+      "side": "left",
+      "point": [
+        -0.014346050098538399,
+        101.89460754394531,
+        10.590292930603027
+      ],
+      "label": 31,
+      "sourceIds": [
+        1003,
+        1027
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        130,
+        90,
+        199
+      ],
+      "originalSourceId": 1027
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "middle-frontal",
+      "side": "right",
+      "point": [
+        43.98655319213867,
+        18.890443801879883,
+        31.58247947692871
+      ],
+      "label": 32,
+      "sourceIds": [
+        2003,
+        2027
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        86,
+        69,
+        116
+      ],
+      "originalSourceId": 2003
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "precentral",
+      "side": "left",
+      "point": [
+        -46.021846771240234,
+        37.89568328857422,
+        18.58213996887207
+      ],
+      "label": 33,
+      "sourceIds": [
+        1024
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        176,
+        82,
+        135
+      ],
+      "originalSourceId": 1024
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "precentral",
+      "side": "right",
+      "point": [
+        62.98948669433594,
+        23.891029357910156,
+        18.58351707458496
+      ],
+      "label": 34,
+      "sourceIds": [
+        2024
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        67,
+        82,
+        121
+      ],
+      "originalSourceId": 2024
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "postcentral",
+      "side": "left",
+      "point": [
+        -36.0225944519043,
+        -1.1058249473571777,
+        28.578174591064453
+      ],
+      "label": 35,
+      "sourceIds": [
+        1022
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        166,
+        72,
+        96
+      ],
+      "originalSourceId": 1022
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "postcentral",
+      "side": "right",
+      "point": [
+        63.98862838745117,
+        0.8905496597290039,
+        22.5810546875
+      ],
+      "label": 36,
+      "sourceIds": [
+        2022
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        66,
+        78,
+        98
+      ],
+      "originalSourceId": 2022
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "precuneus",
+      "side": "left",
+      "point": [
+        -4.019124984741211,
+        -31.105270385742188,
+        10.575733184814453
+      ],
+      "label": 37,
+      "sourceIds": [
+        1025
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        134,
+        90,
+        66
+      ],
+      "originalSourceId": 1025
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "precuneus",
+      "side": "right",
+      "point": [
+        16.984519958496094,
+        -26.10380744934082,
+        -11.423197746276855
+      ],
+      "label": 38,
+      "sourceIds": [
+        2025
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        113,
+        112,
+        71
+      ],
+      "originalSourceId": 2025
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "inferior-parietal",
+      "side": "left",
+      "point": [
+        -32.02141571044922,
+        -27.10289192199707,
+        -0.4245918095111847
+      ],
+      "label": 39,
+      "sourceIds": [
+        1008,
+        1031
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        162,
+        101,
+        70
+      ],
+      "originalSourceId": 1008
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "inferior-parietal",
+      "side": "right",
+      "point": [
+        45.987518310546875,
+        -0.10696756839752197,
+        6.580430030822754
+      ],
+      "label": 40,
+      "sourceIds": [
+        2008,
+        2031
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        84,
+        94,
+        97
+      ],
+      "originalSourceId": 2031
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "temporal-horn",
+      "side": "left",
+      "point": [
+        -14.016819953918457,
+        28.897966384887695,
+        -15.418049812316895
+      ],
+      "label": 41,
+      "sourceIds": [
+        5
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        144,
+        116,
+        126
+      ],
+      "originalSourceId": 5
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "temporal-horn",
+      "side": "right",
+      "point": [
+        31.988544464111328,
+        30.896650314331055,
+        -21.4166202545166
+      ],
+      "label": 42,
+      "sourceIds": [
+        44
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        98,
+        122,
+        128
+      ],
+      "originalSourceId": 44
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "fourth-ventricle",
+      "side": "midline",
+      "point": [
+        1.9854140281677246,
+        3.8998546600341797,
+        -39.42039108276367
+      ],
+      "label": 43,
+      "sourceIds": [
+        15
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        128,
+        140,
+        101
+      ],
+      "originalSourceId": 15
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "brainstem",
+      "side": "midline",
+      "point": [
+        1.9857194423675537,
+        19.899417877197266,
+        -35.41864013671875
+      ],
+      "label": 44,
+      "sourceIds": [
+        16
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        128,
+        136,
+        117
+      ],
+      "originalSourceId": 16
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "cerebellar-cortex",
+      "side": "left",
+      "point": [
+        -27.016517639160156,
+        8.903127670288086,
+        -58.4206428527832
+      ],
+      "label": 45,
+      "sourceIds": [
+        8
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        157,
+        159,
+        106
+      ],
+      "originalSourceId": 8
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "cerebellar-cortex",
+      "side": "right",
+      "point": [
+        33.9886589050293,
+        -16.100666046142578,
+        -47.421722412109375
+      ],
+      "label": 46,
+      "sourceIds": [
+        47
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        96,
+        148,
+        81
+      ],
+      "originalSourceId": 47
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "hippocampus",
+      "side": "left",
+      "point": [
+        -19.017343521118164,
+        25.898391723632812,
+        -17.418514251708984
+      ],
+      "label": 1,
+      "sourceIds": [
+        17
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        149,
+        118,
+        123
+      ],
+      "originalSourceId": 17
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "hippocampus",
+      "side": "left",
+      "point": [
+        -19.017343521118164,
+        25.898391723632812,
+        -17.418514251708984
+      ],
+      "label": 1,
+      "sourceIds": [
+        17
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        149,
+        118,
+        123
+      ],
+      "originalSourceId": 17
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "hippocampus",
+      "side": "left",
+      "point": [
+        -19.017335891723633,
+        25.898391723632812,
+        -17.418514251708984
+      ],
+      "label": 1,
+      "sourceIds": [
+        17
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        149,
+        118,
+        123
+      ],
+      "originalSourceId": 17
+    },
+    {
+      "caseId": "sub-01",
+      "topic": "thalamus",
+      "side": "left",
+      "point": [
+        -8.017690658569336,
+        10.89588737487793,
+        1.5801748037338257
+      ],
+      "label": 11,
+      "sourceIds": [
+        10
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        138,
+        99,
+        108
+      ],
+      "originalSourceId": 10
+    },
+    {
+      "caseId": "sub-02",
+      "topic": "hippocampus",
+      "side": "left",
+      "point": [
+        -28.245330595258523,
+        6.404960430597768,
+        -18.294367291940773
+      ],
+      "label": 1,
+      "sourceIds": [
+        17
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        153,
+        118,
+        115
+      ],
+      "originalSourceId": 17
+    },
+    {
+      "caseId": "sub-02",
+      "topic": "hippocampus",
+      "side": "right",
+      "point": [
+        27.764796287061273,
+        13.405317040094687,
+        -17.294714332599042
+      ],
+      "label": 2,
+      "sourceIds": [
+        53
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        97,
+        117,
+        122
+      ],
+      "originalSourceId": 53
+    },
+    {
+      "caseId": "sub-02",
+      "topic": "amygdala",
+      "side": "left",
+      "point": [
+        -26.245185258379635,
+        21.40452481438382,
+        -14.292710207545468
+      ],
+      "label": 3,
+      "sourceIds": [
+        18
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        151,
+        114,
+        130
+      ],
+      "originalSourceId": 18
+    },
+    {
+      "caseId": "sub-02",
+      "topic": "amygdala",
+      "side": "right",
+      "point": [
+        21.763443987231895,
+        29.405152867664412,
+        -16.292781816469542
+      ],
+      "label": 4,
+      "sourceIds": [
+        54
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        103,
+        116,
+        138
+      ],
+      "originalSourceId": 54
+    },
+    {
+      "caseId": "sub-02",
+      "topic": "caudate",
+      "side": "left",
+      "point": [
+        -16.243444101610137,
+        36.401785903763624,
+        10.708787322681175
+      ],
+      "label": 5,
+      "sourceIds": [
+        11
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        141,
+        89,
+        145
+      ],
+      "originalSourceId": 11
+    },
+    {
+      "caseId": "sub-02",
+      "topic": "caudate",
+      "side": "right",
+      "point": [
+        12.76190716513527,
+        36.40112622737769,
+        18.708198593728866
+      ],
+      "label": 6,
+      "sourceIds": [
+        50
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        112,
+        81,
+        145
+      ],
+      "originalSourceId": 50
+    },
+    {
+      "caseId": "sub-02",
+      "topic": "putamen",
+      "side": "left",
+      "point": [
+        -27.245423607894324,
+        31.40259691641495,
+        2.708444158708147
+      ],
+      "label": 7,
+      "sourceIds": [
+        12
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        152,
+        97,
+        140
+      ],
+      "originalSourceId": 12
+    },
+    {
+      "caseId": "sub-02",
+      "topic": "putamen",
+      "side": "right",
+      "point": [
+        21.76350211834601,
+        34.40266927072622,
+        5.707787245248994
+      ],
+      "label": 8,
+      "sourceIds": [
+        51
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        103,
+        94,
+        143
+      ],
+      "originalSourceId": 51
+    },
+    {
+      "caseId": "sub-02",
+      "topic": "pallidum",
+      "side": "left",
+      "point": [
+        -22.244358708263874,
+        21.402865219345614,
+        0.7072106987156417
+      ],
+      "label": 9,
+      "sourceIds": [
+        13
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        147,
+        99,
+        130
+      ],
+      "originalSourceId": 13
+    },
+    {
+      "caseId": "sub-02",
+      "topic": "pallidum",
+      "side": "right",
+      "point": [
+        19.76332402646834,
+        21.403104768375755,
+        1.7063564492211043
+      ],
+      "label": 10,
+      "sourceIds": [
+        52
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        105,
+        98,
+        130
+      ],
+      "originalSourceId": 52
+    },
+    {
+      "caseId": "sub-02",
+      "topic": "thalamus",
+      "side": "left",
+      "point": [
+        -13.242416260845133,
+        4.402603115180398,
+        3.7051046171527986
+      ],
+      "label": 11,
+      "sourceIds": [
+        10
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        138,
+        96,
+        113
+      ],
+      "originalSourceId": 10
+    },
+    {
+      "caseId": "sub-02",
+      "topic": "thalamus",
+      "side": "right",
+      "point": [
+        8.761568291466517,
+        7.402561787006803,
+        5.70499680984922
+      ],
+      "label": 12,
+      "sourceIds": [
+        49
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        116,
+        94,
+        116
+      ],
+      "originalSourceId": 49
+    },
+    {
+      "caseId": "sub-02",
+      "topic": "insula",
+      "side": "left",
+      "point": [
+        -42.24815787162838,
+        29.402922677620836,
+        -1.2914775937384917
+      ],
+      "label": 13,
+      "sourceIds": [
+        1035
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        167,
+        101,
+        138
+      ],
+      "originalSourceId": 1035
+    },
+    {
+      "caseId": "sub-02",
+      "topic": "insula",
+      "side": "right",
+      "point": [
+        35.766006344035986,
+        35.403463950666406,
+        -0.2923853221442698
+      ],
+      "label": 14,
+      "sourceIds": [
+        2035
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        89,
+        100,
+        144
+      ],
+      "originalSourceId": 2035
+    },
+    {
+      "caseId": "sub-02",
+      "topic": "cingulate",
+      "side": "left",
+      "point": [
+        -6.241800277249823,
+        55.399611142497946,
+        30.710736670369897
+      ],
+      "label": 15,
+      "sourceIds": [
+        1002,
+        1010,
+        1023,
+        1026
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        131,
+        69,
+        164
+      ],
+      "originalSourceId": 1026
+    },
+    {
+      "caseId": "sub-02",
+      "topic": "cingulate",
+      "side": "right",
+      "point": [
+        4.760201120242897,
+        54.40015501310015,
+        26.71039914698612
+      ],
+      "label": 16,
+      "sourceIds": [
+        2002,
+        2010,
+        2023,
+        2026
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        120,
+        73,
+        163
+      ],
+      "originalSourceId": 2002
+    },
+    {
+      "caseId": "sub-02",
+      "topic": "ventricle",
+      "side": "left",
+      "point": [
+        -8.24158072802014,
+        15.40083838184411,
+        19.70624991840002
+      ],
+      "label": 17,
+      "sourceIds": [
+        4
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        133,
+        80,
+        124
+      ],
+      "originalSourceId": 4
+    },
+    {
+      "caseId": "sub-02",
+      "topic": "ventricle",
+      "side": "right",
+      "point": [
+        3.7604815006275487,
+        23.400938600822627,
+        19.706910957198545
+      ],
+      "label": 18,
+      "sourceIds": [
+        43
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        121,
+        80,
+        132
+      ],
+      "originalSourceId": 43
+    },
+    {
+      "caseId": "sub-02",
+      "topic": "callosum",
+      "side": "midline",
+      "point": [
+        -1.2399892279028535,
+        -5.5985372490247585,
+        14.70373073104453
+      ],
+      "label": 19,
+      "sourceIds": [
+        251,
+        252,
+        253,
+        254,
+        255
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        126,
+        85,
+        103
+      ],
+      "originalSourceId": 252
+    },
+    {
+      "caseId": "sub-02",
+      "topic": "third-ventricle",
+      "side": "midline",
+      "point": [
+        -2.2406668903256417,
+        18.40325897384602,
+        -1.2935358953298675
+      ],
+      "label": 20,
+      "sourceIds": [
+        14
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        127,
+        101,
+        127
+      ],
+      "originalSourceId": 14
+    },
+    {
+      "caseId": "sub-02",
+      "topic": "accumbens",
+      "side": "left",
+      "point": [
+        -12.242720233984713,
+        31.403400046740387,
+        -3.2918618957580748
+      ],
+      "label": 21,
+      "sourceIds": [
+        26
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        137,
+        103,
+        140
+      ],
+      "originalSourceId": 26
+    },
+    {
+      "caseId": "sub-02",
+      "topic": "accumbens",
+      "side": "right",
+      "point": [
+        4.760366842225153,
+        33.40331682233392,
+        -1.2919811327990516
+      ],
+      "label": 22,
+      "sourceIds": [
+        58
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        120,
+        101,
+        142
+      ],
+      "originalSourceId": 58
+    },
+    {
+      "caseId": "sub-02",
+      "topic": "parahippocampal",
+      "side": "left",
+      "point": [
+        -19.243717481188,
+        6.40560033700838,
+        -23.29455113721687
+      ],
+      "label": 23,
+      "sourceIds": [
+        1016
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        144,
+        123,
+        115
+      ],
+      "originalSourceId": 1016
+    },
+    {
+      "caseId": "sub-02",
+      "topic": "parahippocampal",
+      "side": "right",
+      "point": [
+        17.763338897862596,
+        -9.594652630147849,
+        -18.297113371786295
+      ],
+      "label": 24,
+      "sourceIds": [
+        2016
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        107,
+        118,
+        99
+      ],
+      "originalSourceId": 2016
+    },
+    {
+      "caseId": "sub-02",
+      "topic": "entorhinal",
+      "side": "left",
+      "point": [
+        -24.24502617813495,
+        27.40646015494025,
+        -31.292074609748994
+      ],
+      "label": 25,
+      "sourceIds": [
+        1006
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        149,
+        131,
+        136
+      ],
+      "originalSourceId": 1006
+    },
+    {
+      "caseId": "sub-02",
+      "topic": "entorhinal",
+      "side": "right",
+      "point": [
+        19.76286103899139,
+        38.40637720218197,
+        -27.291724503437592
+      ],
+      "label": 26,
+      "sourceIds": [
+        2006
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        105,
+        127,
+        147
+      ],
+      "originalSourceId": 2006
+    },
+    {
+      "caseId": "sub-02",
+      "topic": "orbitofrontal",
+      "side": "left",
+      "point": [
+        -21.2444488413242,
+        33.40422742662227,
+        -11.29145373622363
+      ],
+      "label": 27,
+      "sourceIds": [
+        1012,
+        1014
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        146,
+        111,
+        142
+      ],
+      "originalSourceId": 1014
+    },
+    {
+      "caseId": "sub-02",
+      "topic": "orbitofrontal",
+      "side": "right",
+      "point": [
+        15.76221812627574,
+        40.404198850568406,
+        -8.291413958276792
+      ],
+      "label": 28,
+      "sourceIds": [
+        2012,
+        2014
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        109,
+        108,
+        149
+      ],
+      "originalSourceId": 2012
+    },
+    {
+      "caseId": "sub-02",
+      "topic": "superior-frontal",
+      "side": "left",
+      "point": [
+        -5.2418113205746835,
+        68.3992801310421,
+        33.71218765743252
+      ],
+      "label": 29,
+      "sourceIds": [
+        1028
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        130,
+        66,
+        177
+      ],
+      "originalSourceId": 1028
+    },
+    {
+      "caseId": "sub-02",
+      "topic": "superior-frontal",
+      "side": "right",
+      "point": [
+        21.764309802269437,
+        8.395898174262626,
+        65.70485460774516
+      ],
+      "label": 30,
+      "sourceIds": [
+        2028
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        103,
+        34,
+        117
+      ],
+      "originalSourceId": 2028
+    },
+    {
+      "caseId": "sub-02",
+      "topic": "middle-frontal",
+      "side": "left",
+      "point": [
+        -46.24945588431969,
+        71.40074195471863,
+        17.713358718770763
+      ],
+      "label": 31,
+      "sourceIds": [
+        1003,
+        1027
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        171,
+        82,
+        180
+      ],
+      "originalSourceId": 1027
+    },
+    {
+      "caseId": "sub-02",
+      "topic": "middle-frontal",
+      "side": "right",
+      "point": [
+        41.76695447464775,
+        60.39888484606496,
+        40.71032745114924
+      ],
+      "label": 32,
+      "sourceIds": [
+        2003,
+        2027
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        83,
+        59,
+        169
+      ],
+      "originalSourceId": 2027
+    },
+    {
+      "caseId": "sub-02",
+      "topic": "precentral",
+      "side": "left",
+      "point": [
+        -30.244780256576078,
+        -19.603746362115544,
+        58.70274333786118
+      ],
+      "label": 33,
+      "sourceIds": [
+        1024
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        155,
+        41,
+        89
+      ],
+      "originalSourceId": 1024
+    },
+    {
+      "caseId": "sub-02",
+      "topic": "precentral",
+      "side": "right",
+      "point": [
+        53.76927525837891,
+        39.4028246123151,
+        6.707702145565634
+      ],
+      "label": 34,
+      "sourceIds": [
+        2024
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        71,
+        93,
+        148
+      ],
+      "originalSourceId": 2024
+    },
+    {
+      "caseId": "sub-02",
+      "topic": "postcentral",
+      "side": "left",
+      "point": [
+        -6.240108977318457,
+        -36.60365684514208,
+        59.70033180925031
+      ],
+      "label": 35,
+      "sourceIds": [
+        1022
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        131,
+        40,
+        72
+      ],
+      "originalSourceId": 1022
+    },
+    {
+      "caseId": "sub-02",
+      "topic": "postcentral",
+      "side": "right",
+      "point": [
+        61.77145158781774,
+        2.4009750205375724,
+        23.70335564918149
+      ],
+      "label": 36,
+      "sourceIds": [
+        2022
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        63,
+        76,
+        111
+      ],
+      "originalSourceId": 2022
+    },
+    {
+      "caseId": "sub-02",
+      "topic": "precuneus",
+      "side": "left",
+      "point": [
+        -1.2393322627528391,
+        -49.59740586764038,
+        4.698750868415814
+      ],
+      "label": 37,
+      "sourceIds": [
+        1025
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        126,
+        95,
+        59
+      ],
+      "originalSourceId": 1025
+    },
+    {
+      "caseId": "sub-02",
+      "topic": "precuneus",
+      "side": "right",
+      "point": [
+        22.7648896087657,
+        -44.595737372722056,
+        -8.301173614117033
+      ],
+      "label": 38,
+      "sourceIds": [
+        2025
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        102,
+        108,
+        64
+      ],
+      "originalSourceId": 2025
+    },
+    {
+      "caseId": "sub-02",
+      "topic": "inferior-parietal",
+      "side": "left",
+      "point": [
+        -24.24312934959501,
+        -68.59929089609804,
+        19.697071293196544
+      ],
+      "label": 39,
+      "sourceIds": [
+        1008,
+        1031
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        149,
+        80,
+        40
+      ],
+      "originalSourceId": 1008
+    },
+    {
+      "caseId": "sub-02",
+      "topic": "inferior-parietal",
+      "side": "right",
+      "point": [
+        53.77056263453457,
+        -32.59909003340901,
+        23.69955834586571
+      ],
+      "label": 40,
+      "sourceIds": [
+        2008,
+        2031
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        71,
+        76,
+        76
+      ],
+      "originalSourceId": 2008
+    },
+    {
+      "caseId": "sub-02",
+      "topic": "temporal-horn",
+      "side": "left",
+      "point": [
+        -32.246209075633985,
+        15.404926332645744,
+        -18.293267622730326
+      ],
+      "label": 41,
+      "sourceIds": [
+        5
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        157,
+        118,
+        124
+      ],
+      "originalSourceId": 5
+    },
+    {
+      "caseId": "sub-02",
+      "topic": "temporal-horn",
+      "side": "right",
+      "point": [
+        34.76600745615778,
+        16.405714231859235,
+        -20.29451775583638
+      ],
+      "label": 42,
+      "sourceIds": [
+        44
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        90,
+        120,
+        125
+      ],
+      "originalSourceId": 44
+    },
+    {
+      "caseId": "sub-02",
+      "topic": "fourth-ventricle",
+      "side": "midline",
+      "point": [
+        -1.2402483065036591,
+        -9.592780269764859,
+        -36.296729590272065
+      ],
+      "label": 43,
+      "sourceIds": [
+        15
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        126,
+        136,
+        99
+      ],
+      "originalSourceId": 15
+    },
+    {
+      "caseId": "sub-02",
+      "topic": "brainstem",
+      "side": "midline",
+      "point": [
+        -0.24029575336207643,
+        6.406662786339254,
+        -31.294938866949224
+      ],
+      "label": 44,
+      "sourceIds": [
+        16
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        125,
+        131,
+        115
+      ],
+      "originalSourceId": 16
+    },
+    {
+      "caseId": "sub-02",
+      "topic": "cerebellar-cortex",
+      "side": "left",
+      "point": [
+        -12.242397870450091,
+        -11.589824766323105,
+        -63.29673620693032
+      ],
+      "label": 45,
+      "sourceIds": [
+        8
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        137,
+        163,
+        97
+      ],
+      "originalSourceId": 8
+    },
+    {
+      "caseId": "sub-02",
+      "topic": "cerebellar-cortex",
+      "side": "right",
+      "point": [
+        7.761326702486912,
+        -16.58943089325824,
+        -65.29770908934321
+      ],
+      "label": 46,
+      "sourceIds": [
+        47
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        117,
+        165,
+        92
+      ],
+      "originalSourceId": 47
+    },
+    {
+      "caseId": "sub-02",
+      "topic": "hippocampus",
+      "side": "left",
+      "point": [
+        -28.245330810546875,
+        6.404961585998535,
+        -18.29435920715332
+      ],
+      "label": 1,
+      "sourceIds": [
+        17
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        153,
+        118,
+        115
+      ],
+      "originalSourceId": 17
+    },
+    {
+      "caseId": "sub-03",
+      "topic": "hippocampus",
+      "side": "left",
+      "point": [
+        -30.604319678861188,
+        13.792865425723505,
+        2.511156122018491
+      ],
+      "label": 1,
+      "sourceIds": [
+        17
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        157,
+        117,
+        120
+      ],
+      "originalSourceId": 17
+    },
+    {
+      "caseId": "sub-03",
+      "topic": "hippocampus",
+      "side": "right",
+      "point": [
+        24.39926687324008,
+        19.79602307209575,
+        1.5125395469581662
+      ],
+      "label": 2,
+      "sourceIds": [
+        53
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        102,
+        118,
+        126
+      ],
+      "originalSourceId": 53
+    },
+    {
+      "caseId": "sub-03",
+      "topic": "amygdala",
+      "side": "left",
+      "point": [
+        -23.604509022115863,
+        26.793265576492203,
+        3.5114040088555356
+      ],
+      "label": 3,
+      "sourceIds": [
+        18
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        150,
+        116,
+        133
+      ],
+      "originalSourceId": 18
+    },
+    {
+      "caseId": "sub-03",
+      "topic": "amygdala",
+      "side": "right",
+      "point": [
+        24.39869435375624,
+        31.796034207956595,
+        0.512609953299517
+      ],
+      "label": 4,
+      "sourceIds": [
+        54
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        102,
+        119,
+        138
+      ],
+      "originalSourceId": 54
+    },
+    {
+      "caseId": "sub-03",
+      "topic": "caudate",
+      "side": "left",
+      "point": [
+        -10.604970713858577,
+        39.79386296760025,
+        28.51179921463357
+      ],
+      "label": 5,
+      "sourceIds": [
+        11
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        137,
+        91,
+        146
+      ],
+      "originalSourceId": 11
+    },
+    {
+      "caseId": "sub-03",
+      "topic": "caudate",
+      "side": "right",
+      "point": [
+        6.396208296343801,
+        41.794855430728305,
+        25.51222764536635
+      ],
+      "label": 6,
+      "sourceIds": [
+        50
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        120,
+        94,
+        148
+      ],
+      "originalSourceId": 50
+    },
+    {
+      "caseId": "sub-03",
+      "topic": "putamen",
+      "side": "left",
+      "point": [
+        -20.60528314230534,
+        37.79335053077243,
+        18.511542246583105
+      ],
+      "label": 7,
+      "sourceIds": [
+        12
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        147,
+        101,
+        144
+      ],
+      "originalSourceId": 12
+    },
+    {
+      "caseId": "sub-03",
+      "topic": "putamen",
+      "side": "right",
+      "point": [
+        18.397244668870144,
+        40.79557254908475,
+        20.512515885976583
+      ],
+      "label": 8,
+      "sourceIds": [
+        51
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        108,
+        99,
+        147
+      ],
+      "originalSourceId": 51
+    },
+    {
+      "caseId": "sub-03",
+      "topic": "pallidum",
+      "side": "left",
+      "point": [
+        -19.604561467650782,
+        24.79340232540828,
+        18.5114904754426
+      ],
+      "label": 9,
+      "sourceIds": [
+        13
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        146,
+        101,
+        131
+      ],
+      "originalSourceId": 13
+    },
+    {
+      "caseId": "sub-03",
+      "topic": "pallidum",
+      "side": "right",
+      "point": [
+        15.397643272436241,
+        29.795408354233203,
+        18.512377778063723
+      ],
+      "label": 10,
+      "sourceIds": [
+        52
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        111,
+        101,
+        136
+      ],
+      "originalSourceId": 52
+    },
+    {
+      "caseId": "sub-03",
+      "topic": "thalamus",
+      "side": "left",
+      "point": [
+        -11.603443040219744,
+        10.793824008594257,
+        23.511604478700534
+      ],
+      "label": 11,
+      "sourceIds": [
+        10
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        138,
+        96,
+        117
+      ],
+      "originalSourceId": 10
+    },
+    {
+      "caseId": "sub-03",
+      "topic": "thalamus",
+      "side": "right",
+      "point": [
+        9.397879803832467,
+        13.795027625889219,
+        23.512136860273202
+      ],
+      "label": 12,
+      "sourceIds": [
+        49
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        117,
+        96,
+        120
+      ],
+      "originalSourceId": 49
+    },
+    {
+      "caseId": "sub-03",
+      "topic": "insula",
+      "side": "left",
+      "point": [
+        -32.60620989312919,
+        41.7926895313811,
+        14.51127152018293
+      ],
+      "label": 13,
+      "sourceIds": [
+        1035
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        159,
+        105,
+        148
+      ],
+      "originalSourceId": 1035
+    },
+    {
+      "caseId": "sub-03",
+      "topic": "insula",
+      "side": "right",
+      "point": [
+        33.39829868409579,
+        44.796475723790806,
+        13.51290698639319
+      ],
+      "label": 14,
+      "sourceIds": [
+        2035
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        93,
+        106,
+        151
+      ],
+      "originalSourceId": 2035
+    },
+    {
+      "caseId": "sub-03",
+      "topic": "cingulate",
+      "side": "left",
+      "point": [
+        -6.6060373454380255,
+        63.79407159173853,
+        33.51203815007189
+      ],
+      "label": 15,
+      "sourceIds": [
+        1002,
+        1010,
+        1023,
+        1026
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        133,
+        86,
+        170
+      ],
+      "originalSourceId": 1026
+    },
+    {
+      "caseId": "sub-03",
+      "topic": "cingulate",
+      "side": "right",
+      "point": [
+        4.3973004121459525,
+        2.79457215340112,
+        50.511950015519204
+      ],
+      "label": 16,
+      "sourceIds": [
+        2002,
+        2010,
+        2023,
+        2026
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        122,
+        69,
+        109
+      ],
+      "originalSourceId": 2023
+    },
+    {
+      "caseId": "sub-03",
+      "topic": "ventricle",
+      "side": "left",
+      "point": [
+        -4.6041140562013965,
+        28.794177496114585,
+        32.51188178555984
+      ],
+      "label": 17,
+      "sourceIds": [
+        4
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        131,
+        87,
+        135
+      ],
+      "originalSourceId": 4
+    },
+    {
+      "caseId": "sub-03",
+      "topic": "ventricle",
+      "side": "right",
+      "point": [
+        3.3963469268629183,
+        30.7946363770197,
+        32.51208962732518
+      ],
+      "label": 18,
+      "sourceIds": [
+        43
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        123,
+        87,
+        137
+      ],
+      "originalSourceId": 43
+    },
+    {
+      "caseId": "sub-03",
+      "topic": "callosum",
+      "side": "midline",
+      "point": [
+        1.3978893732229096,
+        -2.205485898948737,
+        31.5118469460122
+      ],
+      "label": 19,
+      "sourceIds": [
+        251,
+        252,
+        253,
+        254,
+        255
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        125,
+        88,
+        104
+      ],
+      "originalSourceId": 251
+    },
+    {
+      "caseId": "sub-03",
+      "topic": "third-ventricle",
+      "side": "midline",
+      "point": [
+        0.3975721010858706,
+        10.794547642415267,
+        17.511898577352284
+      ],
+      "label": 20,
+      "sourceIds": [
+        14
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        126,
+        102,
+        117
+      ],
+      "originalSourceId": 14
+    },
+    {
+      "caseId": "sub-03",
+      "topic": "accumbens",
+      "side": "left",
+      "point": [
+        -9.604237918931787,
+        35.79401606941728,
+        12.511800095966493
+      ],
+      "label": 21,
+      "sourceIds": [
+        26
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        136,
+        107,
+        142
+      ],
+      "originalSourceId": 26
+    },
+    {
+      "caseId": "sub-03",
+      "topic": "accumbens",
+      "side": "right",
+      "point": [
+        5.396714129264765,
+        37.79487573605137,
+        12.512179530228792
+      ],
+      "label": 22,
+      "sourceIds": [
+        58
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        121,
+        107,
+        144
+      ],
+      "originalSourceId": 58
+    },
+    {
+      "caseId": "sub-03",
+      "topic": "parahippocampal",
+      "side": "left",
+      "point": [
+        -28.603711278358034,
+        10.793045725537866,
+        -8.488812565478781
+      ],
+      "label": 23,
+      "sourceIds": [
+        1016
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        155,
+        128,
+        117
+      ],
+      "originalSourceId": 1016
+    },
+    {
+      "caseId": "sub-03",
+      "topic": "parahippocampal",
+      "side": "right",
+      "point": [
+        19.399810565824893,
+        0.7957166250335206,
+        3.512305508342479
+      ],
+      "label": 24,
+      "sourceIds": [
+        2016
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        107,
+        116,
+        107
+      ],
+      "originalSourceId": 2016
+    },
+    {
+      "caseId": "sub-03",
+      "topic": "entorhinal",
+      "side": "left",
+      "point": [
+        -21.604135897840067,
+        30.793473198272963,
+        -11.488523642393886
+      ],
+      "label": 25,
+      "sourceIds": [
+        1006
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        148,
+        131,
+        137
+      ],
+      "originalSourceId": 1006
+    },
+    {
+      "caseId": "sub-03",
+      "topic": "entorhinal",
+      "side": "right",
+      "point": [
+        19.39851864111158,
+        35.79582885315129,
+        -12.487489270475407
+      ],
+      "label": 26,
+      "sourceIds": [
+        2006
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        107,
+        132,
+        142
+      ],
+      "originalSourceId": 2006
+    },
+    {
+      "caseId": "sub-03",
+      "topic": "orbitofrontal",
+      "side": "left",
+      "point": [
+        -5.605110003925873,
+        58.79425475066232,
+        12.512033113448837
+      ],
+      "label": 27,
+      "sourceIds": [
+        1012,
+        1014
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        132,
+        107,
+        165
+      ],
+      "originalSourceId": 1014
+    },
+    {
+      "caseId": "sub-03",
+      "topic": "orbitofrontal",
+      "side": "right",
+      "point": [
+        15.396987560868936,
+        49.7954899000964,
+        6.51249501877993
+      ],
+      "label": 28,
+      "sourceIds": [
+        2012,
+        2014
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        111,
+        113,
+        156
+      ],
+      "originalSourceId": 2012
+    },
+    {
+      "caseId": "sub-03",
+      "topic": "superior-frontal",
+      "side": "left",
+      "point": [
+        -1.6041263087199837,
+        14.794148327208717,
+        64.5118734923636
+      ],
+      "label": 29,
+      "sourceIds": [
+        1028
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        128,
+        55,
+        121
+      ],
+      "originalSourceId": 1028
+    },
+    {
+      "caseId": "sub-03",
+      "topic": "superior-frontal",
+      "side": "right",
+      "point": [
+        5.3946565854335375,
+        55.79463947955735,
+        52.5122855541492
+      ],
+      "label": 30,
+      "sourceIds": [
+        2028
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        121,
+        67,
+        162
+      ],
+      "originalSourceId": 2028
+    },
+    {
+      "caseId": "sub-03",
+      "topic": "middle-frontal",
+      "side": "left",
+      "point": [
+        -32.608788106529985,
+        74.79250833885591,
+        46.51146548462624
+      ],
+      "label": 31,
+      "sourceIds": [
+        1003,
+        1027
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        159,
+        73,
+        181
+      ],
+      "originalSourceId": 1027
+    },
+    {
+      "caseId": "sub-03",
+      "topic": "middle-frontal",
+      "side": "right",
+      "point": [
+        37.396590640972036,
+        71.79658198575164,
+        35.513163695670926
+      ],
+      "label": 32,
+      "sourceIds": [
+        2003,
+        2027
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        89,
+        84,
+        178
+      ],
+      "originalSourceId": 2027
+    },
+    {
+      "caseId": "sub-03",
+      "topic": "precentral",
+      "side": "left",
+      "point": [
+        -19.605392513230314,
+        6.793029039046203,
+        78.51138545009661
+      ],
+      "label": 33,
+      "sourceIds": [
+        1024
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        146,
+        41,
+        113
+      ],
+      "originalSourceId": 1024
+    },
+    {
+      "caseId": "sub-03",
+      "topic": "precentral",
+      "side": "right",
+      "point": [
+        49.3989596678537,
+        29.797129496917123,
+        55.513211596807224
+      ],
+      "label": 34,
+      "sourceIds": [
+        2024
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        77,
+        64,
+        136
+      ],
+      "originalSourceId": 2024
+    },
+    {
+      "caseId": "sub-03",
+      "topic": "postcentral",
+      "side": "left",
+      "point": [
+        -41.60574215165754,
+        11.792076298363355,
+        28.510875000240944
+      ],
+      "label": 35,
+      "sourceIds": [
+        1022
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        168,
+        91,
+        118
+      ],
+      "originalSourceId": 1022
+    },
+    {
+      "caseId": "sub-03",
+      "topic": "postcentral",
+      "side": "right",
+      "point": [
+        57.400085026482486,
+        31.797728572679162,
+        32.513419208900444
+      ],
+      "label": 36,
+      "sourceIds": [
+        2022
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        69,
+        87,
+        138
+      ],
+      "originalSourceId": 2022
+    },
+    {
+      "caseId": "sub-03",
+      "topic": "precuneus",
+      "side": "left",
+      "point": [
+        -14.601808550929135,
+        -31.206420257088155,
+        32.51128457178585
+      ],
+      "label": 37,
+      "sourceIds": [
+        1025
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        141,
+        87,
+        75
+      ],
+      "originalSourceId": 1025
+    },
+    {
+      "caseId": "sub-03",
+      "topic": "precuneus",
+      "side": "right",
+      "point": [
+        22.400486376366572,
+        -25.204299298018938,
+        32.51222676886192
+      ],
+      "label": 38,
+      "sourceIds": [
+        2025
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        104,
+        87,
+        81
+      ],
+      "originalSourceId": 2025
+    },
+    {
+      "caseId": "sub-03",
+      "topic": "inferior-parietal",
+      "side": "left",
+      "point": [
+        -35.60500103757683,
+        0.7923664451634238,
+        36.510957611110186
+      ],
+      "label": 39,
+      "sourceIds": [
+        1008,
+        1031
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        162,
+        83,
+        107
+      ],
+      "originalSourceId": 1031
+    },
+    {
+      "caseId": "sub-03",
+      "topic": "inferior-parietal",
+      "side": "right",
+      "point": [
+        60.40103958501679,
+        15.797881426558092,
+        34.51339888007735
+      ],
+      "label": 40,
+      "sourceIds": [
+        2008,
+        2031
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        66,
+        85,
+        122
+      ],
+      "originalSourceId": 2031
+    },
+    {
+      "caseId": "sub-03",
+      "topic": "temporal-horn",
+      "side": "left",
+      "point": [
+        -22.604024356488125,
+        16.793300344950424,
+        6.511369871754056
+      ],
+      "label": 41,
+      "sourceIds": [
+        5
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        149,
+        113,
+        123
+      ],
+      "originalSourceId": 5
+    },
+    {
+      "caseId": "sub-03",
+      "topic": "temporal-horn",
+      "side": "right",
+      "point": [
+        31.399515007471564,
+        25.796438568897983,
+        -0.48725367235283557
+      ],
+      "label": 42,
+      "sourceIds": [
+        44
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        95,
+        120,
+        132
+      ],
+      "originalSourceId": 44
+    },
+    {
+      "caseId": "sub-03",
+      "topic": "fourth-ventricle",
+      "side": "midline",
+      "point": [
+        0.3990324286136655,
+        -2.2052871460533083,
+        -10.488177986602892
+      ],
+      "label": 43,
+      "sourceIds": [
+        15
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        126,
+        130,
+        104
+      ],
+      "originalSourceId": 15
+    },
+    {
+      "caseId": "sub-03",
+      "topic": "brainstem",
+      "side": "midline",
+      "point": [
+        0.39840979201498783,
+        10.794724409843539,
+        -11.488101712234283
+      ],
+      "label": 44,
+      "sourceIds": [
+        16
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        126,
+        131,
+        117
+      ],
+      "originalSourceId": 16
+    },
+    {
+      "caseId": "sub-03",
+      "topic": "cerebellar-cortex",
+      "side": "left",
+      "point": [
+        -11.600707544276744,
+        -9.205818666412526,
+        -36.48851348098927
+      ],
+      "label": 45,
+      "sourceIds": [
+        8
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        138,
+        156,
+        97
+      ],
+      "originalSourceId": 8
+    },
+    {
+      "caseId": "sub-03",
+      "topic": "cerebellar-cortex",
+      "side": "right",
+      "point": [
+        10.40087234384923,
+        -8.204540347799792,
+        -39.487968352214494
+      ],
+      "label": 46,
+      "sourceIds": [
+        47
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        116,
+        159,
+        98
+      ],
+      "originalSourceId": 47
+    },
+    {
+      "caseId": "sub-03",
+      "topic": "hippocampus",
+      "side": "left",
+      "point": [
+        -30.60432243347168,
+        13.792864799499512,
+        2.5111594200134277
+      ],
+      "label": 1,
+      "sourceIds": [
+        17
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        157,
+        117,
+        120
+      ],
+      "originalSourceId": 17
+    },
+    {
+      "caseId": "sub-03",
+      "topic": "thalamus",
+      "side": "left",
+      "point": [
+        -11.603445053100586,
+        10.793828964233398,
+        23.5116024017334
+      ],
+      "label": 11,
+      "sourceIds": [
+        10
+      ],
+      "origin": "browser",
+      "originalVoxel": [
+        138,
+        96,
+        117
+      ],
+      "originalSourceId": 10
+    },
+    {
+      "caseId": "sub-04",
+      "topic": "hippocampus",
+      "side": "left",
+      "point": [
+        -26.40504038461748,
+        24.63499059377314,
+        15.6236103831572
+      ],
+      "label": 1,
+      "sourceIds": [
+        17
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        153,
+        121,
+        128
+      ],
+      "originalSourceId": 17
+    },
+    {
+      "caseId": "sub-04",
+      "topic": "hippocampus",
+      "side": "right",
+      "point": [
+        26.597597594222506,
+        22.63487792509413,
+        14.62093827563028
+      ],
+      "label": 2,
+      "sourceIds": [
+        53
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        100,
+        122,
+        126
+      ],
+      "originalSourceId": 53
+    },
+    {
+      "caseId": "sub-04",
+      "topic": "amygdala",
+      "side": "left",
+      "point": [
+        -23.40468888932824,
+        34.63519616344183,
+        20.623038925786958
+      ],
+      "label": 3,
+      "sourceIds": [
+        18
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        150,
+        116,
+        138
+      ],
+      "originalSourceId": 18
+    },
+    {
+      "caseId": "sub-04",
+      "topic": "amygdala",
+      "side": "right",
+      "point": [
+        22.5974512920358,
+        36.634967119639896,
+        16.620563581732625
+      ],
+      "label": 4,
+      "sourceIds": [
+        54
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        104,
+        120,
+        140
+      ],
+      "originalSourceId": 54
+    },
+    {
+      "caseId": "sub-04",
+      "topic": "caudate",
+      "side": "left",
+      "point": [
+        -8.402936491445388,
+        49.63614010506598,
+        43.62163878286276
+      ],
+      "label": 5,
+      "sourceIds": [
+        11
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        135,
+        93,
+        153
+      ],
+      "originalSourceId": 11
+    },
+    {
+      "caseId": "sub-04",
+      "topic": "caudate",
+      "side": "right",
+      "point": [
+        10.597973887152364,
+        51.63607283551107,
+        42.62056759394315
+      ],
+      "label": 6,
+      "sourceIds": [
+        50
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        116,
+        94,
+        155
+      ],
+      "originalSourceId": 50
+    },
+    {
+      "caseId": "sub-04",
+      "topic": "putamen",
+      "side": "left",
+      "point": [
+        -20.40375722904369,
+        45.635946565066575,
+        38.62242824579249
+      ],
+      "label": 7,
+      "sourceIds": [
+        12
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        147,
+        98,
+        149
+      ],
+      "originalSourceId": 12
+    },
+    {
+      "caseId": "sub-04",
+      "topic": "putamen",
+      "side": "right",
+      "point": [
+        22.59837305837668,
+        44.635847248633496,
+        37.62023434550139
+      ],
+      "label": 8,
+      "sourceIds": [
+        51
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        104,
+        99,
+        148
+      ],
+      "originalSourceId": 51
+    },
+    {
+      "caseId": "sub-04",
+      "topic": "pallidum",
+      "side": "left",
+      "point": [
+        -17.403666285814523,
+        33.63585871045743,
+        36.622771638098
+      ],
+      "label": 9,
+      "sourceIds": [
+        13
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        144,
+        100,
+        137
+      ],
+      "originalSourceId": 13
+    },
+    {
+      "caseId": "sub-04",
+      "topic": "pallidum",
+      "side": "right",
+      "point": [
+        17.59801255143256,
+        33.63572816635735,
+        34.62095178872305
+      ],
+      "label": 10,
+      "sourceIds": [
+        52
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        109,
+        102,
+        137
+      ],
+      "originalSourceId": 52
+    },
+    {
+      "caseId": "sub-04",
+      "topic": "thalamus",
+      "side": "left",
+      "point": [
+        -12.40323813948251,
+        16.635977723293564,
+        39.6232202079503
+      ],
+      "label": 11,
+      "sourceIds": [
+        10
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        139,
+        97,
+        120
+      ],
+      "originalSourceId": 10
+    },
+    {
+      "caseId": "sub-04",
+      "topic": "thalamus",
+      "side": "right",
+      "point": [
+        8.597860506366402,
+        19.63599160618486,
+        40.62200377801001
+      ],
+      "label": 12,
+      "sourceIds": [
+        49
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        118,
+        96,
+        123
+      ],
+      "originalSourceId": 49
+    },
+    {
+      "caseId": "sub-04",
+      "topic": "insula",
+      "side": "left",
+      "point": [
+        -34.404733498456125,
+        45.63571379498069,
+        32.62315491933025
+      ],
+      "label": 13,
+      "sourceIds": [
+        1035
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        161,
+        104,
+        149
+      ],
+      "originalSourceId": 1035
+    },
+    {
+      "caseId": "sub-04",
+      "topic": "insula",
+      "side": "right",
+      "point": [
+        36.59870369191988,
+        33.63545134204395,
+        28.619962955413186
+      ],
+      "label": 14,
+      "sourceIds": [
+        2035
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        90,
+        108,
+        137
+      ],
+      "originalSourceId": 2035
+    },
+    {
+      "caseId": "sub-04",
+      "topic": "cingulate",
+      "side": "left",
+      "point": [
+        -1.402093345496155,
+        69.63663372934619,
+        55.62044425548163
+      ],
+      "label": 15,
+      "sourceIds": [
+        1002,
+        1010,
+        1023,
+        1026
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        128,
+        81,
+        173
+      ],
+      "originalSourceId": 1026
+    },
+    {
+      "caseId": "sub-04",
+      "topic": "cingulate",
+      "side": "right",
+      "point": [
+        5.59878445722569,
+        19.637001450147324,
+        64.62216420216234
+      ],
+      "label": 16,
+      "sourceIds": [
+        2002,
+        2010,
+        2023,
+        2026
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        121,
+        72,
+        123
+      ],
+      "originalSourceId": 2023
+    },
+    {
+      "caseId": "sub-04",
+      "topic": "ventricle",
+      "side": "left",
+      "point": [
+        -20.403329994206302,
+        -1.3637601817755467,
+        45.624386785477554
+      ],
+      "label": 17,
+      "sourceIds": [
+        4
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        147,
+        91,
+        102
+      ],
+      "originalSourceId": 4
+    },
+    {
+      "caseId": "sub-04",
+      "topic": "ventricle",
+      "side": "right",
+      "point": [
+        4.598020654395839,
+        36.636374177888484,
+        49.62150545759391
+      ],
+      "label": 18,
+      "sourceIds": [
+        43
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        122,
+        87,
+        140
+      ],
+      "originalSourceId": 43
+    },
+    {
+      "caseId": "sub-04",
+      "topic": "callosum",
+      "side": "midline",
+      "point": [
+        0.5981043373462853,
+        29.636630960193003,
+        55.622006018332456
+      ],
+      "label": 19,
+      "sourceIds": [
+        251,
+        252,
+        253,
+        254,
+        255
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        126,
+        81,
+        133
+      ],
+      "originalSourceId": 253
+    },
+    {
+      "caseId": "sub-04",
+      "topic": "third-ventricle",
+      "side": "midline",
+      "point": [
+        -0.4029793255972436,
+        30.635668368576574,
+        32.62201207728768
+      ],
+      "label": 20,
+      "sourceIds": [
+        14
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        127,
+        104,
+        134
+      ],
+      "originalSourceId": 14
+    },
+    {
+      "caseId": "sub-04",
+      "topic": "accumbens",
+      "side": "left",
+      "point": [
+        -7.403376501069943,
+        48.635677758052736,
+        32.62162639284635
+      ],
+      "label": 21,
+      "sourceIds": [
+        26
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        134,
+        104,
+        152
+      ],
+      "originalSourceId": 26
+    },
+    {
+      "caseId": "sub-04",
+      "topic": "accumbens",
+      "side": "right",
+      "point": [
+        6.597288486741519,
+        47.63561715594079,
+        31.620940059178892
+      ],
+      "label": 22,
+      "sourceIds": [
+        58
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        120,
+        105,
+        151
+      ],
+      "originalSourceId": 58
+    },
+    {
+      "caseId": "sub-04",
+      "topic": "parahippocampal",
+      "side": "left",
+      "point": [
+        -31.405632208134136,
+        16.63466196913852,
+        7.624201965368258
+      ],
+      "label": 23,
+      "sourceIds": [
+        1016
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        158,
+        129,
+        120
+      ],
+      "originalSourceId": 1016
+    },
+    {
+      "caseId": "sub-04",
+      "topic": "parahippocampal",
+      "side": "right",
+      "point": [
+        24.597105292447637,
+        17.63450339301005,
+        5.621248786493453
+      ],
+      "label": 24,
+      "sourceIds": [
+        2016
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        102,
+        131,
+        121
+      ],
+      "originalSourceId": 2016
+    },
+    {
+      "caseId": "sub-04",
+      "topic": "entorhinal",
+      "side": "left",
+      "point": [
+        -19.405447196457033,
+        42.634310734221856,
+        -0.3775060713908829
+      ],
+      "label": 25,
+      "sourceIds": [
+        1006
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        146,
+        137,
+        146
+      ],
+      "originalSourceId": 1006
+    },
+    {
+      "caseId": "sub-04",
+      "topic": "entorhinal",
+      "side": "right",
+      "point": [
+        24.596944278133805,
+        28.634377690410957,
+        2.6207901513056413
+      ],
+      "label": 26,
+      "sourceIds": [
+        2006
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        102,
+        134,
+        132
+      ],
+      "originalSourceId": 2006
+    },
+    {
+      "caseId": "sub-04",
+      "topic": "orbitofrontal",
+      "side": "left",
+      "point": [
+        -17.404337162865062,
+        51.63527201566171,
+        22.622019451357176
+      ],
+      "label": 27,
+      "sourceIds": [
+        1012,
+        1014
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        144,
+        114,
+        155
+      ],
+      "originalSourceId": 1012
+    },
+    {
+      "caseId": "sub-04",
+      "topic": "orbitofrontal",
+      "side": "right",
+      "point": [
+        31.59816176086551,
+        60.63524853408845,
+        23.61909757990483
+      ],
+      "label": 28,
+      "sourceIds": [
+        2012,
+        2014
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        95,
+        113,
+        164
+      ],
+      "originalSourceId": 2012
+    },
+    {
+      "caseId": "sub-04",
+      "topic": "superior-frontal",
+      "side": "left",
+      "point": [
+        -0.4006962324375678,
+        31.6378057790011,
+        83.6219799305554
+      ],
+      "label": 29,
+      "sourceIds": [
+        1028
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        127,
+        53,
+        135
+      ],
+      "originalSourceId": 1028
+    },
+    {
+      "caseId": "sub-04",
+      "topic": "superior-frontal",
+      "side": "right",
+      "point": [
+        7.599089172070023,
+        46.63725030691231,
+        70.62093697954657
+      ],
+      "label": 30,
+      "sourceIds": [
+        2028
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        119,
+        66,
+        150
+      ],
+      "originalSourceId": 2028
+    },
+    {
+      "caseId": "sub-04",
+      "topic": "middle-frontal",
+      "side": "left",
+      "point": [
+        -25.40237216243841,
+        72.63754588537799,
+        76.62157087721445
+      ],
+      "label": 31,
+      "sourceIds": [
+        1003,
+        1027
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        152,
+        60,
+        176
+      ],
+      "originalSourceId": 1027
+    },
+    {
+      "caseId": "sub-04",
+      "topic": "middle-frontal",
+      "side": "right",
+      "point": [
+        43.59961122448604,
+        82.63607076812326,
+        43.61756133025706
+      ],
+      "label": 32,
+      "sourceIds": [
+        2003,
+        2027
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        83,
+        93,
+        186
+      ],
+      "originalSourceId": 2027
+    },
+    {
+      "caseId": "sub-04",
+      "topic": "precentral",
+      "side": "left",
+      "point": [
+        -33.40250424685479,
+        15.637682153709804,
+        79.62436098575739
+      ],
+      "label": 33,
+      "sourceIds": [
+        1024
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        160,
+        57,
+        119
+      ],
+      "originalSourceId": 1024
+    },
+    {
+      "caseId": "sub-04",
+      "topic": "precentral",
+      "side": "right",
+      "point": [
+        55.601439361917045,
+        40.637102393236546,
+        68.61869118438818
+      ],
+      "label": 34,
+      "sourceIds": [
+        2024
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        71,
+        68,
+        144
+      ],
+      "originalSourceId": 2024
+    },
+    {
+      "caseId": "sub-04",
+      "topic": "postcentral",
+      "side": "left",
+      "point": [
+        -42.402611478021896,
+        1.637987503496987,
+        86.62541316125204
+      ],
+      "label": 35,
+      "sourceIds": [
+        1022
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        169,
+        50,
+        105
+      ],
+      "originalSourceId": 1022
+    },
+    {
+      "caseId": "sub-04",
+      "topic": "postcentral",
+      "side": "right",
+      "point": [
+        52.60052219578701,
+        23.636351976731817,
+        50.61955172432708
+      ],
+      "label": 36,
+      "sourceIds": [
+        2022
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        74,
+        86,
+        127
+      ],
+      "originalSourceId": 2022
+    },
+    {
+      "caseId": "sub-04",
+      "topic": "precuneus",
+      "side": "left",
+      "point": [
+        -12.40324804943063,
+        -16.364106178465832,
+        37.62459406522923
+      ],
+      "label": 37,
+      "sourceIds": [
+        1025
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        139,
+        99,
+        87
+      ],
+      "originalSourceId": 1025
+    },
+    {
+      "caseId": "sub-04",
+      "topic": "precuneus",
+      "side": "right",
+      "point": [
+        12.598005477117695,
+        -12.3641395429606,
+        37.62312786553326
+      ],
+      "label": 38,
+      "sourceIds": [
+        2025
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        114,
+        99,
+        91
+      ],
+      "originalSourceId": 2025
+    },
+    {
+      "caseId": "sub-04",
+      "topic": "inferior-parietal",
+      "side": "left",
+      "point": [
+        -41.40403039352691,
+        -39.363480781748954,
+        51.62706203521407
+      ],
+      "label": 39,
+      "sourceIds": [
+        1008,
+        1031
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        168,
+        85,
+        64
+      ],
+      "originalSourceId": 1008
+    },
+    {
+      "caseId": "sub-04",
+      "topic": "inferior-parietal",
+      "side": "right",
+      "point": [
+        56.60124141589179,
+        13.636807621582093,
+        61.619762265628324
+      ],
+      "label": 40,
+      "sourceIds": [
+        2008,
+        2031
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        70,
+        75,
+        117
+      ],
+      "originalSourceId": 2031
+    },
+    {
+      "caseId": "sub-04",
+      "topic": "temporal-horn",
+      "side": "left",
+      "point": [
+        -20.404381123681077,
+        25.635317866071148,
+        23.62325831915865
+      ],
+      "label": 41,
+      "sourceIds": [
+        5
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        147,
+        113,
+        129
+      ],
+      "originalSourceId": 5
+    },
+    {
+      "caseId": "sub-04",
+      "topic": "temporal-horn",
+      "side": "right",
+      "point": [
+        29.597597825396505,
+        29.63474820764526,
+        11.620490258570797
+      ],
+      "label": 42,
+      "sourceIds": [
+        44
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        97,
+        125,
+        133
+      ],
+      "originalSourceId": 44
+    },
+    {
+      "caseId": "sub-04",
+      "topic": "fourth-ventricle",
+      "side": "midline",
+      "point": [
+        -2.4044322919701813,
+        -3.365670164500486,
+        0.6235259617722022
+      ],
+      "label": 43,
+      "sourceIds": [
+        15
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        129,
+        136,
+        100
+      ],
+      "originalSourceId": 15
+    },
+    {
+      "caseId": "sub-04",
+      "topic": "brainstem",
+      "side": "midline",
+      "point": [
+        -2.4043365013517928,
+        12.634455605058605,
+        3.62286022721014
+      ],
+      "label": 44,
+      "sourceIds": [
+        16
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        129,
+        133,
+        116
+      ],
+      "originalSourceId": 16
+    },
+    {
+      "caseId": "sub-04",
+      "topic": "cerebellar-cortex",
+      "side": "left",
+      "point": [
+        -19.406039934271348,
+        -27.36640190869295,
+        -17.374594204236587
+      ],
+      "label": 45,
+      "sourceIds": [
+        8
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        146,
+        154,
+        76
+      ],
+      "originalSourceId": 8
+    },
+    {
+      "caseId": "sub-04",
+      "topic": "cerebellar-cortex",
+      "side": "right",
+      "point": [
+        10.59524216064527,
+        -23.366651497869157,
+        -22.376321260250904
+      ],
+      "label": 46,
+      "sourceIds": [
+        47
+      ],
+      "origin": "stored-anchor",
+      "originalVoxel": [
+        116,
+        159,
+        80
+      ],
+      "originalSourceId": 47
+    }
+  ]
+}

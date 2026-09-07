@@ -11,6 +11,7 @@ let individualMode=true;
 let caseTrainer=null;
 document.addEventListener('individual-mode',e=>{individualMode=e.detail.active;if(individualMode){explore();mode='explore';document.querySelector('.layout').classList.remove('is-training','is-mri-test','answer-revealed');$('find-mode').setAttribute('aria-pressed','false');$('mri-train').setAttribute('aria-pressed','false');$('explore-mode').setAttribute('aria-pressed','false');}else{document.querySelector('.workspace-head h2').textContent='같은 구조, 세 단면.';document.querySelector('.workspace-head .eyebrow').textContent='REFERENCE ATLAS / SPATIAL LOCALIZATION';document.querySelector('.workspace-head .muted').textContent='집단 평균 템플릿과 atlas 위치를 학습하는 참고 모드입니다.';}updateCursor(latestLocation?.mm??[0,0,0]);renderState();});
 document.addEventListener('reference-structure',e=>{if(!ready)return;select(e.detail.group*2+(e.detail.side==='right'?2:1));});
+document.addEventListener('open-reference-atlas',e=>{if(!ready||!Number.isInteger(e.detail.group)||!regions[e.detail.group])return;$('explore-mode').click();select(e.detail.group*2+(e.detail.side==='right'?2:1));});
 document.addEventListener('individual-hide-reference',e=>{document.body.classList.toggle('reference-concealed',e.detail.hidden);document.querySelector('.hidden-3d-note').textContent=e.detail.note??'개인 MRI에서 먼저 관찰하세요. 첫 응답 후 참고 모델을 열 수 있습니다.';});
 const KEY = 'mri-tutor-training-v1';
 let stored = {answers:{}, find:{}};

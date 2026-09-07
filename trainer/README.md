@@ -2,6 +2,8 @@
 
 정신과 전문의가 개인 MRI의 위치·형태·주변 관계를 연속 단면에서 설명하도록 돕는 로컬 웹앱입니다. 기본 화면은 실제 StudyForrest 개인 영상입니다. 기존 참고 Atlas, 3D 조작과 높이 조절 분할도 유지합니다.
 
+구조 위치의 출처, 탐색 십자선의 의미, 개인 MRI의 AAL normalization 수행 여부는 [위치 근거와 검증 범위](ANATOMICAL_VALIDITY.md)에 정리했습니다.
+
 ## 실행
 
 macOS의 `Start MRI Tutor.command`를 실행하거나 프로젝트 루트에서 다음을 실행합니다.
