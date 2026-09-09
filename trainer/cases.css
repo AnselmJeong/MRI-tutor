@@ -6,11 +6,10 @@
 .individual-mode #case-bar,.individual-mode #case-sidebar,.individual-mode #case-detail{display:block}
 .individual-mode #case-mri-content{display:flex}
 .individual-mode #atlas-mri-content,.individual-mode #detail,.individual-mode .sidebar>:not(#case-sidebar),.individual-mode .network-control,.individual-mode #network-panel,.individual-mode #practice-status{display:none!important}
-.individual-mode .display-controls label:has(#show-planes){display:none}
 #case-bar{margin:0 0 16px;border-top:1px solid var(--line);padding-top:12px}
 .case-picker-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
 .case-picker-row label{font-size:12px;display:flex;align-items:center;gap:8px}
-.case-picker-row select{max-width:260px}
+.case-choice{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:12px}.case-buttons{display:flex;gap:4px}.case-buttons button,.case-choice .sequence-switch button{padding:8px 12px;font-size:12px}.case-picker-row .coordinate-chip{margin-left:auto}
 .case-picker-row .text-button{font-size:12px}
 .case-modes{display:flex;gap:6px;margin-top:12px;flex-wrap:wrap}
 .case-modes button{font-size:12px;padding:8px 14px}
@@ -85,7 +84,7 @@ select,textarea{color:#344d3d;background:#fafbf7;border:1px solid #ccd6c4;border
 .history-attempts details{padding:12px 0;border-bottom:1px solid var(--line)}
 .history-attempts summary{font-size:12px;cursor:pointer}.history-attempts p{overflow-wrap:anywhere}
 #export-reading{margin-top:20px}
-.individual-mode #viewer-split{height:max(700px,calc(100dvh - 310px))}
+.individual-mode #viewer-split[data-split-axis=x]{height:clamp(560px,calc(100dvh - 360px),880px)}
 .individual-mode #three-pane .viewer-toolbar #viewer-status{max-width:70%;font-size:10px}
 .individual-mode.reference-concealed #brain,.individual-mode.reference-concealed .viewer-toolbar,.individual-mode.reference-concealed .viewer-bottom{visibility:hidden}
 .individual-mode.reference-concealed .hidden-3d-note{display:grid;position:absolute;inset:0;place-content:center;font-size:12px;padding:16px;text-align:center}
@@ -101,3 +100,41 @@ select,textarea{color:#344d3d;background:#fafbf7;border:1px solid #ccd6c4;border
 
 .case-category-label{display:flex;flex-direction:column;gap:6px;font-size:11px;color:var(--muted);margin:0 0 12px}.case-category-label select{width:100%;min-width:0;padding:7px;border:1px solid var(--line);border-radius:5px;background:var(--surface);color:var(--accent)}
 #case-cursor-status{flex:none;margin:8px 0 0;padding:7px 10px;font-size:11px!important;line-height:1.6}
+
+/* The app chooses guided questions; the structure browser belongs to exploration. */
+.guided-mode #case-sidebar .search,.guided-mode .case-category-label,.guided-mode #case-topics,.guided-mode #case-sidebar>.small{display:none}
+.guided-mode #case-sidebar>.section-heading{display:block}
+.guided-mode #case-sidebar>.section-heading span{display:block;margin-top:12px;font-size:12px;line-height:1.7}
+.guided-progress{display:flex;flex-wrap:wrap;gap:12px;list-style:none;padding:12px 0;margin:12px 0;border-block:1px solid var(--line);font-size:11px;color:var(--muted)}
+.guided-progress [aria-current]{color:var(--accent);font-weight:700}
+#guided-submit,#guided-next{width:100%;min-height:44px;margin:8px 0}
+.guided-feedback{padding:12px 0;border-block:1px solid var(--line);margin:16px 0}
+#case-detail .guided-feedback h3{font-size:17px;line-height:1.55;color:var(--accent);margin-top:0}
+#case-detail .guided-route h3{font-size:15px}
+.guided-route{margin-top:24px}
+.guided-mode .clinical-context{margin-top:16px;padding-top:12px}
+.guided-mode #guided-new{margin-top:20px}
+@media(max-width:700px){.guided-mode #case-sidebar{display:none!important}.guided-mode .sidebar{padding:0}.guided-mode #case-detail button{min-height:44px}.guided-mode #case-detail{scroll-margin-top:12px}}
+
+#guided-image-prompt{display:none}
+@media(max-width:1100px){#guided-image-prompt{display:block;margin:8px 0;font-weight:600;color:var(--accent);line-height:1.7;flex:none}}
+
+#nearby-controls{display:flex;align-items:center;gap:12px;flex-wrap:wrap;flex:none;margin:0 0 8px;font-size:11px;line-height:1.6}
+#nearby-controls label{display:flex;align-items:center;gap:6px;white-space:nowrap}
+#nearby-status{flex:1;min-width:150px;color:var(--muted)}
+#nearby-clear{font-size:11px}
+.nearby-markers{position:absolute;inset:0;z-index:2;pointer-events:none;overflow:hidden}
+.nearby-dot{position:absolute;transform:translate(-50%,-50%);width:24px;height:24px;min-width:0;min-height:0;padding:0;border:0;border-radius:50%;background:transparent;pointer-events:auto;cursor:help;touch-action:manipulation}
+.nearby-dot::after{content:'';display:block;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:8px;height:8px;border-radius:50%;background:#ffdc57;box-shadow:0 0 0 1px #242b20,0 0 0 2px #ffdc5750}
+.nearby-dot:hover,.nearby-dot:focus-visible{background:#ffdc5720;outline:1px solid #ffdc57;outline-offset:0}
+.nearby-tooltip{position:absolute;z-index:3;max-width:min(310px,calc(100% - 16px));pointer-events:none;padding:8px 12px;border:1px solid #7c7349;border-radius:4px;background:#22281df5;color:#fff2b8;font-size:12px;line-height:1.6;white-space:pre-line;overflow-wrap:anywhere}
+@media(max-width:700px){#nearby-controls{gap:8px}#nearby-status{font-size:11px}.nearby-tooltip{font-size:12px}}
+
+/* Same-subject geometry has its own persistent provenance and clipping controls. */
+.subject-controls{display:none}
+.individual-mode .subject-controls{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;padding:10px 14px;border-top:1px solid var(--line,#dce0d5);font-size:12px}
+.subject-controls p{flex-basis:100%;margin:0;font-weight:600}
+.subject-controls label{display:flex;gap:8px;align-items:center}
+.individual-mode .display-controls label:has(#brain-opacity),.individual-mode .display-controls label:has(#cut){display:none}
+.reference-concealed .subject-controls select,.reference-concealed .subject-controls button{visibility:hidden}
+.individual-mode #viewer-status{font-size:11px}

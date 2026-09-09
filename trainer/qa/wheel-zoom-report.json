@@ -1,0 +1,14 @@
+{
+  "date": "2026-09-09T13:43:11.741Z",
+  "checks": [
+    "Command + real wheel zooms and synchronizes controls without moving the slice/crosshair",
+    "Unmodified real wheel still changes cut level without changing zoom",
+    "Command wheel over a yellow marker also zooms, preserving nearby structures",
+    "Zoom clamps at 1x and 4x; reaching either limit does not scroll slices",
+    "T2 preserves the actual zoom and matching slider display",
+    "Comparison image supports independent Command wheel zoom",
+    "Reference Atlas supports the same shortcut without moving its coordinate",
+    "No uncaught browser errors"
+  ],
+  "errors": []
+}

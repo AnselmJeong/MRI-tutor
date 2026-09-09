@@ -1,0 +1,40 @@
+#reference-illustrations { margin:0 0 24px; padding-bottom:20px; border-bottom:1px solid var(--line); min-width:0; }
+.illustration-heading { display:flex; justify-content:space-between; align-items:center; gap:8px; margin-bottom:12px; }
+.illustration-heading h3 { margin:0; font-size:14px; }
+.illustration-heading>span { font-size:10px; color:var(--muted); }
+.illustration-preview { display:block; width:100%; padding:8px; background:#fff; border:1px solid var(--line); border-radius:6px; overflow:hidden; }
+.illustration-preview img { display:block; width:100%; height:200px; object-fit:contain; }
+.illustration-preview span { display:block; font-size:11px; padding:8px 0 0; color:var(--accent); }
+.illustration-title { font-size:13px; font-weight:600; margin:12px 0 8px; line-height:1.5; }
+.illustration-navigation { display:flex; align-items:center; justify-content:space-between; gap:6px; }
+.illustration-navigation span { font-size:11px; }
+.illustration-navigation button { padding:5px 10px; }
+.illustration-follow { border:0; padding:8px 0 0; font-size:11px; color:var(--accent); text-align:left; }
+.illustration-follow:disabled { opacity:1; color:var(--muted); cursor:default; }
+.illustration-note { font-size:11px; line-height:1.65; color:var(--muted); margin:10px 0 0; }
+.illustration-source { font-size:10px; line-height:1.5; color:var(--muted); overflow-wrap:anywhere; margin:8px 0 0; }
+.illustration-planes { display:flex; gap:5px; margin-bottom:10px; }
+.illustration-planes button { flex:1; font-size:10px; padding:6px 4px; }
+#illustration-dialog { width:min(1200px,calc(100vw - 32px)); height:90vh; height:90dvh; max-height:94dvh; padding:20px; overflow:hidden; }
+#illustration-dialog[open] { display:grid; grid-template-rows:auto auto minmax(0,1fr) auto; gap:12px; }
+.illustration-dialog-head { display:flex; justify-content:space-between; align-items:start; gap:12px; }
+.illustration-dialog-head h2 { font-size:21px; margin:0; }
+.illustration-dialog-head .eyebrow { margin-bottom:6px; }
+.illustration-dialog-head>button { white-space:nowrap; }
+.illustration-toolbar { display:flex; flex-wrap:wrap; gap:7px; align-items:center; font-size:12px; }
+.illustration-toolbar button { padding:6px 10px; font-size:12px; }
+.illustration-toolbar-spacer { flex:1; }
+.illustration-viewport { background:white; border:1px solid var(--line); border-radius:5px; min-height:0; min-width:0; overflow:auto; padding:10px; overscroll-behavior:contain; }
+.illustration-viewport img { display:block; height:auto; max-width:none; margin:auto; user-select:none; }
+.illustration-viewport.is-zoomed { cursor:grab; }
+.illustration-viewport.is-zoomed:active { cursor:grabbing; }
+#illustration-dialog .illustration-source { margin:0; font-size:11px; line-height:1.5; }
+#illustration-dialog [hidden], #reference-illustrations [hidden] { display:none; }
+@media(max-width:700px) {
+  #illustration-dialog { padding:12px; width:calc(100vw - 16px); height:94dvh; }
+  .illustration-dialog-head h2 { font-size:17px; }
+  .illustration-toolbar { gap:5px; font-size:11px; }
+  .illustration-toolbar button { padding:6px; font-size:11px; }
+  .illustration-toolbar-spacer { flex-basis:100%; height:0; }
+  .illustration-preview img { height:230px; }
+}

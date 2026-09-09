@@ -61,7 +61,13 @@ All 44 case/task contracts are observation exercises. Reference-label status is 
 
 The ordinary T1/T2 pilot cannot certify small-nucleus boundaries or functional-network borders. [Wengler et al., neuromelanin-sensitive MRI](https://pmc.ncbi.nlm.nih.gov/articles/PMC11526017/) supports the need for appropriate contrast for SN/LC-related observation. ATAG is a future data candidate, not an installed or tested component. No clinical disease-specific interpretation is attached to these four participants.
 
-Authored anatomical observation prompts refer to [Radiology Assistant brain anatomy](https://radiologyassistant.nl/neuroradiology/brain/anatomy), [UTHealth basal-ganglia anatomy](https://nba.uth.tmc.edu/neuroanatomy/L5/Lab05p20_index.html), and [UTHealth internal capsule](https://nba.uth.tmc.edu/neuroanatomy/L10/Lab10p01_index.html). They are original Korean prompts, not reproduced textbook figures. The user's textbook PDF and extraction results remain local and are excluded from Git.
+Authored anatomical observation prompts refer to [Radiology Assistant brain anatomy](https://radiologyassistant.nl/neuroradiology/brain/anatomy), [UTHealth basal-ganglia anatomy](https://nba.uth.tmc.edu/neuroanatomy/L5/Lab05p20_index.html), and [UTHealth internal capsule](https://nba.uth.tmc.edu/neuroanatomy/L10/Lab10p01_index.html). The observation prompts are original Korean text. The original user PDFs and earlier extraction work remain local and are excluded from Git. The separately requested Telencephalon reference figures are described below.
+
+## Telencephalon reference illustrations (2026-09-09)
+
+Source: user-supplied `Telencephalon.pdf`, figures 13.1A–13.20A, printed pages 300–338 (even pages), PDF pages 2–40 (even pages). Ten axial and ten coronal annotated figure regions are provided as derived WebP assets under `assets/illustrations/telencephalon/`. Original leader lines, English labels, localizers and artist credit are retained; prose and page headers are excluded. These figures are separate from the open dataset licenses above; no open redistribution license is asserted for the supplied chapter. The manifest records the exact source hash and source page for each derivative.
+
+The approximate coordinate table is authored for nearby-plate browsing, not supplied by the textbook. Individual MRI selection uses a translation based on the midpoint of bilateral thalamic anchors relative to reference [0, -18, 8] mm; this is neither registration nor an anatomical boundary claim. Diagram selection does not alter MRI geometry, masks or assessment. No matching accuracy or learning-effect validation is claimed.
 
 ## 개인 분할 확장 (2026-09-07)
 

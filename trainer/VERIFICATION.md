@@ -55,3 +55,35 @@
 - 기존 단위 검사 10개, 브라우저 흐름 16개, 오류·저장소 복구 흐름 4개를 통과했다. 첫 응답 보존, 전이 잠금, 비교 좌표, Atlas, 390px 화면을 포함한다.
 
 검사는 UI 동작과 원천 분할 좌표의 일관성을 확인한다. 전문의의 국소 경계 승인이나 교육 효과 검증을 대신하지 않는다. 이번 수정에서 MRI·분할 자산과 공간 변환 자체는 변경하지 않았다. 개인 AAL normalization 파이프라인도 추가하지 않았다.
+
+## 안내 학습의 위치 찾기 개선 — 2026-09-07
+
+- 앱이 개인 참고 라벨이 있는 구조와 관찰 측을 무작위로 선택한다. 실제 라벨을 1 mm 간격으로 조회해 각 방향에서 목표 면적이 넓은 단면을 고르고, 경계 픽셀을 반복 제거해 내부의 답 위치를 찾는다. 단순한 전체 bounding box 또는 중심 좌표를 정답으로 사용하지 않는다.
+- NiiVue의 native voxel plane을 기준으로 좌표 변환한다. `setSliceMM(true)`는 native oblique 영상을 world-axis 단면으로 재구성하지 않는다. 촬영 방향이 기울어진 파일에서도 클릭과 목표가 같은 표시 단면에 있는지 확인한다. 원본 MRI/마스크 파일은 수정하지 않는다.
+- 클릭한 점의 실제 참고 라벨로 일치/불일치를 구분한다. 불일치 중 같은 단면의 2 mm 반경에서 목표 라벨을 찾으면 경계 근처라고 안내한다. 이것은 자동 분할과의 위치 비교이며 전문 검수된 임상 점수가 아니다.
+- 오답·정답 보기 뒤 목표 마스크와 같은 단면의 내부 지점을 표시한다. 글·확신도·존재 여부 입력은 새 안내 학습에서 제거했다. 세 방향을 마치면 다른 구조를 출제한다.
+- 기존 서술형 기록은 보존하고 이전 안내 학습 draft는 별도 `-legacy` 키에 백업한다. 새 진행도와 응답을 복원하며, 기록 복습은 제출 당시 응답 ID를 유지한다.
+
+검증: `npm test` 16개 통과. `node tests/guided.mjs`에서 세 방향의 실제 마우스 클릭, 일치/오답 피드백, 마스크와 답 지점, 재연습, 다음 단면, T2, 빠른 사례 전환, 복원, 전이/탐색 유지와 390px 화면을 검증했다. `node tests/browser.mjs`와 `node tests/resilience.mjs`도 통과했다. 각 결과는 `qa/guided-report.json`, `qa/browser-report.json`, `qa/resilience-report.json`에 기록했다. 브라우저 검증은 Chrome headless / software WebGL이며 전문의의 영상 가시성 검수는 포함하지 않는다.
+
+추가 복원 검증: `node tests/guided-recovery.mjs` 통과. 이전 안내 학습 기록/draft 보존, 같은 십자선 위치의 재클릭, 기록 복습 뒤 재로딩, 미응답 다음 단면 복원, 좁은 화면의 영상 위 문제 표시를 검증했다. 결과: `qa/guided-recovery-report.json`.
+
+안내 학습 출제 범위는 해마·미상핵·조가비핵·담창구·시상·뇌섬엽·대상회·측뇌실·뇌량 9종으로 한정했다. 경계가 추론에 의존하는 세부 피질 구획이나 전용 라벨이 없는 내포는 탐색에서 관찰한다.
+
+## 탐색 중 주변 구조 표시 — 2026-09-07
+
+- 탐색 모드에서 MRI 클릭 시 동일한 native 단면의 반경 10/15/25 mm (기본 15 mm)를 1 mm 격자로 조회한다. 등록된 개인 참고 라벨만 표시하며, 구조마다 주변에 같은 라벨이 충분히 있는 실제 내부 표본을 선택한다. 곡선형 구조의 평균 좌표나 다른 깊이의 고정 anchor를 단면 위에 대신 표시하지 않는다.
+- 노란 점의 hover/focus/touch는 좌우·한영 구조 이름만 표시한다. 점을 눌러도 MRI의 탐색 위치나 왼쪽 선택 구조를 바꾸지 않는다. 새로운 클릭은 이전 DOM 마커를 교체하고, 결과가 없으면 점을 제거한다.
+- 단면·사례·시퀀스·학습 모드 전환 시 결과를 지운다. 같은 영상의 확대·분할 조정에서는 NiiVue 그리기 완료 후 화면 위치를 다시 계산한다. 고해상도 화면의 device pixel ratio를 CSS 좌표로 변환한다. 3면 보기에서는 실제로 클릭한 tile에만 표시한다.
+- `npm test`: 21개 통과. 반경/단면/등록 라벨/곡선형 영역/기울어진 native 방향을 검증한다. 기존 `node tests/browser.mjs` 회귀 검증도 통과했다.
+- `node tests/nearby.mjs` 통과: 실제 MRI 클릭, 표시된 각 점의 hover, 키보드/터치 이름 확인, 각 점의 라벨 membership과 반경, 새로운 클릭으로 기존 점 제거, 빈 결과, 3면 중 클릭한 tile, T2/다른 사례, 모드 전환, DPR 2 및 2배 확대·화면 분할·viewport 크기 변경, 390px 터치 화면을 검증했다. 가까운 점끼리 투명 hit box가 서로 가리지 않도록 조정했다. uncaught browser error 없음. 결과: `qa/nearby-report.json`; 화면: `qa/nearby-hover.png`, `qa/nearby-mobile.png`.
+
+## Command + 휠 확대·축소 — 2026-09-07
+
+`node tests/wheel-zoom.mjs` 통과. 실제 Meta+wheel 입력이 개인 MRI와 참고 Atlas에서 좌표를 유지하며 확대하고, modifier 없는 휠은 기존대로 단면을 이동한다. 노란 점 위에서도 단축 조작이 적용된다. 1–4배 제한, 확대 컨트롤 동기화, T2 전환 시 확대 유지, 비교 영상 독립 확대도 확인했다. 브라우저 오류 없음. 결과: `qa/wheel-zoom-report.json`.
+
+## 개인 3D / 실제 MRI 단면 통합 (2026-09-09)
+
+4명 × 18개 원본 label 기반 GLB를 독립 해독하여 mask 경계 cell·anchor membership·winding·mm 범위·원본 hash 보존을 검사했다. Chrome의 실제 클릭, native 기울어진 세 방향/다중면, T1/T2, 두 절단 방향, 20회 사례 전환, 손상 GLB와 worker 복구, 전이 잠금·첫 응답 불변, 별도 공간 Atlas 및 모바일을 검증했다. MRI sample은 Python/nibabel 원본 판독과도 대조했다.
+
+세 renderer의 실제 비교와 NiiVue framebuffer 밝기 검사, Metal/SwiftShader 성능 차이 및 아직 측정하지 않은 범위는 [통합 구현 기록](../docs/ATLAS-INTEGRATION-IMPLEMENTATION.md)에 정리했다. 피질 pial/white, smoothing·LOD와 임상/교육 전문가 검수는 완료하지 않았다.

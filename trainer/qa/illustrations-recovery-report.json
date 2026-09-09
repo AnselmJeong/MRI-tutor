@@ -1,0 +1,10 @@
+{
+  "date": "2026-09-09T13:36:08.178Z",
+  "checks": [
+    "Manifest and large-image failures show actionable retry and recover without a page reload",
+    "Delayed next plate never leaves the previous image beneath its new title",
+    "Mouse dragging pans the zoomed plate and fit resets its scale and scroll",
+    "Loading hides stale figures; missing subject landmarks use explicit manual fallback; locked state removes labeled content"
+  ],
+  "errors": []
+}

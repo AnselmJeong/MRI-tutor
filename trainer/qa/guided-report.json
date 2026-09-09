@@ -1,0 +1,14 @@
+{
+  "date": "2026-09-09T13:41:23.311Z",
+  "checks": [
+    "Random question opens a real target-containing plane with click-only response; route hidden until first answer",
+    "Real clicks match all three planes; slice movement invalidates response; feedback restores after reload; new structure follows",
+    "Wrong real click reveals target mask and actual interior answer on same plane; own point can be compared",
+    "Reveal, retry, unfinished progress restore, T2 and reset preserve the assigned section",
+    "Rapid subject changes build questions from the loaded subject’s own mask",
+    "Transfer remains locked and exploration retains structure selection and native target navigation",
+    "390px layout retains question, answer controls and route without horizontal overflow",
+    "No uncaught browser errors"
+  ],
+  "errors": []
+}

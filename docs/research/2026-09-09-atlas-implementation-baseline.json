@@ -1,0 +1,14 @@
+{
+  "date": "2026-09-09T19:57:49.000925",
+  "head": "3b14f51f8053fab679764a6af8160028c2e903c5",
+  "status": " M package.json\n M tests/browser.mjs\n M tests/expanded.mjs\n M tests/navigation.mjs\n M tests/resilience.mjs\n M trainer/PLAN.md\n M trainer/README.md\n M trainer/VERIFICATION.md\n M trainer/app.js\n M trainer/case-state.js\n M trainer/case-viewer.js\n M trainer/cases.css\n M trainer/cases.js\n M trainer/index.html\n M trainer/mri.js\n M trainer/qa/browser-report.json\n M trainer/qa/resilience-report.json\n M trainer/split-view.js\n M trainer/styles.css\n?? .impeccable.md\n?? \"AAL \\355\\225\\265\\354\\213\\254 \\352\\265\\254\\355\\230\\204 \\353\\251\\224\\354\\273\\244\\353\\213\\210\\354\\246\\230.md\"\n?? docs/\n?? tests/guided-practice.test.mjs\n?? tests/guided-recovery.mjs\n?? tests/guided.mjs\n?? tests/http-origin.mjs\n?? tests/nearby-structures.test.mjs\n?? tests/nearby.mjs\n?? tests/split-layout.mjs\n?? tests/task-id.test.mjs\n?? tests/wheel-zoom.mjs\n?? trainer/guided-practice.js\n?? trainer/nearby-structures.js\n?? trainer/qa/guided-match.png\n?? trainer/qa/guided-miss.png\n?? trainer/qa/guided-mobile.png\n?? trainer/qa/guided-recovery-report.json\n?? trainer/qa/guided-report.json\n?? trainer/qa/nearby-hover.png\n?? trainer/qa/nearby-mobile.png\n?? trainer/qa/nearby-report.json\n?? trainer/qa/wheel-zoom-report.json\n?? trainer/task-id.js\n?? trainer/wheel-zoom.js\n",
+  "unitTests": {
+    "passed": 23,
+    "failed": 0
+  },
+  "scope": "P1 core subject meshes for four existing cases, P2 native MRI slice + clipping + selection + isolation; P0 decision evidence, with unmeasured gates left open. No new clinical answer set, surface download, or commit.",
+  "browserBaseline": {
+    "passed": false,
+    "cause": "Existing browser.mjs expects y increment in default axial view; actual z increments correctly before implementation."
+  }
+}

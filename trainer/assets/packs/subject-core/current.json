@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 2,
+  "packId": "subject-core",
+  "version": "1",
+  "cases": [
+    {
+      "caseId": "sub-01",
+      "url": "assets/packs/subject-core/1/sub-01/manifest.json",
+      "sha256": "cbc9b9b6f53b3b953c4dba94a8257dd6ad16baa1ddd8e6baa25dc53f6badf39c",
+      "representations": 18
+    },
+    {
+      "caseId": "sub-02",
+      "url": "assets/packs/subject-core/1/sub-02/manifest.json",
+      "sha256": "c67173b120959e56c9f7515dbe802e366cf20bfdc3283ff3fd433441215d784c",
+      "representations": 18
+    },
+    {
+      "caseId": "sub-03",
+      "url": "assets/packs/subject-core/1/sub-03/manifest.json",
+      "sha256": "d3e80c47b295eb8e3999e804df05e1317e14224d3c2fc473858d4cd6eefabdfe",
+      "representations": 18
+    },
+    {
+      "caseId": "sub-04",
+      "url": "assets/packs/subject-core/1/sub-04/manifest.json",
+      "sha256": "5bcb5ffbf616d2c567bcb0eed58da3ea07a46159d0ef4b7a2eb4165ebde9daa9",
+      "representations": 18
+    }
+  ]
+}

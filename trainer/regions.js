@@ -25,13 +25,13 @@ const additions = [
  ['전대상회','ACC · Anterior cingulate cortex','이 앱에서는 AAL3의 subgenual, pregenual, supracallosal ACC를 합쳐 표시합니다.','시상면에서 뇌량 무릎을 찾고 그 아래·앞·위의 대상피질을 구분하세요. 관상면에서는 정중선 양측, 뇌량 위의 대상구와 뇌량구 사이입니다.','parcel'],
  ['후대상회','PCC · Posterior cingulate cortex','뇌량 팽대 뒤위쪽 대상피질입니다. Precuneus와 인접하지만 같은 영역은 아닙니다.','정중 시상면에서 뇌량 팽대를 기준으로 찾습니다. 뒤위쪽 precuneus 및 아래쪽 retrosplenial 영역과의 상대 위치를 확인하세요.','parcel'],
  ['전대상회 배측부','dACC · Supracallosal ACC proxy','AAL3의 supracallosal ACC를 표시합니다. 문헌의 dACC 경계와 완전히 일치하는 보편적 구획은 아닙니다.','시상면에서 뇌량 몸통 앞부분 바로 위, 대상구 아래를 따라갑니다. SMA는 더 위뒤쪽 내측 전두피질에 위치합니다.','proxy'],
- ['뇌섬엽','Insula','외측구 깊숙이 놓인 피질입니다. 주변 operculum을 통과한 관상·축상 절편에서 찾습니다.','가쪽부터 뇌섬엽 피질 → 최외포 → 담장 → 외포 → 조가비핵 순서를 확인하세요. 이 얇은 층들의 경계는 영상 해상도에 영향을 받습니다.','anatomy'],
+ ['뇌섬엽','Insula','외측구 깊숙이 놓인 피질입니다. 주변 operculum을 통과한 관상면·축상면 절편에서 찾습니다.','가쪽부터 뇌섬엽 피질 → 최외포 → 담장 → 외포 → 조가비핵 순서를 확인하세요. 이 얇은 층들의 경계는 영상 해상도에 영향을 받습니다.','anatomy'],
  ['배외측 전전두엽','dlPFC · Macroanatomical proxy','AAL3의 중전두회와 배외측 상전두회 합집합을 위치 학습용으로 표시합니다. 기능적으로 정의한 dlPFC 전체와 동일하지 않습니다.','축상면에서 전두엽 상외측면, 시상면에서 중심앞고랑보다 앞쪽 전두피질을 확인합니다. MRI 신호만으로 기능적 dlPFC 경계를 확정할 수 없습니다.','proxy'],
  ['안와전두피질','OFC · Orbitofrontal cortex','AAL3의 내측·앞·뒤·가쪽 안와전두 구획을 합친 영역입니다.','아래쪽 축상면에서 안와 위 전두엽 기저부를 찾습니다. 관상면에서는 후각구와 직회, 내측 및 외측 안와회를 함께 확인하세요.','parcel'],
  ['복내측 전전두엽','vmPFC · Macroanatomical proxy','내측 안와상전두회와 직회를 위치 학습용으로 표시합니다. 연구별 vmPFC 정의는 이 구획보다 넓거나 다를 수 있습니다.','정중선 가까운 시상면에서 전두극 아래쪽 및 안와면을 확인합니다. OFC와 vmPFC는 정의에 따라 겹칠 수 있습니다.','proxy'],
  ['보완운동영역','SMA · Supplementary motor area','AAL3의 보완운동영역 구획입니다. pre-SMA와 SMA proper를 별도 분할하지 않습니다.','시상면에서 중심앞이랑 내측 부분보다 앞쪽, 대상구보다 위쪽을 찾습니다. 관상면에서 대뇌종열 양측의 내측 전두피질입니다.','parcel'],
  ['쐐기앞소엽','Precuneus','내측 두정엽 피질로, 후대상회보다 위쪽에 위치합니다.','정중 시상면에서 두정후두구 앞쪽, 대상구 변연가지 뒤쪽을 확인합니다. 아래쪽 PCC와 함께 DMN의 후내측 영역을 관찰하세요.','anatomy'],
- ['하두정소엽','IPL · Angular + supramarginal','AAL3 하두정 구획, 모서리이랑(각회), 모서리위이랑(연상회)을 합칩니다.','외측구 뒤끝을 감싸는 supramarginal gyrus와 상측두구 뒤끝 주변 angular gyrus를 구별하세요. 한 절편보다 연속 축상·시상면 추적이 유용합니다.','parcel'],
+ ['하두정소엽','IPL · Angular + supramarginal','AAL3 하두정 구획, 모서리이랑·각회, 모서리위이랑·연상회을 합칩니다.','외측구 뒤끝을 감싸는 supramarginal gyrus와 상측두구 뒤끝 주변 angular gyrus를 구별하세요. 한 절편보다 연속 축상면·시상면 추적이 유용합니다.','parcel'],
  ['시상','Thalamus','AAL3 시상 하위 구획의 합집합입니다. 전체 시상과 앞핵의 위치를 별도로 학습할 수 있습니다.','축상면에서 제3뇌실 양측, 내포 뒤다리 안쪽을 찾습니다. 관상면에서는 아래의 시상하부 및 위가쪽의 측뇌실과의 관계를 확인하세요.','anatomy'],
  ['유두체','Mammillary body','CoBrA의 유두체 분할입니다. 기존 CIT168 유두핵 라벨과 범위가 다릅니다.','정중선 가까운 시상면에서 시상하부 뒤아래, 중뇌 앞의 작은 돌기를 찾습니다. 관상면에서 쌍을 이루는 위치와 뇌궁 기둥의 연결을 확인하세요.','anatomy'],
  ['마이네르트 기저핵','Nucleus basalis of Meynert · Ch4','Julich의 기저전뇌 Ch4 구획입니다. 미상핵(caudate nucleus)과 다른 구조입니다.','전교련·전유공질 주변의 기저전뇌에서 위치를 추정합니다. 일상 T1에서 Ch4의 세포구축학적 경계를 직접 구별하는 과제로 해석하지 마세요.','micro'],
@@ -42,9 +42,9 @@ const additions = [
  ['정중 봉선핵','Median raphe nucleus','AAN v2의 median raphe 구획입니다. 등쪽 봉선핵과 따로 표시합니다.','뇌간 정중선에서 등쪽 봉선핵에 대한 아래·배쪽 위치를 확인하세요. 봉선핵 전체 B1–B9를 포함하지 않습니다.','micro'],
  ['소뇌 충부','Cerebellar vermis','AAL3 충부 I–X 구획의 합집합입니다. 좌우 한 쌍이 아닌 정중 구조입니다.','정중 시상면에서 제4뇌실 뒤의 소뇌 충부를 확인합니다. 관상면에서 양측 소뇌반구 사이 중앙 부분을 연속 추적하세요.','anatomy'],
  ['뇌궁·해마술','Fornix + fimbria','CoBrA 뇌궁과 해마술 합집합입니다. MRI에서 보이는 주요 백질 다발 위치를 연결합니다.','시상면에서 뇌량 아래의 뇌궁 몸통을 찾고, 앞쪽 기둥과 뒤쪽 다리를 추적하세요. 표시된 atlas 분할이 전체 Papez 경로를 끊김 없이 재현하지는 않습니다.','anatomy'],
- ['시상 앞배쪽핵','Anterior ventral thalamic nucleus','시상 앞핵군 중 anteroventral nucleus 분할입니다. 앞핵군 전체와 동일하지 않습니다.','관상·축상면에서 시상 앞위쪽, 제3뇌실 및 측뇌실 사이를 확인합니다. 유두체와 대상회 사이 Papez 회로의 한 노드입니다.','micro'],
+ ['시상 앞배쪽핵','Anterior ventral thalamic nucleus','시상 앞핵군 중 anteroventral nucleus 분할입니다. 앞핵군 전체와 동일하지 않습니다.','관상면·축상면에서 시상 앞위쪽, 제3뇌실 및 측뇌실 사이를 확인합니다. 유두체와 대상회 사이 Papez 회로의 한 노드입니다.','micro'],
  ['해마곁이랑','Parahippocampal gyrus','AAL3 해마곁이랑 구획입니다. 내후각피질의 세포구축학적 경계를 별도로 제공하지 않습니다.','관상면에서 해마 아래 내측 측두엽 피질을 찾고, 가쪽 collateral sulcus와의 관계를 확인합니다.','anatomy'],
- ['담장','Claustrum','Allen Human Reference Atlas의 담장입니다. 이 구조를 선택하면 맞춤 ICBM2009b symmetric MRI로 전환됩니다.','축상·관상면에서 조가비핵과 뇌섬엽 사이의 얇은 회백질판입니다. 가쪽 최외포, 안쪽 외포를 구분하며 관찰하세요. 해상도에 따른 부분용적 효과가 큽니다.','anatomy'],
+ ['담장','Claustrum','Allen Human Reference Atlas의 담장입니다. 이 구조를 선택하면 맞춤 ICBM2009b symmetric MRI로 전환됩니다.','축상면·관상면에서 조가비핵과 뇌섬엽 사이의 얇은 회백질판입니다. 가쪽 최외포, 안쪽 외포를 구분하며 관찰하세요. 해상도에 따른 부분용적 효과가 큽니다.','anatomy'],
  ['중격 영역 · LSN 참고','Septal region · not isolated LSN','Allen의 septal region을 참고용으로 표시합니다. 외측중격핵만을 분할한 자료가 아니므로 LSN 식별 채점에는 사용하지 않습니다.','전교련 위쪽, 뇌량 부리 아래 및 투명중격 기저부 주변의 중격 영역을 확인하세요. 이 영역 전체를 외측중격핵의 경계로 외우면 안 됩니다.','reference']
 ];
 for(const [ko,en,description,relation,kind] of additions) regions.push({group:regions.length,ko,en,description,relation,kind});

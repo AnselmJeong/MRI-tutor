@@ -11,7 +11,14 @@
     "test:resilience": "node tests/resilience.mjs",
     "test:atlas-recovery": "node tests/atlas-recovery.mjs",
     "test:expanded": "node tests/expanded.mjs",
-    "test:navigation": "node tests/navigation.mjs"
+    "test:navigation": "node tests/navigation.mjs",
+    "test:wheel-zoom": "node tests/wheel-zoom.mjs",
+    "test:nearby": "node tests/nearby.mjs",
+    "test:guided": "node tests/guided.mjs && node tests/guided-recovery.mjs",
+    "build:subject": "uv run --with-requirements scripts/subject-mesh-requirements.txt python scripts/build_subject_meshes.py",
+    "test:subject-browser": "node tests/subject-browser.mjs",
+    "test:subject-data": "uv run --with-requirements scripts/subject-mesh-requirements.txt python scripts/validate_subject_meshes.py",
+    "test:subject-failures": "node tests/subject-failures.mjs"
   },
   "devDependencies": {
     "@playwright/test": "1.58.2"

@@ -1,0 +1,84 @@
+{
+  "hardware": {
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+    "cores": 12,
+    "deviceMemoryGiB": 32,
+    "dpr": 1
+  },
+  "heapBefore": 9565945,
+  "worker2D": {
+    "firstMs": 183.79999995231628,
+    "additionalScalarSlabBytes": 420864,
+    "rgbaBytes": 420864,
+    "gpuTextureBytes": 420864,
+    "heap": 258590714
+  },
+  "three3D": {
+    "firstMs": 107.60000002384186,
+    "additionalCPUVolumeBytes": 0,
+    "gpuTextureBytes": 80805888,
+    "format": "R16I, original array reused",
+    "heap": 258996247,
+    "webglError": 0
+  },
+  "twoVsThreePixels": {
+    "samples": 32063,
+    "p95": 0,
+    "max": 0,
+    "above2": 0
+  },
+  "niivue": {
+    "firstMs": 360.39999997615814,
+    "meshCount": 1,
+    "additionalCPUVolumeBytes": 0,
+    "volumeArrayBytes": 80805888,
+    "gpuTextures": "NiiVue-managed; not measured as peak GPU memory",
+    "heap": 417230414,
+    "webglError": 0
+  },
+  "niivueFramebufferVsWorker": {
+    "samples": 323,
+    "p95": 1,
+    "max": 1,
+    "above2": 0
+  },
+  "frame": {
+    "spaceId": "subject:sub-01:T1-native-RAS-mm",
+    "plane": "axial",
+    "originMm": [
+      -100.3556900024414,
+      -92.35196685791016,
+      -28.410552978515625
+    ],
+    "uMm": [
+      189.9804458618164,
+      -8.85516357421875,
+      -24.836200714111328
+    ],
+    "vMm": [
+      17.296340942382812,
+      251.85274505615234,
+      42.5092830657959
+    ],
+    "normal": [
+      0.11972497259907916,
+      -0.17322406811847252,
+      0.9775783105003081
+    ],
+    "width": 274,
+    "height": 384,
+    "axis": 2,
+    "uAxis": 0,
+    "vAxis": 1,
+    "depth": 204.189453125,
+    "sampleIndex": 204,
+    "convention": "voxel-centers; origin-at-pixel-edge; x-fastest; native-RAS-permutation",
+    "interpolation": "nearest",
+    "revision": 0
+  },
+  "volumeBytes": 80805888,
+  "totalMs": 1080.8999999761581,
+  "complete": true,
+  "workerScalarMatches": true,
+  "renderer": "ANGLE Metal, Apple M2 Max"
+}

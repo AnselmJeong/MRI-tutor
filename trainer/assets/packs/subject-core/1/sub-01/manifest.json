@@ -1,0 +1,1894 @@
+{
+  "schemaVersion": 2,
+  "id": "subject-core",
+  "version": "1",
+  "caseId": "sub-01",
+  "space": {
+    "id": "subject:sub-01:T1-native-RAS-mm",
+    "unit": "mm",
+    "axisConvention": "RAS",
+    "referenceImageHash": "06d22728884f865d87196d86611a72eb865b0521de6243350b3511ce52a1f84e"
+  },
+  "volumes": [
+    {
+      "id": "T1w",
+      "spaceId": "subject:sub-01:T1-native-RAS-mm",
+      "shape": [
+        384,
+        384,
+        274
+      ],
+      "voxelToWorld": [
+        [
+          -0.04504255950450897,
+          0.07981664687395096,
+          0.6933593153953552,
+          -99.03291320800781
+        ],
+        [
+          -0.6558665037155151,
+          -0.11548271775245667,
+          -0.032318130135536194,
+          182.73703002929688
+        ],
+        [
+          -0.11070125550031662,
+          0.6517188549041748,
+          -0.09064307063817978,
+          -119.07606506347656
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "dtype": "int16",
+      "slope": 1.0,
+      "intercept": 0.0,
+      "sourceHash": "06d22728884f865d87196d86611a72eb865b0521de6243350b3511ce52a1f84e",
+      "acquisitionSpacing": [
+        0.7,
+        0.7,
+        0.7
+      ]
+    },
+    {
+      "id": "T2w",
+      "spaceId": "subject:sub-01:T1-native-RAS-mm",
+      "shape": [
+        384,
+        384,
+        274
+      ],
+      "voxelToWorld": [
+        [
+          -0.04504255950450897,
+          0.07981665432453156,
+          0.693359375,
+          -99.03291320800781
+        ],
+        [
+          -0.6558665037155151,
+          -0.11548271775245667,
+          -0.032318130135536194,
+          182.73703002929688
+        ],
+        [
+          -0.11070125550031662,
+          0.6517188549041748,
+          -0.09064307808876038,
+          -119.07606506347656
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "dtype": "float32",
+      "slope": 1.0,
+      "intercept": 0.0,
+      "sourceHash": "de5a38fa2e7999018af5963ed0f10061f3b84fcce6126c212a3e32c989d0c1a1",
+      "acquisitionSpacing": [
+        0.7,
+        0.7,
+        0.7
+      ]
+    }
+  ],
+  "structures": [
+    {
+      "id": "anatomy:hippocampus:left",
+      "topicId": "hippocampus",
+      "ko": "해마",
+      "en": "Hippocampus",
+      "synonyms": [],
+      "side": "left",
+      "definition": "Concept link; boundary is the named FreeSurfer label, not other atlas definitions.",
+      "version": 1
+    },
+    {
+      "id": "anatomy:hippocampus:right",
+      "topicId": "hippocampus",
+      "ko": "해마",
+      "en": "Hippocampus",
+      "synonyms": [],
+      "side": "right",
+      "definition": "Concept link; boundary is the named FreeSurfer label, not other atlas definitions.",
+      "version": 1
+    },
+    {
+      "id": "anatomy:amygdala:left",
+      "topicId": "amygdala",
+      "ko": "편도체",
+      "en": "Amygdala",
+      "synonyms": [],
+      "side": "left",
+      "definition": "Concept link; boundary is the named FreeSurfer label, not other atlas definitions.",
+      "version": 1
+    },
+    {
+      "id": "anatomy:amygdala:right",
+      "topicId": "amygdala",
+      "ko": "편도체",
+      "en": "Amygdala",
+      "synonyms": [],
+      "side": "right",
+      "definition": "Concept link; boundary is the named FreeSurfer label, not other atlas definitions.",
+      "version": 1
+    },
+    {
+      "id": "anatomy:caudate:left",
+      "topicId": "caudate",
+      "ko": "꼬리핵",
+      "en": "Caudate",
+      "synonyms": [
+        "미상핵"
+      ],
+      "side": "left",
+      "definition": "Concept link; boundary is the named FreeSurfer label, not other atlas definitions.",
+      "version": 1
+    },
+    {
+      "id": "anatomy:caudate:right",
+      "topicId": "caudate",
+      "ko": "꼬리핵",
+      "en": "Caudate",
+      "synonyms": [
+        "미상핵"
+      ],
+      "side": "right",
+      "definition": "Concept link; boundary is the named FreeSurfer label, not other atlas definitions.",
+      "version": 1
+    },
+    {
+      "id": "anatomy:putamen:left",
+      "topicId": "putamen",
+      "ko": "조가비핵",
+      "en": "Putamen",
+      "synonyms": [],
+      "side": "left",
+      "definition": "Concept link; boundary is the named FreeSurfer label, not other atlas definitions.",
+      "version": 1
+    },
+    {
+      "id": "anatomy:putamen:right",
+      "topicId": "putamen",
+      "ko": "조가비핵",
+      "en": "Putamen",
+      "synonyms": [],
+      "side": "right",
+      "definition": "Concept link; boundary is the named FreeSurfer label, not other atlas definitions.",
+      "version": 1
+    },
+    {
+      "id": "anatomy:pallidum:left",
+      "topicId": "pallidum",
+      "ko": "담창구",
+      "en": "Pallidum",
+      "synonyms": [],
+      "side": "left",
+      "definition": "Concept link; boundary is the named FreeSurfer label, not other atlas definitions.",
+      "version": 1
+    },
+    {
+      "id": "anatomy:pallidum:right",
+      "topicId": "pallidum",
+      "ko": "담창구",
+      "en": "Pallidum",
+      "synonyms": [],
+      "side": "right",
+      "definition": "Concept link; boundary is the named FreeSurfer label, not other atlas definitions.",
+      "version": 1
+    },
+    {
+      "id": "anatomy:thalamus:left",
+      "topicId": "thalamus",
+      "ko": "시상",
+      "en": "Thalamus",
+      "synonyms": [],
+      "side": "left",
+      "definition": "Concept link; boundary is the named FreeSurfer label, not other atlas definitions.",
+      "version": 1
+    },
+    {
+      "id": "anatomy:thalamus:right",
+      "topicId": "thalamus",
+      "ko": "시상",
+      "en": "Thalamus",
+      "synonyms": [],
+      "side": "right",
+      "definition": "Concept link; boundary is the named FreeSurfer label, not other atlas definitions.",
+      "version": 1
+    },
+    {
+      "id": "anatomy:ventricle:left",
+      "topicId": "ventricle",
+      "ko": "측뇌실",
+      "en": "Lateral ventricle",
+      "synonyms": [],
+      "side": "left",
+      "definition": "Concept link; boundary is the named FreeSurfer label, not other atlas definitions.",
+      "version": 1
+    },
+    {
+      "id": "anatomy:ventricle:right",
+      "topicId": "ventricle",
+      "ko": "측뇌실",
+      "en": "Lateral ventricle",
+      "synonyms": [],
+      "side": "right",
+      "definition": "Concept link; boundary is the named FreeSurfer label, not other atlas definitions.",
+      "version": 1
+    },
+    {
+      "id": "anatomy:third-ventricle:midline",
+      "topicId": "third-ventricle",
+      "ko": "제3뇌실",
+      "en": "Third ventricle",
+      "synonyms": [],
+      "side": "midline",
+      "definition": "Concept link; boundary is the named FreeSurfer label, not other atlas definitions.",
+      "version": 1
+    },
+    {
+      "id": "anatomy:temporal-horn:left",
+      "topicId": "temporal-horn",
+      "ko": "측두각",
+      "en": "Temporal horn",
+      "synonyms": [],
+      "side": "left",
+      "definition": "Concept link; boundary is the named FreeSurfer label, not other atlas definitions.",
+      "version": 1
+    },
+    {
+      "id": "anatomy:temporal-horn:right",
+      "topicId": "temporal-horn",
+      "ko": "측두각",
+      "en": "Temporal horn",
+      "synonyms": [],
+      "side": "right",
+      "definition": "Concept link; boundary is the named FreeSurfer label, not other atlas definitions.",
+      "version": 1
+    },
+    {
+      "id": "anatomy:fourth-ventricle:midline",
+      "topicId": "fourth-ventricle",
+      "ko": "제4뇌실",
+      "en": "Fourth ventricle",
+      "synonyms": [],
+      "side": "midline",
+      "definition": "Concept link; boundary is the named FreeSurfer label, not other atlas definitions.",
+      "version": 1
+    }
+  ],
+  "representations": [
+    {
+      "structureId": "anatomy:hippocampus:left",
+      "representationId": "sub-01:freesurfer-5.3:1",
+      "caseId": "sub-01",
+      "spaceId": "subject:sub-01:T1-native-RAS-mm",
+      "unit": "m",
+      "id": "sub-01:freesurfer-5.3:1",
+      "kind": "subject-segmentation",
+      "labelId": 1,
+      "sourceLabelIds": [
+        17
+      ],
+      "reviewStatus": "unreviewed",
+      "assessmentUse": "reference-only",
+      "referenceMask": {
+        "url": "assets/cases/sub-01/labels-reference.nii.gz",
+        "sha256": "cf634e97e53f8e40b6202e414327c47d0af9564a7f1726423c0d76bf37643918",
+        "voxelToWorld": [
+          [
+            -1.0001081228256226,
+            5.484846042236313e-05,
+            3.263463077018969e-05,
+            129.98828125
+          ],
+          [
+            4.272840669727884e-05,
+            0.00010729305358836427,
+            1.0000003576278687,
+            -97.12067413330078
+          ],
+          [
+            -2.652347757248208e-05,
+            -1.0000017881393433,
+            0.00010865651711355895,
+            100.5722885131836
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "mesh": {
+        "url": "assets/packs/subject-core/1/sub-01/hippocampus-left.glb",
+        "sha256": "9ecfd871ce00f3e6b0cf54331d79d33852618dd186277344310590ab8b93bd6d",
+        "bytes": 124660,
+        "unit": "m"
+      },
+      "referenceSurface": {
+        "url": "assets/packs/subject-core/1/sub-01/hippocampus-left.glb",
+        "sha256": "9ecfd871ce00f3e6b0cf54331d79d33852618dd186277344310590ab8b93bd6d",
+        "bytes": 124660,
+        "unit": "m"
+      },
+      "lod": [],
+      "bounds": [
+        [
+          -31.519446521997452,
+          -7.60292261838913,
+          -25.917628780007362
+        ],
+        [
+          -4.515426699072123,
+          38.39895874261856,
+          -4.921452607959509
+        ]
+      ],
+      "interiorAnchor": [
+        -19.017340588735806,
+        25.898392191448266,
+        -17.418508097190923
+      ],
+      "qa": {
+        "anchorInsideMask": true,
+        "voxelCount": 4191,
+        "components": 1,
+        "vertices": 3428,
+        "triangles": 6888,
+        "outwardWinding": true,
+        "displayVsReferenceMaxMm": 2.080993822312637e-06,
+        "displayVsReferenceVolumeChange": 0,
+        "referenceSurfaceVolumeMm3": 4152.999622807048,
+        "smoothing": "none",
+        "decimation": "none"
+      }
+    },
+    {
+      "structureId": "anatomy:hippocampus:right",
+      "representationId": "sub-01:freesurfer-5.3:2",
+      "caseId": "sub-01",
+      "spaceId": "subject:sub-01:T1-native-RAS-mm",
+      "unit": "m",
+      "id": "sub-01:freesurfer-5.3:2",
+      "kind": "subject-segmentation",
+      "labelId": 2,
+      "sourceLabelIds": [
+        53
+      ],
+      "reviewStatus": "unreviewed",
+      "assessmentUse": "reference-only",
+      "referenceMask": {
+        "url": "assets/cases/sub-01/labels-reference.nii.gz",
+        "sha256": "cf634e97e53f8e40b6202e414327c47d0af9564a7f1726423c0d76bf37643918",
+        "voxelToWorld": [
+          [
+            -1.0001081228256226,
+            5.484846042236313e-05,
+            3.263463077018969e-05,
+            129.98828125
+          ],
+          [
+            4.272840669727884e-05,
+            0.00010729305358836427,
+            1.0000003576278687,
+            -97.12067413330078
+          ],
+          [
+            -2.652347757248208e-05,
+            -1.0000017881393433,
+            0.00010865651711355895,
+            100.5722885131836
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "mesh": {
+        "url": "assets/packs/subject-core/1/sub-01/hippocampus-right.glb",
+        "sha256": "bd64aa41705d9593e3611bff1576116e845c480bc9eea65e738f4130d5d1be4e",
+        "bytes": 129928,
+        "unit": "m"
+      },
+      "referenceSurface": {
+        "url": "assets/packs/subject-core/1/sub-01/hippocampus-right.glb",
+        "sha256": "bd64aa41705d9593e3611bff1576116e845c480bc9eea65e738f4130d5d1be4e",
+        "bytes": 129928,
+        "unit": "m"
+      },
+      "lod": [],
+      "bounds": [
+        [
+          10.484560392796993,
+          -9.604139253497124,
+          -28.91630306839943
+        ],
+        [
+          37.4889113008976,
+          37.39778697490692,
+          -5.920876283198595
+        ]
+      ],
+      "interiorAnchor": [
+        24.987692048663178,
+        25.897048606852536,
+        -22.41734983211026
+      ],
+      "qa": {
+        "anchorInsideMask": true,
+        "voxelCount": 4441,
+        "components": 1,
+        "vertices": 3581,
+        "triangles": 7174,
+        "outwardWinding": true,
+        "displayVsReferenceMaxMm": 2.2224787531726653e-06,
+        "displayVsReferenceVolumeChange": 0,
+        "referenceSurfaceVolumeMm3": 4400.068534052383,
+        "smoothing": "none",
+        "decimation": "none"
+      }
+    },
+    {
+      "structureId": "anatomy:amygdala:left",
+      "representationId": "sub-01:freesurfer-5.3:3",
+      "caseId": "sub-01",
+      "spaceId": "subject:sub-01:T1-native-RAS-mm",
+      "unit": "m",
+      "id": "sub-01:freesurfer-5.3:3",
+      "kind": "subject-segmentation",
+      "labelId": 3,
+      "sourceLabelIds": [
+        18
+      ],
+      "reviewStatus": "unreviewed",
+      "assessmentUse": "reference-only",
+      "referenceMask": {
+        "url": "assets/cases/sub-01/labels-reference.nii.gz",
+        "sha256": "cf634e97e53f8e40b6202e414327c47d0af9564a7f1726423c0d76bf37643918",
+        "voxelToWorld": [
+          [
+            -1.0001081228256226,
+            5.484846042236313e-05,
+            3.263463077018969e-05,
+            129.98828125
+          ],
+          [
+            4.272840669727884e-05,
+            0.00010729305358836427,
+            1.0000003576278687,
+            -97.12067413330078
+          ],
+          [
+            -2.652347757248208e-05,
+            -1.0000017881393433,
+            0.00010865651711355895,
+            100.5722885131836
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "mesh": {
+        "url": "assets/packs/subject-core/1/sub-01/amygdala-left.glb",
+        "sha256": "803bd3f83078b568c5f561d98f5ebc498536892f087d25390dc2bb66b3becfd2",
+        "bytes": 54600,
+        "unit": "m"
+      },
+      "referenceSurface": {
+        "url": "assets/packs/subject-core/1/sub-01/amygdala-left.glb",
+        "sha256": "803bd3f83078b568c5f561d98f5ebc498536892f087d25390dc2bb66b3becfd2",
+        "bytes": 54600,
+        "unit": "m"
+      },
+      "lod": [],
+      "bounds": [
+        [
+          -25.51792748272419,
+          24.397602304816246,
+          -24.917056784033775
+        ],
+        [
+          -5.515644326806068,
+          46.39891907572746,
+          -6.917409598827362
+        ]
+      ],
+      "interiorAnchor": [
+        -15.016921172611148,
+        33.89768754419279,
+        -12.417523983234759
+      ],
+      "qa": {
+        "anchorInsideMask": true,
+        "voxelCount": 1915,
+        "components": 1,
+        "vertices": 1494,
+        "triangles": 2984,
+        "outwardWinding": true,
+        "displayVsReferenceMaxMm": 2.2174763270960046e-06,
+        "displayVsReferenceVolumeChange": 0,
+        "referenceSurfaceVolumeMm3": 1894.7089317766304,
+        "smoothing": "none",
+        "decimation": "none"
+      }
+    },
+    {
+      "structureId": "anatomy:amygdala:right",
+      "representationId": "sub-01:freesurfer-5.3:4",
+      "caseId": "sub-01",
+      "spaceId": "subject:sub-01:T1-native-RAS-mm",
+      "unit": "m",
+      "id": "sub-01:freesurfer-5.3:4",
+      "kind": "subject-segmentation",
+      "labelId": 4,
+      "sourceLabelIds": [
+        54
+      ],
+      "reviewStatus": "unreviewed",
+      "assessmentUse": "reference-only",
+      "referenceMask": {
+        "url": "assets/cases/sub-01/labels-reference.nii.gz",
+        "sha256": "cf634e97e53f8e40b6202e414327c47d0af9564a7f1726423c0d76bf37643918",
+        "voxelToWorld": [
+          [
+            -1.0001081228256226,
+            5.484846042236313e-05,
+            3.263463077018969e-05,
+            129.98828125
+          ],
+          [
+            4.272840669727884e-05,
+            0.00010729305358836427,
+            1.0000003576278687,
+            -97.12067413330078
+          ],
+          [
+            -2.652347757248208e-05,
+            -1.0000017881393433,
+            0.00010865651711355895,
+            100.5722885131836
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "mesh": {
+        "url": "assets/packs/subject-core/1/sub-01/amygdala-right.glb",
+        "sha256": "8b5684b4421823ec29258bfa9dc049111d4dd8b6717fb17a2137308259765580",
+        "bytes": 61944,
+        "unit": "m"
+      },
+      "referenceSurface": {
+        "url": "assets/packs/subject-core/1/sub-01/amygdala-right.glb",
+        "sha256": "8b5684b4421823ec29258bfa9dc049111d4dd8b6717fb17a2137308259765580",
+        "bytes": 61944,
+        "unit": "m"
+      },
+      "lod": [],
+      "bounds": [
+        [
+          12.486236169934273,
+          22.39600196480751,
+          -29.91616725921631
+        ],
+        [
+          33.488910645246506,
+          45.397233217954636,
+          -9.916622191667557
+        ]
+      ],
+      "interiorAnchor": [
+        25.987972415750235,
+        37.896580803689716,
+        -18.416012416090695
+      ],
+      "qa": {
+        "anchorInsideMask": true,
+        "voxelCount": 2215,
+        "components": 1,
+        "vertices": 1698,
+        "triangles": 3392,
+        "outwardWinding": true,
+        "displayVsReferenceMaxMm": 2.730526706105285e-06,
+        "displayVsReferenceVolumeChange": 0,
+        "referenceSurfaceVolumeMm3": 2192.5334399011695,
+        "smoothing": "none",
+        "decimation": "none"
+      }
+    },
+    {
+      "structureId": "anatomy:caudate:left",
+      "representationId": "sub-01:freesurfer-5.3:5",
+      "caseId": "sub-01",
+      "spaceId": "subject:sub-01:T1-native-RAS-mm",
+      "unit": "m",
+      "id": "sub-01:freesurfer-5.3:5",
+      "kind": "subject-segmentation",
+      "labelId": 5,
+      "sourceLabelIds": [
+        11
+      ],
+      "reviewStatus": "unreviewed",
+      "assessmentUse": "reference-only",
+      "referenceMask": {
+        "url": "assets/cases/sub-01/labels-reference.nii.gz",
+        "sha256": "cf634e97e53f8e40b6202e414327c47d0af9564a7f1726423c0d76bf37643918",
+        "voxelToWorld": [
+          [
+            -1.0001081228256226,
+            5.484846042236313e-05,
+            3.263463077018969e-05,
+            129.98828125
+          ],
+          [
+            4.272840669727884e-05,
+            0.00010729305358836427,
+            1.0000003576278687,
+            -97.12067413330078
+          ],
+          [
+            -2.652347757248208e-05,
+            -1.0000017881393433,
+            0.00010865651711355895,
+            100.5722885131836
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "mesh": {
+        "url": "assets/packs/subject-core/1/sub-01/caudate-left.glb",
+        "sha256": "a96007354957f9e6b5e90d9a22b22dd9007241462680fd22e84e71a89bd09502",
+        "bytes": 133132,
+        "unit": "m"
+      },
+      "referenceSurface": {
+        "url": "assets/packs/subject-core/1/sub-01/caudate-left.glb",
+        "sha256": "a96007354957f9e6b5e90d9a22b22dd9007241462680fd22e84e71a89bd09502",
+        "bytes": 133132,
+        "unit": "m"
+      },
+      "lod": [],
+      "bounds": [
+        [
+          -16.519544646143913,
+          -2.6045311242341995,
+          0.0837374827824533
+        ],
+        [
+          4.4845775701105595,
+          62.39521503448486,
+          26.082538068294525
+        ]
+      ],
+      "interiorAnchor": [
+        -2.0165823621923096,
+        44.89434621150792,
+        13.584061636751187
+      ],
+      "qa": {
+        "anchorInsideMask": true,
+        "voxelCount": 4640,
+        "components": 1,
+        "vertices": 3670,
+        "triangles": 7352,
+        "outwardWinding": true,
+        "displayVsReferenceMaxMm": 2.047704698783414e-06,
+        "displayVsReferenceVolumeChange": 0,
+        "referenceSurfaceVolumeMm3": 4590.797899336586,
+        "smoothing": "none",
+        "decimation": "none"
+      }
+    },
+    {
+      "structureId": "anatomy:caudate:right",
+      "representationId": "sub-01:freesurfer-5.3:6",
+      "caseId": "sub-01",
+      "spaceId": "subject:sub-01:T1-native-RAS-mm",
+      "unit": "m",
+      "id": "sub-01:freesurfer-5.3:6",
+      "kind": "subject-segmentation",
+      "labelId": 6,
+      "sourceLabelIds": [
+        50
+      ],
+      "reviewStatus": "unreviewed",
+      "assessmentUse": "reference-only",
+      "referenceMask": {
+        "url": "assets/cases/sub-01/labels-reference.nii.gz",
+        "sha256": "cf634e97e53f8e40b6202e414327c47d0af9564a7f1726423c0d76bf37643918",
+        "voxelToWorld": [
+          [
+            -1.0001081228256226,
+            5.484846042236313e-05,
+            3.263463077018969e-05,
+            129.98828125
+          ],
+          [
+            4.272840669727884e-05,
+            0.00010729305358836427,
+            1.0000003576278687,
+            -97.12067413330078
+          ],
+          [
+            -2.652347757248208e-05,
+            -1.0000017881393433,
+            0.00010865651711355895,
+            100.5722885131836
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "mesh": {
+        "url": "assets/packs/subject-core/1/sub-01/caudate-right.glb",
+        "sha256": "8909d8a26adecca81b51ec96a8b4637f2c4650d77fe0d2d1e57b16bb79fdd5c1",
+        "bytes": 139048,
+        "unit": "m"
+      },
+      "referenceSurface": {
+        "url": "assets/packs/subject-core/1/sub-01/caudate-right.glb",
+        "sha256": "8909d8a26adecca81b51ec96a8b4637f2c4650d77fe0d2d1e57b16bb79fdd5c1",
+        "bytes": 139048,
+        "unit": "m"
+      },
+      "lod": [],
+      "bounds": [
+        [
+          8.484642021358013,
+          -3.606197889894247,
+          -0.9162189671769738
+        ],
+        [
+          26.487063616514206,
+          59.39418822526932,
+          24.084147065877914
+        ]
+      ],
+      "interiorAnchor": [
+        18.98565605537813,
+        43.893448573525404,
+        13.584509973246455
+      ],
+      "qa": {
+        "anchorInsideMask": true,
+        "voxelCount": 4884,
+        "components": 1,
+        "vertices": 3833,
+        "triangles": 7682,
+        "outwardWinding": true,
+        "displayVsReferenceMaxMm": 2.1732493790897756e-06,
+        "displayVsReferenceVolumeChange": 0,
+        "referenceSurfaceVolumeMm3": 4832.28286149999,
+        "smoothing": "none",
+        "decimation": "none"
+      }
+    },
+    {
+      "structureId": "anatomy:putamen:left",
+      "representationId": "sub-01:freesurfer-5.3:7",
+      "caseId": "sub-01",
+      "spaceId": "subject:sub-01:T1-native-RAS-mm",
+      "unit": "m",
+      "id": "sub-01:freesurfer-5.3:7",
+      "kind": "subject-segmentation",
+      "labelId": 7,
+      "sourceLabelIds": [
+        12
+      ],
+      "reviewStatus": "unreviewed",
+      "assessmentUse": "reference-only",
+      "referenceMask": {
+        "url": "assets/cases/sub-01/labels-reference.nii.gz",
+        "sha256": "cf634e97e53f8e40b6202e414327c47d0af9564a7f1726423c0d76bf37643918",
+        "voxelToWorld": [
+          [
+            -1.0001081228256226,
+            5.484846042236313e-05,
+            3.263463077018969e-05,
+            129.98828125
+          ],
+          [
+            4.272840669727884e-05,
+            0.00010729305358836427,
+            1.0000003576278687,
+            -97.12067413330078
+          ],
+          [
+            -2.652347757248208e-05,
+            -1.0000017881393433,
+            0.00010865651711355895,
+            100.5722885131836
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "mesh": {
+        "url": "assets/packs/subject-core/1/sub-01/putamen-left.glb",
+        "sha256": "f330427082190e5957756d7d44bad102f1f5826ddf35e4b14d92bb451311b028",
+        "bytes": 169132,
+        "unit": "m"
+      },
+      "referenceSurface": {
+        "url": "assets/packs/subject-core/1/sub-01/putamen-left.glb",
+        "sha256": "f330427082190e5957756d7d44bad102f1f5826ddf35e4b14d92bb451311b028",
+        "bytes": 169132,
+        "unit": "m"
+      },
+      "lod": [],
+      "bounds": [
+        [
+          -30.519725754857063,
+          10.396009311079979,
+          -10.918548330664635
+        ],
+        [
+          -3.5158474929630756,
+          56.39572814106941,
+          18.08326132595539
+        ]
+      ],
+      "interiorAnchor": [
+        -14.017364256326346,
+        43.89593154146854,
+        3.5836171627092597
+      ],
+      "qa": {
+        "anchorInsideMask": true,
+        "voxelCount": 7693,
+        "components": 1,
+        "vertices": 4670,
+        "triangles": 9352,
+        "outwardWinding": true,
+        "displayVsReferenceMaxMm": 2.0527372933486175e-06,
+        "displayVsReferenceVolumeChange": 0,
+        "referenceSurfaceVolumeMm3": 7649.55185839061,
+        "smoothing": "none",
+        "decimation": "none"
+      }
+    },
+    {
+      "structureId": "anatomy:putamen:right",
+      "representationId": "sub-01:freesurfer-5.3:8",
+      "caseId": "sub-01",
+      "spaceId": "subject:sub-01:T1-native-RAS-mm",
+      "unit": "m",
+      "id": "sub-01:freesurfer-5.3:8",
+      "kind": "subject-segmentation",
+      "labelId": 8,
+      "sourceLabelIds": [
+        51
+      ],
+      "reviewStatus": "unreviewed",
+      "assessmentUse": "reference-only",
+      "referenceMask": {
+        "url": "assets/cases/sub-01/labels-reference.nii.gz",
+        "sha256": "cf634e97e53f8e40b6202e414327c47d0af9564a7f1726423c0d76bf37643918",
+        "voxelToWorld": [
+          [
+            -1.0001081228256226,
+            5.484846042236313e-05,
+            3.263463077018969e-05,
+            129.98828125
+          ],
+          [
+            4.272840669727884e-05,
+            0.00010729305358836427,
+            1.0000003576278687,
+            -97.12067413330078
+          ],
+          [
+            -2.652347757248208e-05,
+            -1.0000017881393433,
+            0.00010865651711355895,
+            100.5722885131836
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "mesh": {
+        "url": "assets/packs/subject-core/1/sub-01/putamen-right.glb",
+        "sha256": "264f2c3e7ae58986b71278eabfaf6e7d2f0ff7e27df495f08028f1a75b492055",
+        "bytes": 160536,
+        "unit": "m"
+      },
+      "referenceSurface": {
+        "url": "assets/packs/subject-core/1/sub-01/putamen-right.glb",
+        "sha256": "264f2c3e7ae58986b71278eabfaf6e7d2f0ff7e27df495f08028f1a75b492055",
+        "bytes": 160536,
+        "unit": "m"
+      },
+      "lod": [],
+      "bounds": [
+        [
+          15.486009418964386,
+          6.394579540938139,
+          -15.917671844363213
+        ],
+        [
+          40.48851877450943,
+          53.39474603533745,
+          14.083498157560825
+        ]
+      ],
+      "interiorAnchor": [
+        27.987134792643445,
+        40.89424321710274,
+        2.5844034256011383
+      ],
+      "qa": {
+        "anchorInsideMask": true,
+        "voxelCount": 7170,
+        "components": 1,
+        "vertices": 4434,
+        "triangles": 8872,
+        "outwardWinding": true,
+        "displayVsReferenceMaxMm": 2.5500249213164784e-06,
+        "displayVsReferenceVolumeChange": 0,
+        "referenceSurfaceVolumeMm3": 7126.577522730425,
+        "smoothing": "none",
+        "decimation": "none"
+      }
+    },
+    {
+      "structureId": "anatomy:pallidum:left",
+      "representationId": "sub-01:freesurfer-5.3:9",
+      "caseId": "sub-01",
+      "spaceId": "subject:sub-01:T1-native-RAS-mm",
+      "unit": "m",
+      "id": "sub-01:freesurfer-5.3:9",
+      "kind": "subject-segmentation",
+      "labelId": 9,
+      "sourceLabelIds": [
+        13
+      ],
+      "reviewStatus": "unreviewed",
+      "assessmentUse": "reference-only",
+      "referenceMask": {
+        "url": "assets/cases/sub-01/labels-reference.nii.gz",
+        "sha256": "cf634e97e53f8e40b6202e414327c47d0af9564a7f1726423c0d76bf37643918",
+        "voxelToWorld": [
+          [
+            -1.0001081228256226,
+            5.484846042236313e-05,
+            3.263463077018969e-05,
+            129.98828125
+          ],
+          [
+            4.272840669727884e-05,
+            0.00010729305358836427,
+            1.0000003576278687,
+            -97.12067413330078
+          ],
+          [
+            -2.652347757248208e-05,
+            -1.0000017881393433,
+            0.00010865651711355895,
+            100.5722885131836
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "mesh": {
+        "url": "assets/packs/subject-core/1/sub-01/pallidum-left.glb",
+        "sha256": "53817818ac4780ac0b6e993d8453e372078a4334b326c518d95227b6523ff35e",
+        "bytes": 67780,
+        "unit": "m"
+      },
+      "referenceSurface": {
+        "url": "assets/packs/subject-core/1/sub-01/pallidum-left.glb",
+        "sha256": "53817818ac4780ac0b6e993d8453e372078a4334b326c518d95227b6523ff35e",
+        "bytes": 67780,
+        "unit": "m"
+      },
+      "lod": [],
+      "bounds": [
+        [
+          -22.51872792840004,
+          16.396397724747658,
+          -7.919197902083397
+        ],
+        [
+          -2.5159025099128485,
+          44.395916163921356,
+          13.082191348075867
+        ]
+      ],
+      "interiorAnchor": [
+        -10.017071262065969,
+        32.896186044056066,
+        -0.41747897940754797
+      ],
+      "qa": {
+        "anchorInsideMask": true,
+        "voxelCount": 2506,
+        "components": 1,
+        "vertices": 1860,
+        "triangles": 3716,
+        "outwardWinding": true,
+        "displayVsReferenceMaxMm": 1.906283671706711e-06,
+        "displayVsReferenceVolumeChange": 0,
+        "referenceSurfaceVolumeMm3": 2479.8151187889384,
+        "smoothing": "none",
+        "decimation": "none"
+      }
+    },
+    {
+      "structureId": "anatomy:pallidum:right",
+      "representationId": "sub-01:freesurfer-5.3:10",
+      "caseId": "sub-01",
+      "spaceId": "subject:sub-01:T1-native-RAS-mm",
+      "unit": "m",
+      "id": "sub-01:freesurfer-5.3:10",
+      "kind": "subject-segmentation",
+      "labelId": 10,
+      "sourceLabelIds": [
+        52
+      ],
+      "reviewStatus": "unreviewed",
+      "assessmentUse": "reference-only",
+      "referenceMask": {
+        "url": "assets/cases/sub-01/labels-reference.nii.gz",
+        "sha256": "cf634e97e53f8e40b6202e414327c47d0af9564a7f1726423c0d76bf37643918",
+        "voxelToWorld": [
+          [
+            -1.0001081228256226,
+            5.484846042236313e-05,
+            3.263463077018969e-05,
+            129.98828125
+          ],
+          [
+            4.272840669727884e-05,
+            0.00010729305358836427,
+            1.0000003576278687,
+            -97.12067413330078
+          ],
+          [
+            -2.652347757248208e-05,
+            -1.0000017881393433,
+            0.00010865651711355895,
+            100.5722885131836
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "mesh": {
+        "url": "assets/packs/subject-core/1/sub-01/pallidum-right.glb",
+        "sha256": "ed54c743986f39d509422f26bc8e44aa4fe90c486935d79e54ca3cae7b355d8a",
+        "bytes": 75748,
+        "unit": "m"
+      },
+      "referenceSurface": {
+        "url": "assets/packs/subject-core/1/sub-01/pallidum-right.glb",
+        "sha256": "ed54c743986f39d509422f26bc8e44aa4fe90c486935d79e54ca3cae7b355d8a",
+        "bytes": 75748,
+        "unit": "m"
+      },
+      "lod": [],
+      "bounds": [
+        [
+          14.485652558505535,
+          10.394945740699768,
+          -11.917850002646446
+        ],
+        [
+          30.487418174743652,
+          41.395317763090134,
+          9.082813747227192
+        ]
+      ],
+      "interiorAnchor": [
+        21.986346333473904,
+        29.894925003750956,
+        -1.4169579512841182
+      ],
+      "qa": {
+        "anchorInsideMask": true,
+        "voxelCount": 3042,
+        "components": 1,
+        "vertices": 2076,
+        "triangles": 4164,
+        "outwardWinding": true,
+        "displayVsReferenceMaxMm": 2.05832381165901e-06,
+        "displayVsReferenceVolumeChange": 0,
+        "referenceSurfaceVolumeMm3": 3012.4571871880084,
+        "smoothing": "none",
+        "decimation": "none"
+      }
+    },
+    {
+      "structureId": "anatomy:thalamus:left",
+      "representationId": "sub-01:freesurfer-5.3:11",
+      "caseId": "sub-01",
+      "spaceId": "subject:sub-01:T1-native-RAS-mm",
+      "unit": "m",
+      "id": "sub-01:freesurfer-5.3:11",
+      "kind": "subject-segmentation",
+      "labelId": 11,
+      "sourceLabelIds": [
+        10
+      ],
+      "reviewStatus": "unreviewed",
+      "assessmentUse": "reference-only",
+      "referenceMask": {
+        "url": "assets/cases/sub-01/labels-reference.nii.gz",
+        "sha256": "cf634e97e53f8e40b6202e414327c47d0af9564a7f1726423c0d76bf37643918",
+        "voxelToWorld": [
+          [
+            -1.0001081228256226,
+            5.484846042236313e-05,
+            3.263463077018969e-05,
+            129.98828125
+          ],
+          [
+            4.272840669727884e-05,
+            0.00010729305358836427,
+            1.0000003576278687,
+            -97.12067413330078
+          ],
+          [
+            -2.652347757248208e-05,
+            -1.0000017881393433,
+            0.00010865651711355895,
+            100.5722885131836
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "mesh": {
+        "url": "assets/packs/subject-core/1/sub-01/thalamus-left.glb",
+        "sha256": "c067bda3c4923471c64bdce46c01ddb330edd9e9a94f34ffc0dc517e9b935d59",
+        "bytes": 146704,
+        "unit": "m"
+      },
+      "referenceSurface": {
+        "url": "assets/packs/subject-core/1/sub-01/thalamus-left.glb",
+        "sha256": "c067bda3c4923471c64bdce46c01ddb330edd9e9a94f34ffc0dc517e9b935d59",
+        "bytes": 146704,
+        "unit": "m"
+      },
+      "lod": [],
+      "bounds": [
+        [
+          -21.518748253583908,
+          -2.6033499743789434,
+          -13.921031728386879
+        ],
+        [
+          5.48415444791317,
+          32.39496797323227,
+          15.081619843840599
+        ]
+      ],
+      "interiorAnchor": [
+        -8.017682630217479,
+        10.895878489124698,
+        1.5801871312989846
+      ],
+      "qa": {
+        "anchorInsideMask": true,
+        "voxelCount": 9162,
+        "components": 1,
+        "vertices": 4051,
+        "triangles": 8102,
+        "outwardWinding": true,
+        "displayVsReferenceMaxMm": 1.8317391517671484e-06,
+        "displayVsReferenceVolumeChange": 0,
+        "referenceSurfaceVolumeMm3": 9129.340036368958,
+        "smoothing": "none",
+        "decimation": "none"
+      }
+    },
+    {
+      "structureId": "anatomy:thalamus:right",
+      "representationId": "sub-01:freesurfer-5.3:12",
+      "caseId": "sub-01",
+      "spaceId": "subject:sub-01:T1-native-RAS-mm",
+      "unit": "m",
+      "id": "sub-01:freesurfer-5.3:12",
+      "kind": "subject-segmentation",
+      "labelId": 12,
+      "sourceLabelIds": [
+        49
+      ],
+      "reviewStatus": "unreviewed",
+      "assessmentUse": "reference-only",
+      "referenceMask": {
+        "url": "assets/cases/sub-01/labels-reference.nii.gz",
+        "sha256": "cf634e97e53f8e40b6202e414327c47d0af9564a7f1726423c0d76bf37643918",
+        "voxelToWorld": [
+          [
+            -1.0001081228256226,
+            5.484846042236313e-05,
+            3.263463077018969e-05,
+            129.98828125
+          ],
+          [
+            4.272840669727884e-05,
+            0.00010729305358836427,
+            1.0000003576278687,
+            -97.12067413330078
+          ],
+          [
+            -2.652347757248208e-05,
+            -1.0000017881393433,
+            0.00010865651711355895,
+            100.5722885131836
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "mesh": {
+        "url": "assets/packs/subject-core/1/sub-01/thalamus-right.glb",
+        "sha256": "c2a6542708d0671387734202758d47e5ba6e18f5e641b17b45c6e60f84945e89",
+        "bytes": 135100,
+        "unit": "m"
+      },
+      "referenceSurface": {
+        "url": "assets/packs/subject-core/1/sub-01/thalamus-right.glb",
+        "sha256": "c2a6542708d0671387734202758d47e5ba6e18f5e641b17b45c6e60f84945e89",
+        "bytes": 135100,
+        "unit": "m"
+      },
+      "lod": [],
+      "bounds": [
+        [
+          2.4834605865180492,
+          -3.604396479204297,
+          -16.92011207342148
+        ],
+        [
+          25.486236438155174,
+          31.39546513557434,
+          14.081963337957859
+        ]
+      ],
+      "interiorAnchor": [
+        12.984708539711804,
+        12.895089168561526,
+        0.5809596837696773
+      ],
+      "qa": {
+        "anchorInsideMask": true,
+        "voxelCount": 8086,
+        "components": 1,
+        "vertices": 3730,
+        "triangles": 7456,
+        "outwardWinding": true,
+        "displayVsReferenceMaxMm": 1.7391745096043645e-06,
+        "displayVsReferenceVolumeChange": 0,
+        "referenceSurfaceVolumeMm3": 8048.054135037471,
+        "smoothing": "none",
+        "decimation": "none"
+      }
+    },
+    {
+      "structureId": "anatomy:ventricle:left",
+      "representationId": "sub-01:freesurfer-5.3:17",
+      "caseId": "sub-01",
+      "spaceId": "subject:sub-01:T1-native-RAS-mm",
+      "unit": "m",
+      "id": "sub-01:freesurfer-5.3:17",
+      "kind": "subject-segmentation",
+      "labelId": 17,
+      "sourceLabelIds": [
+        4
+      ],
+      "reviewStatus": "unreviewed",
+      "assessmentUse": "reference-only",
+      "referenceMask": {
+        "url": "assets/cases/sub-01/labels-reference.nii.gz",
+        "sha256": "cf634e97e53f8e40b6202e414327c47d0af9564a7f1726423c0d76bf37643918",
+        "voxelToWorld": [
+          [
+            -1.0001081228256226,
+            5.484846042236313e-05,
+            3.263463077018969e-05,
+            129.98828125
+          ],
+          [
+            4.272840669727884e-05,
+            0.00010729305358836427,
+            1.0000003576278687,
+            -97.12067413330078
+          ],
+          [
+            -2.652347757248208e-05,
+            -1.0000017881393433,
+            0.00010865651711355895,
+            100.5722885131836
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "mesh": {
+        "url": "assets/packs/subject-core/1/sub-01/ventricle-left.glb",
+        "sha256": "94ddd85ab10293c8d65bd10daa1579e5b0742607cc0bc6c9b9ac07d4e0752ddc",
+        "bytes": 215008,
+        "unit": "m"
+      },
+      "referenceSurface": {
+        "url": "assets/packs/subject-core/1/sub-01/ventricle-left.glb",
+        "sha256": "94ddd85ab10293c8d65bd10daa1579e5b0742607cc0bc6c9b9ac07d4e0752ddc",
+        "bytes": 215008,
+        "unit": "m"
+      },
+      "lod": [],
+      "bounds": [
+        [
+          -28.519773855805397,
+          -17.602819949388504,
+          -15.923364087939262
+        ],
+        [
+          7.4846274219453335,
+          62.3946376144886,
+          26.082400232553482
+        ]
+      ],
+      "interiorAnchor": [
+        1.9829232842227782,
+        24.893632003511613,
+        18.582003368188808
+      ],
+      "qa": {
+        "anchorInsideMask": true,
+        "voxelCount": 5691,
+        "components": 1,
+        "vertices": 5919,
+        "triangles": 11926,
+        "outwardWinding": true,
+        "displayVsReferenceMaxMm": 2.063231720256576e-06,
+        "displayVsReferenceVolumeChange": 0,
+        "referenceSurfaceVolumeMm3": 5633.454540974297,
+        "smoothing": "none",
+        "decimation": "none"
+      }
+    },
+    {
+      "structureId": "anatomy:ventricle:right",
+      "representationId": "sub-01:freesurfer-5.3:18",
+      "caseId": "sub-01",
+      "spaceId": "subject:sub-01:T1-native-RAS-mm",
+      "unit": "m",
+      "id": "sub-01:freesurfer-5.3:18",
+      "kind": "subject-segmentation",
+      "labelId": 18,
+      "sourceLabelIds": [
+        43
+      ],
+      "reviewStatus": "unreviewed",
+      "assessmentUse": "reference-only",
+      "referenceMask": {
+        "url": "assets/cases/sub-01/labels-reference.nii.gz",
+        "sha256": "cf634e97e53f8e40b6202e414327c47d0af9564a7f1726423c0d76bf37643918",
+        "voxelToWorld": [
+          [
+            -1.0001081228256226,
+            5.484846042236313e-05,
+            3.263463077018969e-05,
+            129.98828125
+          ],
+          [
+            4.272840669727884e-05,
+            0.00010729305358836427,
+            1.0000003576278687,
+            -97.12067413330078
+          ],
+          [
+            -2.652347757248208e-05,
+            -1.0000017881393433,
+            0.00010865651711355895,
+            100.5722885131836
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "mesh": {
+        "url": "assets/packs/subject-core/1/sub-01/ventricle-right.glb",
+        "sha256": "dd4ddd6f6ff71e2fee08907c063a17a483b55b2163be41cd17291fb54da771f1",
+        "bytes": 242980,
+        "unit": "m"
+      },
+      "referenceSurface": {
+        "url": "assets/packs/subject-core/1/sub-01/ventricle-right.glb",
+        "sha256": "dd4ddd6f6ff71e2fee08907c063a17a483b55b2163be41cd17291fb54da771f1",
+        "bytes": 242980,
+        "unit": "m"
+      },
+      "lod": [],
+      "bounds": [
+        [
+          6.4832232892513275,
+          -22.604551166296005,
+          -20.922457799315453
+        ],
+        [
+          33.48734229803085,
+          58.39376151561737,
+          24.08401109278202
+        ]
+      ],
+      "interiorAnchor": [
+        20.98465856052428,
+        -10.105582391315565,
+        3.5786780323988836
+      ],
+      "qa": {
+        "anchorInsideMask": true,
+        "voxelCount": 7980,
+        "components": 1,
+        "vertices": 6724,
+        "triangles": 13452,
+        "outwardWinding": true,
+        "displayVsReferenceMaxMm": 2.155430910623472e-06,
+        "displayVsReferenceVolumeChange": 0,
+        "referenceSurfaceVolumeMm3": 7937.250249896427,
+        "smoothing": "none",
+        "decimation": "none"
+      }
+    },
+    {
+      "structureId": "anatomy:third-ventricle:midline",
+      "representationId": "sub-01:freesurfer-5.3:20",
+      "caseId": "sub-01",
+      "spaceId": "subject:sub-01:T1-native-RAS-mm",
+      "unit": "m",
+      "id": "sub-01:freesurfer-5.3:20",
+      "kind": "subject-segmentation",
+      "labelId": 20,
+      "sourceLabelIds": [
+        14
+      ],
+      "reviewStatus": "unreviewed",
+      "assessmentUse": "reference-only",
+      "referenceMask": {
+        "url": "assets/cases/sub-01/labels-reference.nii.gz",
+        "sha256": "cf634e97e53f8e40b6202e414327c47d0af9564a7f1726423c0d76bf37643918",
+        "voxelToWorld": [
+          [
+            -1.0001081228256226,
+            5.484846042236313e-05,
+            3.263463077018969e-05,
+            129.98828125
+          ],
+          [
+            4.272840669727884e-05,
+            0.00010729305358836427,
+            1.0000003576278687,
+            -97.12067413330078
+          ],
+          [
+            -2.652347757248208e-05,
+            -1.0000017881393433,
+            0.00010865651711355895,
+            100.5722885131836
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "mesh": {
+        "url": "assets/packs/subject-core/1/sub-01/third-ventricle-midline.glb",
+        "sha256": "aea06a90e68c8daf5a1f38f9a8703c49fd32b124fd78ae960e7d3f22be862cfb",
+        "bytes": 38432,
+        "unit": "m"
+      },
+      "referenceSurface": {
+        "url": "assets/packs/subject-core/1/sub-01/third-ventricle-midline.glb",
+        "sha256": "aea06a90e68c8daf5a1f38f9a8703c49fd32b124fd78ae960e7d3f22be862cfb",
+        "bytes": 38432,
+        "unit": "m"
+      },
+      "lod": [],
+      "bounds": [
+        [
+          1.48334342520684,
+          1.3960752403363585,
+          -11.919628828763962
+        ],
+        [
+          7.485650014132261,
+          41.39593988656998,
+          6.08268566429615
+        ]
+      ],
+      "interiorAnchor": [
+        4.984497441839437,
+        27.895757996798395,
+        -2.417627917007678
+      ],
+      "qa": {
+        "anchorInsideMask": true,
+        "voxelCount": 616,
+        "components": 2,
+        "vertices": 1046,
+        "triangles": 2084,
+        "outwardWinding": true,
+        "displayVsReferenceMaxMm": 1.872193711883847e-06,
+        "displayVsReferenceVolumeChange": 0,
+        "referenceSurfaceVolumeMm3": 579.4388954067482,
+        "smoothing": "none",
+        "decimation": "none"
+      }
+    },
+    {
+      "structureId": "anatomy:temporal-horn:left",
+      "representationId": "sub-01:freesurfer-5.3:41",
+      "caseId": "sub-01",
+      "spaceId": "subject:sub-01:T1-native-RAS-mm",
+      "unit": "m",
+      "id": "sub-01:freesurfer-5.3:41",
+      "kind": "subject-segmentation",
+      "labelId": 41,
+      "sourceLabelIds": [
+        5
+      ],
+      "reviewStatus": "unreviewed",
+      "assessmentUse": "reference-only",
+      "referenceMask": {
+        "url": "assets/cases/sub-01/labels-reference.nii.gz",
+        "sha256": "cf634e97e53f8e40b6202e414327c47d0af9564a7f1726423c0d76bf37643918",
+        "voxelToWorld": [
+          [
+            -1.0001081228256226,
+            5.484846042236313e-05,
+            3.263463077018969e-05,
+            129.98828125
+          ],
+          [
+            4.272840669727884e-05,
+            0.00010729305358836427,
+            1.0000003576278687,
+            -97.12067413330078
+          ],
+          [
+            -2.652347757248208e-05,
+            -1.0000017881393433,
+            0.00010865651711355895,
+            100.5722885131836
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "mesh": {
+        "url": "assets/packs/subject-core/1/sub-01/temporal-horn-left.glb",
+        "sha256": "57480fae23af35728bed27f6a3a2357db864cbf6943b79b3c6f17082ee58bdd8",
+        "bytes": 6624,
+        "unit": "m"
+      },
+      "referenceSurface": {
+        "url": "assets/packs/subject-core/1/sub-01/temporal-horn-left.glb",
+        "sha256": "57480fae23af35728bed27f6a3a2357db864cbf6943b79b3c6f17082ee58bdd8",
+        "bytes": 6624,
+        "unit": "m"
+      },
+      "lod": [],
+      "bounds": [
+        [
+          -27.518274262547493,
+          26.397904381155968,
+          -17.917826771736145
+        ],
+        [
+          -11.5165114402771,
+          34.398697316646576,
+          -12.918123044073582
+        ]
+      ],
+      "interiorAnchor": [
+        -14.016811655046268,
+        28.89796498767444,
+        -15.418046003090865
+      ],
+      "qa": {
+        "anchorInsideMask": true,
+        "voxelCount": 51,
+        "components": 2,
+        "vertices": 160,
+        "triangles": 320,
+        "outwardWinding": true,
+        "displayVsReferenceMaxMm": 2.2174763270960046e-06,
+        "displayVsReferenceVolumeChange": 0,
+        "referenceSurfaceVolumeMm3": 40.62948026044952,
+        "smoothing": "none",
+        "decimation": "none"
+      }
+    },
+    {
+      "structureId": "anatomy:temporal-horn:right",
+      "representationId": "sub-01:freesurfer-5.3:42",
+      "caseId": "sub-01",
+      "spaceId": "subject:sub-01:T1-native-RAS-mm",
+      "unit": "m",
+      "id": "sub-01:freesurfer-5.3:42",
+      "kind": "subject-segmentation",
+      "labelId": 42,
+      "sourceLabelIds": [
+        44
+      ],
+      "reviewStatus": "unreviewed",
+      "assessmentUse": "reference-only",
+      "referenceMask": {
+        "url": "assets/cases/sub-01/labels-reference.nii.gz",
+        "sha256": "cf634e97e53f8e40b6202e414327c47d0af9564a7f1726423c0d76bf37643918",
+        "voxelToWorld": [
+          [
+            -1.0001081228256226,
+            5.484846042236313e-05,
+            3.263463077018969e-05,
+            129.98828125
+          ],
+          [
+            4.272840669727884e-05,
+            0.00010729305358836427,
+            1.0000003576278687,
+            -97.12067413330078
+          ],
+          [
+            -2.652347757248208e-05,
+            -1.0000017881393433,
+            0.00010865651711355895,
+            100.5722885131836
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "mesh": {
+        "url": "assets/packs/subject-core/1/sub-01/temporal-horn-right.glb",
+        "sha256": "702f15e833ce8a96e70effd88ab7aa75e8767c5d5a8ad5033256aca29e49907c",
+        "bytes": 11092,
+        "unit": "m"
+      },
+      "referenceSurface": {
+        "url": "assets/packs/subject-core/1/sub-01/temporal-horn-right.glb",
+        "sha256": "702f15e833ce8a96e70effd88ab7aa75e8767c5d5a8ad5033256aca29e49907c",
+        "bytes": 11092,
+        "unit": "m"
+      },
+      "lod": [],
+      "bounds": [
+        [
+          20.486697554588318,
+          17.396321520209312,
+          -23.916570469737053
+        ],
+        [
+          36.488909274339676,
+          32.39694982767105,
+          -13.917471282184124
+        ]
+      ],
+      "interiorAnchor": [
+        31.988557390765138,
+        30.896643922230908,
+        -21.41661913159963
+      ],
+      "qa": {
+        "anchorInsideMask": true,
+        "voxelCount": 102,
+        "components": 2,
+        "vertices": 284,
+        "triangles": 568,
+        "outwardWinding": true,
+        "displayVsReferenceMaxMm": 2.210119243955349e-06,
+        "displayVsReferenceVolumeChange": 0,
+        "referenceSurfaceVolumeMm3": 85.46775796326347,
+        "smoothing": "none",
+        "decimation": "none"
+      }
+    },
+    {
+      "structureId": "anatomy:fourth-ventricle:midline",
+      "representationId": "sub-01:freesurfer-5.3:43",
+      "caseId": "sub-01",
+      "spaceId": "subject:sub-01:T1-native-RAS-mm",
+      "unit": "m",
+      "id": "sub-01:freesurfer-5.3:43",
+      "kind": "subject-segmentation",
+      "labelId": 43,
+      "sourceLabelIds": [
+        15
+      ],
+      "reviewStatus": "unreviewed",
+      "assessmentUse": "reference-only",
+      "referenceMask": {
+        "url": "assets/cases/sub-01/labels-reference.nii.gz",
+        "sha256": "cf634e97e53f8e40b6202e414327c47d0af9564a7f1726423c0d76bf37643918",
+        "voxelToWorld": [
+          [
+            -1.0001081228256226,
+            5.484846042236313e-05,
+            3.263463077018969e-05,
+            129.98828125
+          ],
+          [
+            4.272840669727884e-05,
+            0.00010729305358836427,
+            1.0000003576278687,
+            -97.12067413330078
+          ],
+          [
+            -2.652347757248208e-05,
+            -1.0000017881393433,
+            0.00010865651711355895,
+            100.5722885131836
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "mesh": {
+        "url": "assets/packs/subject-core/1/sub-01/fourth-ventricle-midline.glb",
+        "sha256": "8647a91e2885ee48e6954bce632895f6ca518e271e60f493493baa6ffcaf84f8",
+        "bytes": 62272,
+        "unit": "m"
+      },
+      "referenceSurface": {
+        "url": "assets/packs/subject-core/1/sub-01/fourth-ventricle-midline.glb",
+        "sha256": "8647a91e2885ee48e6954bce632895f6ca518e271e60f493493baa6ffcaf84f8",
+        "bytes": 62272,
+        "unit": "m"
+      },
+      "lod": [],
+      "bounds": [
+        [
+          -9.515594691038132,
+          -6.5996358171105385,
+          -63.919857144355774
+        ],
+        [
+          10.487081483006477,
+          11.402343399822712,
+          -12.919982895255089
+        ]
+      ],
+      "interiorAnchor": [
+        1.985419167704066,
+        3.8998478301042923,
+        -39.42038012634728
+      ],
+      "qa": {
+        "anchorInsideMask": true,
+        "voxelCount": 1292,
+        "components": 1,
+        "vertices": 1696,
+        "triangles": 3420,
+        "outwardWinding": true,
+        "displayVsReferenceMaxMm": 3.1824112319801264e-06,
+        "displayVsReferenceVolumeChange": 0,
+        "referenceSurfaceVolumeMm3": 1247.8042635066276,
+        "smoothing": "none",
+        "decimation": "none"
+      }
+    }
+  ],
+  "transforms": [],
+  "reviews": [],
+  "provenance": {
+    "source": "https://doi.gin.g-node.org/10.12751/g-node.zdwr8e/",
+    "sourceVersion": "StudyForrest FreeSurfer 5.3",
+    "license": "PDDL",
+    "licenseFiles": [
+      "structural-LICENSE.txt",
+      "freesurfer-LICENSE.txt"
+    ],
+    "tools": {
+      "nibabel": "5.4.2",
+      "numpy": "2.5.0",
+      "scipy": "1.18.0",
+      "scikit-image": "0.26.0"
+    },
+    "changes": [
+      "Cropped each label; marching cubes at 0.5; existing label affine applied once; meters in GLB. No smoothing or decimation."
+    ]
+  }
+}

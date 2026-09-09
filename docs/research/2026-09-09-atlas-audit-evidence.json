@@ -1,0 +1,160 @@
+{
+  "audited_at": "2026-09-09T10:41:17.307851+00:00",
+  "scope": "Read-only source and local asset audit; no Nervous System Atlas data build or browser runtime validation",
+  "atlas": {
+    "root": "/Volumes/Aquatope/_DEV_/Nervous System Atlas",
+    "missing_or_present": {
+      ".git": false,
+      "public/data/manifest.json": false,
+      "pipeline/raw": false,
+      "pipeline/work": false,
+      "node_modules": false
+    },
+    "content_counts": {
+      "cranial-nerves": 12,
+      "glossary": 205,
+      "pathways": 25,
+      "quiz": 60,
+      "structures": 379,
+      "syndromes": 125,
+      "topics": 19
+    },
+    "bibliography_count": 657,
+    "citation_count": 2387,
+    "unresolved_top_level_citation_refs": [],
+    "python_ast_files_checked": 29,
+    "python_syntax_errors": [],
+    "registration_recorded_not_recomputed": {
+      "zanatomy_to_mni.json": {
+        "landmark_mean_mm": 3.61,
+        "landmark_max_mm": 7.4,
+        "n": 31,
+        "scale": 1.0367
+      },
+      "bp3d_to_mni.json": {
+        "landmark_mean_mm": 3.31,
+        "landmark_max_mm": 8.53,
+        "surface_rms_mm": 12.45,
+        "surface_p95_mm": 24.85,
+        "scale": 1.038
+      }
+    },
+    "source_sha256": {
+      "pipeline/atlas_pipeline/volumes.py": "ea8b5d106639c55be94f409440ed854c72dd2efb17810e31bdc0fab9d1a2e745",
+      "pipeline/atlas_pipeline/meshing.py": "ec835f9b44e82e26c6402ab9d70fb7dd80a863223eef0541dc66bd947d5c3512",
+      "pipeline/atlas_pipeline/atlas_meshes.py": "728e2ef66660cf5dc3617dc50a4e12f80d5f6f264fe9d74cfa66560041d6b797",
+      "pipeline/atlas_pipeline/labels.py": "e2d30f14b63f0226144489c4ce980d162dc4c473c6feb5667905dc78423ce441",
+      "src/main.ts": "d3b9d3ed7ffad5893f8df01ca3c7fd8b706e867aa55a64832c5cfddd865faabd",
+      "src/volume/coords.ts": "ca527d2a525a55d712a00bedc379988da698ab59c8a72486d143d28efa4bc834",
+      "src/volume/shaders/slice.frag.glsl": "69f53f6be3e9b429435ee865d26110054a9034ae49e6a886c1416f3611d7c498",
+      "src/loader/MeshRegistry.ts": "a17ff6c7affa8ddfb79f6d5879a61aabadf6a8e09840dac1f00bb29057095d6b",
+      "pipeline/config/sources.yaml": "400e2197868d35617a397f7802cae460ed13f91350282c463f98f1028ae2f03f",
+      "pipeline/config/sources.lock.yaml": "cb4f54232038b993ec100fe351a11d2c6535e6ee1694c5c163ddcf1c7c74b08f"
+    }
+  },
+  "mri_tutor": {
+    "git_head": "3b14f51f8053fab679764a6af8160028c2e903c5",
+    "worktree_dirty": true,
+    "mesh_count": 80,
+    "roi_triangles": 604112,
+    "mesh_file_bytes": 19112016,
+    "mesh_file_sha256": "c7e6c0415e2b9f681247a02c42a178698afb0df7053568d5dc7b3d02e67e0921",
+    "case_count": 4,
+    "case_reference_label_counts": {
+      "sub-01": 46,
+      "sub-02": 46,
+      "sub-03": 46,
+      "sub-04": 46
+    },
+    "mri_headers": [
+      {
+        "path": "/Volumes/Aquatope/_DEV_/MRI-Tutor/trainer/assets/CIT168toMNI152-2009c_T1w_brain.nii.gz",
+        "shape": [
+          165,
+          198,
+          168
+        ],
+        "datatype_code": 2,
+        "spacing_mm": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "sha256": "d665acefc59bd0f16f26fa64cc53ee71833e04abf13e8e2e17e3a5be2a38d2bb"
+      },
+      {
+        "path": "/Volumes/Aquatope/_DEV_/MRI-Tutor/trainer/assets/cases/sub-01/T1w.nii.gz",
+        "shape": [
+          384,
+          384,
+          274
+        ],
+        "datatype_code": 4,
+        "spacing_mm": [
+          0.6666666865348816,
+          0.6666666865348816,
+          0.7000055909156799
+        ],
+        "sha256": "06d22728884f865d87196d86611a72eb865b0521de6243350b3511ce52a1f84e"
+      },
+      {
+        "path": "/Volumes/Aquatope/_DEV_/MRI-Tutor/trainer/assets/cases/sub-02/T1w.nii.gz",
+        "shape": [
+          384,
+          384,
+          274
+        ],
+        "datatype_code": 4,
+        "spacing_mm": [
+          0.6666666865348816,
+          0.6666666865348816,
+          0.6999878287315369
+        ],
+        "sha256": "6a4876dbf6bc08507223a27953d26989c61db0a44d7f69e2532f1bc8decced2e"
+      },
+      {
+        "path": "/Volumes/Aquatope/_DEV_/MRI-Tutor/trainer/assets/cases/sub-03/T1w.nii.gz",
+        "shape": [
+          384,
+          384,
+          274
+        ],
+        "datatype_code": 4,
+        "spacing_mm": [
+          0.6666666865348816,
+          0.6666666865348816,
+          0.7000080347061157
+        ],
+        "sha256": "3e99aaa0c726caaff7ed916ad70758051a747cd20bedc548f16844a6a69a2034"
+      },
+      {
+        "path": "/Volumes/Aquatope/_DEV_/MRI-Tutor/trainer/assets/cases/sub-04/T1w.nii.gz",
+        "shape": [
+          384,
+          384,
+          274
+        ],
+        "datatype_code": 4,
+        "spacing_mm": [
+          0.6666666865348816,
+          0.6666666865348816,
+          0.6999868154525757
+        ],
+        "sha256": "acb21e18b01974af049bdfcb71ee8b8a917e0691dc56ea21983c5753fa6e8f5f"
+      }
+    ],
+    "unit_test_baseline": {
+      "command": "npm test",
+      "passed": 23,
+      "failed": 0,
+      "run_during_audit": true
+    }
+  },
+  "document_validation": {
+    "local_links": "passed",
+    "footnote_references": "passed",
+    "markdown_structure": "passed",
+    "native_T1_hashes_match_case_metadata": true,
+    "git_diff_check": "passed"
+  }
+}

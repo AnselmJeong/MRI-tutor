@@ -1,18 +1,26 @@
+import {annotateAnatomy} from './anatomy-terms.js';
+import {createIllustrations} from './illustrations.js';
+import {createAnatomyMarker,anatomyStatus} from './anatomy-marker.js';
 import * as THREE from 'three';
 import { OrbitControls } from './vendor/OrbitControls.js';
 import { createMRI } from './mri.js';
 import { initCaseTraining } from './cases.js';
 import { createSplitView } from './split-view.js';
+import {createSubjectScene} from './viewer/subject-scene.js';
 import { regions, palette, kindNames, networks } from './regions.js';
 
 const $ = (id) => document.getElementById(id);
 const content = window.MRI_CONTENT;
-let individualMode=true;
+let individualMode=false;
 let caseTrainer=null;
-document.addEventListener('individual-mode',e=>{individualMode=e.detail.active;if(individualMode){explore();mode='explore';document.querySelector('.layout').classList.remove('is-training','is-mri-test','answer-revealed');$('find-mode').setAttribute('aria-pressed','false');$('mri-train').setAttribute('aria-pressed','false');$('explore-mode').setAttribute('aria-pressed','false');}else{document.querySelector('.workspace-head h2').textContent='같은 구조, 세 단면.';document.querySelector('.workspace-head .eyebrow').textContent='REFERENCE ATLAS / SPATIAL LOCALIZATION';document.querySelector('.workspace-head .muted').textContent='집단 평균 템플릿과 atlas 위치를 학습하는 참고 모드입니다.';}updateCursor(latestLocation?.mm??[0,0,0]);renderState();});
+let illustrations=null;
+let subjectScene=null,subjectState=null,atlasRoot=null;
+document.addEventListener('subject-view-state',e=>{if(e.detail.loading||subjectState?.current.id!==e.detail.current.id){$('tooltip').hidden=true;hovered=null;}subjectState=e.detail;subjectScene?.update(e.detail);});
+document.addEventListener('subject-selection',e=>subjectScene?.setSelection(e.detail));
+document.addEventListener('individual-mode',e=>{individualMode=e.detail.active;subjectScene?.setActive(individualMode);if(atlasRoot)atlasRoot.visible=!individualMode;if(individualMode){explore();mode='explore';document.querySelector('.layout').classList.remove('is-training','is-mri-test','answer-revealed');$('find-mode').setAttribute('aria-pressed','false');$('mri-train').setAttribute('aria-pressed','false');$('explore-mode').setAttribute('aria-pressed','false');}updateCursor(latestLocation?.mm??[0,0,0]);renderState();});
 document.addEventListener('reference-structure',e=>{if(!ready)return;select(e.detail.group*2+(e.detail.side==='right'?2:1));});
 document.addEventListener('open-reference-atlas',e=>{if(!ready||!Number.isInteger(e.detail.group)||!regions[e.detail.group])return;$('explore-mode').click();select(e.detail.group*2+(e.detail.side==='right'?2:1));});
-document.addEventListener('individual-hide-reference',e=>{document.body.classList.toggle('reference-concealed',e.detail.hidden);document.querySelector('.hidden-3d-note').textContent=e.detail.note??'개인 MRI에서 먼저 관찰하세요. 첫 응답 후 참고 모델을 열 수 있습니다.';});
+document.addEventListener('individual-hide-reference',e=>{document.body.classList.toggle('reference-concealed',e.detail.hidden);if(e.detail.hidden){$('tooltip').hidden=true;hovered=null;}document.querySelector('.hidden-3d-note').textContent=e.detail.note??'실제 MRI에서 먼저 관찰하세요. 첫 응답 후 참고 모델을 열 수 있습니다.';});
 const KEY = 'mri-tutor-training-v1';
 let stored = {answers:{}, find:{}};
 try {
@@ -24,12 +32,12 @@ try {
 } catch { /* Corrupt or unavailable storage must not stop learning. */ }
 function save() {
   try { localStorage.setItem(KEY, JSON.stringify(stored)); }
-  catch { $('quiz-count').title = '저장할 수 없어 이번 실행 동안만 진도가 유지됩니다.'; }
-  $('quiz-count').textContent = `${Object.keys(stored.answers).length}/16`;
+  catch { $('practice-status').textContent = '저장할 수 없어 이번 실행 동안만 진도가 유지됩니다.'; }
 }
 save();
 const labelName = (id) => !id ? '선택 없음' : `${regions[Math.floor((id-1)/2)]?.midline?'':id%2?'왼쪽':'오른쪽'} ${regions[Math.floor((id-1)/2)]?.ko??'라벨 없음'}`;
 const groupOf = (id) => Math.floor((id-1)/2);
+let anatomyMarker=null,anatomyRequest=0,unregisteredSelection=false;
 let selected = 3, side = 'both', mode = 'explore', ready = false, mriReady = false;
 let nv, scene, camera, renderer, controls, brainMesh, allenBrainMesh, meshData, cursor, slicePlanes=[];
 let currentSpace="mni", network=null, mriSession=null, latestLocation=null,locationVersion=0;
@@ -46,7 +54,7 @@ function list() {
     if (!`${r.ko} ${r.en}`.toLowerCase().includes(query)) return;
     const b = document.createElement('button');
     b.className = 'structure'; b.dataset.group = i;
-    b.setAttribute('aria-pressed', String(mode==='explore' && groupOf(selected)===i));
+    b.setAttribute('aria-pressed', String(mode==='explore' && !unregisteredSelection && groupOf(selected)===i));
     b.disabled = mode!=='explore' || !ready;
     const dot = document.createElement('span'); dot.className='dot'; dot.style.background=palette[i];
     const name = document.createElement('span'); name.textContent=r.ko;
@@ -55,10 +63,13 @@ function list() {
   });
   if (!$('structures').children.length) $('structures').textContent = '검색 결과가 없습니다.';
 }
-function draw() { if (renderer) renderer.render(scene,camera); }
+function draw() { if (renderer&&!$('three-pane').hidden&&(!individualMode||!document.body.classList.contains('reference-concealed'))) renderer.render(scene,camera); }
 function renderState() {
+  illustrations?.refresh();
+  if(atlasRoot)atlasRoot.visible=!individualMode;
+  subjectScene?.refresh();
   if (!ready) return;
-  const focus = (mode==='find' && !session?.answered)||(mode==='mri-test'&&!mriSession?.answered) ? null : selected;
+  const focus = unregisteredSelection || (mode==='find' && !session?.answered)||(mode==='mri-test'&&!mriSession?.answered) ? null : selected;
   const cut = $('cut').value;
   for (const m of meshes) {
     const id=m.userData.id;
@@ -84,7 +95,7 @@ function renderState() {
   draw();
 }
 function updateMriColors(){if(mriReady)nv.colors();}
-async function moveMRI(id){if(mriReady&&!individualMode)return nv.select(id);}
+async function moveMRI(id){if(unregisteredSelection)return;clearAnatomy();if(mriReady&&!individualMode)return nv.select(id);}
 function updateCursor(mm){
  if(!cursor)return;cursor.position.set(...mm);
  cursor.visible=!individualMode&&(mode!=='mri-test'||Boolean(mriSession?.answered));
@@ -98,24 +109,48 @@ function select(id,{move=true}={}) {
   if (!ready || !meshData.regions.some(r=>r.id===id)) return;
   if(mode==='mri-test')return;
   if (mode==='find') { answerFind(id);return; }
-  selected=id;currentSpace=regions[groupOf(id)].space;
+  unregisteredSelection=false;clearAnatomy();$('mri-reset').disabled=false;selected=id;currentSpace=regions[groupOf(id)].space;
   // Clicking a slice must reveal its hemisphere even after a previous view filter.
   if (!regions[groupOf(id)].midline && side!=='both' && (side==='left')!==(id%2===1)) setSide(id%2?'left':'right',false);
   if ($('cut').value!=='none' && ($('cut').value==='left')!==(id%2===1)) $('cut').value='none';
   renderState();detail();list();if(mriReady&&!individualMode)nv.select(id,{move});
 }
+function clearAnatomy(){anatomyRequest++;anatomyMarker?.clear();$('detail').querySelector('.anatomy-status')?.remove();}
+function hasAnatomyLocation(term){return Boolean(meshData?.regions.some(r=>r.space===currentSpace&&term.groups.includes(groupOf(r.id))));}
+function setDetailHTML(html){
+ clearAnatomy();$('detail').innerHTML=html;
+ annotateAnatomy($('detail'),{onLocate:locateAnatomy,canLocate:hasAnatomyLocation,enabled:mode==='explore'||Boolean(mode==='find'?session?.answered:mriSession?.answered)});
+}
+async function locateAnatomy(term){
+ if(!mriReady||nv.busy||individualMode||!(mode==='explore'||(mode==='find'?session?.answered:mriSession?.answered)))return;
+ if($('mri-pane').hidden)setWorkspace('linked');
+ clearAnatomy();const mine=anatomyRequest;
+ if(!hasAnatomyLocation(term))return;
+ anatomyStatus($('detail'),`${term.ko}(${term.en}) 위치 확인 중…`);
+ try{
+  const found=await nv.locate(term.groups,side==='right'||side==='both'&&latestLocation?.mm[0]>0?'right':'left');
+  if(mine!==anatomyRequest)return;
+  if(!found){anatomyStatus($('detail'),'현재 영상에서 등록 위치를 확인하지 못했습니다. 다시 선택하세요.');return;}
+  if(found.moved)nv.setPoint(found.point);
+  anatomyMarker.show(found.point,term.ko);
+  anatomyStatus($('detail'),`${term.ko}(${term.en}) · 노란 원${found.moved?' · 구조가 보이는 단면으로 이동했습니다.':''}`);
+ }catch{if(mine===anatomyRequest)anatomyStatus($('detail'),'위치 자료를 불러오지 못했습니다. 용어를 눌러 다시 시도하세요.');}
+}
+function clearSelectedStructure(){
+ unregisteredSelection=true;clearAnatomy();if(mriReady)nv.clearSelection();$('mri-reset').disabled=true;hovered=null;$('tooltip').hidden=true;detail();list();renderState();
+}
 function detail() {
   if(mode==='find'){findDetail();return;}
   if(mode==='mri-test'){mriDetail();return;}
+  if(unregisteredSelection){setDetailHTML('<h2>미등록 위치</h2><p>이 위치에는 등록된 구조가 없습니다.</p>');return;}
   const r=regions[groupOf(selected)];
-  $('detail').innerHTML=`<p class="eyebrow">SELECTED STRUCTURE</p><span class="coordinate-chip">${r.midline?'MIDLINE · 정중':selected%2?'LEFT · 왼쪽':'RIGHT · 오른쪽'}${side==='both'&&!r.midline?' / 양측 함께 강조':''}</span><h2>${r.ko}</h2><p class="english">${r.en}</p><span class="kind-chip">${kindNames[r.kind]}</span><p>${r.description}</p><div class="action-row"><button class="primary" id="focus-structure">가까이 보기</button><button id="locate-mri">MRI 위치로 이동</button></div><h3>위치 관계</h3><p class="relation">${r.relation}</p><h3>단면 추적</h3><p>Axial · Coronal · Sagittal을 바꾸고 깊이를 이동하세요. MRI 십자선과 3D의 점·절단면 테두리는 같은 좌표입니다.</p><p class="small">${r.space==="allen"?"Allen · ICBM2009b symmetric. 다른 구조를 선택하면 해당 표준 공간으로 돌아갑니다.":"MNI152 2009c asymmetric. Atlas 간 정합 오차와 개인차가 존재합니다."}</p>`;
+  setDetailHTML(`<p class="eyebrow">SELECTED STRUCTURE</p><span class="coordinate-chip">${r.midline?'MIDLINE · 정중':selected%2?'LEFT · 왼쪽':'RIGHT · 오른쪽'}${side==='both'&&!r.midline?' / 양측 함께 강조':''}</span><h2>${r.ko}</h2><p class="english">${r.en}</p><span class="kind-chip">${kindNames[r.kind]}</span><p>${r.description}</p><div class="action-row"><button class="primary" id="focus-structure">가까이 보기</button></div><h3>위치 관계</h3><p class="relation">${r.relation}</p>`);
   $('focus-structure').onclick=()=>{
     if(!ready)return;
     const target=new THREE.Vector3(...meshData.regions.find(r=>r.id===selected).anchor);
     const direction=camera.position.clone().sub(controls.target).normalize();
     controls.target.copy(target);camera.position.copy(target).addScaledVector(direction,150);controls.update();draw();
   };
-  $('locate-mri').onclick=()=>{moveMRI(selected);$('mri').scrollIntoView({block:'nearest',behavior:'auto'});};
 }
 function setSide(value,refresh=true) {
   side=value; document.querySelectorAll('[data-side]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.side===value)));
@@ -124,6 +159,7 @@ function setSide(value,refresh=true) {
   if(refresh){renderState();detail();list();moveMRI(selected);}
 }
 function preset(view) {
+  if(individualMode&&subjectScene){subjectScene.preset(view);return;}
   if (!ready) return;
   controls.target.set(0,-12,5); camera.up.set(0,0,1);
   const positions={front:[0,290,35],left:[-290,0,35],top:[0,-12,310],oblique:[160,225,135]};
@@ -134,13 +170,14 @@ function pick(event) {
   const rect=$('brain').getBoundingClientRect();
   pointer.set((event.clientX-rect.left)/rect.width*2-1,-(event.clientY-rect.top)/rect.height*2+1);
   raycaster.setFromCamera(pointer,camera);
+  if(individualMode)return subjectScene?.pick(raycaster)??null;
   return raycaster.intersectObjects(meshes.filter(m=>m.visible),false)[0]?.object;
 }
 function directionLabel(text,position) {
   const canvas=document.createElement('canvas');canvas.width=64;canvas.height=64;
   const ctx=canvas.getContext('2d');ctx.font='28px sans-serif';ctx.fillStyle='#819076';ctx.textAlign='center';ctx.fillText(text,32,42);
   const sprite=new THREE.Sprite(new THREE.SpriteMaterial({map:new THREE.CanvasTexture(canvas),depthTest:false,transparent:true}));
-  sprite.position.set(...position);sprite.scale.set(14,14,1);scene.add(sprite);
+  sprite.position.set(...position);sprite.scale.set(14,14,1);atlasRoot.add(sprite);
 }
 async function init3D() {
   renderer=new THREE.WebGLRenderer({canvas:$('brain'),antialias:true,alpha:true});
@@ -148,6 +185,11 @@ async function init3D() {
   scene=new THREE.Scene();camera=new THREE.PerspectiveCamera(38,1,1,1600);camera.up.set(0,0,1);
   controls=new OrbitControls(camera,$('brain'));controls.minDistance=60;controls.maxDistance=650;controls.enablePan=true;
   controls.addEventListener('change',draw);
+  atlasRoot=new THREE.Group();atlasRoot.visible=!individualMode;scene.add(atlasRoot);
+  subjectScene=createSubjectScene({scene,camera,controls,draw,onPick:detail=>document.dispatchEvent(new CustomEvent('subject-mesh-pick',{detail}))});
+  subjectScene.setActive(individualMode);
+  if(subjectState)subjectScene.update(subjectState);
+  window.mriSubjectQA={snapshot:()=>({...subjectScene.snapshot(),renderer:{...renderer.info.memory},atlasVisible:atlasRoot.visible}),pickAt:(x,y)=>{const hit=pick({clientX:x,clientY:y});return hit?.object?{point:hit.point.toArray(),labelId:hit.object.userData.representation.labelId,spaceId:hit.object.userData.spaceId}:null;},project:(mm)=>{const p=new THREE.Vector3(...mm).project(camera),r=$('brain').getBoundingClientRect();return [r.x+(p.x+1)*r.width/2,r.y+(1-p.y)*r.height/2];}};
   scene.add(new THREE.AmbientLight(0xffffff,1.7));
   for(const [pos,intensity] of [[[100,200,300],2.8],[[-150,-120,80],1.2]]){
     const light=new THREE.DirectionalLight(0xfff9e8,intensity);light.position.set(...pos);scene.add(light);
@@ -156,32 +198,38 @@ async function init3D() {
   meshData=await response.json();
   const geometry=(d)=>{const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(d.positions,3));g.setIndex(d.indices);g.computeVertexNormals();return g;};
   brainMesh=new THREE.Mesh(geometry(meshData.brain),new THREE.MeshStandardMaterial({color:'#b9c5ab',transparent:true,opacity:.12,depthWrite:false,roughness:.85,side:THREE.FrontSide}));
-  brainMesh.renderOrder=2;scene.add(brainMesh);
-  allenBrainMesh=new THREE.Mesh(geometry(meshData.allenBrain),brainMesh.material.clone());allenBrainMesh.renderOrder=2;scene.add(allenBrainMesh);
-  cursor=new THREE.Mesh(new THREE.SphereGeometry(1.7,16,12),new THREE.MeshBasicMaterial({color:'#faf9df',depthTest:false}));cursor.renderOrder=10;scene.add(cursor);
+  brainMesh.renderOrder=2;atlasRoot.add(brainMesh);
+  allenBrainMesh=new THREE.Mesh(geometry(meshData.allenBrain),brainMesh.material.clone());allenBrainMesh.renderOrder=2;atlasRoot.add(allenBrainMesh);
+  cursor=new THREE.Mesh(new THREE.SphereGeometry(1.7,16,12),new THREE.MeshBasicMaterial({color:'#faf9df',depthTest:false}));cursor.renderOrder=10;atlasRoot.add(cursor);
   for(let axis=0;axis<3;axis++){
     const corners=axis===0?[[0,-110,-65],[0,90,-65],[0,90,105],[0,-110,105]]:axis===1?[[-85,0,-65],[85,0,-65],[85,0,105],[-85,0,105]]:[[-85,-110,0],[85,-110,0],[85,90,0],[-85,90,0]];
     const g=new THREE.BufferGeometry().setFromPoints(corners.map(p=>new THREE.Vector3(...p)));
-    const plane=new THREE.LineLoop(g,new THREE.LineBasicMaterial({color:['#c77878','#7fac92','#d0aa6f'][axis],transparent:true,opacity:.6}));scene.add(plane);slicePlanes.push(plane);
+    const plane=new THREE.LineLoop(g,new THREE.LineBasicMaterial({color:['#c77878','#7fac92','#d0aa6f'][axis],transparent:true,opacity:.6}));atlasRoot.add(plane);slicePlanes.push(plane);
   }
   for(const r of meshData.regions){
     const m=new THREE.Mesh(geometry(r),new THREE.MeshStandardMaterial({color:palette[groupOf(r.id)],roughness:.52,metalness:0,side:THREE.DoubleSide}));
-    m.userData.id=r.id;m.userData.space=r.space;meshes.push(m);scene.add(m);
+    m.userData.id=r.id;m.userData.space=r.space;meshes.push(m);atlasRoot.add(m);
   }
   directionLabel('L',[-107,0,0]);directionLabel('R',[107,0,0]);directionLabel('A',[0,115,0]);directionLabel('P',[0,-130,0]);directionLabel('S',[0,0,110]);
   ready=true;
-  const resize=()=>{const r=$('brain').getBoundingClientRect();if(r.width<1||r.height<1)return;renderer.setSize(r.width,r.height,false);camera.aspect=r.width/r.height;camera.updateProjectionMatrix();draw();};
+  const resize=()=>{
+    const r=$('brain').getBoundingClientRect();if(r.width<1||r.height<1)return;
+    renderer.setSize(r.width,r.height,false);camera.aspect=r.width/r.height;
+    // Keep the original field of view on the shorter axis so narrow panes do not crop the brain.
+    camera.fov=THREE.MathUtils.radToDeg(2*Math.atan(Math.tan(THREE.MathUtils.degToRad(38)/2)/Math.min(1,camera.aspect)));
+    camera.updateProjectionMatrix();draw();
+  };
   new ResizeObserver(resize).observe($('brain'));resize();preset('oblique');renderState();
   $('loading').hidden=true;$('viewer-status').innerHTML=`<i></i> ${meshData.regions.length}개 영역 · MRI 연동`; list();detail();
   let down=null;
   $('brain').addEventListener('pointerdown',e=>{down=[e.clientX,e.clientY];$('tooltip').hidden=true;});
-  $('brain').addEventListener('pointerup',e=>{if(down && Math.hypot(e.clientX-down[0],e.clientY-down[1])<5){const m=pick(e);if(m)select(m.userData.id);}down=null;});
+  $('brain').addEventListener('pointerup',e=>{if(down && Math.hypot(e.clientX-down[0],e.clientY-down[1])<5){const m=pick(e);if(m){if(individualMode)subjectScene?.select(m);else select(m.userData.id);}}down=null;});
   $('brain').addEventListener('pointerleave',()=>{hovered=null;$('tooltip').hidden=true;renderState();});
   $('brain').addEventListener('pointermove',e=>{
     if(e.buttons || mode!=='explore'){$('tooltip').hidden=true;return;}
-    const m=pick(e);const id=m?.userData.id??null;if(id!==hovered){hovered=id;renderState();}
+    const hit=pick(e),m=individualMode?hit?.object:hit;const id=individualMode?m?.userData.representation?.id:m?.userData.id??null;if(id!==hovered){hovered=id;renderState();}
     $('brain').style.cursor=m?'pointer':'grab';$('tooltip').hidden=!m;
-    if(m){const rect=$('brain').getBoundingClientRect();$('tooltip').textContent=labelName(id);$('tooltip').style.left=`${Math.min(e.clientX-rect.left+14,rect.width-175)}px`;$('tooltip').style.top=`${e.clientY-rect.top+16}px`;}
+    if(m){const rect=$('brain').getBoundingClientRect();$('tooltip').textContent=individualMode?`${{left:'왼쪽',right:'오른쪽',midline:'정중'}[m.userData.structure.side]} ${m.userData.structure.ko} · 개인 참고 분할`:labelName(id);$('tooltip').style.left=`${Math.min(e.clientX-rect.left+14,rect.width-175)}px`;$('tooltip').style.top=`${e.clientY-rect.top+16}px`;}
   });
   $('brain').addEventListener('keydown',e=>{
     const offset=camera.position.clone().sub(controls.target);
@@ -193,24 +241,25 @@ async function init3D() {
   });
 }
 async function initMRI(){
- nv=await createMRI({data:meshData,onRetry(){if(mode==='mri-test')nextMRIQuestion();else moveMRI(selected);},onLocation(event){
-  latestLocation=event;locationVersion++;updateCursor(event.mm);
+ nv=await createMRI({data:meshData,onViewChange:()=>{anatomyMarker?.refresh();illustrations?.refresh();},onRetry(){if(mode==='mri-test')nextMRIQuestion();else moveMRI(selected);},onLocation(event){
+  latestLocation=event;locationVersion++;anatomyMarker?.refresh();updateCursor(event.mm);illustrations?.refresh();
   const hidden=mode==='mri-test'&&!mriSession?.answered || mode==='find'&&!session?.answered;
-  $('voxel-label').textContent=hidden?'답 제출 전: 라벨 숨김':event.id?labelName(event.id):'이 위치의 선택 ROI / 탐색 atlas 라벨 없음';
+  $('voxel-label').textContent=hidden?'답 제출 전: 라벨 숨김':event.id?labelName(event.id):'미등록 위치';
   // Continuous scrolling keeps the selected learning target. Only a direct
   // canvas click changes the structure, handled after pointerup below.
- }});mriReady=true;await moveMRI(selected);
+ }});mriReady=true;anatomyMarker=createAnatomyMarker({canvas:$('mri'),viewer:nv,statusRoot:$('detail'),scope:()=>nv.space});await moveMRI(selected);
+ window.mriAtlasQA={snapshot:()=>({...nv.snapshot(),unregisteredSelection,marker:anatomyMarker.snapshot()}),projectPoint:(point,plane)=>nv.projectPoint(point,plane),referenceAt:point=>nv.referenceAt(point)};
 }
 
 function shuffle(items){const copy=[...items];for(let i=copy.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[copy[i],copy[j]]=[copy[j],copy[i]];}return copy;}
 function startFind(ids=null) {
   if(!ready)return;
-  explore();setWorkspace('linked');mode='find';currentSpace='mni';selected=3;document.querySelector('.layout').classList.add('is-training');hovered=null;$('tooltip').hidden=true;
+  explore();unregisteredSelection=false;setWorkspace('linked');mode='find';currentSpace='mni';selected=3;document.querySelector('.layout').classList.add('is-training');hovered=null;$('tooltip').hidden=true;
   session={ids:shuffle(ids??[1,4,5,10,11,16,27,32]),index:0,score:0,answered:false,choice:null};
   $('isolate').checked=false;$('isolate').disabled=true;$('cut').value='none';$('cut').disabled=true;
   $('brain-opacity').value='6';$('brain-opacity-value').textContent='6%';setSide('both',false);
   document.querySelectorAll('[data-side]').forEach(b=>b.disabled=true);
-  $('find-mode').setAttribute('aria-pressed','true');$('explore-mode').setAttribute('aria-pressed','false');
+  $('find-mode').setAttribute('aria-pressed','true');$('mri-train').setAttribute('aria-pressed','true');$('explore-mode').setAttribute('aria-pressed','false');
   $('list-hint').textContent='구조 찾기에서는 3D 또는 MRI를 클릭하세요.';
   nextFindView();list();
 }
@@ -224,11 +273,11 @@ function findDetail(){
   if(!session)return;
   if(session.index>=session.ids.length){
     const wrong=Object.entries(stored.find).filter(([,correct])=>!correct).map(([id])=>Number(id));
-    $('detail').innerHTML=`<p class="eyebrow">SESSION COMPLETE</p><h2>${session.score} / ${session.ids.length}</h2><p>이번 세션에서 처음 선택한 답의 점수입니다.</p><div class="action-row"><button class="primary" id="find-again">다시 훈련</button><button id="find-review" ${wrong.length?'':'disabled'}>오답 ${wrong.length}개</button></div><button class="text-button" id="return-explore">탐색으로 돌아가기 →</button>`;
+    setDetailHTML(`<p class="eyebrow">SESSION COMPLETE</p><h2>${session.score} / ${session.ids.length}</h2><p>이번 세션에서 처음 선택한 답의 점수입니다.</p><div class="action-row"><button class="primary" id="find-again">다시 훈련</button><button id="find-review" ${wrong.length?'':'disabled'}>오답 ${wrong.length}개</button></div><button class="text-button" id="return-explore">탐색으로 돌아가기 →</button>`);
     $('find-again').onclick=()=>startFind();$('find-review').onclick=()=>startFind(wrong);$('return-explore').onclick=explore;return;
   }
   const target=session.ids[session.index];
-  $('detail').innerHTML=`<p class="eyebrow">FIND THE STRUCTURE · ${session.index+1} / ${session.ids.length}</p><progress max="${session.ids.length}" value="${session.index}"></progress><h2 class="training-title">${labelName(target)}을<br>찾아보세요.</h2><p>입체를 회전하여 구조를 클릭하거나, MRI 단면의 해당 위치를 클릭하세요. L·R은 환자 기준입니다.</p>${session.answered?`<div class="result feedback ${session.choice===target?'':'wrong'}" role="status"><strong>${session.choice===target?'정답입니다.':`선택한 답: ${labelName(session.choice)}`}</strong><p>정답은 ${labelName(target)}입니다. 정답과 양측 짝을 금색으로 강조했습니다.</p><p>${regions[groupOf(target)].relation}</p></div><button class="primary" id="find-next">${session.index===session.ids.length-1?'결과 보기':'다음 구조 →'}</button>`:'<p class="relation">첫 선택으로 채점합니다. 이름표는 잠시 숨겨집니다.</p><button class="text-button" id="find-reveal">모르겠어요 · 정답 확인</button>'}`;
+  setDetailHTML(`<p class="eyebrow">FIND THE STRUCTURE · ${session.index+1} / ${session.ids.length}</p><progress max="${session.ids.length}" value="${session.index}"></progress><h2 class="training-title">${labelName(target)}을<br>찾아보세요.</h2><p>입체를 회전하여 구조를 클릭하거나, MRI 단면의 해당 위치를 클릭하세요. L·R은 환자 기준입니다.</p>${session.answered?`<div class="result feedback ${session.choice===target?'':'wrong'}" role="status"><strong>${session.choice===target?'정답입니다.':`선택한 답: ${labelName(session.choice)}`}</strong><p>정답은 ${labelName(target)}입니다. 정답과 양측 짝을 금색으로 강조했습니다.</p><p>${regions[groupOf(target)].relation}</p></div><button class="primary" id="find-next">${session.index===session.ids.length-1?'결과 보기':'다음 구조 →'}</button>`:'<p class="relation">첫 선택으로 채점합니다. 이름표는 잠시 숨겨집니다.</p><button class="text-button" id="find-reveal">모르겠어요 · 정답 확인</button>'}`);
   if(session.answered)$('find-next').onclick=()=>{session.index++;if(session.index<session.ids.length)nextFindView();else findDetail();};
   else $('find-reveal').onclick=()=>answerFind(0);
 }
@@ -239,7 +288,7 @@ function answerFind(id){
   currentSpace=regions[groupOf(target)].space;renderState();if(mriReady){nv.hide(false);$('overlay').checked=true;moveMRI(target);}findDetail();
 }
 function explore(){
-  mode='explore';mriSession=null;document.querySelector('.layout').classList.remove('is-training','is-mri-test','answer-revealed');if(mriReady)nv.hide(false);$('mri-train').setAttribute('aria-pressed','false');$('mri-reset').disabled=false;document.querySelectorAll('[data-plane]').forEach(b=>b.disabled=false);document.querySelectorAll('[data-node]').forEach(b=>b.disabled=false);session=null;$('isolate').disabled=false;$('cut').disabled=false;
+  clearAnatomy();mode='explore';mriSession=null;document.querySelector('.layout').classList.remove('is-training','is-mri-test','answer-revealed');if(mriReady)nv.hide(false);$('mri-train').setAttribute('aria-pressed','false');$('mri-reset').disabled=unregisteredSelection;document.querySelectorAll('[data-plane]').forEach(b=>b.disabled=false);document.querySelectorAll('[data-node]').forEach(b=>b.disabled=false);session=null;$('isolate').disabled=false;$('cut').disabled=false;
   document.querySelectorAll('[data-side]').forEach(b=>b.disabled=false);
   $('explore-mode').setAttribute('aria-pressed','true');$('find-mode').setAttribute('aria-pressed','false');
   $('list-hint').textContent='구조를 선택하면 MRI 위치도 이동합니다.';list();detail();renderState();updateMriColors();moveMRI(selected);
@@ -254,7 +303,7 @@ const planeNames={axial:'Axial · 축상',coronal:'Coronal · 관상',sagittal:'
 function practiceStats(){return Object.entries(planeNames).map(([key,label])=>{const h=practiceHistory.filter(x=>x.plane===key);return `<span>${label.split(' · ')[0]} <b>${h.filter(x=>x.correct).length}/${h.length}</b></span>`;}).join('');}
 async function startMRIPractice(review=false){
  if(!mriReady||!ready)return;
- explore();mode='mri-test';network=null;$('network').value='';$('network-panel').hidden=true;
+ explore();unregisteredSelection=false;mode='mri-test';network=null;$('network').value='';$('network-panel').hidden=true;
  const difficulty=$('practice-kind').value;
  let pool=meshData.regions.filter(x=>regions[groupOf(x.id)].trainable && (difficulty==='all' || ['anatomy','parcel'].includes(regions[groupOf(x.id)].kind)));
  if(review){const latest=new Map(practiceHistory.map(x=>[x.id,x.correct]));pool=pool.filter(x=>latest.get(x.id)===false);}
@@ -282,11 +331,11 @@ async function nextMRIQuestion(){
 function mriDetail(){
  const s=mriSession;if(!s)return;
  if(s.index>=s.ids.length){
-  $('detail').innerHTML=`<p class="eyebrow">LOCALIZATION SESSION</p><h2>${s.score} / ${s.ids.length}</h2><p>첫 제출 위치가 해당 atlas ROI 안에 포함되었는지 채점했습니다.</p><div class="plane-stats">${practiceStats()}</div><div class="action-row"><button class="primary" id="mri-again">새 단면 훈련</button><button id="mri-review">오답 복습</button><button id="mri-exit">탐색으로</button></div>`;
+  setDetailHTML(`<p class="eyebrow">LOCALIZATION SESSION</p><h2>${s.score} / ${s.ids.length}</h2><p>첫 제출 위치가 해당 atlas ROI 안에 포함되었는지 채점했습니다.</p><div class="plane-stats">${practiceStats()}</div><div class="action-row"><button class="primary" id="mri-again">새 단면 훈련</button><button id="mri-review">오답 복습</button><button id="mri-exit">탐색으로</button></div>`);
   $('mri-again').onclick=()=>startMRIPractice();$('mri-review').onclick=()=>startMRIPractice(true);$('mri-exit').onclick=explore;return;
  }
  const id=s.ids[s.index],r=regions[groupOf(id)];
- $('detail').innerHTML=`<p class="eyebrow">MRI LOCALIZATION · ${s.index+1} / ${s.ids.length}</p><progress max="${s.ids.length}" value="${s.index}"></progress><span class="coordinate-chip">${planeNames[s.plane]}</span><h2 class="training-title">${labelName(id)}</h2><span class="kind-chip">${kindNames[r.kind]}</span><p>${r.kind==='micro'||r.kind==='proxy'?'주변 해부학을 기준으로 atlas상 위치를 추정하세요. 직접 보이는 핵 경계의 식별 점수는 아닙니다.':'연속 단면의 형태와 주변 구조를 근거로 위치를 지정하세요.'}</p>${s.loading?'<p>무작위 단면 준비 중…</p>':s.answered?`<div class="result ${s.correct?'':'wrong'}"><strong>${s.correct?'ROI 안의 위치입니다.':'해당 ROI 밖의 위치입니다.'}</strong><p>${s.candidate?`제출 좌표: ${s.candidate.mm.map(x=>x.toFixed(1)).join(' / ')} mm`:'정답 확인을 선택했습니다.'}</p><p>${r.relation}</p></div><div class="action-row"><button id="mri-answer-location">정답 중심으로</button><button class="primary" id="mri-next">${s.index===s.ids.length-1?'결과 보기':'다음 단면 →'}</button></div>`:`<p class="relation">MRI에서 위치를 클릭한 뒤 제출하세요. 스크롤·슬라이더로 주변 절편을 확인할 수 있습니다. 정답 색과 3D 구조는 제출 후 나타납니다.</p><p id="candidate-status">${s.candidate?`지정 좌표 ${s.candidate.mm.map(x=>x.toFixed(1)).join(' / ')} mm`:'위치가 아직 지정되지 않았습니다.'}</p><button class="primary" id="mri-submit" ${s.candidate?'':'disabled'}>이 위치 제출</button><button class="text-button" id="mri-reveal">모르겠어요 · 정답 확인</button>`}`;
+ setDetailHTML(`<p class="eyebrow">MRI LOCALIZATION · ${s.index+1} / ${s.ids.length}</p><progress max="${s.ids.length}" value="${s.index}"></progress><span class="coordinate-chip">${planeNames[s.plane]}</span><h2 class="training-title">${labelName(id)}</h2><span class="kind-chip">${kindNames[r.kind]}</span><p>${r.kind==='micro'||r.kind==='proxy'?'주변 해부학을 기준으로 atlas상 위치를 추정하세요. 직접 보이는 핵 경계의 식별 점수는 아닙니다.':'연속 단면의 형태와 주변 구조를 근거로 위치를 지정하세요.'}</p>${s.loading?'<p>무작위 단면 준비 중…</p>':s.answered?`<div class="result ${s.correct?'':'wrong'}"><strong>${s.correct?'ROI 안의 위치입니다.':'해당 ROI 밖의 위치입니다.'}</strong><p>${s.candidate?`제출 좌표: ${s.candidate.mm.map(x=>x.toFixed(1)).join(' / ')} mm`:'정답 확인을 선택했습니다.'}</p><p>${r.relation}</p></div><div class="action-row"><button id="mri-answer-location">정답 중심으로</button><button class="primary" id="mri-next">${s.index===s.ids.length-1?'결과 보기':'다음 단면 →'}</button></div>`:`<p class="relation">MRI에서 위치를 클릭한 뒤 제출하세요. 스크롤·슬라이더로 주변 절편을 확인할 수 있습니다. 정답 색과 3D 구조는 제출 후 나타납니다.</p><p id="candidate-status">${s.candidate?`지정 좌표 ${s.candidate.mm.map(x=>x.toFixed(1)).join(' / ')} mm`:'위치가 아직 지정되지 않았습니다.'}</p><button class="primary" id="mri-submit" ${s.candidate?'':'disabled'}>이 위치 제출</button><button class="text-button" id="mri-reveal">모르겠어요 · 정답 확인</button>`}`);
  if(s.loading)return;
  if(s.answered){$('mri-answer-location').onclick=()=>nv.setPoint(meshData.regions.find(x=>x.id===id).anchor);$('mri-next').onclick=()=>{s.index++;if(s.index<s.ids.length)nextMRIQuestion();else mriDetail();};}
  else{$('mri-submit').onclick=()=>gradeMRI(false);$('mri-reveal').onclick=()=>gradeMRI(true);}
@@ -303,7 +352,7 @@ function gradeMRI(reveal){
 let mriDown=null;
 $('mri').addEventListener('pointerdown',e=>mriDown={xy:[e.clientX,e.clientY],version:locationVersion},true);
 $('mri').addEventListener('pointerup',e=>{
- const down=mriDown;if(down&&Math.hypot(e.clientX-down.xy[0],e.clientY-down.xy[1])<5){setTimeout(()=>{if(mode==='mri-test'&&mriSession&&!mriSession.answered&&!mriSession.loading&&latestLocation&&locationVersion>down.version){mriSession.candidate={mm:[...latestLocation.mm],active:latestLocation.active};mriDetail();}else if(mode==='find'&&locationVersion>down.version&&latestLocation?.id){answerFind(latestLocation.id);}else if(mode==='explore'&&locationVersion>down.version&&latestLocation?.id&&latestLocation.id!==selected){select(latestLocation.id,{move:false});}},0);}mriDown=null;
+ const down=mriDown;if(down&&Math.hypot(e.clientX-down.xy[0],e.clientY-down.xy[1])<5){setTimeout(()=>{if(mode==='mri-test'&&mriSession&&!mriSession.answered&&!mriSession.loading&&latestLocation&&locationVersion>down.version){mriSession.candidate={mm:[...latestLocation.mm],active:latestLocation.active};mriDetail();}else if(mode==='find'&&locationVersion>down.version&&latestLocation?.id){answerFind(latestLocation.id);}else if(mode==='explore'&&locationVersion>down.version&&latestLocation&&!nv.busy){clearAnatomy();if(meshData.regions.some(r=>r.id===latestLocation.id)){if(unregisteredSelection||latestLocation.id!==selected)select(latestLocation.id,{move:false});}else clearSelectedStructure();}},0);}mriDown=null;
 });
 $('review-localization').onclick=()=>startMRIPractice(true);
 let historyBackup=null;
@@ -325,39 +374,26 @@ $('network').onchange=()=>{
  panel.querySelectorAll('[data-node]').forEach(b=>b.onclick=()=>select(Number(b.dataset.node)*2+1));select(n.nodes[0]*2+1);renderState();
 };
 
-let quizSession=null;
-function quizHome(){
-  const wrong=content.questions.filter(q=>stored.answers[q.id]===false);
-  $('quiz-body').innerHTML=`<p class="eyebrow">FOUNDATIONS / KNOWLEDGE CHECK</p><h2>이유까지 설명할 수 있나요?</h2><p>단면과 방향, 깊은 구조, 시퀀스, 확산의 기초를 16문제로 확인합니다.</p><p>${Object.keys(stored.answers).length} / 16문제 학습 · 오답 ${wrong.length}개</p><div class="quiz-actions"><button id="quiz-review" ${wrong.length?'':'disabled'}>오답 복습</button><button id="quiz-start" class="primary">전체 문제 시작</button></div>`;
-  $('quiz-start').onclick=()=>startQuiz(content.questions);$('quiz-review').onclick=()=>startQuiz(wrong);
-}
-function startQuiz(questions){quizSession={queue:shuffle(questions),index:0,score:0,choice:null};quizQuestion();}
-function quizQuestion(){
-  const s=quizSession;
-  if(s.index>=s.queue.length){$('quiz-body').innerHTML=`<p class="eyebrow">SESSION COMPLETE</p><h2>${s.score} / ${s.queue.length} 정답</h2><p>이번 세션의 첫 답변 점수입니다. 틀린 문제는 오답 복습에 남고, 복습에서 맞히면 해제됩니다.</p><button class="primary" id="quiz-home">학습 현황으로</button>`;$('quiz-home').onclick=quizHome;return;}
-  const q=s.queue[s.index],lesson=content.lessons.find(l=>l.id===q.lesson);
-  $('quiz-body').innerHTML=`<p class="eyebrow">${lesson.title} · ${s.index+1} / ${s.queue.length}</p><progress max="${s.queue.length}" value="${s.index}"></progress><h2>${q.prompt}</h2><div class="quiz-options"></div><div id="quiz-feedback" role="status"></div><div class="quiz-actions"><button id="quiz-next" class="primary" disabled>${s.index===s.queue.length-1?'결과 보기':'다음 문제 →'}</button></div>`;
-  const container=$('quiz-body').querySelector('.quiz-options');
-  q.options.forEach((option,i)=>{const b=document.createElement('button');b.textContent=option;b.dataset.answer=i;b.onclick=()=>{
-    if(s.choice!==null)return;s.choice=i;const correct=i===q.answer;s.score+=Number(correct);stored.answers[q.id]=correct;save();
-    [...container.children].forEach((button,index)=>{button.disabled=true;if(index===q.answer)button.classList.add('correct');else if(index===i)button.classList.add('wrong');});
-    $('quiz-feedback').innerHTML=`<div class="result feedback ${correct?'':'wrong'}"><strong>${correct?'정답입니다.':'다시 짚어볼까요?'}</strong><p>${q.explanation}</p></div>`;$('quiz-next').disabled=false;$('quiz-next').focus();
-  };container.append(b);});
-  $('quiz-next').onclick=()=>{if(s.choice===null)return;s.index++;s.choice=null;quizQuestion();};
-}
-
 $('search').oninput=list;
 $('brain-opacity').oninput=()=>{$('brain-opacity-value').textContent=$('brain-opacity').value+'%';renderState();};
-$('isolate').onchange=renderState;$('cut').onchange=()=>{if($('cut').value!=='none'&&!regions[groupOf(selected)].midline)select(groupOf(selected)*2+($('cut').value==='left'?1:2));renderState();};$('cortex-context').onchange=renderState;$('show-planes').onchange=()=>updateCursor(latestLocation?.mm??[0,0,0]);
+$('isolate').onchange=renderState;$('cut').onchange=()=>{if(!unregisteredSelection&&$('cut').value!=='none'&&!regions[groupOf(selected)].midline)select(groupOf(selected)*2+($('cut').value==='left'?1:2));renderState();};$('cortex-context').onchange=renderState;$('show-planes').onchange=()=>{updateCursor(latestLocation?.mm??[0,0,0]);subjectScene?.refresh();};
 $('reset-view').onclick=()=>preset('oblique');
 for(const b of document.querySelectorAll('button[data-view]'))b.onclick=()=>preset(b.dataset.view);
 for(const b of document.querySelectorAll('[data-side]'))b.onclick=()=>setSide(b.dataset.side);
 $('find-mode').onclick=()=>startFind();$('mri-train').onclick=()=>startMRIPractice();$('explore-mode').onclick=explore;
-$('about-open').onclick=()=>$('about').showModal();$('quiz-open').onclick=()=>{quizHome();$('quiz').showModal();};
+$('about-open').onclick=()=>$('about').showModal();
 for(const b of document.querySelectorAll('[data-close]'))b.onclick=()=>$(b.dataset.close).close();
 for(const [name,url] of content.sources){const li=document.createElement('li'),a=document.createElement('a');a.textContent=name;a.href=url;a.target='_blank';a.rel='noopener';li.append(a);$('source-list').append(li);}
+illustrations=createIllustrations({
+ getState:()=>individualMode?caseTrainer?.illustrationState():{
+  context:`atlas:${nv?.space}:${mode}`,plane:nv?.plane,point:nv?.point,
+  busy:!mriReady||nv?.busy||nv?.failed,
+  revealed:mode==='explore'||Boolean(mode==='find'?session?.answered:mriSession?.answered),locked:true,
+ },
+ onHint:()=>{if(individualMode)caseTrainer?.revealIllustration();},
+});
 list();detail();
-const caseStart=initCaseTraining().then(value=>{caseTrainer=value;});
-try {await init3D();updateCursor([0,0,0]);caseTrainer?.refresh();}catch(error){console.error(error);$('loading').textContent='3D 화면을 열 수 없습니다. WebGL을 지원하는 브라우저에서 새로고침해 주세요. 기초 문제는 계속 사용할 수 있습니다.';}
+const caseStart=initCaseTraining().then(value=>{caseTrainer=value;illustrations.refresh();});
+try {await init3D();updateCursor([0,0,0]);caseTrainer?.refresh();}catch(error){console.error(error);$('loading').textContent='3D 화면을 열 수 없습니다. WebGL을 지원하는 브라우저에서 새로고침해 주세요.';}
 await caseStart;caseTrainer?.refresh();
 try {await initMRI();}catch(error){console.error(error);$('mri-loading').textContent='MRI를 열 수 없습니다. 로컬 서버로 실행했는지 확인하고 새로고침해 주세요.';}

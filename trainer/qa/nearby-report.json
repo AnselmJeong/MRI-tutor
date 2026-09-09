@@ -1,0 +1,15 @@
+{
+  "date": "2026-09-09T13:42:43.034Z",
+  "checks": [
+    "Actual MRI click finds multiple in-plane masks; yellow points have hover, focus and touch labels without moving the MRI",
+    "Radius updates replace results; 2x zoom, DPR 2, viewport and split resizing keep every dot on its registered point",
+    "Clicking elsewhere removes old marker elements before showing the new local result",
+    "Empty neighbourhood clears the old dots and explains how to search again",
+    "Three-plane view searches and marks only the clicked tile",
+    "Slice, sequence and subject changes clear old markers; new subject and T2 use their own coordinates",
+    "Guided practice stays separate and still accepts a reveal response",
+    "Narrow screen supports touch labels and clear action without horizontal overflow",
+    "No uncaught browser errors"
+  ],
+  "errors": []
+}

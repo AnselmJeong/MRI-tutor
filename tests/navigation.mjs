@@ -7,9 +7,9 @@ const state=()=>page.evaluate(()=>window.mriCaseQA.snapshot());
 const ready=()=>page.waitForFunction(()=>window.mriCaseQA&&!window.mriCaseQA.snapshot().loading&&!window.mriCaseQA.snapshot().loadError,undefined,{timeout:120000});
 const log=x=>{checks.push(x);console.log('PASS',x);};
 try{
- await page.goto('http://127.0.0.1:8091/');await ready();
+ await page.goto('http://127.0.0.1:8091/');await page.locator('#cases-mode').click();await ready();
  const manifest=await page.evaluate(()=>window.mriCaseQA.manifest());
- await expect(page.locator('#case-cursor-status')).toContainText('목표 구조의 위치를 뜻하지 않습니다');
+ await expect(page.locator('#guided-submit')).toBeVisible();await page.locator('[data-case-mode=explore]').click();await page.locator('[data-topic=hippocampus]').click();await page.locator('#case-side').selectOption('left');
  await expect(page.locator('#case-anchor')).toBeVisible();expect((await state()).viewer.overlay).toBe(false);
  const check=async()=>{
   const s=await state(),c=manifest.cases.find(c=>c.id===s.caseId),ref=c.segmentation.labels.find(l=>l.structure===s.topic&&l.side===s.side);
@@ -34,12 +34,10 @@ try{
  await page.locator('#case-anchor').click();await check();
  await page.locator('[data-sequence=T2w]').click();await ready();await check();(await state()).viewer.point.forEach((v,i)=>expect(v).toBeCloseTo(keep[i],2));
  log('Manual movement reports actual membership; visible anchor restores location; T2 preserves native point');
- await page.locator('#case-select').selectOption('sub-02');await ready();await check();
- await page.locator('#case-select').selectOption('sub-03');await ready();await check();
+ await page.locator('[data-case-id="sub-02"]').click();await ready();await check();
+ await page.locator('[data-case-id="sub-03"]').click();await ready();await check();
  log('Changing subjects locates the new subject’s own label');
- await page.locator('[data-case-mode=guided]').click();let previous=(await state()).viewer.point;
- await page.locator('[data-topic=thalamus]').click();expect((await state()).viewer.point).toEqual(previous);expect((await state()).task.hints).toEqual([]);await expect(page.locator('#case-cursor-status')).toContainText('목표 구조의 위치를 뜻하지 않습니다');
- await page.locator('#case-anchor').click();await check();
+ await page.locator('[data-case-mode=guided]').click();expect((await state()).task.guided.sections).toHaveLength(3);expect((await state()).task.hints).toEqual([]);await expect(page.locator('#case-topics')).toBeHidden();
  await page.locator('[data-case-mode=transfer]').click();await ready();await expect(page.locator('#case-anchor')).toBeDisabled();await expect(page.locator('[data-hint=boundary]')).toBeDisabled();await expect(page.locator('#case-cursor-status')).not.toContainText('현재 십자선의 자동 라벨:');
  await page.locator('#case-location-source summary').click();await expect(page.locator('#case-open-aal')).toBeDisabled();
  log('Unaided training does not auto-locate or expose labels; held-out location and AAL hints locked');

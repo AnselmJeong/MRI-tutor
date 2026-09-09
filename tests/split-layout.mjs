@@ -1,0 +1,51 @@
+import {chromium,expect} from '@playwright/test';
+import {mkdirSync} from 'node:fs';
+const browser=await chromium.launch({channel:'chrome',headless:true,args:['--enable-webgl','--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
+const output='/tmp/mri-tutor-split-layout';mkdirSync(output,{recursive:true});
+try{
+ const page=await browser.newPage({viewport:{width:1600,height:1100}}),errors=[];
+ page.on('pageerror',e=>errors.push(e.message));
+ await page.addInitScript(()=>{if(!localStorage.getItem('split-layout-test-seeded')){localStorage.setItem('mri-tutor-view-split-v1',JSON.stringify({ratio:0,shared:30}));localStorage.setItem('split-layout-test-seeded','1');}});
+ await page.goto('http://127.0.0.1:8091/');await page.locator('#cases-mode').click();
+ const ready=()=>page.waitForFunction(()=>window.mriCaseQA&&!window.mriCaseQA.snapshot().loading&&!window.mriCaseQA.snapshot().loadError,undefined,{timeout:120000});
+ await ready();
+ await page.locator('[data-workspace=linked]').click();
+ const area=page.locator('#viewer-split'),divider=page.locator('#viewer-divider');
+ const state=()=>page.evaluate(()=>window.mriCaseQA.snapshot());
+ const ratio=async()=>Number(await divider.getAttribute('aria-valuenow'));
+ const samePoint=(actual,expected)=>actual.forEach((value,i)=>expect(Math.abs(value-expected[i])).toBeLessThan(.001));
+ await expect(area).toHaveAttribute('data-split-axis','x');await expect(divider).toHaveAttribute('aria-orientation','vertical');expect(await ratio()).toBe(40);
+ const three=await page.locator('#three-pane').boundingBox(),mri=await page.locator('#mri-pane').boundingBox();
+ expect(Math.abs(three.y-mri.y)).toBeLessThan(1);expect(mri.x).toBeGreaterThan(three.x+three.width);
+ await page.locator('[data-case-mode=explore]').click();
+ expect((await state()).viewer.plane).toBe('axial');
+ const point=(await state()).viewer.point;
+ await divider.focus();await page.keyboard.press('ArrowRight');expect(await ratio()).toBe(42);await page.keyboard.press('Shift+ArrowLeft');expect(await ratio()).toBe(32);
+ const handle=await divider.boundingBox();await page.mouse.move(handle.x+handle.width/2,handle.y+handle.height/2);await page.mouse.down();await page.mouse.move(handle.x+handle.width/2+80,handle.y+handle.height/2,{steps:8});await page.mouse.up();expect(await ratio()).toBeGreaterThan(38);
+ samePoint((await state()).viewer.point,point);
+ const saved=await ratio();await page.reload();await page.locator('#cases-mode').click();await ready();expect(await ratio()).toBe(saved);samePoint((await state()).viewer.point,point);
+ await divider.focus();await page.keyboard.press('Home');await expect(page.locator('#three-pane')).toBeHidden();await page.keyboard.press('End');await expect(page.locator('#mri-pane')).toBeHidden();await page.keyboard.press('Enter');await expect(page.locator('#mri-pane')).toBeVisible();await expect(page.locator('#three-pane')).toBeVisible();expect(await ratio()).toBe(saved);
+ await page.locator('[data-workspace=mri]').click();await page.locator('[data-workspace=linked]').click();samePoint((await state()).viewer.point,point);
+ await divider.dblclick();expect(await ratio()).toBe(40);
+ await page.screenshot({path:`${output}/individual-desktop.png`,fullPage:true});
+ console.log('PASS desktop side-by-side, Axial, horizontal drag/keyboard, collapse/restore, persistence and MRI coordinates');
+ await page.locator('#explore-mode').click();await page.waitForFunction(()=>document.querySelector('#mri-loading').hidden,undefined,{timeout:120000});
+ await expect(page.locator('[data-plane=axial]')).toHaveAttribute('aria-pressed','true');
+ const coords=await page.locator('#coordinates').textContent();
+ await page.locator('[data-workspace=three]').click();await page.locator('[data-workspace=linked]').click();await expect(page.locator('#coordinates')).toHaveText(coords);
+ await page.screenshot({path:`${output}/atlas-desktop.png`,fullPage:true});
+ for(const width of [1440,1024,390]){
+  await page.setViewportSize({width,height:1000});
+  await expect(area).toHaveAttribute('data-split-axis',width===390?'y':'x');
+  await page.waitForTimeout(200);
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);
+  const canvas=await page.locator('#mri').boundingBox();expect(canvas.height).toBeGreaterThan(180);expect(canvas.width).toBeGreaterThan(200);
+  await page.screenshot({path:`${output}/atlas-${width}.png`,fullPage:true});
+ }
+ await expect(divider).toHaveAttribute('aria-orientation','horizontal');await divider.focus();await page.keyboard.press('ArrowDown');expect(await ratio()).toBe(42);
+ await page.locator('#cases-mode').click();await ready();expect((await state()).viewer.plane).toBe('axial');
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth)).toBeLessThanOrEqual(390);
+ await page.screenshot({path:`${output}/individual-mobile.png`,fullPage:true});
+ expect(errors).toEqual([]);
+ console.log(`PASS Atlas Axial default, 1440/1024/390 widths, mobile vertical controls, no page errors; screenshots ${output}`);
+}finally{await browser.close();}

@@ -1,0 +1,11 @@
+{
+  "date": "2026-09-09T13:42:09.007Z",
+  "checks": [
+    "Legacy guided draft migrates to click exercise with prior history and draft backup preserved",
+    "A deliberate repeat click at the unchanged crosshair is accepted",
+    "History review opens the actual answer and remains submitted across reload",
+    "Unanswered next section restores without accessing an unloaded volume",
+    "Narrow layout shows the assigned structure above the image"
+  ],
+  "errors": []
+}

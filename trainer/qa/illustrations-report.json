@@ -1,0 +1,11 @@
+{
+  "date": "2026-09-09T13:36:05.748Z",
+  "checks": [
+    "Atlas axial/coronal follow actual sliders; manual browsing stays put; sagittal and multiplanar coverage are explicit",
+    "Large image loads, zoom and keyboard plate navigation work, Escape restores focus, Atlas exercise keeps labels hidden",
+    "Individual matching accounts for three different native origins, supports coronal, and survives T1/T2 switching",
+    "Optional guided illustration is recorded as help; new question and held-out transfer reset/lock labeled plates",
+    "390px mobile dialog fits viewport with controls and no document overflow"
+  ],
+  "errors": []
+}

@@ -1,0 +1,511 @@
+{
+  "sourceHashesUnchanged": true,
+  "representations": [
+    {
+      "caseId": "sub-01",
+      "labelId": 1,
+      "verticesOnSourceBoundary": 3428,
+      "volumeMm3": 4152.999622655224,
+      "roundTripMaxMm": 6.355287432313019e-14
+    },
+    {
+      "caseId": "sub-01",
+      "labelId": 2,
+      "verticesOnSourceBoundary": 3581,
+      "volumeMm3": 4400.06852968917,
+      "roundTripMaxMm": 5.317214951750687e-14
+    },
+    {
+      "caseId": "sub-01",
+      "labelId": 3,
+      "verticesOnSourceBoundary": 1494,
+      "volumeMm3": 1894.7089223791054,
+      "roundTripMaxMm": 6.51223174224333e-14
+    },
+    {
+      "caseId": "sub-01",
+      "labelId": 4,
+      "verticesOnSourceBoundary": 1698,
+      "volumeMm3": 2192.5334604579543,
+      "roundTripMaxMm": 5.317214951750687e-14
+    },
+    {
+      "caseId": "sub-01",
+      "labelId": 5,
+      "verticesOnSourceBoundary": 3670,
+      "volumeMm3": 4590.797920266961,
+      "roundTripMaxMm": 6.51223174224333e-14
+    },
+    {
+      "caseId": "sub-01",
+      "labelId": 6,
+      "verticesOnSourceBoundary": 3833,
+      "volumeMm3": 4832.282868394489,
+      "roundTripMaxMm": 5.317214951750687e-14
+    },
+    {
+      "caseId": "sub-01",
+      "labelId": 7,
+      "verticesOnSourceBoundary": 4670,
+      "volumeMm3": 7649.551849295286,
+      "roundTripMaxMm": 6.51223174224333e-14
+    },
+    {
+      "caseId": "sub-01",
+      "labelId": 8,
+      "verticesOnSourceBoundary": 4434,
+      "volumeMm3": 7126.5774738639,
+      "roundTripMaxMm": 5.317214951750687e-14
+    },
+    {
+      "caseId": "sub-01",
+      "labelId": 9,
+      "verticesOnSourceBoundary": 1860,
+      "volumeMm3": 2479.8151182061915,
+      "roundTripMaxMm": 6.51223174224333e-14
+    },
+    {
+      "caseId": "sub-01",
+      "labelId": 10,
+      "verticesOnSourceBoundary": 2076,
+      "volumeMm3": 3012.4571954331864,
+      "roundTripMaxMm": 5.317214951750687e-14
+    },
+    {
+      "caseId": "sub-01",
+      "labelId": 11,
+      "verticesOnSourceBoundary": 4051,
+      "volumeMm3": 9129.340051138119,
+      "roundTripMaxMm": 6.029155041345696e-14
+    },
+    {
+      "caseId": "sub-01",
+      "labelId": 12,
+      "verticesOnSourceBoundary": 3730,
+      "volumeMm3": 8048.054119377779,
+      "roundTripMaxMm": 4.713207304057789e-14
+    },
+    {
+      "caseId": "sub-01",
+      "labelId": 17,
+      "verticesOnSourceBoundary": 5919,
+      "volumeMm3": 5633.454535138279,
+      "roundTripMaxMm": 6.51223174224333e-14
+    },
+    {
+      "caseId": "sub-01",
+      "labelId": 18,
+      "verticesOnSourceBoundary": 6724,
+      "volumeMm3": 7937.250269231004,
+      "roundTripMaxMm": 5.317214951750687e-14
+    },
+    {
+      "caseId": "sub-01",
+      "labelId": 20,
+      "verticesOnSourceBoundary": 1046,
+      "volumeMm3": 579.4388911800661,
+      "roundTripMaxMm": 4.713207304057789e-14
+    },
+    {
+      "caseId": "sub-01",
+      "labelId": 41,
+      "verticesOnSourceBoundary": 160,
+      "volumeMm3": 40.62948339629691,
+      "roundTripMaxMm": 6.029155041345696e-14
+    },
+    {
+      "caseId": "sub-01",
+      "labelId": 42,
+      "verticesOnSourceBoundary": 284,
+      "volumeMm3": 85.46776566754681,
+      "roundTripMaxMm": 4.4938668397781776e-14
+    },
+    {
+      "caseId": "sub-01",
+      "labelId": 43,
+      "verticesOnSourceBoundary": 1696,
+      "volumeMm3": 1247.8042712166286,
+      "roundTripMaxMm": 6.51223174224333e-14
+    },
+    {
+      "caseId": "sub-02",
+      "labelId": 1,
+      "verticesOnSourceBoundary": 3482,
+      "volumeMm3": 4106.333930515276,
+      "roundTripMaxMm": 6.51223174224333e-14
+    },
+    {
+      "caseId": "sub-02",
+      "labelId": 2,
+      "verticesOnSourceBoundary": 3878,
+      "volumeMm3": 4664.685981632953,
+      "roundTripMaxMm": 4.263256414560601e-14
+    },
+    {
+      "caseId": "sub-02",
+      "labelId": 3,
+      "verticesOnSourceBoundary": 1468,
+      "volumeMm3": 1719.0225480829959,
+      "roundTripMaxMm": 6.029155041345696e-14
+    },
+    {
+      "caseId": "sub-02",
+      "labelId": 4,
+      "verticesOnSourceBoundary": 1646,
+      "volumeMm3": 2255.7456412262727,
+      "roundTripMaxMm": 4.263256414560601e-14
+    },
+    {
+      "caseId": "sub-02",
+      "labelId": 5,
+      "verticesOnSourceBoundary": 3888,
+      "volumeMm3": 4596.173449107405,
+      "roundTripMaxMm": 6.51223174224333e-14
+    },
+    {
+      "caseId": "sub-02",
+      "labelId": 6,
+      "verticesOnSourceBoundary": 3917,
+      "volumeMm3": 4849.053015830997,
+      "roundTripMaxMm": 4.263256414560601e-14
+    },
+    {
+      "caseId": "sub-02",
+      "labelId": 7,
+      "verticesOnSourceBoundary": 4781,
+      "volumeMm3": 7595.346680848775,
+      "roundTripMaxMm": 6.51223174224333e-14
+    },
+    {
+      "caseId": "sub-02",
+      "labelId": 8,
+      "verticesOnSourceBoundary": 4406,
+      "volumeMm3": 6554.531427582447,
+      "roundTripMaxMm": 4.263256414560601e-14
+    },
+    {
+      "caseId": "sub-02",
+      "labelId": 9,
+      "verticesOnSourceBoundary": 1840,
+      "volumeMm3": 2174.1057371775287,
+      "roundTripMaxMm": 4.9227844771419234e-14
+    },
+    {
+      "caseId": "sub-02",
+      "labelId": 10,
+      "verticesOnSourceBoundary": 1752,
+      "volumeMm3": 2090.632148889423,
+      "roundTripMaxMm": 4.263256414560601e-14
+    },
+    {
+      "caseId": "sub-02",
+      "labelId": 11,
+      "verticesOnSourceBoundary": 3835,
+      "volumeMm3": 8389.200107505021,
+      "roundTripMaxMm": 6.029155041345696e-14
+    },
+    {
+      "caseId": "sub-02",
+      "labelId": 12,
+      "verticesOnSourceBoundary": 3718,
+      "volumeMm3": 7622.726670345694,
+      "roundTripMaxMm": 4.263256414560601e-14
+    },
+    {
+      "caseId": "sub-02",
+      "labelId": 17,
+      "verticesOnSourceBoundary": 10037,
+      "volumeMm3": 15420.485363554972,
+      "roundTripMaxMm": 6.51223174224333e-14
+    },
+    {
+      "caseId": "sub-02",
+      "labelId": 18,
+      "verticesOnSourceBoundary": 7315,
+      "volumeMm3": 7142.47219931742,
+      "roundTripMaxMm": 6.51223174224333e-14
+    },
+    {
+      "caseId": "sub-02",
+      "labelId": 20,
+      "verticesOnSourceBoundary": 1508,
+      "volumeMm3": 1783.6593635656773,
+      "roundTripMaxMm": 4.9227844771419234e-14
+    },
+    {
+      "caseId": "sub-02",
+      "labelId": 41,
+      "verticesOnSourceBoundary": 1094,
+      "volumeMm3": 532.9307367537185,
+      "roundTripMaxMm": 6.029155041345696e-14
+    },
+    {
+      "caseId": "sub-02",
+      "labelId": 42,
+      "verticesOnSourceBoundary": 687,
+      "volumeMm3": 277.88413376470686,
+      "roundTripMaxMm": 4.263256414560601e-14
+    },
+    {
+      "caseId": "sub-02",
+      "labelId": 43,
+      "verticesOnSourceBoundary": 2684,
+      "volumeMm3": 2402.1057482333304,
+      "roundTripMaxMm": 6.51223174224333e-14
+    },
+    {
+      "caseId": "sub-03",
+      "labelId": 1,
+      "verticesOnSourceBoundary": 3577,
+      "volumeMm3": 4019.8253587673225,
+      "roundTripMaxMm": 6.029155041345696e-14
+    },
+    {
+      "caseId": "sub-03",
+      "labelId": 2,
+      "verticesOnSourceBoundary": 3316,
+      "volumeMm3": 3968.57174724267,
+      "roundTripMaxMm": 4.4938668397781776e-14
+    },
+    {
+      "caseId": "sub-03",
+      "labelId": 3,
+      "verticesOnSourceBoundary": 1213,
+      "volumeMm3": 1446.2687293442923,
+      "roundTripMaxMm": 5.859285502108464e-14
+    },
+    {
+      "caseId": "sub-03",
+      "labelId": 4,
+      "verticesOnSourceBoundary": 1377,
+      "volumeMm3": 1747.1649612202573,
+      "roundTripMaxMm": 4.263256414560601e-14
+    },
+    {
+      "caseId": "sub-03",
+      "labelId": 5,
+      "verticesOnSourceBoundary": 2893,
+      "volumeMm3": 3545.8752680180073,
+      "roundTripMaxMm": 6.51223174224333e-14
+    },
+    {
+      "caseId": "sub-03",
+      "labelId": 6,
+      "verticesOnSourceBoundary": 2924,
+      "volumeMm3": 3445.95150468103,
+      "roundTripMaxMm": 4.263256414560601e-14
+    },
+    {
+      "caseId": "sub-03",
+      "labelId": 7,
+      "verticesOnSourceBoundary": 4361,
+      "volumeMm3": 6727.308098884633,
+      "roundTripMaxMm": 6.51223174224333e-14
+    },
+    {
+      "caseId": "sub-03",
+      "labelId": 8,
+      "verticesOnSourceBoundary": 4102,
+      "volumeMm3": 6484.540918503203,
+      "roundTripMaxMm": 4.263256414560601e-14
+    },
+    {
+      "caseId": "sub-03",
+      "labelId": 9,
+      "verticesOnSourceBoundary": 1747,
+      "volumeMm3": 2116.4409983625906,
+      "roundTripMaxMm": 5.859285502108464e-14
+    },
+    {
+      "caseId": "sub-03",
+      "labelId": 10,
+      "verticesOnSourceBoundary": 1568,
+      "volumeMm3": 1872.3404606713793,
+      "roundTripMaxMm": 4.263256414560601e-14
+    },
+    {
+      "caseId": "sub-03",
+      "labelId": 11,
+      "verticesOnSourceBoundary": 3604,
+      "volumeMm3": 7262.762535221457,
+      "roundTripMaxMm": 6.029155041345696e-14
+    },
+    {
+      "caseId": "sub-03",
+      "labelId": 12,
+      "verticesOnSourceBoundary": 3518,
+      "volumeMm3": 7500.73767213183,
+      "roundTripMaxMm": 6.029155041345696e-14
+    },
+    {
+      "caseId": "sub-03",
+      "labelId": 17,
+      "verticesOnSourceBoundary": 3805,
+      "volumeMm3": 2835.491755341698,
+      "roundTripMaxMm": 6.355287432313019e-14
+    },
+    {
+      "caseId": "sub-03",
+      "labelId": 18,
+      "verticesOnSourceBoundary": 3126,
+      "volumeMm3": 1915.3851938868986,
+      "roundTripMaxMm": 4.263256414560601e-14
+    },
+    {
+      "caseId": "sub-03",
+      "labelId": 20,
+      "verticesOnSourceBoundary": 972,
+      "volumeMm3": 765.2623283335791,
+      "roundTripMaxMm": 4.263256414560601e-14
+    },
+    {
+      "caseId": "sub-03",
+      "labelId": 41,
+      "verticesOnSourceBoundary": 660,
+      "volumeMm3": 314.35551335996416,
+      "roundTripMaxMm": 5.859285502108464e-14
+    },
+    {
+      "caseId": "sub-03",
+      "labelId": 42,
+      "verticesOnSourceBoundary": 456,
+      "volumeMm3": 178.09589051144187,
+      "roundTripMaxMm": 4.263256414560601e-14
+    },
+    {
+      "caseId": "sub-03",
+      "labelId": 43,
+      "verticesOnSourceBoundary": 1718,
+      "volumeMm3": 1127.6212405509202,
+      "roundTripMaxMm": 6.51223174224333e-14
+    },
+    {
+      "caseId": "sub-04",
+      "labelId": 1,
+      "verticesOnSourceBoundary": 3486,
+      "volumeMm3": 4207.005303451276,
+      "roundTripMaxMm": 5.684341886080802e-14
+    },
+    {
+      "caseId": "sub-04",
+      "labelId": 2,
+      "verticesOnSourceBoundary": 3668,
+      "volumeMm3": 4595.941756891184,
+      "roundTripMaxMm": 4.263256414560601e-14
+    },
+    {
+      "caseId": "sub-04",
+      "labelId": 3,
+      "verticesOnSourceBoundary": 1374,
+      "volumeMm3": 1774.6734520350226,
+      "roundTripMaxMm": 5.684341886080802e-14
+    },
+    {
+      "caseId": "sub-04",
+      "labelId": 4,
+      "verticesOnSourceBoundary": 1652,
+      "volumeMm3": 2103.065138201293,
+      "roundTripMaxMm": 4.263256414560601e-14
+    },
+    {
+      "caseId": "sub-04",
+      "labelId": 5,
+      "verticesOnSourceBoundary": 3349,
+      "volumeMm3": 4351.137579976169,
+      "roundTripMaxMm": 6.355287432313019e-14
+    },
+    {
+      "caseId": "sub-04",
+      "labelId": 6,
+      "verticesOnSourceBoundary": 3379,
+      "volumeMm3": 4311.719030022406,
+      "roundTripMaxMm": 4.263256414560601e-14
+    },
+    {
+      "caseId": "sub-04",
+      "labelId": 7,
+      "verticesOnSourceBoundary": 4616,
+      "volumeMm3": 7104.77744515579,
+      "roundTripMaxMm": 6.355287432313019e-14
+    },
+    {
+      "caseId": "sub-04",
+      "labelId": 8,
+      "verticesOnSourceBoundary": 4420,
+      "volumeMm3": 6934.768865267273,
+      "roundTripMaxMm": 4.263256414560601e-14
+    },
+    {
+      "caseId": "sub-04",
+      "labelId": 9,
+      "verticesOnSourceBoundary": 1834,
+      "volumeMm3": 2379.704214251294,
+      "roundTripMaxMm": 4.9227844771419234e-14
+    },
+    {
+      "caseId": "sub-04",
+      "labelId": 10,
+      "verticesOnSourceBoundary": 2000,
+      "volumeMm3": 2857.436793082957,
+      "roundTripMaxMm": 4.263256414560601e-14
+    },
+    {
+      "caseId": "sub-04",
+      "labelId": 11,
+      "verticesOnSourceBoundary": 4023,
+      "volumeMm3": 9250.011377943696,
+      "roundTripMaxMm": 5.859285502108464e-14
+    },
+    {
+      "caseId": "sub-04",
+      "labelId": 12,
+      "verticesOnSourceBoundary": 3617,
+      "volumeMm3": 7854.982269589306,
+      "roundTripMaxMm": 4.263256414560601e-14
+    },
+    {
+      "caseId": "sub-04",
+      "labelId": 17,
+      "verticesOnSourceBoundary": 4132,
+      "volumeMm3": 3240.497874808379,
+      "roundTripMaxMm": 4.9227844771419234e-14
+    },
+    {
+      "caseId": "sub-04",
+      "labelId": 18,
+      "verticesOnSourceBoundary": 3667,
+      "volumeMm3": 3083.656602834794,
+      "roundTripMaxMm": 4.0194366942304644e-14
+    },
+    {
+      "caseId": "sub-04",
+      "labelId": 20,
+      "verticesOnSourceBoundary": 698,
+      "volumeMm3": 416.3544716684996,
+      "roundTripMaxMm": 4.263256414560601e-14
+    },
+    {
+      "caseId": "sub-04",
+      "labelId": 41,
+      "verticesOnSourceBoundary": 1043,
+      "volumeMm3": 516.2762169351223,
+      "roundTripMaxMm": 4.263256414560601e-14
+    },
+    {
+      "caseId": "sub-04",
+      "labelId": 42,
+      "verticesOnSourceBoundary": 602,
+      "volumeMm3": 296.14003650036744,
+      "roundTripMaxMm": 4.0194366942304644e-14
+    },
+    {
+      "caseId": "sub-04",
+      "labelId": 43,
+      "verticesOnSourceBoundary": 2422,
+      "volumeMm3": 2161.859799057665,
+      "roundTripMaxMm": 4.263256414560601e-14
+    }
+  ],
+  "browserSamples": 192,
+  "maxIntensityError": 0
+}

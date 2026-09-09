@@ -1,0 +1,8 @@
+{
+  "checks": [
+    "Worker failure keeps MRI and same-subject meshes usable, clears stale planes and supports retry",
+    "Unsupported subject ROI displays no borrowed or previous mesh",
+    "Both rollback flags preserve MRI and never substitute a template"
+  ],
+  "errors": []
+}

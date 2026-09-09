@@ -1,7 +1,12 @@
+import {locateOnSlice,labelAt} from './anatomy-location.js';
+import {installCommandWheelZoom} from './wheel-zoom.js';
 import { Niivue, NVImage, MULTIPLANAR_TYPE, SHOW_RENDER } from './vendor/niivue.js';
+import {templateSpaces} from './viewer/space-registry.js';
+import {nativeSliceFrame,extractNativeSlab} from './viewer/slice-adapter.js';
 const $=id=>document.getElementById(id);
-export async function createMRI({data,onLocation,onRetry}){
- let nv,token=0,busy=false,failed=false,space=null,selected=3,plane='multi',concealed=false,lastPoint=[0,0,0];
+export async function createMRI({data,onLocation,onRetry,onViewChange=()=>{}}){
+ let nv,token=0,busy=false,failed=false,space=null,selected=3,plane='axial',concealed=false,lastPoint=[0,0,0];
+ let hasSelection=true;
  const cache=new Map();
  const get=async(url)=>{if(!cache.has(url))cache.set(url,NVImage.loadFromUrl({url,name:url.split('/').pop()}).catch(e=>{cache.delete(url);throw e;}));return cache.get(url);};
  const roi=id=>data.regions.find(r=>r.id===id);
@@ -16,6 +21,8 @@ export async function createMRI({data,onLocation,onRetry}){
   onLocation({mm:lastPoint,id:active||global,active,space});
  }});
  await nv.attachToCanvas($('mri'));nv.setInterpolation(true);
+ const drawScene=nv.drawScene.bind(nv);nv.drawScene=(...args)=>{const result=drawScene(...args);onViewChange();return result;};
+ installCommandWheelZoom({canvas:$('mri'),canZoom:()=>!busy&&!failed&&nv.volumes.length>0,getPan:()=>nv.scene.pan2Dxyzmm,setPan:pan=>nv.setPan2Dxyzmm(pan),onZoom:zoom=>{$('zoom').value=zoom.toFixed(2);}});
  // The splitter changes container size without a window resize.
  let resizeFrame=0;
  new ResizeObserver(()=>{cancelAnimationFrame(resizeFrame);resizeFrame=requestAnimationFrame(()=>{const r=$('mri').getBoundingClientRect();if(r.width>0&&r.height>0)nv.resizeListener();});}).observe($('mri').parentElement);
@@ -25,7 +32,7 @@ export async function createMRI({data,onLocation,onRetry}){
   nv.volumes[1].opacity=0;
   for(let i=2;i<nv.volumes.length;i++){
    const n=data.regions.reduce((m,r)=>Math.max(m,r.id),0),lut={R:Array(n+1).fill(237),G:Array(n+1).fill(175),B:Array(n+1).fill(87),A:Array(n+1).fill(210),labels:Array(n+1).fill('ROI')};lut.A[0]=0;
-   nv.volumes[i].setColormapLabel(lut);nv.volumes[i].opacity=!concealed&&$('overlay').checked?.58:0;
+   nv.volumes[i].setColormapLabel(lut);nv.volumes[i].opacity=hasSelection&&!concealed&&$('overlay').checked?.58:0;
   }
   nv.updateGLVolume();
  }
@@ -38,7 +45,7 @@ export async function createMRI({data,onLocation,onRetry}){
    const pair=data.regions.filter(x=>Math.floor((x.id-1)/2)===Math.floor((id-1)/2));
    const volumes=await Promise.all([get(baseUrl),get(lookupUrl),...pair.map(x=>get(x.url))]);
    if(mine!==token)return false;
-   const switched=space!==r.space;selected=id;space=r.space;
+   const switched=space!==r.space;selected=id;hasSelection=true;space=r.space;
    // Batch the public volume state before one GPU refresh. Repeated add/remove
    // would re-upload the full MRI for each intermediate overlay state.
    nv.volumes=volumes;nv.back=volumes[0];nv.overlays=volumes.slice(1);
@@ -60,8 +67,29 @@ export async function createMRI({data,onLocation,onRetry}){
  for(const [axis,i] of [['x',0],['y',1],['z',2]])$('slice-'+axis).oninput=()=>{if(busy)return;const p=[...lastPoint];p[i]=Number($('slice-'+axis).value);setPoint(p);};
  $('overlay').onchange=colors;
  $('zoom').oninput=()=>nv.setPan2Dxyzmm([0,0,0,Number($('zoom').value)]);
- $('mri-reset').onclick=()=>{nv.setPan2Dxyzmm([0,0,0,1]);$('zoom').value=1;setPoint(roi(selected).anchor);};
+ $('mri-reset').onclick=()=>{nv.setPan2Dxyzmm([0,0,0,1]);$('zoom').value=1;if(hasSelection)setPoint(roi(selected).anchor);};
  $('contrast').oninput=()=>{if(!nv.volumes.length)return;nv.volumes[0].cal_min=0;nv.volumes[0].cal_max=Number($('contrast').value);nv.updateGLVolume();};
  $('mri').addEventListener('keydown',e=>{if(!['ArrowUp','ArrowDown'].includes(e.key)||busy)return;e.preventDefault();const axis=plane==='sagittal'?0:plane==='coronal'?1:2,p=[...lastPoint];p[axis]+=e.key==='ArrowUp'?1:-1;setPoint(p);});
- return {select,setPoint,setPlane,hide,colors,get point(){return [...lastPoint];},get busy(){return busy;},get plane(){return plane;},get space(){return space;}};
+ function sliceSlabs(revision=0){
+  const base=nv.volumes[0];if(busy||failed||!base||!space)return [];
+  return (plane==='multi'?['axial','coronal','sagittal']:[plane]).map(p=>extractNativeSlab(base,nativeSliceFrame({spaceId:templateSpaces[space],shape:base.dimsRAS.slice(1,4),voxel:Array.from(base.mm2vox(lastPoint,true)),plane:p,revision,voxelToWorld:v=>Array.from(base.vox2mm(v,base.matRAS))})));
+ }
+ function projectPoint(mm,orientation){
+  if(busy||failed||!nv.volumes.length)return null;
+  const axis={axial:2,coronal:1,sagittal:0}[orientation],base=nv.volumes[0];
+  if(axis===undefined||Math.abs(base.mm2vox(mm,true)[axis]-base.mm2vox(lastPoint,true)[axis])>.1)return null;
+  const r=$('mri').getBoundingClientRect(),result=nv.frac2canvasPosWithTile(nv.mm2frac(mm),{axial:0,coronal:1,sagittal:2}[orientation]);
+  if(!result||!r.width||!r.height)return null;
+  const p=[result.pos[0]*r.width/$('mri').width,result.pos[1]*r.height/$('mri').height];
+  return p.every(Number.isFinite)&&p[0]>=0&&p[1]>=0&&p[0]<=r.width&&p[1]<=r.height?p:null;
+ }
+ async function locate(groups,hemisphere){
+  if(busy||failed)return null;
+  const mine=token,at=[...lastPoint],orientation=plane;
+  const entries=data.regions.filter(r=>r.space===space&&groups.includes(Math.floor((r.id-1)/2))&&(r.id%2===(hemisphere==='right'?0:1)||!data.regions.some(p=>p.id===(r.id%2?r.id+1:r.id-1))));
+  const masks=await Promise.all(entries.map(async r=>({image:await get(r.url),ids:[r.id],anchors:[r.anchor]})));
+  if(mine!==token||busy||failed||orientation!==plane||at.some((v,i)=>v!==lastPoint[i]))return null;
+  return locateOnSlice({base:nv.volumes[0],masks,point:at,plane});
+ }
+ return {locate,projectPoint,clearSelection(){hasSelection=false;colors();},snapshot(){return {selected:hasSelection?selected:null,space,plane,point:[...lastPoint],busy,failed};},referenceAt(mm){return nv.volumes[1]?labelAt(nv.volumes[1],mm):0;},get failed(){return failed;},select,setPoint,setPlane,hide,colors,sliceSlabs,get spaceId(){return templateSpaces[space];},get point(){return [...lastPoint];},get busy(){return busy;},get plane(){return plane;},get space(){return space;}};
 }

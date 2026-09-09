@@ -1,0 +1,91 @@
+[
+  {
+    "test": "browser",
+    "exitCode": 0,
+    "seconds": 84.244,
+    "stdout": "PASS Individual T1 defaults to guided practice; exploration retains hidden label and topic selection\nPASS Split endpoints preserve MRI coordinates\nPASS Native label reveal, anatomical anchor and continuous slice keyboard navigation\nPASS T2 load retains T1 world point and W/L updates display\nPASS Real click required; moving slice invalidates old candidate; first response has reference-only feedback\nPASS First response and review survive reload\nPASS Ordered appearance, change and disappearance trace records\nPASS Same-person T1/T2 comparison shares world coordinates\nPASS Different subjects navigate independently, without false spatial matching\nPASS Held-out case, reference masking and pre-answer hint lock\nPASS Next transfer question re-locks every hint after feedback\nPASS Rapid subject selection rejects stale volume completion\nPASS History and acquisition/native geometry provenance\nPASS Original atlas, MRI planes and 3D split still work\nPASS 390px mobile retains reading controls without horizontal overflow\nPASS No uncaught browser errors\n",
+    "stderr": ""
+  },
+  {
+    "test": "guided",
+    "exitCode": 0,
+    "seconds": 86.934,
+    "stdout": "PASS Random question opens a real target-containing plane with click-only response; route hidden until first answer\nPASS Real clicks match all three planes; slice movement invalidates response; feedback restores after reload; new structure follows\nPASS Wrong real click reveals target mask and actual interior answer on same plane; own point can be compared\nPASS Reveal, retry, unfinished progress restore, T2 and reset preserve the assigned section\nPASS Rapid subject changes build questions from the loaded subject’s own mask\nPASS Transfer remains locked and exploration retains structure selection and native target navigation\nPASS 390px layout retains question, answer controls and route without horizontal overflow\nPASS No uncaught browser errors\n",
+    "stderr": ""
+  },
+  {
+    "test": "guided-recovery",
+    "exitCode": 0,
+    "seconds": 37.296,
+    "stdout": "Legacy guided draft migrates to click exercise with prior history and draft backup preserved\nA deliberate repeat click at the unchanged crosshair is accepted\nHistory review opens the actual answer and remains submitted across reload\nUnanswered next section restores without accessing an unloaded volume\nNarrow layout shows the assigned structure above the image\n",
+    "stderr": ""
+  },
+  {
+    "test": "nearby",
+    "exitCode": 0,
+    "seconds": 28.369,
+    "stdout": "PASS Actual MRI click finds multiple in-plane masks; yellow points have hover, focus and touch labels without moving the MRI\nPASS Radius updates replace results; 2x zoom, DPR 2, viewport and split resizing keep every dot on its registered point\nPASS Clicking elsewhere removes old marker elements before showing the new local result\nPASS Empty neighbourhood clears the old dots and explains how to search again\nPASS Three-plane view searches and marks only the clicked tile\nPASS Slice, sequence and subject changes clear old markers; new subject and T2 use their own coordinates\nPASS Guided practice stays separate and still accepts a reveal response\nPASS Narrow screen supports touch labels and clear action without horizontal overflow\nPASS No uncaught browser errors\n",
+    "stderr": ""
+  },
+  {
+    "test": "navigation",
+    "exitCode": 0,
+    "seconds": 49.597,
+    "stdout": "CHECK sub-01 hippocampus left\nCHECK sub-01 hippocampus left\nCHECK sub-01 hippocampus right\nCHECK sub-01 amygdala left\nCHECK sub-01 amygdala right\nCHECK sub-01 caudate left\nCHECK sub-01 caudate right\nCHECK sub-01 putamen left\nCHECK sub-01 putamen right\nCHECK sub-01 pallidum left\nCHECK sub-01 pallidum right\nCHECK sub-01 thalamus left\nCHECK sub-01 thalamus right\nCHECK sub-01 insula left\nCHECK sub-01 insula right\nCHECK sub-01 cingulate left\nCHECK sub-01 cingulate right\nCHECK sub-01 ventricle left\nCHECK sub-01 ventricle right\nCHECK sub-01 callosum midline\nCHECK sub-01 third-ventricle midline\nCHECK sub-01 accumbens left\nCHECK sub-01 accumbens right\nCHECK sub-01 parahippocampal left\nCHECK sub-01 parahippocampal right\nCHECK sub-01 entorhinal left\nCHECK sub-01 entorhinal right\nCHECK sub-01 orbitofrontal left\nCHECK sub-01 orbitofrontal right\nCHECK sub-01 superior-frontal left\nCHECK sub-01 superior-frontal right\nCHECK sub-01 middle-frontal left\nCHECK sub-01 middle-frontal right\nCHECK sub-01 precentral left\nCHECK sub-01 precentral right\nCHECK sub-01 postcentral left\nCHECK sub-01 postcentral right\nCHECK sub-01 precuneus left\nCHECK sub-01 precuneus right\nCHECK sub-01 inferior-parietal left\nCHECK sub-01 inferior-parietal right\nCHECK sub-01 temporal-horn left\nCHECK sub-01 temporal-horn right\nCHECK sub-01 fourth-ventricle midline\nCHECK sub-01 brainstem midline\nCHECK sub-01 cerebellar-cortex left\nCHECK sub-01 cerebellar-cortex right\nPASS All 46 native labels: normal exploration topic/side selection reaches actual label voxel\nCHECK sub-01 hippocampus left\nCHECK sub-01 hippocampus left\nCHECK sub-01 hippocampus left\nPASS Manual movement reports actual membership; visible anchor restores location; T2 preserves native point\nCHECK sub-02 hippocampus left\nCHECK sub-03 hippocampus left\nPASS Changing subjects locates the new subject’s own label\nPASS Unaided training does not auto-locate or expose labels; held-out location and AAL hints locked\nCHECK sub-01 insula left\nPASS AAL link opens corresponding hippocampus in separate reference atlas\nPASS No uncaught browser errors\n",
+    "stderr": ""
+  },
+  {
+    "test": "resilience",
+    "exitCode": 0,
+    "seconds": 47.634,
+    "stdout": "503 hides stale MRI, blocks submission, and retry recovers\nRepeated held-out exposure is not mislabeled as unseen\nLegacy atlas localization, 3D quiz, foundation quiz and return restore controls\nBlocked localStorage still permits learning, live history and export\n",
+    "stderr": ""
+  },
+  {
+    "test": "atlas-recovery",
+    "exitCode": 0,
+    "seconds": 22.156,
+    "stdout": "Atlas disconnected-server and template-switch recovery passed\n",
+    "stderr": "Request failed: http://127.0.0.1:8091/assets/all-labels.nii.gz { errorText: 'net::ERR_CONNECTION_REFUSED' }\n"
+  },
+  {
+    "test": "split-layout",
+    "exitCode": 0,
+    "seconds": 22.694,
+    "stdout": "PASS desktop side-by-side, Axial, horizontal drag/keyboard, collapse/restore, persistence and MRI coordinates\nPASS Atlas Axial default, 1440/1024/390 widths, mobile vertical controls, no page errors; screenshots /tmp/mri-tutor-split-layout\n",
+    "stderr": ""
+  },
+  {
+    "test": "wheel-zoom",
+    "exitCode": 0,
+    "seconds": 22.451,
+    "stdout": "Command + real wheel zooms and synchronizes controls without moving the slice/crosshair\nUnmodified real wheel still changes cut level without changing zoom\nCommand wheel over a yellow marker also zooms, preserving nearby structures\nZoom clamps at 1x and 4x; reaching either limit does not scroll slices\nT2 preserves the actual zoom and matching slider display\nComparison image supports independent Command wheel zoom\nReference Atlas supports the same shortcut without moving its coordinate\nNo uncaught browser errors\n",
+    "stderr": ""
+  },
+  {
+    "test": "http-origin",
+    "exitCode": 0,
+    "seconds": 20.145,
+    "stdout": "PASS http://mri-tutor.test:8091/: insecure HTTP, T1/T2 MRI, saved task restored, new task created; no browser errors or failed requests\n",
+    "stderr": ""
+  },
+  {
+    "test": "expanded",
+    "exitCode": 1,
+    "seconds": 31.556,
+    "stdout": "Checked accumbens left\nChecked accumbens right\nChecked parahippocampal left\nChecked parahippocampal right\n",
+    "stderr": "/Volumes/Aquatope/_DEV_/MRI-Tutor/node_modules/playwright/lib/matchers/expect.js:213\n        return matcher.call(target, ...args);\n                       ^\n\nA [Error]: expect(locator).toHaveClass(expected) failed\n\nLocator: locator('body')\nExpected pattern: /reference-concealed/\nReceived string:  \"individual-mode\"\nTimeout: 5000ms\n\nCall log:\n  - Expect \"to.have.class\" with timeout 5000ms\n  - waiting for locator('body')\n    9 × locator resolved to <body class=\"individual-mode\">…</body>\n      - unexpected value \"individual-mode\"\n\n    at Proxy.<anonymous> (/Volumes/Aquatope/_DEV_/MRI-Tutor/node_modules/playwright/lib/matchers/expect.js:213:24)\n    at file:///Volumes/Aquatope/_DEV_/MRI-Tutor/tests/expanded.mjs:28:120 {\n  matcherResult: {\n    name: 'toHaveClass',\n    expected: /reference-concealed/,\n    message: 'expect(locator).toHaveClass(expected) failed\\n' +\n      '\\n' +\n      \"Locator: locator('body')\\n\" +\n      'Expected pattern: /reference-concealed/\\n' +\n      'Received string:  \"individual-mode\"\\n' +\n      'Timeout: 5000ms\\n' +\n      '\\n' +\n      'Call log:\\n' +\n      '  - Expect \"to.have.class\" with timeout 5000ms\\n' +\n      \"  - waiting for locator('body')\\n\" +\n      '    9 × locator resolved to <body class=\"individual-mode\">…</body>\\n' +\n      '      - unexpected value \"individual-mode\"\\n',\n    pass: false,\n    actual: 'individual-mode',\n    log: [\n      '  - Expect \"to.have.class\" with timeout 5000ms',\n      \"  - waiting for locator('body')\",\n      '    9 × locator resolved to <body class=\"individual-mode\">…</body>',\n      '      - unexpected value \"individual-mode\"'\n    ],\n    timeout: 5000\n  }\n}\n\nNode.js v22.22.3\n"
+  },
+  {
+    "test": "expanded",
+    "exitCode": 0,
+    "evidence": "trainer/qa/expanded-report.json",
+    "reason": "Rechecked 27 label/side paths with explicit subject-core availability; unsupported meshes stay absent."
+  },
+  {
+    "test": "nearby",
+    "exitCode": 0,
+    "evidence": "trainer/qa/nearby-report.json",
+    "reason": "Rechecked after MRI click selection was linked while preserving its actual point."
+  }
+]

@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-07T12:05:23.696Z",
+  "date": "2026-09-09T13:49:04.454Z",
   "checks": [
     "All 46 native labels: normal exploration topic/side selection reaches actual label voxel",
     "Manual movement reports actual membership; visible anchor restores location; T2 preserves native point",
@@ -730,9 +730,9 @@
       "topic": "hippocampus",
       "side": "left",
       "point": [
-        -28.245330810546875,
-        6.404961585998535,
-        -18.29435920715332
+        -28.245332717895508,
+        6.404963493347168,
+        -18.294376373291016
       ],
       "label": 1,
       "sourceIds": [
@@ -744,9 +744,9 @@
       "topic": "hippocampus",
       "side": "left",
       "point": [
-        -30.60432243347168,
+        -30.60431671142578,
         13.792864799499512,
-        2.5111594200134277
+        2.5111591815948486
       ],
       "label": 1,
       "sourceIds": [
@@ -754,31 +754,20 @@
       ]
     },
     {
-      "caseId": "sub-03",
-      "topic": "thalamus",
-      "side": "left",
-      "point": [
-        -11.603445053100586,
-        10.793828964233398,
-        23.5116024017334
-      ],
-      "label": 11,
-      "sourceIds": [
-        10
-      ]
-    },
-    {
       "caseId": "sub-01",
-      "topic": "thalamus",
-      "side": "left",
+      "topic": "cingulate",
+      "side": "right",
       "point": [
-        -8.017690658569336,
-        10.89588737487793,
-        1.5801748037338257
+        10.983390808105469,
+        39.89133071899414,
+        36.58388900756836
       ],
-      "label": 11,
+      "label": 16,
       "sourceIds": [
-        10
+        2002,
+        2010,
+        2023,
+        2026
       ]
     }
   ],

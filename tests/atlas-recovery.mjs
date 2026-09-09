@@ -5,9 +5,9 @@ const page=await browser.newPage({viewport:{width:1440,height:1050}});
 page.on('pageerror',e=>console.error('Page error:',e.message));
 page.on('requestfailed',r=>console.error('Request failed:',r.url(),r.failure()));
 try{
+ await page.route('**/assets/all-labels.nii.gz',r=>r.abort('connectionrefused'));
  await page.goto('http://127.0.0.1:8091/');
  await page.waitForFunction(()=>window.mriCaseQA&&!window.mriCaseQA.snapshot().loading,undefined,{timeout:120000});
- await page.route('**/assets/all-labels.nii.gz',r=>r.abort('connectionrefused'));
  await page.locator('#explore-mode').click();await expect(page.locator('#atlas-retry')).toBeVisible();
  await expect(page.locator('#mri')).toHaveCSS('visibility','hidden');
  await expect(page.locator('#mri-loading')).toContainText('로컬 서버');
@@ -22,9 +22,9 @@ try{
  await page.screenshot({path:'trainer/qa/atlas-recovered.png',fullPage:true});
  await page.close();
  const practice=await browser.newPage({viewport:{width:1440,height:1050}});
+ await practice.route('**/assets/CIT168toMNI152-2009c_T1w_brain.nii.gz',r=>r.abort('connectionrefused'));
  await practice.goto('http://127.0.0.1:8091/');
  await practice.waitForFunction(()=>window.mriCaseQA&&!window.mriCaseQA.snapshot().loading,undefined,{timeout:120000});
- await practice.route('**/assets/CIT168toMNI152-2009c_T1w_brain.nii.gz',r=>r.abort('connectionrefused'));
  await practice.locator('#explore-mode').click();await expect(practice.locator('#atlas-retry')).toBeVisible({timeout:15000});
  await practice.locator('#mri-train').click();await expect(practice.locator('#detail')).toContainText('MRI LOCALIZATION');await expect(practice.locator('#atlas-retry')).toBeVisible({timeout:15000});
  await expect(practice.locator('#mri-reveal')).toHaveCount(0);

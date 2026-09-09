@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "before": [
+    -2.016587257385254,
+    44.894344329833984,
+    13.584064483642578
+  ],
+  "point": [
+    0.0046312157064676285,
+    44.837886810302734,
+    13.326519966125488
+  ],
+  "selection": {
+    "caseId": "sub-01",
+    "spaceId": "subject:sub-01:T1-native-RAS-mm",
+    "structureId": "anatomy:caudate:left",
+    "pointMm": [
+      0.004636877682060003,
+      44.837886810302734,
+      13.326519012451172
+    ],
+    "source": "mri",
+    "revision": 5
+  },
+  "errors": []
+}

@@ -1,5 +1,7 @@
 # 개인 MRI 판독 훈련으로의 재설계
 
+> 2026-09-09 추가: 같은 개인에서 유래한 label/mesh와 MRI의 좌표 연결에는 [Atlas 통합 계획](../docs/ATLAS-INTEGRATION-PLAN.md)이 아래 초기 3D 범위보다 우선한다. 표준 Atlas의 별도 공간, 개인 MRI 우선과 참고용 자동 분할 원칙은 유지한다. 현재 구현과 남은 검증은 [통합 구현 기록](../docs/ATLAS-INTEGRATION-IMPLEMENTATION.md)에 있다.
+
 작성: 2026-09-06. 업데이트: 개인 4명 T1/T2 확보·정합·통합 및 관찰·추적·비교·전이 훈련 구현. 데이터/브라우저 검증 근거는 [VERIFICATION.md](VERIFICATION.md). 자동 분할의 전문 경계 검수는 미수행이며 임상 정답 채점은 활성화하지 않음.
 
 ## 목표와 기존 접근의 문제
