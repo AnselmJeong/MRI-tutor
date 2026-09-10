@@ -1,0 +1,9 @@
+{
+  "checks": [
+    "All 20 figures load all three variants with correct dimensions, aspect ratio, fit and alt text; navigation preserves the selected view",
+    "Reopening defaults to labeled artwork and view changes reset zoom and scroll",
+    "A failed alternate image retries the selected view successfully",
+    "All view options fit a 390px screen without overflow"
+  ],
+  "errors": []
+}

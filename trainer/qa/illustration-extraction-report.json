@@ -1,0 +1,485 @@
+{
+  "sourceSHA256": "1c57c1d3833659e7ea63d31ce6ae06b1fc89ef9a66f65c4863cf61d5e1e49bc0",
+  "figures": [
+    {
+      "id": "axial-01",
+      "labelLines": 18,
+      "leaderPaths": 1,
+      "maxArtworkChannelDifference": 0,
+      "artCropPoints": [
+        267.0,
+        181.0,
+        536.0,
+        445.0
+      ],
+      "labeledCropPoints": [
+        248.0,
+        128.0,
+        545.0,
+        487.0
+      ],
+      "creditCropPoints": [
+        467.0,
+        534.0,
+        541.0,
+        552.0
+      ]
+    },
+    {
+      "id": "axial-02",
+      "labelLines": 18,
+      "leaderPaths": 1,
+      "maxArtworkChannelDifference": 0,
+      "artCropPoints": [
+        240.0,
+        281.0,
+        539.0,
+        541.0
+      ],
+      "labeledCropPoints": [
+        234.0,
+        214.0,
+        545.0,
+        619.0
+      ],
+      "creditCropPoints": [
+        449.0,
+        626.0,
+        522.0,
+        644.0
+      ]
+    },
+    {
+      "id": "axial-03",
+      "labelLines": 20,
+      "leaderPaths": 1,
+      "maxArtworkChannelDifference": 0,
+      "artCropPoints": [
+        251.0,
+        226.0,
+        540.0,
+        497.0
+      ],
+      "labeledCropPoints": [
+        172.0,
+        128.0,
+        546.0,
+        544.0
+      ],
+      "creditCropPoints": [
+        462.0,
+        566.0,
+        535.0,
+        585.0
+      ]
+    },
+    {
+      "id": "axial-04",
+      "labelLines": 34,
+      "leaderPaths": 1,
+      "maxArtworkChannelDifference": 0,
+      "artCropPoints": [
+        242.0,
+        211.0,
+        542.0,
+        555.0
+      ],
+      "labeledCropPoints": [
+        173.0,
+        138.0,
+        548.0,
+        602.0
+      ],
+      "creditCropPoints": [
+        445.0,
+        647.0,
+        518.0,
+        666.0
+      ]
+    },
+    {
+      "id": "axial-05",
+      "labelLines": 33,
+      "leaderPaths": 1,
+      "maxArtworkChannelDifference": 0,
+      "artCropPoints": [
+        239.0,
+        124.0,
+        524.0,
+        480.0
+      ],
+      "labeledCropPoints": [
+        179.0,
+        75.0,
+        545.0,
+        511.0
+      ],
+      "creditCropPoints": [
+        458.0,
+        527.0,
+        532.0,
+        546.0
+      ]
+    },
+    {
+      "id": "axial-06",
+      "labelLines": 43,
+      "leaderPaths": 2,
+      "maxArtworkChannelDifference": 0,
+      "artCropPoints": [
+        235.0,
+        245.0,
+        514.0,
+        591.0
+      ],
+      "labeledCropPoints": [
+        146.0,
+        177.0,
+        545.0,
+        661.0
+      ],
+      "creditCropPoints": [
+        457.0,
+        666.0,
+        530.0,
+        685.0
+      ]
+    },
+    {
+      "id": "axial-07",
+      "labelLines": 38,
+      "leaderPaths": 1,
+      "maxArtworkChannelDifference": 0,
+      "artCropPoints": [
+        250.0,
+        152.0,
+        509.0,
+        473.0
+      ],
+      "labeledCropPoints": [
+        181.0,
+        112.0,
+        545.0,
+        537.0
+      ],
+      "creditCropPoints": [
+        463.0,
+        547.0,
+        537.0,
+        565.0
+      ]
+    },
+    {
+      "id": "axial-08",
+      "labelLines": 17,
+      "leaderPaths": 1,
+      "maxArtworkChannelDifference": 0,
+      "artCropPoints": [
+        235.0,
+        235.0,
+        512.0,
+        574.0
+      ],
+      "labeledCropPoints": [
+        162.0,
+        177.0,
+        535.0,
+        637.0
+      ],
+      "creditCropPoints": [
+        462.0,
+        653.0,
+        534.0,
+        671.0
+      ]
+    },
+    {
+      "id": "axial-09",
+      "labelLines": 11,
+      "leaderPaths": 2,
+      "maxArtworkChannelDifference": 0,
+      "artCropPoints": [
+        247.0,
+        238.0,
+        531.0,
+        579.0
+      ],
+      "labeledCropPoints": [
+        165.0,
+        191.0,
+        539.0,
+        626.0
+      ],
+      "creditCropPoints": [
+        467.0,
+        664.0,
+        541.0,
+        682.0
+      ]
+    },
+    {
+      "id": "axial-10",
+      "labelLines": 6,
+      "leaderPaths": 1,
+      "maxArtworkChannelDifference": 0,
+      "artCropPoints": [
+        280.0,
+        245.0,
+        541.0,
+        549.0
+      ],
+      "labeledCropPoints": [
+        199.0,
+        220.0,
+        547.0,
+        578.0
+      ],
+      "creditCropPoints": [
+        442.0,
+        633.0,
+        515.0,
+        652.0
+      ]
+    },
+    {
+      "id": "coronal-01",
+      "labelLines": 16,
+      "leaderPaths": 2,
+      "maxArtworkChannelDifference": 0,
+      "artCropPoints": [
+        311.0,
+        277.0,
+        538.0,
+        501.0
+      ],
+      "labeledCropPoints": [
+        258.0,
+        197.0,
+        544.0,
+        507.0
+      ],
+      "creditCropPoints": [
+        463.0,
+        572.0,
+        535.0,
+        590.0
+      ]
+    },
+    {
+      "id": "coronal-02",
+      "labelLines": 23,
+      "leaderPaths": 2,
+      "maxArtworkChannelDifference": 0,
+      "artCropPoints": [
+        292.0,
+        231.0,
+        539.0,
+        468.0
+      ],
+      "labeledCropPoints": [
+        216.0,
+        147.0,
+        545.0,
+        496.0
+      ],
+      "creditCropPoints": [
+        462.0,
+        555.0,
+        535.0,
+        574.0
+      ]
+    },
+    {
+      "id": "coronal-03",
+      "labelLines": 30,
+      "leaderPaths": 2,
+      "maxArtworkChannelDifference": 0,
+      "artCropPoints": [
+        245.0,
+        162.0,
+        493.0,
+        393.0
+      ],
+      "labeledCropPoints": [
+        173.0,
+        138.0,
+        545.0,
+        399.0
+      ],
+      "creditCropPoints": [
+        467.0,
+        384.0,
+        541.0,
+        403.0
+      ]
+    },
+    {
+      "id": "coronal-04",
+      "labelLines": 24,
+      "leaderPaths": 2,
+      "maxArtworkChannelDifference": 0,
+      "artCropPoints": [
+        257.0,
+        198.0,
+        535.0,
+        453.0
+      ],
+      "labeledCropPoints": [
+        184.0,
+        121.0,
+        545.0,
+        525.0
+      ],
+      "creditCropPoints": [
+        452.0,
+        549.0,
+        525.0,
+        568.0
+      ]
+    },
+    {
+      "id": "coronal-05",
+      "labelLines": 37,
+      "leaderPaths": 2,
+      "maxArtworkChannelDifference": 0,
+      "artCropPoints": [
+        234.0,
+        242.0,
+        518.0,
+        517.0
+      ],
+      "labeledCropPoints": [
+        151.0,
+        144.0,
+        545.0,
+        608.0
+      ],
+      "creditCropPoints": [
+        455.0,
+        671.0,
+        528.0,
+        689.0
+      ]
+    },
+    {
+      "id": "coronal-06",
+      "labelLines": 43,
+      "leaderPaths": 1,
+      "maxArtworkChannelDifference": 0,
+      "artCropPoints": [
+        265.0,
+        165.0,
+        531.0,
+        481.0
+      ],
+      "labeledCropPoints": [
+        157.0,
+        79.0,
+        545.0,
+        487.0
+      ],
+      "creditCropPoints": [
+        463.0,
+        509.0,
+        536.0,
+        528.0
+      ]
+    },
+    {
+      "id": "coronal-07",
+      "labelLines": 34,
+      "leaderPaths": 2,
+      "maxArtworkChannelDifference": 0,
+      "artCropPoints": [
+        243.0,
+        219.0,
+        541.0,
+        600.0
+      ],
+      "labeledCropPoints": [
+        137.0,
+        145.0,
+        547.0,
+        643.0
+      ],
+      "creditCropPoints": [
+        468.0,
+        649.0,
+        541.0,
+        667.0
+      ]
+    },
+    {
+      "id": "coronal-08",
+      "labelLines": 30,
+      "leaderPaths": 2,
+      "maxArtworkChannelDifference": 0,
+      "artCropPoints": [
+        262.0,
+        158.0,
+        535.0,
+        480.0
+      ],
+      "labeledCropPoints": [
+        129.0,
+        62.0,
+        545.0,
+        540.0
+      ],
+      "creditCropPoints": [
+        467.0,
+        520.0,
+        539.0,
+        538.0
+      ]
+    },
+    {
+      "id": "coronal-09",
+      "labelLines": 30,
+      "leaderPaths": 2,
+      "maxArtworkChannelDifference": 0,
+      "artCropPoints": [
+        250.0,
+        225.0,
+        532.0,
+        531.0
+      ],
+      "labeledCropPoints": [
+        141.0,
+        141.0,
+        538.0,
+        578.0
+      ],
+      "creditCropPoints": [
+        450.0,
+        646.0,
+        522.0,
+        664.0
+      ]
+    },
+    {
+      "id": "coronal-10",
+      "labelLines": 26,
+      "leaderPaths": 4,
+      "maxArtworkChannelDifference": 0,
+      "artCropPoints": [
+        249.0,
+        204.0,
+        533.0,
+        513.0
+      ],
+      "labeledCropPoints": [
+        131.0,
+        106.0,
+        545.0,
+        602.0
+      ],
+      "creditCropPoints": [
+        452.0,
+        630.0,
+        524.0,
+        649.0
+      ]
+    }
+  ]
+}

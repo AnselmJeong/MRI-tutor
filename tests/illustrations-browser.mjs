@@ -28,7 +28,7 @@ try {
   await expect.poll(()=>modal.locator('img').evaluate(i=>i.complete&&i.naturalWidth>0)).toBe(true);
   await modal.locator('[data-action=zoom-in]').click();await expect(page.locator('#illustration-zoom')).toHaveText('150%');
   await page.keyboard.press('ArrowRight');await expect(page.locator('#illustration-dialog-level')).toContainText('8 / 10');
-  await expect(modal.locator('img')).toBeVisible();await expect.poll(()=>modal.locator('img').evaluate(i=>i.complete&&i.naturalWidth>0&&i.currentSrc.endsWith('coronal-08.webp'))).toBe(true);
+  await expect(modal.locator('img')).toBeVisible();await expect.poll(()=>modal.locator('img').evaluate(i=>i.complete&&i.naturalWidth>0&&i.currentSrc.split('?')[0].endsWith('coronal-08.webp'))).toBe(true);
   await page.screenshot({path:'trainer/qa/illustration-dialog.png'});
   await page.keyboard.press('Escape');await expect(modal).not.toBeVisible();await expect(panel.locator('[data-action=open]')).toBeFocused();
   await page.locator('#mri-train').click();await expect(panel.locator('img')).toHaveCount(0);

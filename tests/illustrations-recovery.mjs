@@ -13,7 +13,7 @@ try {
     </script></body></html>`}));
   let failManifest=true,failImage=true,release;
   await page.route('**/illustrations/telencephalon/manifest.json',route=>failManifest?route.fulfill({status:503,body:'unavailable'}):route.continue());
-  await page.route('**/axial-07.webp',route=>failImage?route.fulfill({status:503,body:'unavailable'}):route.continue());
+  await page.route('**/axial-07.webp*',route=>failImage?route.fulfill({status:503,body:'unavailable'}):route.continue());
   await page.goto('http://127.0.0.1:8091/__illustration-qa__');
   const panel=page.locator('#reference-illustrations'),dialog=page.locator('#illustration-dialog');
   await expect(panel).toContainText('도식 자료를 불러오지 못했습니다');failManifest=false;await panel.locator('[data-action=retry]').click();
@@ -21,11 +21,11 @@ try {
   await expect(page.locator('#illustration-image-error')).toBeVisible();failImage=false;await dialog.locator('[data-action=retry-image]').click();
   await expect(dialog.locator('img')).toBeVisible();await expect.poll(()=>dialog.locator('img').evaluate(i=>i.complete&&i.naturalWidth>0)).toBe(true);
   log('Manifest and large-image failures show actionable retry and recover without a page reload');
-  await page.route('**/axial-08.webp',async route=>{await new Promise(resolve=>{release=resolve;});await route.continue();});
+  await page.route('**/axial-08.webp*',async route=>{await new Promise(resolve=>{release=resolve;});await route.continue();});
   await dialog.locator('[data-action=next]').click();await expect(page.locator('#illustration-dialog-level')).toContainText('8 / 10');
   await expect(dialog.locator('img')).toBeHidden();await expect(page.locator('#illustration-image-loading')).toBeVisible();
   await expect.poll(()=>Boolean(release)).toBe(true);release();await expect(dialog.locator('img')).toBeVisible();
-  await expect.poll(()=>dialog.locator('img').evaluate(i=>i.complete&&i.currentSrc.endsWith('axial-08.webp'))).toBe(true);
+  await expect.poll(()=>dialog.locator('img').evaluate(i=>i.complete&&i.currentSrc.split('?')[0].endsWith('axial-08.webp'))).toBe(true);
   log('Delayed next plate never leaves the previous image beneath its new title');
   await dialog.locator('[data-action=zoom-in]').click();await dialog.locator('[data-action=zoom-in]').click();
   const viewport=dialog.locator('.illustration-viewport'),box=await viewport.boundingBox();

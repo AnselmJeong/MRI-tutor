@@ -1,0 +1,82 @@
+{
+  "scope": "Feasibility only, axial-06 / figure 13.6A / PDF page 12 / book page 310",
+  "sourceSHA256": "1c57c1d3833659e7ea63d31ce6ae06b1fc89ef9a66f65c4863cf61d5e1e49bc0",
+  "sourceUnchanged": true,
+  "labeledCropPoints": [
+    146.0,
+    176.0,
+    545.0,
+    686.0
+  ],
+  "excludedRectanglesPoints": [
+    [
+      144.0,
+      174.0,
+      228.0,
+      280.0
+    ],
+    [
+      144.0,
+      495.0,
+      231.0,
+      688.0
+    ]
+  ],
+  "retainedLabelLines": [
+    "Frontal lobe",
+    "Head of caudate nucleus",
+    "Anterior limb of",
+    "internal capsule",
+    "Genu of corpus",
+    "callosum",
+    "Globus pallidus",
+    "Putamen",
+    "External capsule",
+    "Claustrum",
+    "Extreme",
+    "capsule ",
+    "Genu of",
+    "internal",
+    "capsule",
+    "Columns",
+    "of fornix",
+    "Anterior",
+    "horn of",
+    "lateral",
+    "ventricle",
+    "Third",
+    "ventricle",
+    "Insular",
+    "cortex",
+    "Thalamus",
+    "Posterior limb of",
+    "internal capsule",
+    "Transverse temporal",
+    "gyrus of Heschl",
+    "Auditory radiations",
+    "Pulvinar",
+    "Tail of caudate nucleus",
+    "Temporal lobe",
+    "Optic",
+    "radiation",
+    "Temporal pole of ",
+    "lateral ventricle",
+    "Choroid plexus",
+    "Fimbria of fornix",
+    "Occipital lobe",
+    "Splenium of the",
+    "corpus callosum"
+  ],
+  "changedPixelsOutsideExclusions": 0,
+  "unlabeledCropPoints": [
+    236.0,
+    246.0,
+    515.0,
+    593.0
+  ],
+  "nativeArtApproxPixels": [
+    582,
+    723
+  ],
+  "productionAssetsModified": false
+}

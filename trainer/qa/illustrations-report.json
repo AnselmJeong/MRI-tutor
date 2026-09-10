@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-09T13:36:05.748Z",
+  "date": "2026-09-10T10:58:28.996Z",
   "checks": [
     "Atlas axial/coronal follow actual sliders; manual browsing stays put; sagittal and multiplanar coverage are explicit",
     "Large image loads, zoom and keyboard plate navigation work, Escape restores focus, Atlas exercise keeps labels hidden",

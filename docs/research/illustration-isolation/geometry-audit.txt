@@ -1,0 +1,832 @@
+axial-01 components [(110615, [304.2, 264.7, 518.7, 440.3]), (96799, [69.5, 358.2, 218.8, 553.0]), (67008, [47.4, 99.6, 210.1, 249.8]), (34157, [271.1, 185.0, 379.1, 298.2]), (22953, [441.0, 201.3, 531.7, 287.7])]
+[300.0, 599.4, 558.0, 613.6] posterior limb of the IC carries the major descending corticospi-
+[300.0, 611.4, 560.3, 625.6] nal, corticorubral, and corticoreticular fibers and the ascending
+[300.0, 623.4, 560.3, 637.6] sensory fibers of the somatosensory and trigeminal systems. The
+[300.0, 635.4, 558.0, 649.6] most posterior portions of the posterior limb also carry the audi-
+[300.0, 647.4, 560.2, 661.6] tory and visual projections to their respective cortices. The genu
+[300.0, 659.4, 560.3, 673.6] of the IC carries the corticobulbar fibers. The anterior limb of the
+[300.0, 671.4, 560.3, 685.6] IC carries cortical projections to the striatum and the pontine
+[300.0, 683.4, 560.3, 697.6] nuclei (pontocerebellar system). The full-­plate MR images are T1-­
+[300.0, 695.4, 560.3, 709.6] weighted; the ventricles appear dark. The scout MR images that
+[27.0, 68.5, 30.3, 81.0]
+[63.0, 68.5, 66.3, 81.0] 
+[429.0, 149.5, 467.0, 158.4] Basis pontis
+[437.4, 166.7, 516.4, 175.7] Corticospinal tract fibers
+[296.5, 451.5, 353.3, 460.4] Medial lemniscus
+[448.0, 182.1, 490.2, 191.0] Basilar artery
+[463.3, 451.2, 526.3, 460.1] Pontine tegmentum
+[506.4, 411.6, 533.5, 420.6] Superior
+[506.4, 420.1, 538.5, 429.0] cerebellar
+[506.4, 428.5, 536.4, 437.5] peduncle
+[333.3, 158.9, 354.2, 167.8] Uncus
+[418.2, 134.2, 436.2, 143.1] CN V
+[254.4, 191.6, 285.3, 200.5] Temporal
+[254.4, 200.0, 268.6, 209.0] lobe
+[458.6, 472.0, 509.6, 480.9] Fourth ventricle
+[285.0, 414.0, 306.7, 422.9] Lateral
+[285.0, 422.4, 317.2, 431.4] cerebellar
+[285.0, 430.9, 322.6, 439.8] hemisphere
+[324.5, 471.8, 381.3, 480.8] Cerebellar vermis
+[406.1, 332.8, 411.1, 346.2] *
+[101.8, 255.3, 159.4, 265.4] Level of section
+[110.9, 264.7, 150.4, 274.8] (mid pons)
+[262.6, 80.2, 327.9, 90.3] Level 1: Mid Pons
+[27.0, 599.7, 232.4, 612.1] 13.1A  AXIAL (HORIZONTAL) SECTIONS
+[59.7, 611.7, 252.4, 624.1] THROUGH THE FOREBRAIN: LEVEL
+[59.7, 623.7, 131.3, 636.1] 1—MID PONS
+[27.0, 635.3, 287.3, 649.4] These axial (horizontal) sections compare anatomical sections
+[27.0, 647.3, 287.3, 661.4] and high-­resolution magnetic resonance (MR) images. They are
+[27.0, 659.3, 287.3, 673.4] cut in the true horizontal (axial) plane, not in the older 25-­degree
+[27.0, 671.3, 285.0, 685.4] tilt. The most important anatomical relationships in these sec-
+[27.0, 683.3, 285.0, 697.4] tions center on the internal capsule (IC). The head of the cau-
+[27.0, 695.3, 287.3, 709.4] date nucleus is medial to the anterior limb of the IC and forms
+
+axial-02 components [(218757, [244.1, 285.9, 534.3, 536.8]), (101568, [59.0, 453.8, 212.5, 649.9]), (69402, [47.9, 144.5, 213.4, 297.0])]
+[284.8, 231.1, 316.9, 240.0] Amygdala
+[240.8, 260.9, 287.4, 269.7] Temporal lobe
+[422.7, 220.9, 460.3, 229.7] Basis pontis
+[431.3, 241.5, 509.3, 250.3] Corticospinal tract fibers
+[439.0, 261.0, 480.7, 269.8] Basilar artery
+[506.7, 515.3, 529.0, 524.1] Medial
+[506.7, 523.6, 538.5, 532.5] lemniscus
+[484.9, 559.6, 509.3, 568.5] Pontine
+[484.9, 568.0, 520.8, 576.8] tegmentum
+[249.9, 500.0, 276.7, 508.8] Superior
+[249.9, 508.3, 281.6, 517.2] cerebellar
+[249.9, 516.7, 279.6, 525.5] peduncle
+[249.9, 540.9, 270.5, 549.8] Fourth
+[249.9, 549.3, 277.5, 558.1] ventricle
+[249.9, 573.1, 305.2, 582.0] Lateral cerebellar
+[249.9, 581.5, 287.0, 590.3] hemisphere
+[249.9, 603.8, 318.4, 612.6] Vermis of cerebellum
+[105.6, 302.9, 162.5, 312.9] Level of section
+[109.7, 312.2, 158.4, 322.1] (rostral pons)
+[255.4, 120.3, 331.0, 130.3] Level 2: Rostral Pons
+[395.8, 434.6, 401.1, 449.0] *
+[27.0, 655.0, 29.2, 671.7]
+
+axial-03 components [(227174, [255.6, 230.0, 535.2, 492.8]), (90456, [51.3, 398.8, 190.4, 583.0]), (60131, [48.9, 113.0, 203.3, 255.0]), (1268, [432.5, 240.6, 451.7, 272.2])]
+[304.5, 652.1, 555.5, 664.2] of the lateral ventricle, and extensive cortical areas (superior, middle,
+[304.5, 662.1, 555.6, 674.2] and inferior temporal gyri). The temporal lobe can be damaged by
+[304.5, 672.1, 555.5, 684.2] trauma, infarcts, tumors, abscesses, and other pathological conditions.
+[304.5, 682.1, 553.5, 694.2] Such damage can result in auditory hallucinations, delirium and psy-
+[304.5, 692.1, 555.5, 704.2] chotic behavior, sometimes a contralateral upper quadrantanopia (if
+[472.0, 491.0, 519.8, 499.9] Decussation of
+[472.0, 499.4, 532.2, 508.3] superior cerebellar
+[472.0, 507.8, 501.9, 516.7] peduncle
+[318.5, 154.4, 369.6, 163.3] Substantia nigra
+[291.8, 174.6, 351.2, 183.5] Cerebral peduncle
+[285.2, 196.3, 319.7, 205.2]  Amygdala
+[446.9, 134.1, 528.8, 143.0] Posterior cerebral arteries
+[460.3, 159.6, 523.0, 168.5] CN III (oculomotor)
+[468.4, 190.2, 507.9, 199.1] CN II (optic)
+[485.6, 208.5, 532.5, 217.4] Temporal lobe
+[251.2, 215.8, 299.0, 224.7] Tail of caudate
+[251.2, 224.2, 276.2, 233.1] nucleus
+[179.0, 306.5, 223.0, 315.4] Hippocampal
+[179.0, 314.9, 210.1, 323.8] formation
+[179.0, 335.3, 229.7, 344.2] Inferior horn of
+[179.0, 343.7, 228.8, 352.6] lateral ventricle
+[179.1, 365.4, 234.0, 374.3] Entorhinal cortex
+[258.8, 495.1, 318.2, 504.0] Cerebral aqueduct
+[272.9, 514.1, 319.0, 523.0] Occipital lobe
+[437.8, 528.3, 494.2, 537.2] Cerebellar vermis
+[113.2, 259.9, 170.5, 270.0] Level of section
+[121.3, 269.3, 162.4, 279.3] (midbrain)
+[271.3, 100.3, 335.8, 110.4] Level 3: Midbrain
+[27.0, 586.8, 29.2, 603.5]
+[27.0, 636.2, 232.4, 648.6] 13.3A  AXIAL (HORIZONTAL) SECTIONS
+[59.7, 648.2, 252.4, 660.6] THROUGH THE FOREBRAIN: LEVEL
+[59.7, 660.2, 131.4, 672.6] 3—MIDBRAIN
+[119.6, 691.8, 192.4, 704.2] CLINICAL POINT
+
+axial-04 components [(287504, [246.8, 215.2, 537.4, 550.5]), (97897, [51.5, 474.7, 195.9, 665.6]), (63081, [53.4, 120.2, 211.3, 265.6])]
+[407.0, 164.4, 446.3, 173.2] Red nucleus
+[397.2, 144.1, 448.0, 153.0] Substantia nigra
+[301.9, 168.3, 361.0, 177.1] Cerebral peduncle
+[277.9, 189.7, 335.3, 198.6] Medial geniculate
+[277.9, 198.1, 302.7, 206.9] nucleus
+[265.1, 218.2, 299.4, 227.0]  Amygdala
+[248.1, 240.5, 304.7, 249.4] Lateral geniculate
+[248.1, 248.9, 272.9, 257.7] nucleus
+[242.2, 269.7, 286.0, 278.5] Hippocampal
+[242.2, 278.0, 273.2, 286.9] formation
+[440.3, 183.7, 503.9, 192.6] Orbitofrontal cortex
+[450.5, 208.5, 512.4, 217.4] Mammillary bodies
+[456.0, 231.8, 510.1, 240.6] Anterior cerebral
+[456.0, 240.1, 474.2, 249.0] artery
+[473.8, 563.5, 508.1, 572.4] Optic tract
+[510.2, 525.0, 538.3, 533.8] Posterior
+[510.2, 533.3, 536.2, 542.2] cerebral
+[510.2, 541.7, 528.4, 550.5] artery
+[179.8, 345.7, 226.5, 354.6] Temporal lobe
+[180.9, 367.7, 228.5, 376.5] Tail of caudate
+[180.9, 376.0, 205.7, 384.9] nucleus
+[180.9, 396.7, 236.7, 405.5] Temporal horn of
+[180.9, 405.0, 230.5, 413.9] lateral ventricle
+[252.5, 506.2, 285.2, 515.1] Entorhinal
+[252.5, 514.6, 272.4, 523.4] cortex
+[252.6, 530.8, 300.5, 539.7] Periaqueductal
+[252.6, 539.2, 288.5, 548.1] gray matter
+[252.6, 559.1, 279.4, 568.0] Superior
+[252.6, 567.5, 283.6, 576.3] colliculus
+[359.0, 566.4, 386.2, 575.2] Cerebral
+[359.0, 574.7, 388.7, 583.6] aqueduct
+[252.6, 584.7, 298.4, 593.5] Occipital lobe
+[417.4, 578.8, 450.4, 587.6] Cerebellar
+[417.4, 587.1, 438.4, 596.0] vermis
+[108.6, 270.5, 165.6, 280.4] Level of section
+[106.2, 279.8, 168.0, 289.7] (rostral midbrain
+[102.2, 289.0, 171.9, 299.0] and hypothalamus)
+[208.5, 102.1, 371.7, 112.1] Level 4: Rostral Midbrain and Hypothalamus
+[27.0, 671.2, 29.2, 687.9]
+
+axial-05 components [(301352, [243.7, 128.9, 519.6, 475.7]), (93120, [56.1, 355.8, 197.6, 543.8]), (61667, [55.1, 77.1, 211.5, 221.0])]
+[304.5, 606.1, 555.5, 618.2] nucleus and putamen), then to the globus pallidus, then back to the
+[304.5, 616.1, 555.6, 628.2] thalamus and cortex, completing the loop. Disruption of this loop
+[304.5, 626.1, 555.6, 638.2] can produce excessive movements (e.g., choreiform and athetoid
+[304.5, 636.1, 555.5, 648.2] movements, tremor) or diminished movements (bradykinesia). In
+[304.5, 646.1, 555.5, 658.2] some instances, specific nuclei are known to be associated with such
+[304.5, 656.1, 555.6, 668.2] changes. A small lacunar infarct in the subthalamic nucleus results in
+[304.5, 666.1, 553.5, 678.2] wild, flinging (ballistic) movements in the contralateral limbs. How-
+[304.5, 676.1, 555.5, 688.2] ever, a surgical lesion in the subthalamic nucleus may ameliorate some
+[304.5, 686.1, 553.5, 698.2] of the movement problems seen in Parkinson’s disease. The subthal-
+[304.5, 696.1, 555.5, 708.2] amus most likely drives activity in the internal segment of the globus
+[485.6, 144.0, 512.1, 153.0] Anterior
+[485.6, 152.5, 524.7, 161.5] commissure
+[497.8, 173.1, 526.8, 182.1] Columns
+[497.8, 181.6, 525.1, 190.6] of fornix
+[443.6, 124.9, 524.8, 133.9] Head of caudate nucleus
+[261.6, 85.8, 326.4, 94.8] Orbitofrontal cortex
+[405.9, 81.8, 511.5, 90.8] Anterior limb of internal capsule
+[287.3, 102.4, 315.9, 111.4] Putamen
+[428.3, 99.5, 522.9, 108.5] Globus pallidus (internal and
+[428.3, 108.0, 488.4, 117.1] external segments)
+[267.5, 119.2, 300.7, 128.2] Claustrum
+[262.9, 138.8, 284.8, 147.8] Insular
+[262.9, 147.3, 283.1, 156.3] cortex
+[466.3, 470.7, 513.8, 479.7] Third ventricle
+[498.1, 443.4, 524.2, 452.4] External
+[498.1, 451.9, 522.9, 460.9] capsule
+[510.3, 417.2, 538.5, 426.2] Extreme
+[510.3, 425.7, 535.1, 434.7] capsule
+[212.8, 217.2, 266.7, 226.2] Posterior limb of
+[212.8, 225.7, 264.5, 234.7] internal capsule
+[185.4, 259.0, 217.0, 268.0] Thalamus
+[267.4, 477.1, 294.3, 486.1] Pulvinar
+[185.4, 276.3, 233.0, 285.3] Temporal lobe
+[185.4, 318.3, 233.8, 327.3] Tail of caudate
+[185.4, 326.8, 210.7, 335.8] nucleus
+[185.4, 347.4, 238.4, 356.4] Atrium of lateral
+[185.4, 355.9, 213.6, 364.9] ventricle
+[185.5, 293.2, 235.1, 302.2] Choroid plexus
+[251.6, 450.6, 296.2, 459.6] Hippocampal
+[251.6, 459.1, 283.1, 468.1] formation
+[451.6, 486.8, 486.1, 495.9] Habenular
+[451.6, 495.4, 490.8, 504.4] commissure
+[279.1, 494.5, 325.8, 503.5] Occipital lobe
+[199.5, 50.3, 392.6, 60.5] Level 5: Anterior Commissure and Caudal Thalamus
+[107.5, 224.9, 165.5, 235.1] Level of section
+[96.7, 234.4, 176.2, 244.5] (anterior commissure
+[96.7, 243.9, 176.2, 254.0] and caudal thalamus)
+[27.0, 547.6, 29.2, 564.3]
+[27.0, 590.7, 232.4, 603.1] 13.5A  AXIAL (HORIZONTAL) SECTIONS
+[59.7, 602.7, 252.4, 615.1] THROUGH THE FOREBRAIN: LEVEL
+[59.7, 614.7, 241.1, 627.1] 5—ANTERIOR COMMISSURE AND
+[59.7, 626.7, 168.2, 639.1] CAUDAL THALAMUS
+[119.6, 655.8, 192.4, 668.2] CLINICAL POINT
+[31.5, 666.1, 280.5, 678.2] The basal ganglia assist the cerebral cortex in planning and generat-
+[31.5, 676.1, 282.5, 688.2] ing desired programs of activity and suppressing undesired programs
+[31.5, 686.1, 282.5, 698.2] of activity. The most conspicuous arena in which these functions are
+[31.5, 695.8, 280.5, 708.2] observed is motor activity. Basal ganglia disorders produce move-
+
+axial-06 components [(309675, [239.7, 249.2, 509.7, 586.9]), (89215, [50.8, 502.5, 190.3, 686.2]), (60151, [55.6, 96.1, 209.5, 238.1])]
+[379.7, 183.4, 418.2, 192.3] Frontal lobe
+[433.0, 243.6, 512.9, 252.4] Head of caudate nucleus
+[424.1, 216.0, 475.0, 224.9] Anterior limb of
+[424.1, 224.4, 475.0, 233.3] internal capsule
+[476.8, 258.6, 526.5, 267.4] Genu of corpus
+[476.8, 266.9, 505.8, 275.8] callosum
+[473.2, 577.8, 523.7, 586.6] Globus pallidus
+[462.3, 596.6, 490.5, 605.4] Putamen
+[395.0, 200.4, 447.1, 209.2] External capsule
+[255.5, 255.6, 288.2, 264.4] Claustrum
+[234.5, 280.4, 260.1, 289.2] Extreme
+[234.5, 288.7, 261.0, 297.6] capsule
+[501.7, 281.4, 527.8, 290.3] Genu of
+[501.7, 289.8, 526.1, 298.7] internal
+[501.7, 298.2, 526.1, 307.1] capsule
+[507.6, 523.8, 536.1, 532.7] Columns
+[507.6, 532.2, 534.5, 541.1] of fornix
+[510.8, 339.8, 536.8, 348.6] Anterior
+[510.8, 348.2, 534.0, 357.0] horn of
+[510.8, 356.5, 530.6, 365.4] lateral
+[510.8, 364.9, 538.5, 373.8] ventricle
+[497.3, 550.5, 514.3, 559.3] Third
+[497.3, 558.9, 525.1, 567.7] ventricle
+[233.3, 330.0, 254.8, 338.8] Insular
+[233.3, 338.3, 253.2, 347.2] cortex
+[406.4, 630.6, 437.4, 639.5] Thalamus
+[153.6, 360.3, 206.6, 369.2] Posterior limb of
+[153.6, 368.7, 204.5, 377.6] internal capsule
+[153.3, 384.0, 217.8, 392.9] Transverse temporal
+[153.3, 392.4, 202.9, 401.2] gyrus of Heschl
+[153.0, 408.6, 214.3, 417.5] Auditory radiations
+[389.8, 645.3, 416.3, 654.1] Pulvinar
+[152.3, 423.1, 226.8, 432.0] Tail of caudate nucleus
+[152.9, 435.9, 199.7, 444.7] Temporal lobe
+[244.5, 540.9, 262.7, 549.8] Optic
+[244.5, 549.3, 273.0, 558.2] radiation
+[240.7, 569.9, 297.9, 578.7] Temporal pole of
+[240.7, 578.2, 290.4, 587.1] lateral ventricle
+[255.8, 596.4, 304.7, 605.2] Choroid plexus
+[258.4, 612.6, 311.8, 621.5] Fimbria of fornix
+[280.4, 630.3, 326.4, 639.1] Occipital lobe
+[422.6, 608.3, 473.1, 617.2] Splenium of the
+[422.6, 616.7, 475.1, 625.6] corpus callosum
+[106.2, 243.1, 163.3, 253.1] Level of section
+[104.1, 252.4, 165.4, 262.4] (head of caudate
+[101.9, 261.7, 167.5, 271.7] and midthalamus)
+[212.3, 80.3, 370.4, 90.3] Level 6: Head of Caudate and Midthalamus
+[27.0, 688.9, 29.2, 705.6]
+
+axial-07 components [(264082, [254.8, 156.6, 504.2, 468.5]), (71167, [53.8, 356.7, 179.0, 521.3]), (48787, [52.8, 93.3, 191.5, 220.9])]
+[304.5, 627.1, 555.5, 639.2] disease progresses from a state of minor impairment (clumsiness)
+[304.5, 637.1, 555.5, 649.2] with minor behavioral problems (irritability and depression) to
+[304.5, 647.1, 553.5, 659.2] major impairment, dementia, and a decline that leads to incapaci-
+[304.5, 657.1, 555.5, 669.2] tation and ultimately to an early death. The anatomical hallmark of
+[304.5, 667.1, 555.5, 679.2] this disease is marked degeneration of the caudate nucleus (also the
+[304.5, 677.1, 555.6, 689.2] putamen). The characteristic bulge of the head of the caudate into
+[304.5, 687.1, 555.5, 699.2] the frontal pole of the lateral ventricle is lost. Most of the medium
+[304.5, 697.1, 553.5, 709.2] spiny caudate neurons that project to the globus pallidus degener-
+[431.4, 134.7, 522.5, 143.7] Rostrum of corpus callosum
+[495.4, 423.4, 521.5, 432.4] Head of
+[495.4, 431.9, 521.1, 440.9] caudate
+[495.4, 440.4, 520.7, 449.5] nucleus
+[480.1, 455.0, 537.0, 464.0] Anterior thalamic
+[480.1, 463.5, 500.3, 472.6] nuclei
+[294.4, 497.5, 347.5, 506.5] Medial thalamic
+[294.4, 506.0, 314.6, 515.1] nuclei
+[402.3, 118.2, 508.1, 127.3] Anterior limb of internal capsule
+[298.3, 130.4, 327.0, 139.4] Putamen
+[282.6, 144.3, 315.9, 153.4] Claustrum
+[275.2, 156.7, 297.1, 165.7] Insular
+[275.2, 165.2, 295.4, 174.3] cortex
+[187.7, 254.1, 248.4, 263.1] Lateral and ventral
+[187.7, 262.6, 238.3, 271.7] thalamic nuclei
+[187.7, 275.3, 241.7, 284.4] Posterior limb of
+[187.7, 283.9, 239.6, 292.9] internal capsule
+[393.4, 488.3, 418.7, 497.3] Body of
+[393.4, 496.8, 412.4, 505.8] fornix
+[187.7, 297.4, 214.7, 306.4] Pulvinar
+[187.7, 311.2, 236.2, 320.2] Tail of caudate
+[187.7, 319.7, 213.0, 328.8] nucleus
+[187.7, 332.7, 243.8, 341.7] Temporal pole of
+[187.7, 341.2, 238.3, 350.3] lateral ventricle
+[256.5, 468.7, 309.2, 477.8] Optic radiations
+[271.7, 482.3, 321.5, 491.3] Choroid plexus
+[449.2, 497.0, 512.5, 506.0] Splenium of corpus
+[449.2, 505.5, 478.7, 514.6] callosum
+[305.7, 521.0, 352.5, 530.0] Occipital lobe
+[501.4, 399.3, 525.9, 408.3] Septum
+[501.4, 407.8, 538.5, 416.9] pellucidum
+[451.4, 150.9, 521.4, 160.0] Frontal pole of lateral
+[451.4, 159.5, 479.7, 168.5] ventricle
+[489.6, 175.2, 517.8, 184.2] External
+[489.6, 183.7, 514.5, 192.8] capsule
+[500.8, 201.0, 526.9, 210.0] Extreme
+[500.8, 209.6, 525.7, 218.6] capsule
+[99.0, 224.4, 157.2, 234.6] Level of section
+[62.4, 233.9, 193.8, 244.0] (basal ganglia and internal capsule)
+[457.8, 479.5, 538.3, 488.6] Genu of internal capsule
+[206.6, 70.3, 368.4, 80.5] Level 7: Basal Ganglia and Internal Capsule
+[27.0, 563.3, 29.2, 580.0]
+[27.0, 609.7, 232.4, 622.1] 13.7A  AXIAL (HORIZONTAL) SECTIONS
+[59.7, 621.7, 249.1, 634.1] THROUGH THE FOREBRAIN: LEVEL
+[59.7, 633.7, 251.8, 646.1] 7—BASAL GANGLIA AND INTERNAL
+[59.7, 645.7, 110.6, 658.1] CAPSULE
+[119.6, 676.8, 192.4, 689.2] CLINICAL POINT
+[31.5, 686.8, 282.6, 699.2] Huntington’s disease is an autosomal dominant disorder caused
+[31.5, 697.1, 282.5, 709.2] by a trinucleotide repeat (CAG) on the short arm of chromosome
+
+axial-08 components [(283578, [239.6, 239.5, 507.2, 569.0]), (85177, [59.2, 493.7, 196.4, 672.7]), (59090, [58.2, 113.8, 211.3, 254.3])]
+[440.6, 205.4, 520.9, 214.3] Genu of corpus callosum
+[417.2, 183.7, 469.5, 192.5] Cingulate cortex
+[290.3, 209.7, 336.8, 218.5] Body of lateral
+[290.3, 218.0, 317.8, 226.9] ventricle
+[249.8, 241.0, 301.7, 249.8] Body of caudate
+[249.8, 249.3, 274.5, 258.1] nucleus
+[453.1, 586.2, 515.2, 595.0] Septum pellucidum
+[479.1, 558.8, 525.6, 567.7] Frontal pole of
+[479.1, 567.2, 528.5, 576.0] lateral ventricle
+[460.2, 226.7, 498.5, 235.5] Frontal lobe
+[168.8, 378.7, 212.0, 387.5] Insular cortex
+[171.4, 403.2, 211.3, 412.0] Parietal lobe
+[307.7, 605.2, 337.7, 614.0] Splenium
+[307.7, 613.5, 337.3, 622.3] of corpus
+[307.7, 621.8, 336.5, 630.6] callosum
+[288.4, 580.1, 318.0, 588.9] Occipital
+[288.4, 588.5, 302.4, 597.3] lobe
+[111.7, 258.7, 168.5, 268.6] Level of section
+[74.4, 268.0, 205.9, 277.9] (dorsal caudate, splenium, and genu
+[104.3, 277.2, 176.0, 287.2] of corpus callosum)
+[173.1, 87.5, 415.2, 97.4] Level 8: Dorsal Caudate, Splenium, and Genu of Corpus Callosum
+[27.0, 679.3, 29.2, 696.0]
+
+axial-09 components [(302113, [251.7, 242.6, 526.5, 574.5]), (85318, [58.0, 506.4, 198.0, 681.9]), (63261, [55.1, 102.5, 213.9, 248.3])]
+[325.1, 197.8, 384.1, 206.9] Anterior cingulate
+[325.1, 206.4, 345.5, 215.5] cortex
+[468.7, 227.9, 532.4, 237.0] Centrum semiovale
+[431.5, 609.9, 513.1, 619.0] Body of corpus callosum
+[292.3, 232.0, 345.8, 241.1] Body of caudate
+[292.3, 240.6, 317.8, 249.7] nucleus
+[428.9, 204.2, 470.5, 213.3] Frontal  lobe
+[447.4, 582.7, 526.0, 591.8] Body of lateral ventricle
+[171.5, 394.0, 212.7, 403.0] Parietal lobe
+[258.2, 582.2, 305.3, 591.3] Occipital lobe
+[301.6, 609.2, 344.5, 618.3] Visual cortex
+[107.9, 251.5, 166.5, 261.8] Level of section
+[88.3, 261.1, 186.1, 271.3] (body of corpus callosum)
+[223.6, 80.3, 350.6, 90.6] Level 9: Body of Corpus Callosum
+[27.0, 682.2, 29.2, 698.9]
+
+axial-10 components [(120664, [410.1, 249.6, 536.7, 544.7]), (111098, [284.4, 257.3, 407.2, 539.4]), (78595, [52.7, 482.8, 186.6, 655.1]), (60195, [54.2, 104.2, 208.6, 246.3])]
+[314.1, 235.0, 364.0, 243.9] Cingulate gyrus
+[451.4, 226.7, 490.0, 235.6] Frontal lobe
+[209.6, 381.1, 250.0, 390.0] Parietal lobe
+[205.9, 397.8, 250.0, 406.7] Lateral fissure
+[247.8, 528.9, 310.1, 537.8] Centrum semiovale
+[275.5, 562.8, 321.6, 571.7] Occipital lobe
+[106.1, 252.0, 163.4, 262.0] Level of section
+[97.1, 261.4, 172.4, 271.4] (centrum semiovale)
+[235.9, 78.8, 343.4, 88.9] Level 10: Centrum Semiovale
+[27.0, 657.9, 29.2, 674.6]
+
+coronal-01 components [(145217, [315.5, 281.3, 533.7, 496.8]), (93038, [71.9, 409.9, 199.0, 579.3]), (53340, [50.8, 140.2, 196.1, 274.1])]
+[115.7, 279.7, 171.9, 289.5] Level of section
+[97.1, 288.9, 190.4, 298.7] (genu of corpus callosum)
+[453.0, 214.7, 501.8, 223.4] Cingulate gyrus
+[361.0, 203.7, 409.8, 212.4] Superior frontal
+[361.0, 212.0, 377.7, 220.7] gyrus
+[334.6, 233.2, 379.4, 241.9] Middle frontal
+[334.6, 241.4, 351.3, 250.1] gyrus
+[301.2, 262.6, 346.4, 271.3] Inferior frontal
+[301.2, 270.9, 317.9, 279.6] gyrus
+[264.7, 359.9, 285.8, 368.6] Lateral
+[264.7, 368.2, 284.6, 376.9] fissure
+[264.7, 390.5, 294.9, 399.2] Temporal
+[264.7, 398.7, 278.6, 407.4] pole
+[264.9, 329.6, 300.8, 338.3] Subcallosal
+[264.9, 337.8, 281.6, 346.5] gyrus
+[457.0, 248.9, 536.4, 257.7] Genu of corpus callosum
+[482.5, 276.2, 528.5, 284.9] Frontal pole of
+[482.5, 284.5, 531.4, 293.2] lateral ventricle
+[248.5, 120.4, 371.6, 130.2] Level 1: Genu of Corpus Callosum
+[27.0, 593.7, 29.2, 610.4]
+[300.0, 655.7, 560.3, 669.9] substantia innominata, and nucleus basalis (cholinergic forebrain
+[300.0, 667.7, 560.3, 681.9] nucleus), some individual thalamic nuclei, and the important
+[300.0, 679.7, 558.0, 693.9] temporal lobe structures (amygdaloid nuclei, hippocampal for-
+[300.0, 691.7, 560.3, 705.9] mation) and pathways (fornix, stria terminalis). The full-­page MR
+[27.0, 659.7, 263.3, 672.2] 13.11A  CORONAL SECTIONS THROUGH THE
+[65.5, 671.8, 241.7, 684.2] FOREBRAIN: LEVEL 1—GENU OF
+[65.5, 683.8, 175.4, 696.2] CORPUS CALLOSUM
+[27.0, 695.4, 287.3, 709.5] These coronal sections compare anatomical sections and high-­
+
+coronal-02 components [(170978, [296.9, 236.0, 534.8, 463.9]), (101178, [54.2, 388.1, 188.0, 565.2]), (50898, [50.3, 126.6, 191.8, 257.1]), (686, [396.6, 401.1, 416.8, 411.1]), (618, [427.3, 400.6, 448.0, 411.1])]
+[304.5, 645.8, 555.5, 657.9] bed nucleus of the stria terminalis. A major dopaminergic (DA) input
+[304.5, 655.8, 555.6, 667.9] innervates the nucleus accumbens via the mesolimbic DA pathway,
+[304.5, 665.8, 555.5, 677.9] which derives from the ventral tegmental area in the ventral midbrain.
+[304.5, 675.8, 555.5, 687.9] The nucleus accumbens is central to motivational states and addictive
+[304.5, 685.8, 555.5, 697.9] behavior, driven by DA neurotransmission. The nucleus accumbens
+[304.5, 695.8, 555.6, 707.9] is also a principal region of brain circuitry associated with reward,
+[95.6, 261.9, 152.8, 271.9] Level of section
+[76.8, 271.2, 171.6, 281.2] (head of caudate nucleus/
+[87.2, 280.5, 161.2, 290.5] nucleus accumbens)
+[434.5, 153.7, 484.2, 162.5] Cingulate gyrus
+[346.4, 154.3, 377.9, 163.1] Cingulum
+[299.8, 169.7, 361.1, 178.5] Paraolfactory gyrus
+[297.7, 184.3, 350.7, 193.2] Head of caudate
+[297.7, 192.7, 322.5, 201.5] nucleus
+[274.9, 205.0, 339.9, 213.9] Nucleus accumbens
+[273.7, 219.4, 326.7, 228.2] Anterior limb of
+[273.7, 227.7, 324.6, 236.6] internal capsule
+[287.1, 246.0, 315.2, 254.8] Putamen
+[270.3, 264.4, 303.0, 273.3] Claustrum
+[224.3, 311.7, 267.8, 320.5] Insular cortex
+[223.9, 330.4, 267.8, 339.3] Lateral fissure
+[222.8, 350.2, 269.5, 359.1] Temporal pole
+[304.6, 461.7, 336.9, 470.5] Amygdala
+[342.5, 477.2, 380.6, 486.1] Optic nerve
+[448.0, 170.9, 527.5, 179.7] Body of corpus callosum
+[463.5, 193.4, 526.0, 202.2] Septum pellucidum
+[479.3, 215.1, 528.2, 224.0] Frontal pole of
+[479.3, 223.5, 529.0, 232.4] lateral ventricle
+[510.8, 252.9, 538.5, 261.7] External
+[510.8, 261.2, 535.2, 270.1] capsule
+[507.9, 471.9, 533.5, 480.8] Extreme
+[507.9, 480.3, 532.3, 489.2] capsule
+[192.4, 100.3, 394.8, 110.3] Level 2: Head of Caudate Nucleus/Nucleus Accumbens
+[27.0, 574.7, 29.2, 591.4]
+[27.0, 638.2, 238.2, 650.6] 13.12A  CORONAL SECTIONS THROUGH
+[65.5, 650.2, 248.3, 662.6] THE FOREBRAIN: LEVEL 2—HEAD
+[65.5, 662.2, 249.7, 674.6] OF CAUDATE NUCLEUS/NUCLEUS
+[65.5, 674.2, 135.9, 686.6] ACCUMBENS
+
+coronal-03 components [(179921, [249.9, 166.3, 488.4, 388.7]), (67662, [48.9, 258.8, 158.8, 401.6]), (32246, [46.5, 134.1, 158.8, 237.7])]
+[304.5, 475.2, 555.6, 487.3] many others. No brain region is protected, and prominent structural
+[304.5, 485.2, 555.5, 497.3] damage can be found in the cerebral cortex, limbic structures, basal
+[304.5, 495.2, 512.9, 507.3] ganglia, thalamus, cerebellum, brainstem, and spinal cord.
+[316.5, 505.2, 555.5, 517.3] There are three major forms of prion disease. A genetic form (10%
+[304.5, 515.0, 555.5, 527.3] to 15% of cases) arises from an altered PRNP gene, which codes for the
+[304.5, 525.2, 555.5, 537.3] aberrant protein PrPSc. A spontaneous form, by far the largest number
+[304.5, 535.2, 555.5, 547.3] of cases, arises for unknown reasons (one case per million individuals).
+[304.5, 545.2, 555.5, 557.3] A transmissible acquired form (variant CJD) arises from consumption
+[304.5, 555.2, 555.5, 567.3] of meat or body tissue from infected sheep and goats (scrapie); from
+[304.5, 565.2, 555.6, 577.3] cows (bovine spongiform encephalopathy) who were fed contaminated
+[304.5, 575.0, 555.6, 587.3] feed, leading to bovine spongiform encephalopathy in cows and mad cow
+[304.5, 585.0, 555.5, 597.3] disease in humans who eat the contaminated beef; and from wild game
+[304.5, 595.0, 555.5, 607.3] (deer, elk, with chronic wasting disease) and others. A rare acquired form
+[304.5, 605.2, 555.6, 617.3] was found many decades ago in Papua, New Guinea, in an indigenous
+[304.5, 615.2, 555.5, 627.3] tribe in which eating the brain tissue from other humans was practiced;
+[304.5, 625.0, 502.3, 637.3] this led to the disease kuru, which is also a prion disease.
+[316.5, 635.2, 555.5, 647.3] These insoluble aberrant proteins also can be transmitted from
+[304.5, 645.2, 553.5, 657.3] individual to individual by medical procedures and the use of con-
+[304.5, 655.2, 553.5, 667.3] taminated surgical instruments. It was found that even prolonged, vig-
+[304.5, 665.2, 555.5, 677.3] orous autoclaving of surgical instruments or treatment with standard
+[304.5, 675.2, 555.5, 687.3] chemical disinfectants does not inactivate PrPSc. A special protocol is
+[304.5, 685.2, 553.5, 697.3] now required to ensure that prion disease can no longer be transmit-
+[304.5, 695.2, 555.5, 707.3] ted via this route. Ensurance of inactivation of the PrPSc protein occurs
+[58.4, 236.6, 151.7, 246.7] Level of section (anterior
+[46.9, 246.1, 163.2, 256.2] commissure/columns of fornix)
+[290.5, 144.7, 341.1, 153.7] Cingulate gyrus
+[269.3, 157.6, 301.4, 166.7] Cingulum
+[228.4, 172.9, 287.0, 182.0] Columns of fornix
+[190.6, 185.5, 272.0, 194.5] Head of caudate nucleus
+[179.2, 299.3, 247.1, 308.3] Anterior commissure
+[179.2, 207.5, 258.0, 216.5] Anterior limb of internal
+[179.2, 216.0, 204.1, 225.1] capsule
+[179.2, 286.6, 230.6, 295.6] Globus pallidus
+[179.2, 260.2, 207.9, 269.2] Putamen
+[179.2, 231.9, 212.5, 240.9] Claustrum
+[179.2, 246.2, 223.5, 255.2] Insular cortex
+[179.2, 274.4, 223.9, 283.4] Lateral fissure
+[179.2, 314.1, 230.2, 323.1] Nucleus basalis
+[179.2, 332.9, 226.8, 341.9] Temporal lobe
+[213.0, 362.2, 245.8, 371.2] Amygdala
+[495.5, 318.7, 512.8, 327.7] Third
+[495.5, 327.2, 523.7, 336.3] ventricle
+[493.5, 342.8, 528.5, 351.9] Supraoptic
+[493.5, 351.4, 513.4, 360.4] recess
+[355.5, 359.7, 399.3, 368.7] Optic chiasm
+[475.8, 195.0, 525.1, 204.1] Body of corpus
+[475.8, 203.6, 505.3, 212.6] callosum
+[494.6, 244.5, 519.1, 253.6] Septum
+[494.6, 253.1, 531.8, 262.1] pellucidum
+[487.9, 220.3, 535.5, 229.3] Frontal pole of
+[487.9, 228.8, 538.5, 237.9] lateral ventricle
+[496.5, 294.0, 522.7, 303.0] External
+[496.5, 302.5, 521.4, 311.5] capsule
+[496.6, 269.4, 522.7, 278.4] Extreme
+[496.6, 277.9, 521.5, 287.0] capsule
+[204.7, 120.3, 387.6, 130.5] Level 3: Anterior Commissure/Columns of Fornix
+[27.0, 402.1, 29.2, 418.8]
+[27.0, 467.7, 263.3, 480.1] 13.13A  CORONAL SECTIONS THROUGH THE
+[65.5, 479.7, 248.7, 492.1] FOREBRAIN: LEVEL 3—ANTERIOR
+[65.5, 491.7, 261.9, 504.1] COMMISSURE/COLUMNS OF FORNIX
+[119.6, 527.8, 192.4, 540.2] CLINICAL POINT
+[31.5, 538.1, 282.5, 550.2] Most infections in the brain are caused by viruses, bacteria, fungi, and
+[31.5, 548.1, 282.6, 560.2] other living organisms. A review of these infections is beyond the scope
+[31.5, 558.1, 282.5, 570.2] of this atlas. A prominent but rare exception to the norm is an unusual
+[31.5, 568.0, 280.5, 580.2] and unexpected protein infection (or prion) that is readily transmissi-
+[31.5, 578.1, 282.5, 590.2] ble by a nonliving molecule, a protein. A normal neural protein, prion
+[31.5, 588.1, 282.5, 600.2] protein (PrPc, c = cellular) functions as a copper-­binding protein and
+[31.5, 598.1, 280.5, 610.2] is involved in cellular adhesion and cellular communication in neu-
+[31.5, 608.1, 282.5, 620.2] rons. An aberrant form of this protein (PrPSc, Sc = scrapie) displays
+[31.5, 618.1, 282.5, 630.2] an altered, aberrant folding structure. This aberrant protein form can
+[31.5, 628.1, 282.5, 640.2] recruit normal protein PrPc to transform to the aberrant form, PrPSc,
+[31.5, 638.1, 282.5, 650.2] and form large, insoluble clusters of highly damaging amyloid-­like
+[31.5, 648.1, 280.5, 660.2] plaques. The end result, after an incubation period, is a rapid, pro-
+[31.5, 658.1, 280.5, 670.2] gressive chain reaction leading to vacuolization and degeneration/
+[31.5, 668.1, 282.6, 680.2] destruction of virtually all central nervous system (CNS) regions. This
+[31.5, 677.8, 282.5, 690.2] is referred to as a spongiform encephalopathy, and the prion disease
+[31.5, 687.8, 214.4, 700.2] is also known as Creutzfeldt-­Jakob disease (CJD).
+
+coronal-04 components [(214783, [261.9, 202.9, 530.5, 448.1]), (108153, [52.2, 382.3, 192.3, 561.3]), (60478, [48.4, 94.9, 203.3, 237.4])]
+[304.5, 614.6, 553.5, 627.0] damage. However, specific surgical sectioning of the corpus callo-
+[304.5, 624.6, 555.6, 637.0] sum has been performed in an attempt to alleviate the spread of seizure
+[304.5, 634.9, 555.5, 647.0] activity from one side of the brain to the other. This “split ­brain” surgery
+[304.5, 644.9, 555.5, 657.0] causes each hemisphere to be unaware of specific activity occurring in
+[304.5, 654.9, 555.5, 667.0] the other hemisphere. Thus, the left brain cannot identify a visual or
+[304.5, 664.9, 555.6, 677.0] somatosensory stimulus presented to the right hemisphere and does not
+[304.5, 674.9, 555.5, 687.0] know where the left hand and arm are located if they are kept from the
+[304.5, 684.9, 555.6, 697.0] left hemisphere’s view. Sometimes, the left hand may act independently
+[304.5, 694.9, 553.5, 707.0] of the conscious intent of the left hemisphere. Some emotional infor-
+[101.4, 242.6, 159.0, 252.6] Level of section
+[84.7, 251.9, 175.7, 262.0] (amygdala, anterior limb
+[94.6, 261.3, 165.8, 271.4] of internal capsule)
+[442.8, 151.4, 492.8, 160.3] Cingulate gyrus
+[413.7, 127.9, 445.4, 136.8] Cingulum
+[463.6, 455.4, 521.6, 464.4] Columns of fornix
+[281.9, 153.7, 329.8, 162.6] Stria terminalis
+[281.9, 162.1, 338.6, 171.0] and terminal vein
+[264.6, 185.8, 317.1, 194.8] Body of caudate
+[264.6, 194.3, 289.6, 203.2] nucleus
+[232.8, 218.6, 286.2, 227.5] Anterior limb of
+[232.8, 227.0, 284.1, 236.0] internal capsule
+[224.2, 247.9, 257.1, 256.9] Claustrum
+[190.2, 290.2, 218.5, 299.2] Putamen
+[190.2, 307.9, 233.9, 316.8] Insular cortex
+[190.2, 324.1, 241.0, 333.0] Globus pallidus
+[190.2, 332.5, 244.8, 341.5] external segment
+[190.2, 349.5, 243.1, 358.4] Temporal cortex
+[266.2, 450.5, 298.8, 459.5] Amygdala
+[310.3, 509.3, 344.9, 518.3] Optic tract
+[409.3, 494.9, 456.4, 503.8] Hypothalamus
+[426.7, 475.4, 473.9, 484.4] Third ventricle
+[453.9, 176.2, 533.9, 185.2] Body of corpus callosum
+[491.4, 198.7, 538.5, 207.6] Body of lateral
+[491.4, 207.1, 519.3, 216.0] ventricle
+[280.0, 475.6, 330.9, 484.6] Globus pallidus
+[280.0, 484.1, 333.4, 493.0] internal segment
+[195.1, 80.3, 391.5, 90.4] Level 4: Amygdala, Anterior Limb of Internal Capsule
+[27.0, 571.8, 29.2, 588.5]
+[27.0, 607.7, 263.3, 620.1] 13.14A  CORONAL SECTIONS THROUGH THE
+[65.5, 619.7, 257.7, 632.1] FOREBRAIN: LEVEL 4—AMYGDALA,
+[65.5, 631.7, 281.4, 644.1] ANTERIOR LIMB OF INTERNAL CAPSULE
+[119.6, 661.0, 192.4, 673.5] CLINICAL POINT
+[31.5, 671.4, 282.6, 683.5] The corpus callosum is the principal interhemispheric or commissural
+[31.5, 681.4, 280.5, 693.5] pathway in the brain. It interconnects one hemisphere with its counter-
+[31.5, 691.4, 282.6, 703.5] part on the other side, with the exception of part of the temporal lobe
+
+coronal-05 components [(230934, [238.8, 246.5, 513.2, 512.3]), (108330, [55.6, 498.4, 197.6, 676.0]), (60317, [49.4, 106.3, 203.3, 248.4])]
+[100.9, 254.7, 158.1, 264.7] Level of section
+[91.7, 264.1, 167.3, 274.1] (mammillary bodies)
+[401.6, 165.7, 451.4, 174.6] Cingulate gyrus
+[292.2, 150.7, 339.1, 159.5] Third ventricle
+[268.0, 170.5, 321.1, 179.4] Rostral thalamus
+[255.5, 190.1, 302.4, 198.9] Hypothalamus
+[246.9, 210.4, 299.9, 219.3] Posterior limb of
+[246.9, 218.8, 297.9, 227.7] internal capsule
+[238.8, 240.3, 289.4, 249.2] Globus pallidus
+[238.8, 248.7, 291.9, 257.6] internal segment
+[236.7, 268.5, 264.9, 277.4] Putamen
+[201.2, 288.8, 251.8, 297.7] Globus pallidus
+[201.2, 297.2, 255.5, 306.1] external segment
+[157.1, 339.5, 200.6, 348.3] Insular cortex
+[157.1, 355.1, 201.0, 364.0] Lateral fissure
+[157.1, 371.0, 189.8, 379.8] Claustrum
+[157.1, 386.5, 205.6, 395.4] Inferior horn of
+[157.1, 394.9, 206.8, 403.7] lateral ventricle
+[157.1, 411.4, 203.9, 420.3] Temporal lobe
+[274.5, 497.8, 308.9, 506.7] Optic tract
+[267.7, 480.1, 300.0, 489.0] Amygdala
+[279.3, 514.8, 323.2, 523.6] Hippocampal
+[279.3, 523.2, 310.4, 532.0] formation
+[290.6, 574.3, 349.9, 583.1] Cerebral peduncle
+[283.5, 556.8, 340.7, 565.6] Mammillary body
+[260.7, 539.4, 329.5, 548.3] Interpeduncular fossa
+[424.5, 583.8, 483.4, 592.6] Corticospinal tract
+[424.5, 592.2, 470.2, 601.0] in basis pontis
+[440.6, 563.9, 478.3, 572.8] Basis pontis
+[453.6, 543.9, 524.9, 552.8] Middle cerebral artery
+[421.9, 186.4, 501.5, 195.3] Body of corpus callosum
+[455.9, 228.6, 513.5, 237.5] Columns of fornix
+[466.6, 248.9, 515.5, 257.8] Body of lateral
+[466.6, 257.3, 494.4, 266.2] ventricle
+[475.5, 275.2, 529.8, 284.1] Body of caudate
+[475.5, 283.6, 500.3, 292.5] nucleus
+[472.4, 516.4, 524.7, 525.3] External capsule
+[486.3, 488.3, 538.5, 497.2] Extreme capsule
+[444.7, 207.5, 476.3, 216.3] Cingulum
+[239.0, 80.3, 340.7, 90.3] Level 5: Mammillary Bodies
+[27.0, 690.8, 29.2, 707.5]
+
+coronal-06 components [(205009, [269.2, 170.0, 526.9, 476.1]), (110568, [59.4, 346.6, 203.4, 523.7]), (53542, [48.4, 75.9, 193.8, 209.8])]
+[304.5, 587.9, 553.5, 600.1] as the red nucleus) arising from the motor and premotor/supplemen-
+[304.5, 597.9, 555.6, 610.1] tal motor cortices, which help to control skilled movements of the
+[304.5, 607.9, 555.5, 620.1] contralateral limbs, and the corticobulbar tract, which supplies motor
+[304.5, 617.9, 555.5, 630.1] cranial nerve nuclei with descending control, all bilaterally except
+[304.5, 627.9, 555.5, 640.1] for the lower facial nucleus, which receives exclusively contralateral
+[304.5, 637.9, 555.5, 650.1] input. The corticospinal tract travels in the posterior limb of the IC,
+[304.5, 647.9, 555.5, 660.1] and the corticobulbar tract travels in the genu of the IC. The posterior
+[304.5, 657.9, 553.5, 670.1] limb of the IC also conveys the ascending somatosensory and trigem-
+[304.5, 667.9, 555.6, 680.1] inal sensory axons from the ventral posterolateral and posteromedial
+[304.5, 677.9, 555.5, 690.1] thalamus, respectively, which are susceptible to vascular infarcts in
+[304.5, 687.9, 553.5, 700.1] the middle cerebral artery and fine penetrating lenticulostriate arter-
+[96.9, 214.5, 154.4, 224.6] Level of section
+[48.1, 223.9, 203.2, 233.9] (mammillothalamic tract/substantia nigra,
+[86.5, 233.3, 164.8, 243.3] rostral hippocampus)
+[312.3, 86.0, 362.3, 94.9] Cingulate gyrus
+[306.2, 99.4, 337.8, 108.3] Cingulum
+[290.7, 112.6, 348.2, 121.5] Anterior thalamus
+[266.9, 127.3, 342.3, 136.2] Medial dorsal thalamus
+[257.0, 142.4, 334.4, 151.3] Mammillothalamic tract
+[254.9, 157.4, 334.4, 166.3] Body of caudate nucleus
+[247.8, 171.3, 324.4, 180.3] Ventral lateral thalamus
+[237.6, 185.4, 291.0, 194.3] Posterior limb of
+[237.6, 193.8, 288.9, 202.7] internal capsule
+[163.8, 251.8, 192.2, 260.7] Putamen
+[163.8, 266.7, 207.6, 275.6] Insular cortex
+[163.8, 281.4, 198.4, 290.3] Optic tract
+[163.8, 299.7, 241.3, 308.6] Temporal pole of lateral
+[163.8, 308.1, 191.7, 317.0] ventricle
+[163.8, 324.2, 238.8, 333.1] Tail of caudate nucleus
+[234.6, 340.9, 265.4, 349.8] Temporal
+[234.6, 349.3, 254.5, 358.3] cortex
+[267.8, 387.0, 312.0, 395.9] Hippocampal
+[267.8, 395.4, 299.0, 404.3] formation
+[269.5, 414.6, 329.1, 423.5] Cerebral peduncle
+[273.5, 435.9, 324.8, 444.8] Substantia nigra
+[278.7, 454.6, 337.8, 463.5] Corticospinal tract
+[278.7, 463.0, 344.1, 472.0] fibers in basis pontis
+[440.1, 433.5, 478.0, 442.4] Basis pontis
+[484.0, 380.6, 534.8, 389.5] Globus pallidus
+[484.0, 389.0, 538.5, 397.9] external segment
+[464.6, 407.2, 515.4, 416.1] Globus pallidus
+[464.6, 415.6, 517.9, 424.5] internal segment
+[440.1, 451.0, 466.8, 459.9] Medulla
+[440.1, 468.3, 504.6, 477.2] Medullary pyramids
+[447.5, 89.5, 527.5, 98.4] Body of corpus callosum
+[447.9, 108.9, 505.8, 117.8] Columns of fornix
+[455.2, 121.9, 504.4, 130.8] Body of lateral
+[455.2, 130.3, 483.1, 139.2] ventricle
+[462.0, 143.6, 509.0, 152.5] Third ventricle
+[483.0, 155.9, 510.9, 164.8] Centrum
+[483.0, 164.3, 515.5, 173.2] semiovale
+[488.6, 176.6, 514.5, 185.5] External
+[488.6, 185.0, 513.2, 193.9] capsule
+[498.0, 197.2, 523.8, 206.2] Extreme
+[498.0, 205.7, 522.5, 214.6] capsule
+[159.3, 50.3, 429.2, 60.4] Level 6: Mammillothalamic Tract/Substantia Nigra, Rostral Hippocampus
+[400.2, 309.3, 404.6, 322.3] *
+[412.7, 263.1, 417.1, 276.1] *
+[27.0, 531.6, 29.2, 548.3]
+[27.0, 580.7, 238.2, 593.1] 13.16A  CORONAL SECTIONS THROUGH
+[65.5, 592.7, 218.0, 605.1] THE FOREBRAIN: LEVEL 6—
+[65.5, 604.7, 230.6, 617.1] MAMMILLOTHALAMIC TRACT/
+[65.5, 616.7, 231.8, 629.1] SUBSTANTIA NIGRA, ROSTRAL
+[65.5, 628.7, 146.2, 641.1] HIPPOCAMPUS
+[119.6, 657.6, 192.4, 670.1] CLINICAL POINT
+[31.5, 667.6, 282.5, 680.1] The posterior limb of the IC is the major afferent and efferent route
+[31.5, 677.9, 282.5, 690.1] through which the cerebral cortex is connected with the rest of the
+[31.5, 687.9, 282.5, 700.1] brain. The cerebral cortex sends descending fibers through the IC that
+
+coronal-07 components [(299572, [247.9, 223.6, 536.6, 595.8]), (113401, [47.9, 473.0, 194.7, 651.9]), (61314, [48.4, 89.3, 203.8, 232.2])]
+[100.7, 238.4, 158.4, 248.5] Level of section
+[103.0, 247.8, 156.1, 257.9] (midthalamus)
+[281.5, 151.3, 361.7, 160.2] Body of corpus callosum
+[283.6, 207.9, 315.4, 216.8] Cingulum
+[292.6, 167.2, 345.7, 176.1] Cingulate cortex
+[256.9, 224.8, 304.9, 233.7] Stria terminalis
+[236.6, 241.1, 289.2, 250.0] Body of caudate
+[236.6, 249.5, 261.7, 258.5] nucleus
+[143.7, 328.7, 219.3, 337.6] Medial dorsal thalamus
+[143.7, 345.0, 187.5, 354.0] Insular cortex
+[143.7, 363.2, 196.7, 372.1] Lateral thalamus
+[143.7, 380.5, 228.1, 389.4] Lateral geniculate nucleus
+[143.7, 398.5, 221.0, 407.4] Centromedian thalamus
+[143.7, 416.6, 231.0, 425.5] Tail of the caudate nucleus
+[247.4, 487.6, 270.0, 496.6] Medial
+[247.4, 496.1, 280.9, 505.0] geniculate
+[247.4, 504.5, 272.5, 513.5] nucleus
+[247.4, 460.8, 291.7, 469.7] Hippocampal
+[247.4, 469.2, 278.8, 478.2] formation
+[247.9, 559.0, 280.9, 567.9] Entorhinal
+[247.9, 567.4, 268.0, 576.4] cortex
+[247.4, 527.0, 277.1, 535.9] Cortex of
+[247.4, 535.4, 283.8, 544.4] cerebellum
+[472.6, 528.5, 499.8, 537.5] Superior
+[472.6, 537.0, 537.0, 545.9] cerebellar peduncle
+[449.4, 562.0, 492.4, 570.9] Pons (floor of
+[449.4, 570.4, 500.8, 579.4] fourth ventricle)
+[429.3, 594.8, 487.0, 603.8] Inferior cerebellar
+[429.3, 603.3, 459.4, 612.2] peduncle
+[412.0, 627.8, 438.7, 636.7] Medulla
+[424.6, 167.7, 482.7, 176.7] Columns of fornix
+[275.5, 183.5, 324.8, 192.5] Interventricular
+[275.5, 192.0, 334.4, 200.9] foramen of Munro
+[452.9, 185.9, 500.1, 194.8] Third ventricle
+[477.9, 204.4, 525.1, 213.3] Body of lateral
+[477.9, 212.8, 505.9, 221.8] ventricle
+[251.0, 50.3, 330.0, 60.4] Level 7: Midthalamus
+[27.0, 665.2, 29.2, 681.9]
+
+coronal-08 components [(247511, [266.7, 162.6, 530.5, 475.4]), (108190, [56.6, 341.5, 199.5, 516.6]), (54095, [50.8, 71.9, 197.1, 206.7])]
+[304.5, 613.1, 555.5, 625.2] calcarine fissure. A lesion in the lateral geniculate nucleus results in
+[304.5, 623.1, 555.5, 635.2] contralateral hemianopia. The pulvinar receives visual input from the
+[304.5, 633.1, 555.5, 645.2] superior colliculus and also conveys visual information to the visual
+[304.5, 643.1, 555.6, 655.2] cortex, to areas 18 and 19 (associative visual cortex). A lesion in the
+[304.5, 653.1, 555.5, 665.2] pulvinar can lead to contralateral visual neglect. The medial geniculate
+[304.5, 663.1, 555.6, 675.2] nucleus receives input from the inferior colliculus through the bra-­
+[304.5, 673.1, 555.5, 685.2] chium of the inferior colliculus. However, because the auditory system
+[304.5, 683.1, 555.5, 695.2] is bilaterally represented at this level, a lesion in the medial geniculate
+[304.5, 693.1, 555.5, 705.2] nucleus on one side does not result in contralateral deafness. There
+[102.7, 213.0, 159.3, 222.9] Level of section
+[97.3, 222.2, 164.7, 232.1] (geniculate nuclei)
+[423.6, 74.1, 502.4, 82.9] Body of corpus callosum
+[301.2, 92.3, 332.4, 101.0] Cingulum
+[315.9, 68.9, 365.1, 77.7] Cingulate gyrus
+[278.6, 119.2, 330.2, 128.0] Body of caudate
+[278.6, 127.5, 303.2, 136.3] nucleus
+[257.8, 153.9, 284.1, 162.7] Pulvinar
+[135.2, 239.9, 218.9, 248.7] Medial geniculate nucleus
+[135.2, 260.6, 218.1, 269.4] Lateral geniculate nucleus
+[135.2, 282.7, 209.1, 291.5] Tail of caudate nucleus
+[135.2, 303.0, 233.7, 311.8] Inferior pole of lateral ventricle
+[253.1, 385.3, 296.5, 394.1] Hippocampal
+[253.1, 393.6, 283.8, 402.4] formation
+[253.1, 416.3, 285.0, 425.1] Pretectum
+[253.1, 437.0, 285.9, 445.8] Cerebellar
+[253.1, 445.3, 272.7, 454.1] cortex
+[253.1, 466.1, 309.2, 474.9] Middle cerebellar
+[253.1, 474.4, 282.6, 483.2] peduncle
+[253.1, 494.5, 328.1, 503.3] Decussation of superior
+[253.1, 502.8, 316.2, 511.6] cerebellar peduncle
+[326.8, 525.1, 342.0, 533.9] Pons
+[442.8, 501.3, 469.0, 510.1] Medulla
+[439.8, 98.0, 485.0, 106.7] Body of fornix
+[454.9, 123.8, 501.2, 132.6] Third ventricle
+[500.4, 413.4, 528.3, 422.2] Posterior
+[500.4, 421.7, 538.5, 430.5] commissure
+[447.3, 469.6, 505.9, 478.4] Cerebral aqueduct
+[471.4, 441.2, 518.9, 450.0] Periaqueductal
+[471.4, 449.5, 507.0, 458.3] gray matter
+[485.8, 147.7, 532.1, 156.5] Body of lateral
+[485.8, 156.0, 513.3, 164.8] ventricle
+[245.3, 50.3, 341.8, 60.2] Level 8: Geniculate Nuclei
+[27.0, 535.9, 29.2, 552.6]
+[27.0, 605.7, 263.3, 618.1] 13.18A  CORONAL SECTIONS THROUGH THE
+[65.5, 617.7, 261.9, 630.1] FOREBRAIN: LEVEL 8—GENICULATE
+[65.5, 629.7, 106.0, 642.1] NUCLEI
+[119.6, 662.8, 192.4, 675.2] CLINICAL POINT
+[31.5, 672.8, 282.5, 685.2] Several thalamic nuclei in the posterior thalamus are important for
+[31.5, 683.1, 282.6, 695.2] conveying visual and auditory information to the cerebral cortex. The
+[31.5, 693.1, 280.5, 705.2] lateral geniculate nucleus receives segregated input from the tempo-
+
+coronal-09 components [(267712, [254.1, 229.5, 527.0, 526.5]), (110131, [49.4, 481.9, 195.2, 657.5]), (60137, [49.4, 83.7, 202.8, 225.2])]
+[102.1, 230.2, 159.1, 240.2] Level of section
+[56.6, 239.5, 204.6, 249.5] (caudal pulvinar and superior colliculus)
+[301.9, 147.4, 351.5, 156.3] Cingulate gyrus
+[295.9, 164.3, 327.3, 173.2] Cingulum
+[257.5, 183.7, 317.5, 192.6] Superior colliculus
+[277.1, 202.8, 303.6, 211.7] Pulvinar
+[237.9, 219.9, 290.1, 228.8] Body of caudate
+[237.9, 228.3, 262.8, 237.1] nucleus
+[147.9, 321.5, 222.4, 330.3] Tail of caudate nucleus
+[147.9, 340.6, 224.8, 349.4] Fimbria of hippocampal
+[147.9, 349.0, 178.9, 357.8] formation
+[147.9, 368.8, 197.5, 377.7] Inferior pole of
+[147.9, 377.2, 197.5, 386.0] lateral ventricle
+[147.9, 397.7, 224.8, 406.6] Hippocampal formation
+[253.6, 504.9, 308.2, 513.8] Entorhinal cortex
+[250.3, 466.5, 271.8, 475.4] Lateral
+[250.3, 474.9, 282.2, 483.8] cerebellar
+[250.3, 483.3, 287.6, 492.1] hemisphere
+[286.9, 554.1, 347.7, 562.9] Superior cerebellar
+[286.9, 562.4, 316.7, 571.3] peduncle
+[268.0, 523.8, 324.7, 532.7] Middle cerebellar
+[268.0, 532.2, 297.8, 541.0] peduncle
+[498.8, 474.0, 522.0, 482.8] Inferior
+[498.8, 482.4, 529.9, 491.2] colliculus
+[474.3, 511.6, 530.6, 520.5] Cerebellar vermis
+[455.6, 540.1, 506.1, 549.0] Fourth ventricle
+[426.2, 147.5, 505.7, 156.4] Body of corpus callosum
+[444.9, 174.2, 488.4, 183.0] Crus of fornix
+[461.4, 191.8, 492.8, 200.6] Habenula
+[471.0, 215.7, 517.7, 224.6] Third ventricle
+[483.8, 239.5, 530.6, 248.4] Body of lateral
+[483.8, 247.9, 511.5, 256.8] ventricle
+[203.8, 50.3, 380.7, 60.3] Level 9: Caudal Pulvinar and Superior Colliculus
+[27.0, 668.1, 29.2, 684.7]
+
+coronal-10 components [(268360, [253.8, 208.4, 528.2, 508.7]), (101206, [51.8, 466.5, 186.6, 641.1]), (59505, [52.2, 83.7, 205.8, 224.7])]
+[307.6, 119.8, 357.2, 128.7] Cingulate gyrus
+[284.3, 146.6, 315.7, 155.4] Cingulum
+[258.5, 176.9, 301.9, 185.8] Crus of fornix
+[249.9, 206.7, 276.4, 215.5] Pulvinar
+[138.0, 300.1, 185.5, 308.9] Tail of caudate
+[138.0, 308.5, 162.8, 317.3] nucleus
+[138.0, 327.1, 189.6, 336.0] Optic radiations
+[138.0, 343.9, 181.8, 352.7] Hippocampal
+[138.0, 352.2, 169.0, 361.1] formation
+[138.0, 369.2, 168.5, 378.0] Temporal
+[138.0, 377.5, 152.0, 386.4] lobe
+[258.2, 495.4, 279.6, 504.3] Lateral
+[258.2, 503.8, 289.9, 512.6] cerebellar
+[258.2, 512.2, 295.3, 521.0] hemisphere
+[271.2, 533.7, 323.2, 542.5] Dentate nucleus
+[292.2, 557.6, 348.4, 566.5] Cerebellar vermis
+[313.6, 586.3, 364.0, 595.2] Fourth ventricle
+[431.9, 112.4, 493.9, 121.2] Splenium of corpus
+[431.9, 120.8, 460.8, 129.6] callosum
+[449.4, 141.7, 469.3, 150.6] Pineal
+[463.7, 163.2, 520.3, 172.1] Trigone of lateral
+[463.7, 171.6, 491.4, 180.4] ventricle
+[486.1, 192.5, 534.9, 201.3] Choroid plexus
+[497.2, 216.1, 538.5, 224.9] Inferior pole
+[497.2, 224.4, 525.3, 233.3] of lateral
+[497.2, 232.8, 524.9, 241.6] ventricle
+[104.9, 229.0, 161.9, 239.0] Level of section
+[78.4, 238.3, 188.4, 248.3] (splenium of corpus callosum)
+[220.8, 50.3, 364.3, 60.3] Level 10: Splenium of Corpus Callosum
+[27.0, 650.7, 29.2, 667.4]

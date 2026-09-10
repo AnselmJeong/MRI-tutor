@@ -2,7 +2,9 @@
   "schemaVersion": 1,
   "source": "Telencephalon.pdf",
   "sourceSHA256": "1c57c1d3833659e7ea63d31ce6ae06b1fc89ef9a66f65c4863cf61d5e1e49bc0",
-  "provenance": "User-supplied Telencephalon chapter, figures 13.1A–13.20A. Original labels, leader lines and artist credit retained.",
+  "provenance": "User-supplied Telencephalon chapter, figures 13.1A–13.20A. Main artwork and original annotation layers extracted without reconstruction. Artist credit moved to a compact footer. Full plates retained separately.",
+  "extractionVersion": 2,
+  "renderDpi": 288,
   "matching": "Authored approximate anatomical levels; not registered. Subject offset uses bilateral thalamic anchors relative to reference [0, -18, 8] mm. No rotation or scale correction.",
   "figures": [
     {
@@ -16,16 +18,35 @@
       "printedPage": 300,
       "figure": "13.1A",
       "image": "assets/illustrations/telencephalon/axial-01.webp",
+      "width": 1188,
+      "height": 1532,
+      "sha256": "46b2e4a947f2a134391ffc15b26162a088d536f22d7f1a2c589a9d023d64eafe",
       "thumbnail": "assets/illustrations/telencephalon/axial-01-thumb.webp",
-      "width": 1880,
-      "height": 1823,
       "cropPoints": [
-        24.0,
-        45.0,
-        588.0,
-        591.655029296875
+        248.0,
+        128.0,
+        545.0,
+        487.0
       ],
-      "sha256": "751df99ca6a7c31c126474e0fdf5535cdf402717fca8cb9d26655f2648bcb253"
+      "unlabeled": {
+        "image": "assets/illustrations/telencephalon/axial-01-unlabeled.webp",
+        "width": 1076,
+        "height": 1152,
+        "sha256": "e7bae7f5c56435e221ed0bcde19fc5a3eb2969a4ab41d38c2c80fac09d2e8378"
+      },
+      "fullPlate": {
+        "image": "assets/illustrations/telencephalon/axial-01-full.webp",
+        "width": 1880,
+        "height": 1823,
+        "sha256": "751df99ca6a7c31c126474e0fdf5535cdf402717fca8cb9d26655f2648bcb253",
+        "cropPoints": [
+          24.0,
+          45.0,
+          588.0,
+          591.655029296875
+        ]
+      },
+      "thumbnailSHA256": "fcfdcec81e7c91d28994ef01220aed767c2de7d6bd2767cabbf78bb9412d9425"
     },
     {
       "id": "axial-02",
@@ -38,16 +59,35 @@
       "printedPage": 302,
       "figure": "13.2A",
       "image": "assets/illustrations/telencephalon/axial-02.webp",
+      "width": 1244,
+      "height": 1716,
+      "sha256": "29b3bc3656171045889914f251e20e80f4f67d419f7789eb5d6c0f55748c19e7",
       "thumbnail": "assets/illustrations/telencephalon/axial-02-thumb.webp",
-      "width": 1880,
-      "height": 2281,
       "cropPoints": [
-        24.0,
-        45.0,
-        588.0,
-        729.0040283203125
+        234.0,
+        214.0,
+        545.0,
+        619.0
       ],
-      "sha256": "35213766c9873194abc504aac452ca5bfdf5556c87a248f5aab4283cc5155029"
+      "unlabeled": {
+        "image": "assets/illustrations/telencephalon/axial-02-unlabeled.webp",
+        "width": 1196,
+        "height": 1136,
+        "sha256": "443fe21fb657f9761cfaa28bee3b2684ac12f3cfc14e5640c045e3667c43942f"
+      },
+      "fullPlate": {
+        "image": "assets/illustrations/telencephalon/axial-02-full.webp",
+        "width": 1880,
+        "height": 2281,
+        "sha256": "35213766c9873194abc504aac452ca5bfdf5556c87a248f5aab4283cc5155029",
+        "cropPoints": [
+          24.0,
+          45.0,
+          588.0,
+          729.0040283203125
+        ]
+      },
+      "thumbnailSHA256": "fd088cd1e10086dd8ef81af75e9e7978ec011803751f673e6de33364f9605edf"
     },
     {
       "id": "axial-03",
@@ -60,16 +100,35 @@
       "printedPage": 304,
       "figure": "13.3A",
       "image": "assets/illustrations/telencephalon/axial-03.webp",
+      "width": 1496,
+      "height": 1760,
+      "sha256": "3d2fc7aac9101cc52f555e0cf1df317a543fc75387aecc39d5296d01d699a167",
       "thumbnail": "assets/illustrations/telencephalon/axial-03-thumb.webp",
-      "width": 1880,
-      "height": 1944,
       "cropPoints": [
-        24.0,
-        45.0,
-        588.0,
-        628.154052734375
+        172.0,
+        128.0,
+        546.0,
+        544.0
       ],
-      "sha256": "47974540c4a017d0da1f1b1b593f0db478b385c001ca46fd4c2c4e890d80f59f"
+      "unlabeled": {
+        "image": "assets/illustrations/telencephalon/axial-03-unlabeled.webp",
+        "width": 1156,
+        "height": 1180,
+        "sha256": "83d4e2ce9446fbb017d942e0580a7b3d6b8d5c02796605353c8ecdf36ef0fcde"
+      },
+      "fullPlate": {
+        "image": "assets/illustrations/telencephalon/axial-03-full.webp",
+        "width": 1880,
+        "height": 1944,
+        "sha256": "47974540c4a017d0da1f1b1b593f0db478b385c001ca46fd4c2c4e890d80f59f",
+        "cropPoints": [
+          24.0,
+          45.0,
+          588.0,
+          628.154052734375
+        ]
+      },
+      "thumbnailSHA256": "75b418773c2ae37a3748de1b64cf95c1e41afd1c135ddf339d8ab5ff72e592d5"
     },
     {
       "id": "axial-04",
@@ -82,16 +141,35 @@
       "printedPage": 306,
       "figure": "13.4A",
       "image": "assets/illustrations/telencephalon/axial-04.webp",
+      "width": 1500,
+      "height": 1952,
+      "sha256": "4b6e042da4c1afdd29a0f94e3d96b7e78d663462ea9d0002626466fc82e91ac9",
       "thumbnail": "assets/illustrations/telencephalon/axial-04-thumb.webp",
-      "width": 1880,
-      "height": 2241,
       "cropPoints": [
-        24.0,
-        45.0,
-        588.0,
-        717.0040283203125
+        173.0,
+        138.0,
+        548.0,
+        602.0
       ],
-      "sha256": "0fb39497a6bbf21e8d72422acb0d98fea1a3c118198657e5fc1a307434c05581"
+      "unlabeled": {
+        "image": "assets/illustrations/telencephalon/axial-04-unlabeled.webp",
+        "width": 1200,
+        "height": 1472,
+        "sha256": "9df1521879e5e0c95ed24c007bfbab13815196efdbd22486b18f56813d613d7a"
+      },
+      "fullPlate": {
+        "image": "assets/illustrations/telencephalon/axial-04-full.webp",
+        "width": 1880,
+        "height": 2241,
+        "sha256": "0fb39497a6bbf21e8d72422acb0d98fea1a3c118198657e5fc1a307434c05581",
+        "cropPoints": [
+          24.0,
+          45.0,
+          588.0,
+          717.0040283203125
+        ]
+      },
+      "thumbnailSHA256": "5c5391aaf7ca5705dcc3954081a49e6dba5c5283758fd7eb330b0c84d6c65d3b"
     },
     {
       "id": "axial-05",
@@ -104,16 +182,35 @@
       "printedPage": 308,
       "figure": "13.5A",
       "image": "assets/illustrations/telencephalon/axial-05.webp",
+      "width": 1464,
+      "height": 1840,
+      "sha256": "e86e85f37f3d9dc1e5921009786f2f43d25c2be8009fdc1ea3a355fa1520c82d",
       "thumbnail": "assets/illustrations/telencephalon/axial-05-thumb.webp",
-      "width": 1880,
-      "height": 1793,
       "cropPoints": [
-        24.0,
-        45.0,
-        588.0,
-        582.6590576171875
+        179.0,
+        75.0,
+        545.0,
+        511.0
       ],
-      "sha256": "eb4d0a4138ba5c785c31ffa65c108a52fa3faafb39716fdb7fbe6659b330a5b1"
+      "unlabeled": {
+        "image": "assets/illustrations/telencephalon/axial-05-unlabeled.webp",
+        "width": 1140,
+        "height": 1520,
+        "sha256": "383d61f8f096b928734edc6296c719b72ddd7782765c178e8d57a98ec6d5f145"
+      },
+      "fullPlate": {
+        "image": "assets/illustrations/telencephalon/axial-05-full.webp",
+        "width": 1880,
+        "height": 1793,
+        "sha256": "eb4d0a4138ba5c785c31ffa65c108a52fa3faafb39716fdb7fbe6659b330a5b1",
+        "cropPoints": [
+          24.0,
+          45.0,
+          588.0,
+          582.6590576171875
+        ]
+      },
+      "thumbnailSHA256": "a7d60b90a3753a8b0b32ab18ee1c56f8cc139237ac2c9a17bc1891b1d3d53c5f"
     },
     {
       "id": "axial-06",
@@ -126,16 +223,35 @@
       "printedPage": 310,
       "figure": "13.6A",
       "image": "assets/illustrations/telencephalon/axial-06.webp",
+      "width": 1596,
+      "height": 2032,
+      "sha256": "12a4cde1294792fb286610d9f3058c52f0d02f5261624a62bfe67a0976c10da7",
       "thumbnail": "assets/illustrations/telencephalon/axial-06-thumb.webp",
-      "width": 1880,
-      "height": 2241,
       "cropPoints": [
-        24.0,
-        45.0,
-        588.0,
-        717.0040283203125
+        146.0,
+        177.0,
+        545.0,
+        661.0
       ],
-      "sha256": "4168c1cedfa01b35cd69ee69cbc1f11f0b6c2470b733bf22232a86ff3ced14ee"
+      "unlabeled": {
+        "image": "assets/illustrations/telencephalon/axial-06-unlabeled.webp",
+        "width": 1116,
+        "height": 1480,
+        "sha256": "fd206a570805f290028159d564212c5f6caa3657600c10512493cba1691b94b7"
+      },
+      "fullPlate": {
+        "image": "assets/illustrations/telencephalon/axial-06-full.webp",
+        "width": 1880,
+        "height": 2241,
+        "sha256": "4168c1cedfa01b35cd69ee69cbc1f11f0b6c2470b733bf22232a86ff3ced14ee",
+        "cropPoints": [
+          24.0,
+          45.0,
+          588.0,
+          717.0040283203125
+        ]
+      },
+      "thumbnailSHA256": "c0ec8f3cb7bb396e2862b8f4e6953cf3da2ee49b756fd3b1d1964fc769cc56cd"
     },
     {
       "id": "axial-07",
@@ -148,16 +264,35 @@
       "printedPage": 312,
       "figure": "13.7A",
       "image": "assets/illustrations/telencephalon/axial-07.webp",
+      "width": 1456,
+      "height": 1796,
+      "sha256": "e2f02db03a2dd6c62bd41d08e35c6408135eb101648c2d03e92c0c7ceb617164",
       "thumbnail": "assets/illustrations/telencephalon/axial-07-thumb.webp",
-      "width": 1880,
-      "height": 1856,
       "cropPoints": [
-        24.0,
-        45.0,
-        588.0,
-        601.6610107421875
+        181.0,
+        112.0,
+        545.0,
+        537.0
       ],
-      "sha256": "27167059cc5b872858e76c4a30806bedec4c11747526d849eddb1feeafbdc0d8"
+      "unlabeled": {
+        "image": "assets/illustrations/telencephalon/axial-07-unlabeled.webp",
+        "width": 1036,
+        "height": 1380,
+        "sha256": "b4404f9ec5aaafe7717f1db8c75bdfee3f7372f665f304ccbe10c0d6124ebeb8"
+      },
+      "fullPlate": {
+        "image": "assets/illustrations/telencephalon/axial-07-full.webp",
+        "width": 1880,
+        "height": 1856,
+        "sha256": "27167059cc5b872858e76c4a30806bedec4c11747526d849eddb1feeafbdc0d8",
+        "cropPoints": [
+          24.0,
+          45.0,
+          588.0,
+          601.6610107421875
+        ]
+      },
+      "thumbnailSHA256": "2ed69bfed90548c9c4d6607f3ea2178e7f1b3056289d3df228a05d91a27832f3"
     },
     {
       "id": "axial-08",
@@ -170,16 +305,35 @@
       "printedPage": 314,
       "figure": "13.8A",
       "image": "assets/illustrations/telencephalon/axial-08.webp",
+      "width": 1492,
+      "height": 1936,
+      "sha256": "cd5c5b11b651ea6ef4a7a1bbe5dacb93653d26850d32f67630b523d36f24e625",
       "thumbnail": "assets/illustrations/telencephalon/axial-08-thumb.webp",
-      "width": 1880,
-      "height": 2241,
       "cropPoints": [
-        24.0,
-        45.0,
-        588.0,
-        717.0040283203125
+        162.0,
+        177.0,
+        535.0,
+        637.0
       ],
-      "sha256": "1b966c27086c80ddce481d09217c8eec5004625b1dd789c94b2087e676be0e25"
+      "unlabeled": {
+        "image": "assets/illustrations/telencephalon/axial-08-unlabeled.webp",
+        "width": 1108,
+        "height": 1452,
+        "sha256": "545737f30c8a3be330513b1bd5d8197c42cdb131958984fe688147024c0b3417"
+      },
+      "fullPlate": {
+        "image": "assets/illustrations/telencephalon/axial-08-full.webp",
+        "width": 1880,
+        "height": 2241,
+        "sha256": "1b966c27086c80ddce481d09217c8eec5004625b1dd789c94b2087e676be0e25",
+        "cropPoints": [
+          24.0,
+          45.0,
+          588.0,
+          717.0040283203125
+        ]
+      },
+      "thumbnailSHA256": "e204bba35ad5f887164d2840e96852d59a39a8f486a6943766bc72f670a168f0"
     },
     {
       "id": "axial-09",
@@ -192,16 +346,35 @@
       "printedPage": 316,
       "figure": "13.9A",
       "image": "assets/illustrations/telencephalon/axial-09.webp",
+      "width": 1496,
+      "height": 1836,
+      "sha256": "aa8d6649549db53a8afc982a371494f020916bb52b331f7c44f5465ae256b872",
       "thumbnail": "assets/illustrations/telencephalon/axial-09-thumb.webp",
-      "width": 1880,
-      "height": 2241,
       "cropPoints": [
-        24.0,
-        45.0,
-        588.0,
-        717.0040283203125
+        165.0,
+        191.0,
+        539.0,
+        626.0
       ],
-      "sha256": "6a8ed1b98adbe6ac8bb0eb02003e7f111b1f41f407fabc5b0dbfc54c772293bc"
+      "unlabeled": {
+        "image": "assets/illustrations/telencephalon/axial-09-unlabeled.webp",
+        "width": 1136,
+        "height": 1460,
+        "sha256": "6daac2fea0405c690a876da460c364ce074ab6e76d8a5a66cff1450a9548b373"
+      },
+      "fullPlate": {
+        "image": "assets/illustrations/telencephalon/axial-09-full.webp",
+        "width": 1880,
+        "height": 2241,
+        "sha256": "6a8ed1b98adbe6ac8bb0eb02003e7f111b1f41f407fabc5b0dbfc54c772293bc",
+        "cropPoints": [
+          24.0,
+          45.0,
+          588.0,
+          717.0040283203125
+        ]
+      },
+      "thumbnailSHA256": "0c6e052737814d44fd45247231ff008fe9515f647bf0771f8c297ef494d28c50"
     },
     {
       "id": "axial-10",
@@ -214,16 +387,35 @@
       "printedPage": 318,
       "figure": "13.10A",
       "image": "assets/illustrations/telencephalon/axial-10.webp",
+      "width": 1392,
+      "height": 1528,
+      "sha256": "5dc1597240984f48c8a6093e9a55ab6141494057346f0cdd58f7f4fe232c9b3e",
       "thumbnail": "assets/illustrations/telencephalon/axial-10-thumb.webp",
-      "width": 1880,
-      "height": 2201,
       "cropPoints": [
-        24.0,
-        45.0,
-        588.0,
-        705.0040283203125
+        199.0,
+        220.0,
+        547.0,
+        578.0
       ],
-      "sha256": "940c6e407a3fe0b681bb364433d0c76790c5357041ce1ba8683a2631dd1b6b72"
+      "unlabeled": {
+        "image": "assets/illustrations/telencephalon/axial-10-unlabeled.webp",
+        "width": 1044,
+        "height": 1312,
+        "sha256": "e7e7b713c7dfd12b59114a86c53bab032d2b61817edcb7fb2c2599aca27bdb24"
+      },
+      "fullPlate": {
+        "image": "assets/illustrations/telencephalon/axial-10-full.webp",
+        "width": 1880,
+        "height": 2201,
+        "sha256": "940c6e407a3fe0b681bb364433d0c76790c5357041ce1ba8683a2631dd1b6b72",
+        "cropPoints": [
+          24.0,
+          45.0,
+          588.0,
+          705.0040283203125
+        ]
+      },
+      "thumbnailSHA256": "3bfacbc66aa150fc1e8dd21d185b6e825f82b036115513ad7978433c6bd8e99b"
     },
     {
       "id": "coronal-01",
@@ -236,16 +428,35 @@
       "printedPage": 320,
       "figure": "13.11A",
       "image": "assets/illustrations/telencephalon/coronal-01.webp",
+      "width": 1144,
+      "height": 1336,
+      "sha256": "700564ffb4db58c7aabd7d7128f36a7eeb4c5b95ebe6c8666599107b83640c5e",
       "thumbnail": "assets/illustrations/telencephalon/coronal-01-thumb.webp",
-      "width": 1880,
-      "height": 2023,
       "cropPoints": [
-        24.0,
-        45.0,
-        588.0,
-        651.7430419921875
+        258.0,
+        197.0,
+        544.0,
+        507.0
       ],
-      "sha256": "4161cf08e5037a1769b2b4b82782ee7a1c9634d2ac258697d7bb48f681c22652"
+      "unlabeled": {
+        "image": "assets/illustrations/telencephalon/coronal-01-unlabeled.webp",
+        "width": 908,
+        "height": 992,
+        "sha256": "b0101fad0d3cf7949d076d4b7fdd6aa99bc0764442bd9355bdf60f9aa9c2d9dd"
+      },
+      "fullPlate": {
+        "image": "assets/illustrations/telencephalon/coronal-01-full.webp",
+        "width": 1880,
+        "height": 2023,
+        "sha256": "4161cf08e5037a1769b2b4b82782ee7a1c9634d2ac258697d7bb48f681c22652",
+        "cropPoints": [
+          24.0,
+          45.0,
+          588.0,
+          651.7430419921875
+        ]
+      },
+      "thumbnailSHA256": "76ddefe73ae7a33aff40ef08205d53eb96bd7d61baaf057ec0ee5309c8466704"
     },
     {
       "id": "coronal-02",
@@ -258,16 +469,35 @@
       "printedPage": 322,
       "figure": "13.12A",
       "image": "assets/illustrations/telencephalon/coronal-02.webp",
+      "width": 1316,
+      "height": 1492,
+      "sha256": "e5ad0cbe3d43aa185de725e31e66041a5113d70ddad22672a38588717723a6fe",
       "thumbnail": "assets/illustrations/telencephalon/coronal-02-thumb.webp",
-      "width": 1880,
-      "height": 1951,
       "cropPoints": [
-        24.0,
-        45.0,
-        588.0,
-        630.154052734375
+        216.0,
+        147.0,
+        545.0,
+        496.0
       ],
-      "sha256": "76d5835d2ca6fa0fed82c372635b3c7e65cfe2241188831870b22c3da00dd06f"
+      "unlabeled": {
+        "image": "assets/illustrations/telencephalon/coronal-02-unlabeled.webp",
+        "width": 988,
+        "height": 1044,
+        "sha256": "c17cd17c77e70493e7eec01f15ad8a368daf0ab0e240a59574513e006da59229"
+      },
+      "fullPlate": {
+        "image": "assets/illustrations/telencephalon/coronal-02-full.webp",
+        "width": 1880,
+        "height": 1951,
+        "sha256": "76d5835d2ca6fa0fed82c372635b3c7e65cfe2241188831870b22c3da00dd06f",
+        "cropPoints": [
+          24.0,
+          45.0,
+          588.0,
+          630.154052734375
+        ]
+      },
+      "thumbnailSHA256": "1e637cf2b4b0f749194d39339900b3968dcdc5d2b5f9e872160b7181da9b1b52"
     },
     {
       "id": "coronal-03",
@@ -280,16 +510,35 @@
       "printedPage": 324,
       "figure": "13.13A",
       "image": "assets/illustrations/telencephalon/coronal-03.webp",
+      "width": 1488,
+      "height": 1140,
+      "sha256": "619df4d4cc54aad48c4f4cb93e87eed10015811e31ef8948e81c5875fb806a16",
       "thumbnail": "assets/illustrations/telencephalon/coronal-03-thumb.webp",
-      "width": 1880,
-      "height": 1383,
       "cropPoints": [
-        24.0,
-        45.0,
-        588.0,
-        459.6669921875
+        173.0,
+        138.0,
+        545.0,
+        399.0
       ],
-      "sha256": "869b0e54cf8468fda0794df8926a7932a348164fb68d00279f76fd741fc9620d"
+      "unlabeled": {
+        "image": "assets/illustrations/telencephalon/coronal-03-unlabeled.webp",
+        "width": 992,
+        "height": 1020,
+        "sha256": "2b38d393f4d5d947c8840b2981483b1830cc19d91f11a5144c7bfb78e5d81709"
+      },
+      "fullPlate": {
+        "image": "assets/illustrations/telencephalon/coronal-03-full.webp",
+        "width": 1880,
+        "height": 1383,
+        "sha256": "869b0e54cf8468fda0794df8926a7932a348164fb68d00279f76fd741fc9620d",
+        "cropPoints": [
+          24.0,
+          45.0,
+          588.0,
+          459.6669921875
+        ]
+      },
+      "thumbnailSHA256": "751ee757f8ba7ffc90400185b8dd1b896b03d68d69ec0afc19cd517597fa0803"
     },
     {
       "id": "coronal-04",
@@ -302,16 +551,35 @@
       "printedPage": 326,
       "figure": "13.14A",
       "image": "assets/illustrations/telencephalon/coronal-04.webp",
+      "width": 1444,
+      "height": 1712,
+      "sha256": "37392615eb3c6c0d7476d75c53a4716ca5947147bc899f2c77df0e3fdad91113",
       "thumbnail": "assets/illustrations/telencephalon/coronal-04-thumb.webp",
-      "width": 1880,
-      "height": 1849,
       "cropPoints": [
-        24.0,
-        45.0,
-        588.0,
-        599.6680297851562
+        184.0,
+        121.0,
+        545.0,
+        525.0
       ],
-      "sha256": "1880d9b9c164365dafcc0d78502fe622efd3bf955507a88634b9e588ec7b7b1e"
+      "unlabeled": {
+        "image": "assets/illustrations/telencephalon/coronal-04-unlabeled.webp",
+        "width": 1112,
+        "height": 1116,
+        "sha256": "8eb98e403dfe3f34912a5ce9965b176156dbad23423f0c7cb4aafa1f6fd63164"
+      },
+      "fullPlate": {
+        "image": "assets/illustrations/telencephalon/coronal-04-full.webp",
+        "width": 1880,
+        "height": 1849,
+        "sha256": "1880d9b9c164365dafcc0d78502fe622efd3bf955507a88634b9e588ec7b7b1e",
+        "cropPoints": [
+          24.0,
+          45.0,
+          588.0,
+          599.6680297851562
+        ]
+      },
+      "thumbnailSHA256": "3573040c0440565791cc85113ea94fd0533fb8fd00cd59a01e17c478c16eed18"
     },
     {
       "id": "coronal-05",
@@ -324,16 +592,35 @@
       "printedPage": 328,
       "figure": "13.15A",
       "image": "assets/illustrations/telencephalon/coronal-05.webp",
+      "width": 1576,
+      "height": 1952,
+      "sha256": "320758a91ace0170ecb2d331a051e02dd310d7ddd40b427351324b64c589c9eb",
       "thumbnail": "assets/illustrations/telencephalon/coronal-05-thumb.webp",
-      "width": 1880,
-      "height": 2281,
       "cropPoints": [
-        24.0,
-        45.0,
-        588.0,
-        729.0040283203125
+        151.0,
+        144.0,
+        545.0,
+        608.0
       ],
-      "sha256": "3f98952d6ca8a8f3b8bf0d6fa733145c942a665e26b8d73bb999b9ec6c4f6236"
+      "unlabeled": {
+        "image": "assets/illustrations/telencephalon/coronal-05-unlabeled.webp",
+        "width": 1136,
+        "height": 1196,
+        "sha256": "92f11b39b22a6424cd91d5b830810af070ea1013c451cada04132484d80dd631"
+      },
+      "fullPlate": {
+        "image": "assets/illustrations/telencephalon/coronal-05-full.webp",
+        "width": 1880,
+        "height": 2281,
+        "sha256": "3f98952d6ca8a8f3b8bf0d6fa733145c942a665e26b8d73bb999b9ec6c4f6236",
+        "cropPoints": [
+          24.0,
+          45.0,
+          588.0,
+          729.0040283203125
+        ]
+      },
+      "thumbnailSHA256": "fa9791c722bbfd9e21eb0efc8055a8e9bae2a53e97ce198d2f3519e6570e7f3a"
     },
     {
       "id": "coronal-06",
@@ -346,16 +633,35 @@
       "printedPage": 330,
       "figure": "13.16A",
       "image": "assets/illustrations/telencephalon/coronal-06.webp",
+      "width": 1552,
+      "height": 1728,
+      "sha256": "7c31bd837964d1bfe0bd37211fec760ce38d70686fabf951daaff9c283eac2b8",
       "thumbnail": "assets/illustrations/telencephalon/coronal-06-thumb.webp",
-      "width": 1880,
-      "height": 1759,
       "cropPoints": [
-        24.0,
-        45.0,
-        588.0,
-        572.6700439453125
+        157.0,
+        79.0,
+        545.0,
+        487.0
       ],
-      "sha256": "820d0613d7e0539e5ab2b84f7cd8279405b698bc66022f5cf6b28848acfcab3a"
+      "unlabeled": {
+        "image": "assets/illustrations/telencephalon/coronal-06-unlabeled.webp",
+        "width": 1064,
+        "height": 1360,
+        "sha256": "ac46a0d8f510026bff3de0ad1fad60c1c89f3fe3ec34d571dc0de877a9ad7052"
+      },
+      "fullPlate": {
+        "image": "assets/illustrations/telencephalon/coronal-06-full.webp",
+        "width": 1880,
+        "height": 1759,
+        "sha256": "820d0613d7e0539e5ab2b84f7cd8279405b698bc66022f5cf6b28848acfcab3a",
+        "cropPoints": [
+          24.0,
+          45.0,
+          588.0,
+          572.6700439453125
+        ]
+      },
+      "thumbnailSHA256": "ba81054f9df2160227415cc4cd54655df42f3a78413a50de64590d8e9c31d859"
     },
     {
       "id": "coronal-07",
@@ -368,16 +674,35 @@
       "printedPage": 332,
       "figure": "13.17A",
       "image": "assets/illustrations/telencephalon/coronal-07.webp",
+      "width": 1640,
+      "height": 2088,
+      "sha256": "1d7b32d05832b5e6a45b6d4c212f315a8dad217bbce53edb08e0488a5df5d3b6",
       "thumbnail": "assets/illustrations/telencephalon/coronal-07-thumb.webp",
-      "width": 1880,
-      "height": 2281,
       "cropPoints": [
-        24.0,
-        45.0,
-        588.0,
-        729.0040283203125
+        137.0,
+        145.0,
+        547.0,
+        643.0
       ],
-      "sha256": "88591920dac95e94d9ab565029a9dcb0a4fe52af1dfb83563521a0a5eb8dfbdf"
+      "unlabeled": {
+        "image": "assets/illustrations/telencephalon/coronal-07-unlabeled.webp",
+        "width": 1192,
+        "height": 1620,
+        "sha256": "471774496ae9204b0eb58b73a0b21037d974265f1585c4b2bbec1f2e95779cf9"
+      },
+      "fullPlate": {
+        "image": "assets/illustrations/telencephalon/coronal-07-full.webp",
+        "width": 1880,
+        "height": 2281,
+        "sha256": "88591920dac95e94d9ab565029a9dcb0a4fe52af1dfb83563521a0a5eb8dfbdf",
+        "cropPoints": [
+          24.0,
+          45.0,
+          588.0,
+          729.0040283203125
+        ]
+      },
+      "thumbnailSHA256": "cf64ca6b4f4ce3970fb5ec0ed5d5c4357b12836ca65dc073efae9d3a07af4962"
     },
     {
       "id": "coronal-08",
@@ -390,16 +715,35 @@
       "printedPage": 334,
       "figure": "13.18A",
       "image": "assets/illustrations/telencephalon/coronal-08.webp",
+      "width": 1664,
+      "height": 2008,
+      "sha256": "c90896d1bef582164ebb38736376c00db4b0e77143043eb3b07e444992a84809",
       "thumbnail": "assets/illustrations/telencephalon/coronal-08-thumb.webp",
-      "width": 1880,
-      "height": 1843,
       "cropPoints": [
-        24.0,
-        45.0,
-        588.0,
-        597.6719970703125
+        129.0,
+        62.0,
+        545.0,
+        540.0
       ],
-      "sha256": "6bd032b628c3c6ca75b31c021e573a8ad593f65aefc2ac77f66057868d962279"
+      "unlabeled": {
+        "image": "assets/illustrations/telencephalon/coronal-08-unlabeled.webp",
+        "width": 1092,
+        "height": 1384,
+        "sha256": "f3179f592e5f91d79a9218f8c33169ccf8cf5491ce874de19003805ea8f9eab5"
+      },
+      "fullPlate": {
+        "image": "assets/illustrations/telencephalon/coronal-08-full.webp",
+        "width": 1880,
+        "height": 1843,
+        "sha256": "6bd032b628c3c6ca75b31c021e573a8ad593f65aefc2ac77f66057868d962279",
+        "cropPoints": [
+          24.0,
+          45.0,
+          588.0,
+          597.6719970703125
+        ]
+      },
+      "thumbnailSHA256": "6d8a209881ed9c242b09afc5ef856180d81db8e8e7ba7bad1dbe6b1aa6247754"
     },
     {
       "id": "coronal-09",
@@ -412,16 +756,35 @@
       "printedPage": 336,
       "figure": "13.19A",
       "image": "assets/illustrations/telencephalon/coronal-09.webp",
+      "width": 1588,
+      "height": 1844,
+      "sha256": "4df4d195e7ae87d414d30090254b55e6ebabdee4a416758a9f0a6c5cfb89d90b",
       "thumbnail": "assets/illustrations/telencephalon/coronal-09-thumb.webp",
-      "width": 1880,
-      "height": 2241,
       "cropPoints": [
-        24.0,
-        45.0,
-        588.0,
-        717.0040283203125
+        141.0,
+        141.0,
+        538.0,
+        578.0
       ],
-      "sha256": "711458f532a6b67b47fc1ad5ec984d85aa8b0bdb1e3776ca9b2c70d63b7fc93f"
+      "unlabeled": {
+        "image": "assets/illustrations/telencephalon/coronal-09-unlabeled.webp",
+        "width": 1128,
+        "height": 1320,
+        "sha256": "25af7ae80f1f2d54994d895f45c12ac80f60eecbcdbe2a2c32d131497bde68f5"
+      },
+      "fullPlate": {
+        "image": "assets/illustrations/telencephalon/coronal-09-full.webp",
+        "width": 1880,
+        "height": 2241,
+        "sha256": "711458f532a6b67b47fc1ad5ec984d85aa8b0bdb1e3776ca9b2c70d63b7fc93f",
+        "cropPoints": [
+          24.0,
+          45.0,
+          588.0,
+          717.0040283203125
+        ]
+      },
+      "thumbnailSHA256": "55650ab6dc17a834d0f238319b1793f3f967d799933c1f522b2384639079c0d2"
     },
     {
       "id": "coronal-10",
@@ -434,16 +797,35 @@
       "printedPage": 338,
       "figure": "13.20A",
       "image": "assets/illustrations/telencephalon/coronal-10.webp",
+      "width": 1656,
+      "height": 2080,
+      "sha256": "3de0b256190271ea9e1d6d1fa87b1c2ec2046746faa87b55e6595cc1a8f2c005",
       "thumbnail": "assets/illustrations/telencephalon/coronal-10-thumb.webp",
-      "width": 1880,
-      "height": 2201,
       "cropPoints": [
-        24.0,
-        45.0,
-        588.0,
-        705.0040283203125
+        131.0,
+        106.0,
+        545.0,
+        602.0
       ],
-      "sha256": "ecb8702ba80624476a0b555460419b7f8d47352ed2d4bd81c6a720d0025196d0"
+      "unlabeled": {
+        "image": "assets/illustrations/telencephalon/coronal-10-unlabeled.webp",
+        "width": 1136,
+        "height": 1332,
+        "sha256": "45a9942241d13d50e784c21916ff44f1f3342e9743220df26767c77ab3e353e3"
+      },
+      "fullPlate": {
+        "image": "assets/illustrations/telencephalon/coronal-10-full.webp",
+        "width": 1880,
+        "height": 2201,
+        "sha256": "ecb8702ba80624476a0b555460419b7f8d47352ed2d4bd81c6a720d0025196d0",
+        "cropPoints": [
+          24.0,
+          45.0,
+          588.0,
+          705.0040283203125
+        ]
+      },
+      "thumbnailSHA256": "108c24e1e82cca39f196f1f7064978f14fdfa9a03cf3b0ca3418f38a4abf56ba"
     }
   ]
 }

@@ -14,8 +14,38 @@ test('all 20 labeled plates retain unique source pages and valid full/preview as
     assert.equal(createHash('sha256').update(full).digest('hex'), f.sha256);
     assert.equal(full.toString('ascii', 8, 12), 'WEBP');
     assert.ok(fs.statSync(new URL('../trainer/' + f.thumbnail, import.meta.url)).size > 1000);
-    assert.ok(f.width > 1500 && f.height > 1000);
+    assert.equal(createHash('sha256').update(fs.readFileSync(new URL('../trainer/' + f.thumbnail, import.meta.url))).digest('hex'), f.thumbnailSHA256);
+    assert.ok(f.width > 1000 && f.height > 1000);
+    assert.equal(f.width, (f.cropPoints[2] - f.cropPoints[0]) * manifest.renderDpi / 72);
+    assert.equal(f.height, (f.cropPoints[3] - f.cropPoints[1] + 24) * manifest.renderDpi / 72);
+    for (const key of ['unlabeled', 'fullPlate']) {
+      const variant = f[key];
+      const bytes = fs.readFileSync(new URL('../trainer/' + variant.image, import.meta.url));
+      assert.equal(createHash('sha256').update(bytes).digest('hex'), variant.sha256);
+      assert.equal(bytes.toString('ascii', 8, 12), 'WEBP');
+      assert.ok(variant.width > 800 && variant.height > 800);
+      assert.notEqual(variant.image, f.image);
+    }
   }
+});
+
+test('source and reviewed extraction geometry match the rendered set', () => {
+  const source = fs.readFileSync(new URL('../Telencephalon.pdf', import.meta.url));
+  const regions = JSON.parse(fs.readFileSync(new URL('../scripts/illustration-regions.json', import.meta.url)));
+  const report = JSON.parse(fs.readFileSync(new URL('../trainer/qa/illustration-extraction-report.json', import.meta.url)));
+  const hash = createHash('sha256').update(source).digest('hex');
+  assert.equal(hash, manifest.sourceSHA256);
+  assert.equal(hash, regions.sourceSHA256);
+  assert.equal(hash, report.sourceSHA256);
+  assert.equal(report.figures.length, 20);
+  for (const f of report.figures) {
+    assert.equal(f.labelLines, regions.figures[f.id].labelLines.length);
+    assert.ok(f.leaderPaths > 0);
+    assert.ok(f.maxArtworkChannelDifference <= 2);
+  }
+  // These three lines share a PDF block with the localizer caption.
+  const last = regions.figures['coronal-10'].labelLines.map(l => l.text);
+  for (const text of ['Inferior pole', 'of lateral', 'ventricle']) assert.ok(last.includes(text));
 });
 
 test('subject translation changes native coordinates without changing the selected plate', () => {

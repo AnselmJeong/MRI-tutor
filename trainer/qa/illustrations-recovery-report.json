@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-09T13:36:08.178Z",
+  "date": "2026-09-10T11:15:40.493Z",
   "checks": [
     "Manifest and large-image failures show actionable retry and recover without a page reload",
     "Delayed next plate never leaves the previous image beneath its new title",

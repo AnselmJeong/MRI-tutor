@@ -1,0 +1,206 @@
+{
+  "pagesPerCollection": 20,
+  "bookmarksPerCollection": 20,
+  "figures": [
+    {
+      "id": "axial-01",
+      "variant": "labeled",
+      "maxChannelDifference": 1
+    },
+    {
+      "id": "axial-02",
+      "variant": "labeled",
+      "maxChannelDifference": 1
+    },
+    {
+      "id": "axial-03",
+      "variant": "labeled",
+      "maxChannelDifference": 1
+    },
+    {
+      "id": "axial-04",
+      "variant": "labeled",
+      "maxChannelDifference": 1
+    },
+    {
+      "id": "axial-05",
+      "variant": "labeled",
+      "maxChannelDifference": 1
+    },
+    {
+      "id": "axial-06",
+      "variant": "labeled",
+      "maxChannelDifference": 1
+    },
+    {
+      "id": "axial-07",
+      "variant": "labeled",
+      "maxChannelDifference": 1
+    },
+    {
+      "id": "axial-08",
+      "variant": "labeled",
+      "maxChannelDifference": 1
+    },
+    {
+      "id": "axial-09",
+      "variant": "labeled",
+      "maxChannelDifference": 1
+    },
+    {
+      "id": "axial-10",
+      "variant": "labeled",
+      "maxChannelDifference": 2
+    },
+    {
+      "id": "coronal-01",
+      "variant": "labeled",
+      "maxChannelDifference": 1
+    },
+    {
+      "id": "coronal-02",
+      "variant": "labeled",
+      "maxChannelDifference": 1
+    },
+    {
+      "id": "coronal-03",
+      "variant": "labeled",
+      "maxChannelDifference": 1
+    },
+    {
+      "id": "coronal-04",
+      "variant": "labeled",
+      "maxChannelDifference": 1
+    },
+    {
+      "id": "coronal-05",
+      "variant": "labeled",
+      "maxChannelDifference": 1
+    },
+    {
+      "id": "coronal-06",
+      "variant": "labeled",
+      "maxChannelDifference": 1
+    },
+    {
+      "id": "coronal-07",
+      "variant": "labeled",
+      "maxChannelDifference": 1
+    },
+    {
+      "id": "coronal-08",
+      "variant": "labeled",
+      "maxChannelDifference": 2
+    },
+    {
+      "id": "coronal-09",
+      "variant": "labeled",
+      "maxChannelDifference": 2
+    },
+    {
+      "id": "coronal-10",
+      "variant": "labeled",
+      "maxChannelDifference": 1
+    },
+    {
+      "id": "axial-01",
+      "variant": "unlabeled",
+      "maxChannelDifference": 1
+    },
+    {
+      "id": "axial-02",
+      "variant": "unlabeled",
+      "maxChannelDifference": 1
+    },
+    {
+      "id": "axial-03",
+      "variant": "unlabeled",
+      "maxChannelDifference": 1
+    },
+    {
+      "id": "axial-04",
+      "variant": "unlabeled",
+      "maxChannelDifference": 1
+    },
+    {
+      "id": "axial-05",
+      "variant": "unlabeled",
+      "maxChannelDifference": 1
+    },
+    {
+      "id": "axial-06",
+      "variant": "unlabeled",
+      "maxChannelDifference": 1
+    },
+    {
+      "id": "axial-07",
+      "variant": "unlabeled",
+      "maxChannelDifference": 1
+    },
+    {
+      "id": "axial-08",
+      "variant": "unlabeled",
+      "maxChannelDifference": 1
+    },
+    {
+      "id": "axial-09",
+      "variant": "unlabeled",
+      "maxChannelDifference": 1
+    },
+    {
+      "id": "axial-10",
+      "variant": "unlabeled",
+      "maxChannelDifference": 2
+    },
+    {
+      "id": "coronal-01",
+      "variant": "unlabeled",
+      "maxChannelDifference": 1
+    },
+    {
+      "id": "coronal-02",
+      "variant": "unlabeled",
+      "maxChannelDifference": 1
+    },
+    {
+      "id": "coronal-03",
+      "variant": "unlabeled",
+      "maxChannelDifference": 1
+    },
+    {
+      "id": "coronal-04",
+      "variant": "unlabeled",
+      "maxChannelDifference": 1
+    },
+    {
+      "id": "coronal-05",
+      "variant": "unlabeled",
+      "maxChannelDifference": 1
+    },
+    {
+      "id": "coronal-06",
+      "variant": "unlabeled",
+      "maxChannelDifference": 1
+    },
+    {
+      "id": "coronal-07",
+      "variant": "unlabeled",
+      "maxChannelDifference": 1
+    },
+    {
+      "id": "coronal-08",
+      "variant": "unlabeled",
+      "maxChannelDifference": 2
+    },
+    {
+      "id": "coronal-09",
+      "variant": "unlabeled",
+      "maxChannelDifference": 2
+    },
+    {
+      "id": "coronal-10",
+      "variant": "unlabeled",
+      "maxChannelDifference": 1
+    }
+  ]
+}
